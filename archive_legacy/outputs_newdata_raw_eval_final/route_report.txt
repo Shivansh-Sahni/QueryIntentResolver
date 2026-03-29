@@ -1,0 +1,18 @@
+                            precision    recall  f1-score   support
+
+              b2b_workflow       0.57      0.50      0.53        26
+          compare_pipeline       0.69      0.36      0.47        25
+           faq_or_guidance       0.80      0.48      0.60        25
+          finance_guidance       0.63      0.52      0.57        23
+       foundry_multi_agent       0.61      0.44      0.51        25
+              llm_advisory       0.35      0.48      0.41        23
+         outcomes_pipeline       0.50      0.30      0.38        20
+   recommendation_workflow       1.00      0.31      0.47        26
+        rewrite_then_route       0.50      0.31      0.38        26
+semantic_or_faceted_search       0.29      0.50      0.37        30
+            typesense_only       0.30      0.33      0.32        27
+   typesense_plus_metadata       0.20      0.54      0.30        24
+
+                  accuracy                           0.42       300
+                 macro avg       0.54      0.42      0.44       300
+              weighted avg       0.54      0.42      0.44       300

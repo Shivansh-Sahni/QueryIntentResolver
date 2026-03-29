@@ -1,0 +1,18 @@
+                    precision    recall  f1-score   support
+
+admissions_process       1.00      1.00      1.00        46
+  attribute_lookup       1.00      1.00      1.00        60
+   b2b_partnership       1.00      1.00      1.00        13
+   campus_life_fit       1.00      1.00      1.00         7
+   career_outcomes       1.00      1.00      1.00         6
+        comparison       1.00      1.00      1.00         9
+cost_financial_aid       1.00      1.00      1.00        33
+     direct_lookup       1.00      1.00      1.00        12
+   filtered_search       1.00      1.00      1.00        44
+  multi_constraint       1.00      1.00      1.00        37
+    recommendation       1.00      1.00      1.00        23
+    rewrite_needed       1.00      1.00      1.00        10
+
+          accuracy                           1.00       300
+         macro avg       1.00      1.00      1.00       300
+      weighted avg       1.00      1.00      1.00       300

@@ -1,0 +1,26 @@
+query_norm,rows,n_labels,labels
+api access for college partners,171,4,complex|llm_needed|medium|short_circuit
+harvard but less stressful,74,4,complex|llm_needed|medium|short_circuit
+schools with high internship placement rates,69,4,complex|llm_needed|medium|short_circuit
+mit without the suffering,60,4,complex|llm_needed|medium|short_circuit
+how do we update our school profile data,58,4,complex|llm_needed|medium|short_circuit
+request demo for our admissions team,49,4,complex|llm_needed|medium|short_circuit
+enterprise access for counselors and districts,48,4,complex|llm_needed|medium|short_circuit
+pricing for partner colleges,43,4,complex|llm_needed|medium|short_circuit
+schools with normal people,31,4,complex|llm_needed|medium|short_circuit
+schools with strong first gen support,30,4,complex|llm_needed|medium|short_circuit
+colleges where people dont care about football,22,2,complex|llm_needed
+mit,20,2,medium|short_circuit
+ucla vibe but not so expensive,18,3,complex|llm_needed|medium
+brown,16,3,complex|llm_needed|short_circuit
+how to lower college costs,15,2,complex|medium
+colleges in california,15,3,complex|llm_needed|medium
+penn state,15,2,medium|short_circuit
+nyu,14,3,complex|llm_needed|short_circuit
+uc san diego,14,3,llm_needed|medium|short_circuit
+colleges in texas,14,2,complex|medium
+best colleges for psychology job outcomes,13,2,complex|medium
+harvard,12,3,llm_needed|medium|short_circuit
+colleges in warm states,12,2,llm_needed|medium
+colleges near chicago,12,2,medium|short_circuit
+usc,11,3,llm_needed|medium|short_circuit

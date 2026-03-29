@@ -1,0 +1,13 @@
+rejection_reason,count,share
+intent:unmapped,2038,0.6278496611213802
+intent:cost_financial_aid_rejected_missing_cost_signal,274,0.08441158348736907
+intent:campus_life_fit_rejected_missing_fit_signal,249,0.0767097966728281
+persona:unmapped,198,0.06099815157116451
+intent:comparison_rejected_non_school,105,0.03234750462107209
+intent:admissions_process_rejected_missing_admissions_signal,83,0.025569932224276032
+intent:direct_lookup_rejected_not_entity_like,77,0.0237215033887862
+intent:career_outcomes_rejected_missing_outcome_signal,72,0.022181146025878003
+intent:rewrite_needed_rejected_missing_rewrite_signal,58,0.017868145409735057
+intent:b2b_partnership_rejected_missing_b2b_signal,46,0.014171287738755391
+intent:recommendation_rejected_missing_recommendation_signal,45,0.013863216266173753
+query:blank_or_header,1,0.00030807147258163895

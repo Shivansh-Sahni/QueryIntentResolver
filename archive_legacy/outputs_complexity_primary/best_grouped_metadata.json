@@ -1,0 +1,9 @@
+{
+  "split_type": "grouped_query_split",
+  "dataset_variant": "drop_high_query_plus_persona",
+  "high_strategy": "drop",
+  "use_persona": true,
+  "model_name": "sgd_log",
+  "accuracy": 0.802417480241748,
+  "avg_confidence": 0.8241161024199796
+}

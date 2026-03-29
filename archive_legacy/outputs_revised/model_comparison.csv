@@ -1,0 +1,6 @@
+variant,persona_model,intent_model,persona_accuracy,intent_accuracy,route_accuracy,tier_accuracy,avg_intent_confidence
+original_packaged_outputs,n/a,n/a,0.48,0.37,0.37,,0.5531190127232698
+normalized_nb,nb,nb,0.7266666666666667,1.0,1.0,1.0,0.7393060647649351
+normalized_lsa_logreg,lsa_logreg,lsa_logreg,0.7066666666666667,1.0,1.0,1.0,0.7104601157266609
+normalized_char_word_logreg,char_word_logreg,char_word_logreg,0.7233333333333334,1.0,1.0,1.0,0.7826969216826052
+selected_mixed,nb,char_word_logreg,0.7266666666666667,1.0,1.0,1.0,0.7826969216826052

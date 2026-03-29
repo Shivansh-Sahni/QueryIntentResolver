@@ -1,0 +1,14 @@
+Query Intent Resolver raw-eval metrics summary
+
+Selected persona model: char_word_logreg
+Selected intent model: char_word_logreg
+
+Accepted training rows: 6261
+Rejected training rows: 3246
+Persona accuracy: 0.52
+Intent accuracy: 0.38
+Route accuracy: 0.38
+Tier accuracy: 0.55
+Average intent confidence: 0.66
+Easy-path precision: 0.33
+Evaluation note: gold labels were kept raw; only the training data was lightly standardized.

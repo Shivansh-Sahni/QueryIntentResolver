@@ -1,0 +1,10 @@
+{
+  "high_strategy": "drop",
+  "use_persona": true,
+  "model_name": "word_logreg",
+  "split": "random",
+  "accuracy": 0.769299023957409,
+  "avg_confidence": 0.6887527111271828,
+  "rows_used": 11267,
+  "unique_queries": 7966
+}

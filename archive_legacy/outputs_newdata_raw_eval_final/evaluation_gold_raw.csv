@@ -1,0 +1,301 @@
+query_text,true_persona,true_intent,expected_route,expected_tier,notes,entity_types
+UT Austin,high_school_student,direct_lookup,typesense_only,easy,gold label; high_school_student; direct_lookup,school
+Columbia,high_school_student,direct_lookup,typesense_only,easy,gold label; high_school_student; direct_lookup,school
+georgia tech,high_school_student,direct_lookup,typesense_only,easy,gold label; high_school_student; direct_lookup,school
+Virginia Tech overview,high_school_student,direct_lookup,typesense_only,easy,gold label; high_school_student; direct_lookup,"school,admissions_or_attribute_signal"
+Stanford acceptance rate,high_school_student,attribute_lookup,typesense_plus_metadata,easy,gold label; high_school_student; attribute_lookup,"school,admissions_or_attribute_signal"
+Carnegie Mellon housing policy,high_school_student,attribute_lookup,typesense_plus_metadata,easy,gold label; high_school_student; attribute_lookup,"school,admissions_or_attribute_signal"
+University of Michigan acceptance rate,high_school_student,attribute_lookup,typesense_plus_metadata,easy,gold label; high_school_student; attribute_lookup,"school,admissions_or_attribute_signal"
+Stanford tuition,high_school_student,attribute_lookup,typesense_plus_metadata,easy,gold label; high_school_student; attribute_lookup,"school,cost_constraint"
+universities with strong pre-med,high_school_student,filtered_search,semantic_or_faceted_search,medium,gold label; high_school_student; filtered_search,major_or_program
+colleges near the beach,high_school_student,filtered_search,semantic_or_faceted_search,medium,gold label; high_school_student; filtered_search,location
+best psychology schools in Texas,high_school_student,filtered_search,semantic_or_faceted_search,medium,gold label; high_school_student; filtered_search,"major_or_program,location"
+universities with strong psychology,high_school_student,filtered_search,semantic_or_faceted_search,medium,gold label; high_school_student; filtered_search,major_or_program
+small economics colleges in warm states under 40k,high_school_student,multi_constraint,foundry_multi_agent,complex,gold label; high_school_student; multi_constraint,"major_or_program,location"
+colleges near the beach with scholarships with strong research and campus safety,high_school_student,multi_constraint,foundry_multi_agent,complex,gold label; high_school_student; multi_constraint,"location,cost_constraint"
+small mechanical engineering colleges in the Midwest with strong aid,high_school_student,multi_constraint,foundry_multi_agent,complex,gold label; high_school_student; multi_constraint,"major_or_program,location"
+small engineering colleges near Chicago under 40k,high_school_student,multi_constraint,foundry_multi_agent,complex,gold label; high_school_student; multi_constraint,"major_or_program,location"
+Harvard vs Carnegie Mellon for architecture,high_school_student,comparison,compare_pipeline,complex,gold label; high_school_student; comparison,"school,comparison_target,major_or_program"
+Duke vs Carnegie Mellon for business,high_school_student,comparison,compare_pipeline,complex,gold label; high_school_student; comparison,"school,comparison_target,major_or_program"
+Carnegie Mellon tuition vs MIT tuition,high_school_student,comparison,compare_pipeline,complex,gold label; high_school_student; comparison,"school,comparison_target,cost_constraint"
+University of Michigan vs Northwestern,high_school_student,comparison,compare_pipeline,complex,gold label; high_school_student; comparison,"school,comparison_target"
+recommend colleges in Texas for biology under 30k,high_school_student,recommendation,recommendation_workflow,complex,gold label; high_school_student; recommendation,"major_or_program,location"
+what schools should i apply to for psychology,high_school_student,recommendation,recommendation_workflow,complex,gold label; high_school_student; recommendation,major_or_program
+schools like Purdue but cheaper,high_school_student,recommendation,recommendation_workflow,complex,gold label; high_school_student; recommendation,"school,rewrite_cue"
+recommend colleges in the Midwest for architecture with scholarships,high_school_student,recommendation,recommendation_workflow,complex,gold label; high_school_student; recommendation,"major_or_program,location,cost_constraint"
+how do i apply to UT Austin,high_school_student,admissions_process,faq_or_guidance,medium,gold label; high_school_student; admissions_process,school
+how do i apply to Cornell,high_school_student,admissions_process,faq_or_guidance,medium,gold label; high_school_student; admissions_process,school
+Virginia Tech application deadlines,high_school_student,admissions_process,faq_or_guidance,medium,gold label; high_school_student; admissions_process,"school,admissions_or_attribute_signal"
+what essays does Cornell require,high_school_student,admissions_process,faq_or_guidance,medium,gold label; high_school_student; admissions_process,school
+Stanford financial aid for out of state,high_school_student,cost_financial_aid,finance_guidance,medium,gold label; high_school_student; cost_financial_aid,"school,cost_constraint"
+cheapest economics schools in the Midwest,high_school_student,cost_financial_aid,finance_guidance,medium,gold label; high_school_student; cost_financial_aid,"major_or_program,location"
+Brown scholarships,high_school_student,cost_financial_aid,finance_guidance,medium,gold label; high_school_student; cost_financial_aid,"school,cost_constraint"
+cheapest nursing schools in the Midwest,high_school_student,cost_financial_aid,finance_guidance,medium,gold label; high_school_student; cost_financial_aid,"major_or_program,location"
+Purdue campus culture,high_school_student,campus_life_fit,llm_advisory,complex,gold label; high_school_student; campus_life_fit,"school,fit_or_culture_cue"
+schools with collaborative culture,high_school_student,campus_life_fit,llm_advisory,complex,gold label; high_school_student; campus_life_fit,fit_or_culture_cue
+Cornell job placement for data science,high_school_student,career_outcomes,outcomes_pipeline,medium,gold label; high_school_student; career_outcomes,"school,career_outcome_cue"
+best colleges for psychology job outcomes,high_school_student,career_outcomes,outcomes_pipeline,medium,gold label; high_school_student; career_outcomes,"major_or_program,career_outcome_cue"
+schools with high internship placement rates,high_school_student,career_outcomes,outcomes_pipeline,medium,gold label; high_school_student; career_outcomes,career_outcome_cue
+best colleges for nursing job outcomes,high_school_student,career_outcomes,outcomes_pipeline,medium,gold label; high_school_student; career_outcomes,"major_or_program,career_outcome_cue"
+harvard but less stressful,high_school_student,rewrite_needed,rewrite_then_route,complex,gold label; high_school_student; rewrite_needed,"school,rewrite_cue"
+ucla vibe but not so expensive,high_school_student,rewrite_needed,rewrite_then_route,complex,gold label; high_school_student; rewrite_needed,"school,fit_or_culture_cue,rewrite_cue"
+UC Berkeley but cheaper,high_school_student,rewrite_needed,rewrite_then_route,complex,gold label; high_school_student; rewrite_needed,"school,rewrite_cue"
+how can our university join the platform,high_school_student,b2b_partnership,b2b_workflow,medium,gold label; high_school_student; b2b_partnership,b2b_request_type
+api access for college partners,high_school_student,b2b_partnership,b2b_workflow,medium,gold label; high_school_student; b2b_partnership,b2b_request_type
+pricing for partner universities,high_school_student,b2b_partnership,b2b_workflow,medium,gold label; high_school_student; b2b_partnership,b2b_request_type
+request demo for admissions office,high_school_student,b2b_partnership,b2b_workflow,medium,gold label; high_school_student; b2b_partnership,"admissions_or_attribute_signal,b2b_request_type"
+Carnegie Mellon research opportunities for undergrads,college_student,direct_lookup,typesense_only,easy,gold label; college_student; direct_lookup,school
+UC Berkeley research opportunities for undergrads,college_student,direct_lookup,typesense_only,easy,gold label; college_student; direct_lookup,school
+princeton,college_student,direct_lookup,typesense_only,easy,gold label; college_student; direct_lookup,school
+Stanford research opportunities for undergrads,college_student,direct_lookup,typesense_only,easy,gold label; college_student; direct_lookup,school
+does Brown have biology,college_student,attribute_lookup,typesense_plus_metadata,easy,gold label; college_student; attribute_lookup,"school,major_or_program"
+can i transfer credits into Brown,college_student,attribute_lookup,typesense_plus_metadata,easy,gold label; college_student; attribute_lookup,school
+can i transfer credits into UCLA,college_student,attribute_lookup,typesense_plus_metadata,easy,gold label; college_student; attribute_lookup,school
+Virginia Tech acceptance rate,college_student,attribute_lookup,typesense_plus_metadata,easy,gold label; college_student; attribute_lookup,"school,admissions_or_attribute_signal"
+University of Washington research opportunities for undergrads,college_student,filtered_search,semantic_or_faceted_search,medium,gold label; college_student; filtered_search,school
+best data science schools in warm states,college_student,filtered_search,semantic_or_faceted_search,medium,gold label; college_student; filtered_search,location
+UT Austin research opportunities for undergrads,college_student,filtered_search,semantic_or_faceted_search,medium,gold label; college_student; filtered_search,school
+best psychology schools in California,college_student,filtered_search,semantic_or_faceted_search,medium,gold label; college_student; filtered_search,"major_or_program,location"
+Harvard research opportunities for undergrads,college_student,multi_constraint,foundry_multi_agent,complex,gold label; college_student; multi_constraint,school
+University of Washington research opportunities for undergrads,college_student,multi_constraint,foundry_multi_agent,complex,gold label; college_student; multi_constraint,school
+can i transfer credits into NYU,college_student,multi_constraint,foundry_multi_agent,complex,gold label; college_student; multi_constraint,school
+can i transfer credits into Duke,college_student,multi_constraint,foundry_multi_agent,complex,gold label; college_student; multi_constraint,school
+USC research opportunities for undergrads,college_student,comparison,compare_pipeline,complex,gold label; college_student; comparison,school
+can i transfer credits into Cornell,college_student,comparison,compare_pipeline,complex,gold label; college_student; comparison,school
+Stanford research opportunities for undergrads,college_student,comparison,compare_pipeline,complex,gold label; college_student; comparison,school
+Virginia Tech tuition vs University of Washington tuition,college_student,comparison,compare_pipeline,complex,gold label; college_student; comparison,"school,comparison_target,cost_constraint"
+can i transfer credits into Columbia,college_student,recommendation,recommendation_workflow,complex,gold label; college_student; recommendation,school
+USC research opportunities for undergrads,college_student,recommendation,recommendation_workflow,complex,gold label; college_student; recommendation,school
+schools like University of Michigan but cheaper,college_student,recommendation,recommendation_workflow,complex,gold label; college_student; recommendation,"school,rewrite_cue"
+Columbia research opportunities for undergrads,college_student,recommendation,recommendation_workflow,complex,gold label; college_student; recommendation,school
+do i need sat for Duke,college_student,admissions_process,faq_or_guidance,medium,gold label; college_student; admissions_process,"school,admissions_or_attribute_signal"
+can i transfer credits into University of Washington,college_student,admissions_process,faq_or_guidance,medium,gold label; college_student; admissions_process,school
+can i transfer credits into NYU,college_student,admissions_process,faq_or_guidance,medium,gold label; college_student; admissions_process,school
+USC application deadlines,college_student,admissions_process,faq_or_guidance,medium,gold label; college_student; admissions_process,"school,admissions_or_attribute_signal"
+Purdue research opportunities for undergrads,college_student,cost_financial_aid,finance_guidance,medium,gold label; college_student; cost_financial_aid,school
+Brown scholarships,college_student,cost_financial_aid,finance_guidance,medium,gold label; college_student; cost_financial_aid,"school,cost_constraint"
+University of Michigan scholarships,college_student,cost_financial_aid,finance_guidance,medium,gold label; college_student; cost_financial_aid,"school,cost_constraint"
+University of Michigan research opportunities for undergrads,college_student,cost_financial_aid,finance_guidance,medium,gold label; college_student; cost_financial_aid,school
+can i transfer credits into Columbia,college_student,campus_life_fit,llm_advisory,complex,gold label; college_student; campus_life_fit,school
+can i transfer credits into Cornell,college_student,campus_life_fit,llm_advisory,complex,gold label; college_student; campus_life_fit,school
+can i transfer credits into UC Berkeley,college_student,campus_life_fit,llm_advisory,complex,gold label; college_student; campus_life_fit,school
+can i transfer credits into Northwestern,college_student,campus_life_fit,llm_advisory,complex,gold label; college_student; campus_life_fit,school
+can i transfer credits into Carnegie Mellon,college_student,career_outcomes,outcomes_pipeline,medium,gold label; college_student; career_outcomes,school
+can i transfer credits into UC Berkeley,college_student,career_outcomes,outcomes_pipeline,medium,gold label; college_student; career_outcomes,school
+UT Austin research opportunities for undergrads,college_student,career_outcomes,outcomes_pipeline,medium,gold label; college_student; career_outcomes,school
+Harvard research opportunities for undergrads,college_student,career_outcomes,outcomes_pipeline,medium,gold label; college_student; career_outcomes,school
+harvard but less stressful,college_student,rewrite_needed,rewrite_then_route,complex,gold label; college_student; rewrite_needed,"school,rewrite_cue"
+Brown research opportunities for undergrads,college_student,rewrite_needed,rewrite_then_route,complex,gold label; college_student; rewrite_needed,school
+NYU but cheaper,college_student,rewrite_needed,rewrite_then_route,complex,gold label; college_student; rewrite_needed,"school,rewrite_cue"
+UT Austin research opportunities for undergrads,college_student,rewrite_needed,rewrite_then_route,complex,gold label; college_student; rewrite_needed,school
+can i transfer credits into UCLA,college_student,b2b_partnership,b2b_workflow,medium,gold label; college_student; b2b_partnership,school
+can i transfer credits into Carnegie Mellon,college_student,b2b_partnership,b2b_workflow,medium,gold label; college_student; b2b_partnership,school
+Duke research opportunities for undergrads,college_student,b2b_partnership,b2b_workflow,medium,gold label; college_student; b2b_partnership,school
+UT Austin research opportunities for undergrads,college_student,b2b_partnership,b2b_workflow,medium,gold label; college_student; b2b_partnership,school
+is Harvard safe for students,parent,direct_lookup,typesense_only,easy,gold label; parent; direct_lookup,school
+four year cost of Georgia Tech including housing,parent,direct_lookup,typesense_only,easy,gold label; parent; direct_lookup,"school,cost_constraint,admissions_or_attribute_signal"
+Duke overview,parent,direct_lookup,typesense_only,easy,gold label; parent; direct_lookup,"school,admissions_or_attribute_signal"
+four year cost of Brown including housing,parent,direct_lookup,typesense_only,easy,gold label; parent; direct_lookup,"school,cost_constraint,admissions_or_attribute_signal"
+is University of Michigan safe for students,parent,attribute_lookup,typesense_plus_metadata,easy,gold label; parent; attribute_lookup,school
+Carnegie Mellon housing guarantee,parent,attribute_lookup,typesense_plus_metadata,easy,gold label; parent; attribute_lookup,"school,admissions_or_attribute_signal"
+is Stanford safe for students,parent,attribute_lookup,typesense_plus_metadata,easy,gold label; parent; attribute_lookup,school
+is Harvard safe for students,parent,attribute_lookup,typesense_plus_metadata,easy,gold label; parent; attribute_lookup,school
+is USC safe for students,parent,filtered_search,semantic_or_faceted_search,medium,gold label; parent; filtered_search,school
+four year cost of Duke including housing,parent,filtered_search,semantic_or_faceted_search,medium,gold label; parent; filtered_search,"school,cost_constraint,admissions_or_attribute_signal"
+Princeton housing guarantee,parent,filtered_search,semantic_or_faceted_search,medium,gold label; parent; filtered_search,"school,admissions_or_attribute_signal"
+Brown housing guarantee,parent,filtered_search,semantic_or_faceted_search,medium,gold label; parent; filtered_search,"school,admissions_or_attribute_signal"
+four year cost of Harvard including housing,parent,multi_constraint,foundry_multi_agent,complex,gold label; parent; multi_constraint,"school,cost_constraint,admissions_or_attribute_signal"
+UT Austin housing guarantee,parent,multi_constraint,foundry_multi_agent,complex,gold label; parent; multi_constraint,"school,admissions_or_attribute_signal"
+colleges in warm states with scholarships with strong research and campus safety,parent,multi_constraint,foundry_multi_agent,complex,gold label; parent; multi_constraint,"location,cost_constraint"
+four year cost of Carnegie Mellon including housing,parent,multi_constraint,foundry_multi_agent,complex,gold label; parent; multi_constraint,"school,cost_constraint,admissions_or_attribute_signal"
+is Columbia safe for students,parent,comparison,compare_pipeline,complex,gold label; parent; comparison,school
+four year cost of USC including housing,parent,comparison,compare_pipeline,complex,gold label; parent; comparison,"school,cost_constraint,admissions_or_attribute_signal"
+four year cost of Columbia including housing,parent,comparison,compare_pipeline,complex,gold label; parent; comparison,"school,cost_constraint,admissions_or_attribute_signal"
+UCLA housing guarantee,parent,comparison,compare_pipeline,complex,gold label; parent; comparison,"school,admissions_or_attribute_signal"
+Northwestern housing guarantee,parent,recommendation,recommendation_workflow,complex,gold label; parent; recommendation,"school,admissions_or_attribute_signal"
+four year cost of Princeton including housing,parent,recommendation,recommendation_workflow,complex,gold label; parent; recommendation,"school,cost_constraint,admissions_or_attribute_signal"
+Virginia Tech housing guarantee,parent,recommendation,recommendation_workflow,complex,gold label; parent; recommendation,"school,admissions_or_attribute_signal"
+four year cost of Columbia including housing,parent,recommendation,recommendation_workflow,complex,gold label; parent; recommendation,"school,cost_constraint,admissions_or_attribute_signal"
+Princeton housing guarantee,parent,admissions_process,faq_or_guidance,medium,gold label; parent; admissions_process,"school,admissions_or_attribute_signal"
+Purdue housing guarantee,parent,admissions_process,faq_or_guidance,medium,gold label; parent; admissions_process,"school,admissions_or_attribute_signal"
+is Virginia Tech safe for students,parent,admissions_process,faq_or_guidance,medium,gold label; parent; admissions_process,school
+four year cost of University of Washington including housing,parent,admissions_process,faq_or_guidance,medium,gold label; parent; admissions_process,"school,cost_constraint,admissions_or_attribute_signal"
+four year cost of Stanford including housing,parent,cost_financial_aid,finance_guidance,medium,gold label; parent; cost_financial_aid,"school,cost_constraint,admissions_or_attribute_signal"
+Duke scholarships,parent,cost_financial_aid,finance_guidance,medium,gold label; parent; cost_financial_aid,"school,cost_constraint"
+four year cost of University of Washington including housing,parent,cost_financial_aid,finance_guidance,medium,gold label; parent; cost_financial_aid,"school,cost_constraint,admissions_or_attribute_signal"
+cheapest psychology schools in Texas,parent,cost_financial_aid,finance_guidance,medium,gold label; parent; cost_financial_aid,"major_or_program,location"
+schools good for introverts,parent,campus_life_fit,llm_advisory,complex,gold label; parent; campus_life_fit,fit_or_culture_cue
+Georgia Tech housing guarantee,parent,campus_life_fit,llm_advisory,complex,gold label; parent; campus_life_fit,"school,admissions_or_attribute_signal"
+four year cost of Harvard including housing,parent,campus_life_fit,llm_advisory,complex,gold label; parent; campus_life_fit,"school,cost_constraint,admissions_or_attribute_signal"
+four year cost of UC Berkeley including housing,parent,campus_life_fit,llm_advisory,complex,gold label; parent; campus_life_fit,"school,cost_constraint,admissions_or_attribute_signal"
+four year cost of Virginia Tech including housing,parent,career_outcomes,outcomes_pipeline,medium,gold label; parent; career_outcomes,"school,cost_constraint,admissions_or_attribute_signal"
+four year cost of Northwestern including housing,parent,career_outcomes,outcomes_pipeline,medium,gold label; parent; career_outcomes,"school,cost_constraint,admissions_or_attribute_signal"
+is UC Berkeley safe for students,parent,career_outcomes,outcomes_pipeline,medium,gold label; parent; career_outcomes,school
+is Duke safe for students,parent,career_outcomes,outcomes_pipeline,medium,gold label; parent; career_outcomes,school
+UCLA housing guarantee,parent,rewrite_needed,rewrite_then_route,complex,gold label; parent; rewrite_needed,"school,admissions_or_attribute_signal"
+four year cost of Virginia Tech including housing,parent,rewrite_needed,rewrite_then_route,complex,gold label; parent; rewrite_needed,"school,cost_constraint,admissions_or_attribute_signal"
+UC Berkeley housing guarantee,parent,rewrite_needed,rewrite_then_route,complex,gold label; parent; rewrite_needed,"school,admissions_or_attribute_signal"
+four year cost of Brown including housing,parent,rewrite_needed,rewrite_then_route,complex,gold label; parent; rewrite_needed,"school,cost_constraint,admissions_or_attribute_signal"
+four year cost of USC including housing,parent,b2b_partnership,b2b_workflow,medium,gold label; parent; b2b_partnership,"school,cost_constraint,admissions_or_attribute_signal"
+four year cost of UC Berkeley including housing,parent,b2b_partnership,b2b_workflow,medium,gold label; parent; b2b_partnership,"school,cost_constraint,admissions_or_attribute_signal"
+pricing for partner universities,parent,b2b_partnership,b2b_workflow,medium,gold label; parent; b2b_partnership,b2b_request_type
+Columbia housing guarantee,parent,b2b_partnership,b2b_workflow,medium,gold label; parent; b2b_partnership,"school,admissions_or_attribute_signal"
+best fit colleges for students interested in business,counselor_teacher,direct_lookup,typesense_only,easy,gold label; counselor_teacher; direct_lookup,major_or_program
+MIT overview,counselor_teacher,direct_lookup,typesense_only,easy,gold label; counselor_teacher; direct_lookup,"school,admissions_or_attribute_signal"
+Carnegie Mellon,counselor_teacher,direct_lookup,typesense_only,easy,gold label; counselor_teacher; direct_lookup,school
+University of Washington admissions profile average sat and gpa,counselor_teacher,direct_lookup,typesense_only,easy,gold label; counselor_teacher; direct_lookup,"school,admissions_or_attribute_signal"
+Harvard tuition,counselor_teacher,attribute_lookup,typesense_plus_metadata,easy,gold label; counselor_teacher; attribute_lookup,"school,cost_constraint"
+Harvard admissions profile average sat and gpa,counselor_teacher,attribute_lookup,typesense_plus_metadata,easy,gold label; counselor_teacher; attribute_lookup,"school,admissions_or_attribute_signal"
+best fit colleges for students interested in economics,counselor_teacher,attribute_lookup,typesense_plus_metadata,easy,gold label; counselor_teacher; attribute_lookup,major_or_program
+best fit colleges for students interested in computer science,counselor_teacher,attribute_lookup,typesense_plus_metadata,easy,gold label; counselor_teacher; attribute_lookup,major_or_program
+schools near a tech hub with strong research,counselor_teacher,filtered_search,semantic_or_faceted_search,medium,gold label; counselor_teacher; filtered_search,
+schools in California with strong research,counselor_teacher,filtered_search,semantic_or_faceted_search,medium,gold label; counselor_teacher; filtered_search,location
+schools in warm states with strong research,counselor_teacher,filtered_search,semantic_or_faceted_search,medium,gold label; counselor_teacher; filtered_search,location
+schools with strong first gen support,counselor_teacher,filtered_search,semantic_or_faceted_search,medium,gold label; counselor_teacher; filtered_search,
+schools with strong first gen support,counselor_teacher,multi_constraint,foundry_multi_agent,complex,gold label; counselor_teacher; multi_constraint,
+colleges in the Midwest under 40k with strong research and campus safety,counselor_teacher,multi_constraint,foundry_multi_agent,complex,gold label; counselor_teacher; multi_constraint,location
+affordable data science schools near Chicago under 20k with good internships,counselor_teacher,multi_constraint,foundry_multi_agent,complex,gold label; counselor_teacher; multi_constraint,location
+Purdue vs Harvard,counselor_teacher,comparison,compare_pipeline,complex,gold label; counselor_teacher; comparison,"school,comparison_target"
+Duke vs USC,counselor_teacher,comparison,compare_pipeline,complex,gold label; counselor_teacher; comparison,"school,comparison_target"
+schools with strong first gen support,counselor_teacher,comparison,compare_pipeline,complex,gold label; counselor_teacher; comparison,
+USC admissions profile average sat and gpa,counselor_teacher,comparison,compare_pipeline,complex,gold label; counselor_teacher; comparison,"school,admissions_or_attribute_signal"
+what schools should i apply to for business,counselor_teacher,recommendation,recommendation_workflow,complex,gold label; counselor_teacher; recommendation,major_or_program
+Georgia Tech admissions profile average sat and gpa,counselor_teacher,recommendation,recommendation_workflow,complex,gold label; counselor_teacher; recommendation,"school,admissions_or_attribute_signal"
+Virginia Tech admissions profile average sat and gpa,counselor_teacher,recommendation,recommendation_workflow,complex,gold label; counselor_teacher; recommendation,"school,admissions_or_attribute_signal"
+best fit colleges for students interested in biology,counselor_teacher,recommendation,recommendation_workflow,complex,gold label; counselor_teacher; recommendation,major_or_program
+University of Michigan admissions profile average sat and gpa,counselor_teacher,admissions_process,faq_or_guidance,medium,gold label; counselor_teacher; admissions_process,"school,admissions_or_attribute_signal"
+best fit colleges for students interested in computer science,counselor_teacher,admissions_process,faq_or_guidance,medium,gold label; counselor_teacher; admissions_process,major_or_program
+what essays does MIT require,counselor_teacher,admissions_process,faq_or_guidance,medium,gold label; counselor_teacher; admissions_process,school
+best fit colleges for students interested in engineering,counselor_teacher,cost_financial_aid,finance_guidance,medium,gold label; counselor_teacher; cost_financial_aid,major_or_program
+schools with strong first gen support,counselor_teacher,cost_financial_aid,finance_guidance,medium,gold label; counselor_teacher; cost_financial_aid,
+Virginia Tech scholarships,counselor_teacher,cost_financial_aid,finance_guidance,medium,gold label; counselor_teacher; cost_financial_aid,"school,cost_constraint"
+best fit colleges for students interested in computer science,counselor_teacher,campus_life_fit,llm_advisory,complex,gold label; counselor_teacher; campus_life_fit,major_or_program
+schools with strong first gen support,counselor_teacher,campus_life_fit,llm_advisory,complex,gold label; counselor_teacher; campus_life_fit,
+Stanford admissions profile average sat and gpa,counselor_teacher,campus_life_fit,llm_advisory,complex,gold label; counselor_teacher; campus_life_fit,"school,admissions_or_attribute_signal"
+NYU admissions profile average sat and gpa,counselor_teacher,campus_life_fit,llm_advisory,complex,gold label; counselor_teacher; campus_life_fit,"school,admissions_or_attribute_signal"
+schools with strong first gen support,counselor_teacher,career_outcomes,outcomes_pipeline,medium,gold label; counselor_teacher; career_outcomes,
+best fit colleges for students interested in mechanical engineering,counselor_teacher,career_outcomes,outcomes_pipeline,medium,gold label; counselor_teacher; career_outcomes,major_or_program
+Princeton admissions profile average sat and gpa,counselor_teacher,career_outcomes,outcomes_pipeline,medium,gold label; counselor_teacher; career_outcomes,"school,admissions_or_attribute_signal"
+schools with strong first gen support,counselor_teacher,rewrite_needed,rewrite_then_route,complex,gold label; counselor_teacher; rewrite_needed,
+best fit colleges for students interested in data science,counselor_teacher,rewrite_needed,rewrite_then_route,complex,gold label; counselor_teacher; rewrite_needed,
+Cornell admissions profile average sat and gpa,counselor_teacher,rewrite_needed,rewrite_then_route,complex,gold label; counselor_teacher; rewrite_needed,"school,admissions_or_attribute_signal"
+best fit colleges for students interested in computer science,counselor_teacher,rewrite_needed,rewrite_then_route,complex,gold label; counselor_teacher; rewrite_needed,major_or_program
+request demo for admissions office,counselor_teacher,b2b_partnership,b2b_workflow,medium,gold label; counselor_teacher; b2b_partnership,"admissions_or_attribute_signal,b2b_request_type"
+pricing for partner universities,counselor_teacher,b2b_partnership,b2b_workflow,medium,gold label; counselor_teacher; b2b_partnership,b2b_request_type
+Harvard admissions profile average sat and gpa,counselor_teacher,b2b_partnership,b2b_workflow,medium,gold label; counselor_teacher; b2b_partnership,"school,admissions_or_attribute_signal"
+best options for a student switching into computer science,advisor,direct_lookup,typesense_only,easy,gold label; advisor; direct_lookup,major_or_program
+create reach target safety list for mechanical engineering in warm states under 30k,advisor,direct_lookup,typesense_only,easy,gold label; advisor; direct_lookup,"major_or_program,location"
+best options for a student switching into psychology,advisor,direct_lookup,typesense_only,easy,gold label; advisor; direct_lookup,major_or_program
+University of Michigan housing policy,advisor,attribute_lookup,typesense_plus_metadata,easy,gold label; advisor; attribute_lookup,"school,admissions_or_attribute_signal"
+best options for a student switching into data science,advisor,attribute_lookup,typesense_plus_metadata,easy,gold label; advisor; attribute_lookup,
+create reach target safety list for mechanical engineering near a tech hub with strong aid,advisor,attribute_lookup,typesense_plus_metadata,easy,gold label; advisor; attribute_lookup,major_or_program
+University of Washington tuition,advisor,attribute_lookup,typesense_plus_metadata,easy,gold label; advisor; attribute_lookup,"school,cost_constraint"
+best psychology schools near a tech hub,advisor,filtered_search,semantic_or_faceted_search,medium,gold label; advisor; filtered_search,major_or_program
+best options for a student switching into biology,advisor,filtered_search,semantic_or_faceted_search,medium,gold label; advisor; filtered_search,major_or_program
+schools in warm states with strong research,advisor,filtered_search,semantic_or_faceted_search,medium,gold label; advisor; filtered_search,location
+best options for a student switching into nursing,advisor,filtered_search,semantic_or_faceted_search,medium,gold label; advisor; filtered_search,major_or_program
+best options for a student switching into biology,advisor,multi_constraint,foundry_multi_agent,complex,gold label; advisor; multi_constraint,major_or_program
+create reach target safety list for architecture near the beach under 30k,advisor,multi_constraint,foundry_multi_agent,complex,gold label; advisor; multi_constraint,"major_or_program,location"
+create reach target safety list for mechanical engineering in the Midwest with scholarships,advisor,multi_constraint,foundry_multi_agent,complex,gold label; advisor; multi_constraint,"major_or_program,location,cost_constraint"
+create reach target safety list for economics in warm states under 30k,advisor,multi_constraint,foundry_multi_agent,complex,gold label; advisor; multi_constraint,"major_or_program,location"
+create reach target safety list for engineering in the Midwest under 20k,advisor,comparison,compare_pipeline,complex,gold label; advisor; comparison,"major_or_program,location"
+Northwestern vs UC Berkeley for biology,advisor,comparison,compare_pipeline,complex,gold label; advisor; comparison,"school,comparison_target,major_or_program"
+create reach target safety list for data science in the Midwest with scholarships,advisor,comparison,compare_pipeline,complex,gold label; advisor; comparison,"location,cost_constraint"
+create reach target safety list for engineering near Chicago under 40k,advisor,comparison,compare_pipeline,complex,gold label; advisor; comparison,"major_or_program,location"
+best options for a student switching into architecture,advisor,recommendation,recommendation_workflow,complex,gold label; advisor; recommendation,major_or_program
+schools like USC but cheaper,advisor,recommendation,recommendation_workflow,complex,gold label; advisor; recommendation,"school,rewrite_cue"
+create reach target safety list for mechanical engineering near Chicago with strong aid,advisor,recommendation,recommendation_workflow,complex,gold label; advisor; recommendation,"major_or_program,location"
+create reach target safety list for biology near a tech hub with strong aid,advisor,recommendation,recommendation_workflow,complex,gold label; advisor; recommendation,major_or_program
+create reach target safety list for engineering in the Midwest under 30k,advisor,admissions_process,faq_or_guidance,medium,gold label; advisor; admissions_process,"major_or_program,location"
+best options for a student switching into biology,advisor,admissions_process,faq_or_guidance,medium,gold label; advisor; admissions_process,major_or_program
+best options for a student switching into mechanical engineering,advisor,admissions_process,faq_or_guidance,medium,gold label; advisor; admissions_process,major_or_program
+create reach target safety list for pre-med near Chicago under 30k,advisor,admissions_process,faq_or_guidance,medium,gold label; advisor; admissions_process,"major_or_program,location"
+create reach target safety list for pre-med in the Midwest under 20k,advisor,cost_financial_aid,finance_guidance,medium,gold label; advisor; cost_financial_aid,"major_or_program,location"
+how to lower college costs,advisor,cost_financial_aid,finance_guidance,medium,gold label; advisor; cost_financial_aid,
+University of Washington scholarships,advisor,cost_financial_aid,finance_guidance,medium,gold label; advisor; cost_financial_aid,"school,cost_constraint"
+best options for a student switching into nursing,advisor,cost_financial_aid,finance_guidance,medium,gold label; advisor; cost_financial_aid,major_or_program
+best options for a student switching into nursing,advisor,campus_life_fit,llm_advisory,complex,gold label; advisor; campus_life_fit,major_or_program
+schools with collaborative culture,advisor,campus_life_fit,llm_advisory,complex,gold label; advisor; campus_life_fit,fit_or_culture_cue
+UCLA campus culture,advisor,campus_life_fit,llm_advisory,complex,gold label; advisor; campus_life_fit,"school,fit_or_culture_cue"
+best options for a student switching into engineering,advisor,career_outcomes,outcomes_pipeline,medium,gold label; advisor; career_outcomes,major_or_program
+best options for a student switching into economics,advisor,career_outcomes,outcomes_pipeline,medium,gold label; advisor; career_outcomes,major_or_program
+create reach target safety list for economics near the beach under 20k,advisor,career_outcomes,outcomes_pipeline,medium,gold label; advisor; career_outcomes,"major_or_program,location"
+UT Austin job placement for pre-med,advisor,career_outcomes,outcomes_pipeline,medium,gold label; advisor; career_outcomes,"school,major_or_program,career_outcome_cue"
+create reach target safety list for architecture in Texas under 20k,advisor,rewrite_needed,rewrite_then_route,complex,gold label; advisor; rewrite_needed,"major_or_program,location"
+best options for a student switching into nursing,advisor,rewrite_needed,rewrite_then_route,complex,gold label; advisor; rewrite_needed,major_or_program
+create reach target safety list for mechanical engineering near Chicago under 20k,advisor,rewrite_needed,rewrite_then_route,complex,gold label; advisor; rewrite_needed,"major_or_program,location"
+best options for a student switching into psychology,advisor,rewrite_needed,rewrite_then_route,complex,gold label; advisor; rewrite_needed,major_or_program
+best options for a student switching into pre-med,advisor,b2b_partnership,b2b_workflow,medium,gold label; advisor; b2b_partnership,major_or_program
+best options for a student switching into computer science,advisor,b2b_partnership,b2b_workflow,medium,gold label; advisor; b2b_partnership,major_or_program
+create reach target safety list for engineering near the beach with scholarships,advisor,b2b_partnership,b2b_workflow,medium,gold label; advisor; b2b_partnership,"major_or_program,location,cost_constraint"
+how can our university join the platform,advisor,b2b_partnership,b2b_workflow,medium,gold label; advisor; b2b_partnership,b2b_request_type
+how can our university join the platform,college_b2b,b2b_partnership,b2b_workflow,medium,gold label; college_b2b; b2b_partnership,b2b_request_type
+api access for college partners,college_b2b,b2b_partnership,b2b_workflow,medium,gold label; college_b2b; b2b_partnership,b2b_request_type
+pricing for partner universities,college_b2b,b2b_partnership,b2b_workflow,medium,gold label; college_b2b; b2b_partnership,b2b_request_type
+request demo for admissions office,college_b2b,b2b_partnership,b2b_workflow,medium,gold label; college_b2b; b2b_partnership,"admissions_or_attribute_signal,b2b_request_type"
+is Columbia safe for students,parent,campus_life_fit,llm_advisory,complex,gold label; parent; campus_life_fit,school
+UCLA housing guarantee,parent,b2b_partnership,b2b_workflow,medium,gold label; parent; b2b_partnership,"school,admissions_or_attribute_signal"
+best fit colleges for students interested in economics,counselor_teacher,rewrite_needed,rewrite_then_route,complex,gold label; counselor_teacher; rewrite_needed,major_or_program
+Virginia Tech,parent,direct_lookup,typesense_only,easy,gold label; parent; direct_lookup,school
+University of Washington campus culture,college_student,campus_life_fit,llm_advisory,complex,gold label; college_student; campus_life_fit,"school,fit_or_culture_cue"
+UCLA tuition vs Northwestern tuition,advisor,comparison,compare_pipeline,complex,gold label; advisor; comparison,"school,comparison_target,cost_constraint"
+Georgia Tech job placement for psychology,advisor,career_outcomes,outcomes_pipeline,medium,gold label; advisor; career_outcomes,"school,major_or_program,career_outcome_cue"
+pricing for partner universities,advisor,b2b_partnership,b2b_workflow,medium,gold label; advisor; b2b_partnership,b2b_request_type
+best fit colleges for students interested in business,counselor_teacher,rewrite_needed,rewrite_then_route,complex,gold label; counselor_teacher; rewrite_needed,major_or_program
+Cornell admissions profile average sat and gpa,counselor_teacher,filtered_search,semantic_or_faceted_search,medium,gold label; counselor_teacher; filtered_search,"school,admissions_or_attribute_signal"
+colleges with low stress environment,advisor,campus_life_fit,llm_advisory,complex,gold label; advisor; campus_life_fit,
+Stanford acceptance rate,parent,attribute_lookup,typesense_plus_metadata,easy,gold label; parent; attribute_lookup,"school,admissions_or_attribute_signal"
+Columbia research opportunities for undergrads,college_student,direct_lookup,typesense_only,easy,gold label; college_student; direct_lookup,school
+Princeton research opportunities for undergrads,college_student,rewrite_needed,rewrite_then_route,complex,gold label; college_student; rewrite_needed,school
+is Stanford safe for students,parent,direct_lookup,typesense_only,easy,gold label; parent; direct_lookup,school
+harvard,college_student,direct_lookup,typesense_only,easy,gold label; college_student; direct_lookup,school
+can i transfer credits into USC,college_student,filtered_search,semantic_or_faceted_search,medium,gold label; college_student; filtered_search,school
+Princeton admissions profile average sat and gpa,counselor_teacher,cost_financial_aid,finance_guidance,medium,gold label; counselor_teacher; cost_financial_aid,"school,admissions_or_attribute_signal"
+colleges with low stress environment,high_school_student,campus_life_fit,llm_advisory,complex,gold label; high_school_student; campus_life_fit,
+affordable architecture schools in the Midwest with scholarships with good internships,advisor,multi_constraint,foundry_multi_agent,complex,gold label; advisor; multi_constraint,"major_or_program,location,cost_constraint"
+universities with strong economics,parent,filtered_search,semantic_or_faceted_search,medium,gold label; parent; filtered_search,major_or_program
+create reach target safety list for mechanical engineering near the beach under 20k,advisor,filtered_search,semantic_or_faceted_search,medium,gold label; advisor; filtered_search,"major_or_program,location"
+schools like Northwestern but cheaper,parent,recommendation,recommendation_workflow,complex,gold label; parent; recommendation,"school,rewrite_cue"
+USC admissions profile average sat and gpa,counselor_teacher,campus_life_fit,llm_advisory,complex,gold label; counselor_teacher; campus_life_fit,"school,admissions_or_attribute_signal"
+what schools should i apply to for mechanical engineering,high_school_student,recommendation,recommendation_workflow,complex,gold label; high_school_student; recommendation,major_or_program
+universities with strong pre-med,parent,filtered_search,semantic_or_faceted_search,medium,gold label; parent; filtered_search,major_or_program
+create reach target safety list for business near the beach under 40k,advisor,direct_lookup,typesense_only,easy,gold label; advisor; direct_lookup,"major_or_program,location"
+recommend colleges near Chicago for engineering under 40k,college_student,recommendation,recommendation_workflow,complex,gold label; college_student; recommendation,"major_or_program,location"
+Duke,advisor,direct_lookup,typesense_only,easy,gold label; advisor; direct_lookup,school
+create reach target safety list for economics near Chicago under 30k,advisor,attribute_lookup,typesense_plus_metadata,easy,gold label; advisor; attribute_lookup,"major_or_program,location"
+best fit colleges for students interested in data science,counselor_teacher,multi_constraint,foundry_multi_agent,complex,gold label; counselor_teacher; multi_constraint,
+MIT admissions profile average sat and gpa,counselor_teacher,recommendation,recommendation_workflow,complex,gold label; counselor_teacher; recommendation,"school,admissions_or_attribute_signal"
+Carnegie Mellon housing guarantee,parent,comparison,compare_pipeline,complex,gold label; parent; comparison,"school,admissions_or_attribute_signal"
+how to lower college costs,high_school_student,cost_financial_aid,finance_guidance,medium,gold label; high_school_student; cost_financial_aid,
+schools good for introverts,college_student,campus_life_fit,llm_advisory,complex,gold label; college_student; campus_life_fit,fit_or_culture_cue
+what essays does MIT require,high_school_student,admissions_process,faq_or_guidance,medium,gold label; high_school_student; admissions_process,school
+best fit colleges for students interested in business,counselor_teacher,cost_financial_aid,finance_guidance,medium,gold label; counselor_teacher; cost_financial_aid,major_or_program
+best fit colleges for students interested in engineering,counselor_teacher,rewrite_needed,rewrite_then_route,complex,gold label; counselor_teacher; rewrite_needed,major_or_program
+harvard but less stressful,advisor,rewrite_needed,rewrite_then_route,complex,gold label; advisor; rewrite_needed,"school,rewrite_cue"
+MIT research opportunities for undergrads,college_student,comparison,compare_pipeline,complex,gold label; college_student; comparison,school
+is University of Michigan safe for students,parent,cost_financial_aid,finance_guidance,medium,gold label; parent; cost_financial_aid,school
+four year cost of NYU including housing,parent,direct_lookup,typesense_only,easy,gold label; parent; direct_lookup,"school,cost_constraint,admissions_or_attribute_signal"
+small biology colleges near the beach with scholarships,high_school_student,multi_constraint,foundry_multi_agent,complex,gold label; high_school_student; multi_constraint,"major_or_program,location,cost_constraint"
+universities with strong architecture,parent,filtered_search,semantic_or_faceted_search,medium,gold label; parent; filtered_search,major_or_program
+does Princeton have biology,parent,attribute_lookup,typesense_plus_metadata,easy,gold label; parent; attribute_lookup,"school,major_or_program"
+recommend colleges in California for pre-med with strong aid,college_student,recommendation,recommendation_workflow,complex,gold label; college_student; recommendation,"major_or_program,location"
+create reach target safety list for architecture in Texas under 40k,advisor,rewrite_needed,rewrite_then_route,complex,gold label; advisor; rewrite_needed,"major_or_program,location"
+can i transfer credits into Stanford,college_student,comparison,compare_pipeline,complex,gold label; college_student; comparison,school
+Stanford research opportunities for undergrads,college_student,admissions_process,faq_or_guidance,medium,gold label; college_student; admissions_process,school
+colleges in warm states,advisor,filtered_search,semantic_or_faceted_search,medium,gold label; advisor; filtered_search,location
+best fit colleges for students interested in economics,counselor_teacher,admissions_process,faq_or_guidance,medium,gold label; counselor_teacher; admissions_process,major_or_program
+create reach target safety list for computer science in the Midwest under 20k,advisor,filtered_search,semantic_or_faceted_search,medium,gold label; advisor; filtered_search,"major_or_program,location"
+Carnegie Mellon admissions profile average sat and gpa,counselor_teacher,attribute_lookup,typesense_plus_metadata,easy,gold label; counselor_teacher; attribute_lookup,"school,admissions_or_attribute_signal"
+UC Berkeley housing guarantee,parent,multi_constraint,foundry_multi_agent,complex,gold label; parent; multi_constraint,"school,admissions_or_attribute_signal"
+best options for a student switching into business,advisor,comparison,compare_pipeline,complex,gold label; advisor; comparison,major_or_program
+do i need sat for Princeton,high_school_student,admissions_process,faq_or_guidance,medium,gold label; high_school_student; admissions_process,"school,admissions_or_attribute_signal"
+schools with strong first gen support,counselor_teacher,admissions_process,faq_or_guidance,medium,gold label; counselor_teacher; admissions_process,
+colleges in the Midwest,counselor_teacher,filtered_search,semantic_or_faceted_search,medium,gold label; counselor_teacher; filtered_search,location
+small psychology colleges in the Midwest under 30k,high_school_student,multi_constraint,foundry_multi_agent,complex,gold label; high_school_student; multi_constraint,"major_or_program,location"
+purdue,high_school_student,direct_lookup,typesense_only,easy,gold label; high_school_student; direct_lookup,school
+best options for a student switching into psychology,advisor,b2b_partnership,b2b_workflow,medium,gold label; advisor; b2b_partnership,major_or_program
+can i transfer credits into Virginia Tech,college_student,filtered_search,semantic_or_faceted_search,medium,gold label; college_student; filtered_search,school
+colleges in California with strong aid with strong research and campus safety,high_school_student,multi_constraint,foundry_multi_agent,complex,gold label; high_school_student; multi_constraint,location
+is University of Washington safe for students,parent,recommendation,recommendation_workflow,complex,gold label; parent; recommendation,school
+do i need sat for Carnegie Mellon,counselor_teacher,admissions_process,faq_or_guidance,medium,gold label; counselor_teacher; admissions_process,"school,admissions_or_attribute_signal"
+can i transfer credits into USC,college_student,rewrite_needed,rewrite_then_route,complex,gold label; college_student; rewrite_needed,school

@@ -1,0 +1,9 @@
+{
+  "split_type": "grouped_query_split",
+  "dataset_variant": "drop_high_query_plus_persona",
+  "high_strategy": "drop",
+  "use_persona": true,
+  "model_name": "linear_svc_stats",
+  "accuracy": 0.8126452812645282,
+  "avg_confidence": 0.6041500085506889
+}

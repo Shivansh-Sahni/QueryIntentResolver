@@ -1,0 +1,10 @@
+               precision    recall  f1-score   support
+
+      complex       0.80      0.73      0.77       533
+   llm_needed       0.67      0.77      0.72       368
+       medium       0.84      0.77      0.81      1118
+short_circuit       0.61      0.84      0.70       235
+
+     accuracy                           0.77      2254
+    macro avg       0.73      0.78      0.75      2254
+ weighted avg       0.78      0.77      0.77      2254

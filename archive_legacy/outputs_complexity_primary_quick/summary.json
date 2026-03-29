@@ -1,0 +1,18 @@
+{
+  "best_random": {
+    "variant": "high_to_complex_query_plus_persona",
+    "high_strategy": "to_complex",
+    "use_persona": true,
+    "model": "char_word_logreg",
+    "accuracy": 0.7758099352051836,
+    "avg_confidence": 0.7297488034907256
+  },
+  "best_grouped": {
+    "variant": "drop_high_query_only",
+    "high_strategy": "drop",
+    "use_persona": false,
+    "model": "char_word_logreg",
+    "accuracy": 0.7898651789865179,
+    "avg_confidence": 0.7184893676777011
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "selected_persona_model_variant": "char_word_logreg",
+  "selected_intent_model_variant": "char_word_logreg",
+  "training_standardization_summary": {
+    "accepted_rows_before_dedup": 9157,
+    "accepted_rows_after_dedup": 6937,
+    "duplicate_rows_removed": 2220,
+    "rejected_rows": 2419,
+    "canonical_personas": [
+      "advisor",
+      "college_b2b",
+      "college_student",
+      "counselor_teacher",
+      "high_school_student",
+      "parent"
+    ],
+    "canonical_intents": [
+      "admissions_process",
+      "attribute_lookup",
+      "b2b_partnership",
+      "campus_life_fit",
+      "career_outcomes",
+      "comparison",
+      "cost_financial_aid",
+      "direct_lookup",
+      "filtered_search",
+      "multi_constraint",
+      "recommendation",
+      "rewrite_needed"
+    ],
+    "source_summary": [
+      {
+        "source_file": "Data - Anika.csv",
+        "raw_rows": 960,
+        "accepted_rows_before_dedup": 730,
+        "rejected_rows": 230
+      },
+      {
+        "source_file": "Data - Edward.csv",
+        "raw_rows": 2230,
+        "accepted_rows_before_dedup": 1918,
+        "rejected_rows": 312
+      },
+      {
+        "source_file": "Data - Nimisha.csv",
+        "raw_rows": 1110,
+        "accepted_rows_before_dedup": 336,
+        "rejected_rows": 774
+      },
+      {
+        "source_file": "Data - Ridhi.csv",
+        "raw_rows": 1268,
+        "accepted_rows_before_dedup": 543,
+        "rejected_rows": 725
+      },
+      {
+        "source_file": "Data - Shivansh.csv",
+        "raw_rows": 4500,
+        "accepted_rows_before_dedup": 4464,
+        "rejected_rows": 36
+      },
+      {
+        "source_file": "Data Anthony.csv",
+        "raw_rows": 1508,
+        "accepted_rows_before_dedup": 1166,
+        "rejected_rows": 342
+      }
+    ]
+  },
+  "metrics": {
+    "persona_accuracy": 0.5333333333333333,
+    "intent_accuracy": 0.42333333333333334,
+    "route_accuracy": 0.42333333333333334,
+    "tier_accuracy": 0.5766666666666667,
+    "avg_persona_confidence": 0.519869124792205,
+    "avg_intent_confidence": 0.5992782421863249,
+    "easy_path_precision": 0.3617021276595745,
+    "easy_path_recall": 0.6666666666666666,
+    "llm_escalation_rate_if_below_0_60": 0.44666666666666666,
+    "llm_escalation_rate_if_below_0_70": 0.5233333333333333,
+    "route_accuracy_by_expected_tier": {
+      "easy": {
+        "count": 51,
+        "route_accuracy": 0.43137254901960786
+      },
+      "medium": {
+        "count": 124,
+        "route_accuracy": 0.46774193548387094
+      },
+      "complex": {
+        "count": 125,
+        "route_accuracy": 0.376
+      }
+    }
+  }
+}

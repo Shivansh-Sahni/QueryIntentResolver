@@ -1,0 +1,12 @@
+Query Intent Resolver revised metrics summary
+
+Selected persona model: TF-IDF + Multinomial Naive Bayes
+Selected intent model: word+character TF-IDF + Logistic Regression
+
+Persona accuracy: 0.73
+Intent accuracy: 1.00
+Route accuracy: 1.00
+Tier accuracy: 1.00
+Average intent confidence: 0.78
+Easy-path precision: 1.00
+LLM escalation rate below 0.60 intent confidence: 0.23

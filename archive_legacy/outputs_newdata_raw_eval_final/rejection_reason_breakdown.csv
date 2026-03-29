@@ -1,0 +1,6 @@
+rejection_reason,count,share
+intent:unmapped,2038,0.8424968995452666
+persona:unmapped,198,0.08185200496072757
+intent:comparison_rejected_non_school,105,0.0434063662670525
+intent:direct_lookup_rejected_not_entity_like,77,0.031831335262505166
+query:blank_or_header,1,0.00041339396444811904

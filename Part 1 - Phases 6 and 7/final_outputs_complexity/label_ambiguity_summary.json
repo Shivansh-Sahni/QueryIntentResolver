@@ -1,0 +1,8 @@
+{
+  "rows": 11267,
+  "unique_queries": 7930,
+  "ambiguous_queries": 164,
+  "ambiguous_query_rows": 1365,
+  "pct_queries_ambiguous": 0.02068095838587642,
+  "pct_rows_ambiguous": 0.12115026182657318
+}

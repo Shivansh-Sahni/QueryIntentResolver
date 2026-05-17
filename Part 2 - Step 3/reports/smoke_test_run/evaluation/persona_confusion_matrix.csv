@@ -1,7 +1,0 @@
-Gold \ Predicted,advisor,college_b2b,college_student,counselor_teacher,high_school_student,parent
-advisor,3,0,0,0,0,0
-college_b2b,0,1,0,0,0,0
-college_student,0,0,1,0,0,0
-counselor_teacher,0,0,0,2,0,0
-high_school_student,0,0,0,0,3,0
-parent,0,0,0,0,0,2

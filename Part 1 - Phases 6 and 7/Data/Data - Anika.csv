@@ -1,0 +1,961 @@
+Query,Persona,Intent,Complexity,Entities,Route,Notes
+MIT,high_school_student,exact_lookup,short_circuit,{school:MIT},typesense_only,simple entity
+UCLA tuition,high_school_student,attribute_lookup,short_circuit,"{school:UCLA,attribute:tuition}",typesense_only,single attribute
+engineering schools in California,high_school_student,filtered_search,medium,"{program:engineering,location:CA}",search,1–2 filters
+affordable engineering schools near the beach,high_school_student,multi_constraint,complex,"{program:engineering,cost:low,location:coast}",agentic,multi-constraint
+Purdue vs Georgia Tech,high_school_student,comparison,complex,"{schools:[Purdue,Georgia Tech]}",comparison_engine,compare entities
+schools like MIT but less competitive,high_school_student,recommendation,complex,"{reference:MIT,selectivity:lower}",agentic,needs recommendations
+what GPA do I need for NYU,high_school_student,admissions_process,medium,"{school:NYU,metric:GPA}",llm,how-to admissions
+how to pay for college without loans,high_school_student,cost_financial_aid,medium,{},llm,cost/aid guidance
+schools with fun campus life,high_school_student,campus_life_fit,llm_needed,{},llm,subjective fit
+best colleges for cs job placement,high_school_student,career_outcomes,medium,{program:CS},llm,outcomes
+Cornell,college_student,exact_lookup,short_circuit,{school:Cornell},typesense_only,simple entity
+UC San Diego housing,college_student,attribute_lookup,short_circuit,"{school:UCSD,attribute:housing}",typesense_only,single attribute
+colleges in the Midwest,college_student,filtered_search,medium,{location:Midwest},search,1–2 filters
+research universities under 40k,college_student,multi_constraint,complex,"{research:true,cost:<40k}",agentic,multi-constraint
+Cornell vs Northwestern,college_student,comparison,complex,"{schools:[Cornell,Northwestern]}",comparison_engine,compare entities
+schools like NYU but cheaper,college_student,recommendation,complex,"{reference:NYU,cost:lower}",agentic,needs recommendations
+what essays does UMich require,college_student,admissions_process,medium,"{school:UMich,requirement:essays}",llm,how-to admissions
+how to lower out of state tuition,college_student,cost_financial_aid,medium,{},llm,cost/aid
+schools with strong sports culture,college_student,campus_life_fit,llm_needed,{},llm,subjective fit
+colleges with high internship placement,college_student,career_outcomes,medium,{},llm,outcomes
+Vanderbilt,parent,exact_lookup,short_circuit,{school:Vanderbilt},typesense_only,simple entity
+University of Florida housing guarantee,parent,attribute_lookup,short_circuit,"{school:UF,attribute:housing}",typesense_only,parent framing
+private colleges with merit aid,parent,filtered_search,medium,"{aid:merit,school_type:private}",search,1–2 filters
+safe colleges near major cities under 50k,parent,multi_constraint,complex,"{safety:true,location:city,cost:<50k}",agentic,multi-constraint
+UCLA vs USC cost comparison,parent,comparison,complex,"{schools:[UCLA,USC],metric:cost}",comparison_engine,compare cost
+good colleges for anxious students,parent,recommendation,complex,{},agentic,needs recommendations
+how does financial aid work,parent,cost_financial_aid,medium,{},llm,cost/aid
+schools with strong student support services,parent,campus_life_fit,llm_needed,{},llm,subjective fit
+graduation rates by college,parent,career_outcomes,medium,{},llm,outcomes
+when do college decisions come out,parent,admissions_process,medium,{},llm,admissions timeline
+average SAT for UCLA,counselor_teacher,attribute_lookup,short_circuit,"{school:UCLA,metric:SAT}",typesense_only,single attribute
+colleges in Texas,counselor_teacher,filtered_search,medium,{location:TX},search,1–2 filters
+engineering safety schools for top students,counselor_teacher,recommendation,complex,"{program:engineering,category:safety}",agentic,recommendations
+selective colleges with holistic admissions,counselor_teacher,multi_constraint,complex,{},agentic,multi-constraint
+Harvard vs Yale outcomes,counselor_teacher,comparison,complex,"{schools:[Harvard,Yale]}",comparison_engine,compare outcomes
+what is yield rate,counselor_teacher,admissions_process,medium,{},llm,counselor terminology
+schools with strong advising programs,counselor_teacher,campus_life_fit,llm_needed,{},llm,subjective fit
+best colleges for premed placement,counselor_teacher,career_outcomes,medium,{track:premed},llm,outcomes
+colleges that superscore SAT,counselor_teacher,admissions_process,medium,{},llm,policy
+how selective is Northeastern,counselor_teacher,attribute_lookup,short_circuit,"{school:Northeastern,metric:selectivity}",typesense_only,single attribute
+best colleges for consulting placement,advisor,career_outcomes,medium,{},llm,outcomes
+target schools for investment banking,advisor,career_outcomes,medium,{},llm,outcomes
+schools like Wharton,advisor,recommendation,complex,{reference:Wharton},agentic,needs recommendations
+top business programs in the US,advisor,filtered_search,medium,{program:business},search,1–2 filters
+public ivies,advisor,filtered_search,medium,{},search,category search
+NYU vs Columbia business,advisor,comparison,complex,"{schools:[NYU,Columbia]}",comparison_engine,compare programs
+what matters most for mba recruiting,advisor,career_outcomes,medium,{},llm,career guidance
+schools with strong alumni networks,advisor,campus_life_fit,llm_needed,{},llm,subjective fit
+how rankings should be used,advisor,guidance,medium,{},llm,meta guidance
+regional prestige vs national prestige,advisor,guidance,complex,{},llm,conceptual
+request demo for admissions platform,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+API access for institutional data,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+integrate college search into our website,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+how to update our school profile,college_b2b,profile_management,medium,{},b2b_portal,B2B
+institutional analytics dashboard,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+compare our school to peer institutions,college_b2b,comparison,complex,{},comparison_engine,B2B benchmarking
+improve application yield,college_b2b,recommendation,complex,{},agentic,B2B strategy
+student search behavior trends,college_b2b,analytics_request,medium,{},analytics,B2B data
+international recruitment insights,college_b2b,analytics_request,complex,{},analytics,B2B data
+partnership pricing tiers,college_b2b,b2b_partnership,short_circuit,{},sales_pipeline,B2B
+stanford,high_school_student,exact_lookup,short_circuit,{school:Stanford},typesense_only,simple entity
+usc acceptance rate,high_school_student,attribute_lookup,short_circuit,"{school:USC,metric:acceptance_rate}",typesense_only,single attribute
+schools in new england,high_school_student,filtered_search,medium,{location:New England},search,1–2 filters
+cheap premed schools in warm states,high_school_student,multi_constraint,complex,"{track:premed,cost:low,climate:warm}",agentic,multi-constraint
+duke vs vanderbilt,high_school_student,comparison,complex,"{schools:[Duke,Vanderbilt]}",comparison_engine,compare entities
+schools like usc but public,high_school_student,recommendation,complex,"{reference:USC,school_type:public}",agentic,needs recommendations
+do colleges care about freshman year grades,high_school_student,admissions_process,medium,{},llm,how admissions works
+how to get more financial aid,high_school_student,cost_financial_aid,medium,{},llm,cost aid strategy
+schools with normal social scenes,high_school_student,campus_life_fit,llm_needed,{},llm,subjective fit
+best colleges for engineering internships,high_school_student,career_outcomes,medium,{program:engineering},llm,outcomes
+brown university,college_student,exact_lookup,short_circuit,{school:Brown},typesense_only,simple entity
+nyu dorms,college_student,attribute_lookup,short_circuit,"{school:NYU,attribute:housing}",typesense_only,single attribute
+colleges in the south,college_student,filtered_search,medium,{location:South},search,1–2 filters
+research schools with small class sizes,college_student,multi_constraint,complex,"{research:true,class_size:small}",agentic,multi-constraint
+emory vs rice,college_student,comparison,complex,"{schools:[Emory,Rice]}",comparison_engine,compare entities
+schools like boston university but cheaper,college_student,recommendation,complex,"{reference:BU,cost:lower}",agentic,needs recommendations
+what does rolling admission mean,college_student,admissions_process,medium,{},llm,admissions concept
+how to get merit scholarships,college_student,cost_financial_aid,medium,{},llm,cost aid
+schools with active student orgs,college_student,campus_life_fit,llm_needed,{},llm,subjective fit
+colleges with strong alumni recruiting,college_student,career_outcomes,medium,{},llm,outcomes
+wake forest,parent,exact_lookup,short_circuit,{school:Wake Forest},typesense_only,simple entity
+does northeastern guarantee housing,parent,attribute_lookup,short_circuit,"{school:Northeastern,attribute:housing}",typesense_only,parent framing
+colleges near home,parent,filtered_search,medium,{location:near_user},search,1–2 filters
+safe campuses with strong academics,parent,multi_constraint,complex,"{safety:true,academics:strong}",agentic,multi-constraint
+tufts vs boston college,parent,comparison,complex,"{schools:[Tufts,BC]}",comparison_engine,compare entities
+good colleges for shy students,parent,recommendation,complex,{},agentic,needs recommendations
+how financial aid appeals work,parent,cost_financial_aid,medium,{},llm,cost aid
+schools with mental health resources,parent,campus_life_fit,llm_needed,{},llm,subjective fit
+employment outcomes by major,parent,career_outcomes,medium,{},llm,outcomes
+when fafsa results come out,parent,admissions_process,medium,{},llm,financial timeline
+what is demonstrated interest,counselor_teacher,admissions_process,medium,{},llm,counselor concept
+schools that track demonstrated interest,counselor_teacher,filtered_search,medium,{},search,policy-based
+engineering target schools,counselor_teacher,recommendation,complex,{program:engineering},agentic,recommendations
+colleges with grade deflation,counselor_teacher,attribute_lookup,medium,{},llm,academic rigor
+mit vs caltech outcomes,counselor_teacher,comparison,complex,"{schools:[MIT,Caltech]}",comparison_engine,compare outcomes
+holistic admissions examples,counselor_teacher,guidance,medium,{},llm,process guidance
+best colleges for first gen students,counselor_teacher,recommendation,complex,{},agentic,recommendations
+schools that allow self reported scores,counselor_teacher,admissions_process,medium,{},llm,policy
+selectivity vs acceptance rate,counselor_teacher,guidance,complex,{},llm,conceptual
+college fit vs prestige,counselor_teacher,guidance,complex,{},llm,advising
+top schools for product management,advisor,career_outcomes,medium,{},llm,outcomes
+consulting feeder schools,advisor,career_outcomes,medium,{},llm,outcomes
+schools like stanford for startups,advisor,recommendation,complex,{reference:Stanford},agentic,needs recommendations
+top cs programs west coast,advisor,filtered_search,medium,"{program:CS,location:West Coast}",search,1–2 filters
+ivy league alternatives,advisor,recommendation,complex,{},agentic,recommendations
+berkeley vs ucla career outcomes,advisor,comparison,complex,"{schools:[Berkeley,UCLA]}",comparison_engine,compare outcomes
+how much rankings matter for jobs,advisor,guidance,medium,{},llm,career guidance
+schools with strong peer networks,advisor,campus_life_fit,llm_needed,{},llm,subjective fit
+regional recruiting advantages,advisor,guidance,complex,{},llm,conceptual
+prestige vs program strength,advisor,guidance,complex,{},llm,advising
+institutional data licensing,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+white label college search,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+update admissions stats api,college_b2b,profile_management,medium,{},b2b_portal,B2B
+peer benchmarking dashboard,college_b2b,analytics_request,complex,{},analytics,B2B data
+college search conversion metrics,college_b2b,analytics_request,medium,{},analytics,B2B data
+compare our outcomes to peers,college_b2b,comparison,complex,{},comparison_engine,B2B benchmarking
+optimize yield strategy,college_b2b,recommendation,complex,{},agentic,B2B strategy
+student demand trends by major,college_b2b,analytics_request,complex,{},analytics,B2B data
+crm integration options,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+enterprise pricing discussion,college_b2b,b2b_partnership,short_circuit,{},sales_pipeline,B2B
+princeton,high_school_student,exact_lookup,short_circuit,{school:Princeton},typesense_only,simple entity
+caltech acceptance rate,high_school_student,attribute_lookup,short_circuit,"{school:Caltech,metric:acceptance_rate}",typesense_only,single attribute
+colleges near los angeles,high_school_student,filtered_search,medium,{location:Los Angeles},search,1–2 filters
+cheap schools with good stem programs,high_school_student,multi_constraint,complex,"{cost:low,program:STEM}",agentic,multi-constraint
+unc vs uva,high_school_student,comparison,complex,"{schools:[UNC,UVA]}",comparison_engine,compare entities
+schools like georgia tech but not in the south,high_school_student,recommendation,complex,"{reference:Georgia Tech,exclude_region:South}",agentic,needs recommendations
+do extracurriculars matter more than grades,high_school_student,admissions_process,medium,{},llm,admissions weighting
+how to find scholarships early,high_school_student,cost_financial_aid,medium,{},llm,cost aid
+schools with chill students,high_school_student,campus_life_fit,llm_needed,{},llm,subjective fit
+best colleges for tech careers,high_school_student,career_outcomes,medium,{},llm,outcomes
+dartmouth,college_student,exact_lookup,short_circuit,{school:Dartmouth},typesense_only,simple entity
+washu tuition,college_student,attribute_lookup,short_circuit,"{school:WashU,attribute:tuition}",typesense_only,single attribute
+schools in the pacific northwest,college_student,filtered_search,medium,{location:PNW},search,1–2 filters
+strong liberal arts colleges with research,college_student,multi_constraint,complex,"{school_type:LAC,research:true}",agentic,multi-constraint
+usc vs nyu outcomes,college_student,comparison,complex,"{schools:[USC,NYU]}",comparison_engine,compare outcomes
+schools like umich but smaller,college_student,recommendation,complex,"{reference:UMich,size:smaller}",agentic,needs recommendations
+what is early decision ii,college_student,admissions_process,medium,{},llm,admissions concept
+how to negotiate financial aid,college_student,cost_financial_aid,medium,{},llm,cost aid
+schools with collaborative culture,college_student,campus_life_fit,llm_needed,{},llm,subjective fit
+colleges with good grad school placement,college_student,career_outcomes,medium,{},llm,outcomes
+boston university,parent,exact_lookup,short_circuit,{school:Boston University},typesense_only,simple entity
+does rice require freshmen to live on campus,parent,attribute_lookup,short_circuit,"{school:Rice,attribute:housing}",typesense_only,parent framing
+colleges close to major airports,parent,filtered_search,medium,{location:near_airport},search,1–2 filters
+academically strong schools with low crime,parent,multi_constraint,complex,"{academics:strong,safety:high}",agentic,multi-constraint
+washu vs emory,parent,comparison,complex,"{schools:[WashU,Emory]}",comparison_engine,compare entities
+supportive colleges for first year students,parent,recommendation,complex,{},agentic,needs recommendations
+how much debt is too much for college,parent,cost_financial_aid,medium,{},llm,cost guidance
+schools with good advising support,parent,campus_life_fit,llm_needed,{},llm,subjective fit
+college roi by major,parent,career_outcomes,medium,{},llm,outcomes
+when to commit to a college,parent,admissions_process,medium,{},llm,decision timeline
+average gpa at selective colleges,counselor_teacher,attribute_lookup,medium,{},llm,contextual metric
+colleges in the mountain west,counselor_teacher,filtered_search,medium,{location:Mountain West},search,1–2 filters
+balanced list strategy examples,counselor_teacher,guidance,medium,{},llm,advising
+schools known for grade inflation,counselor_teacher,attribute_lookup,medium,{},llm,academic rigor
+stanford vs mit selectivity,counselor_teacher,comparison,complex,"{schools:[Stanford,MIT]}",comparison_engine,compare selectivity
+what makes a good safety school,counselor_teacher,guidance,medium,{},llm,advising
+schools with strong stem advising,counselor_teacher,recommendation,complex,{program:STEM},agentic,recommendations
+test optional colleges list,counselor_teacher,filtered_search,medium,{},search,policy-based
+contextual admissions factors,counselor_teacher,guidance,complex,{},llm,conceptual
+how counselors evaluate fit,counselor_teacher,guidance,complex,{},llm,process
+best schools for data science careers,advisor,career_outcomes,medium,{},llm,outcomes
+finance target schools list,advisor,career_outcomes,medium,{},llm,outcomes
+schools like carnegie mellon for ai,advisor,recommendation,complex,"{reference:CMU,field:AI}",agentic,needs recommendations
+top quantitative finance programs,advisor,filtered_search,medium,{field:quant finance},search,1–2 filters
+non ivy elite universities,advisor,recommendation,complex,{},agentic,recommendations
+duke vs northwestern outcomes,advisor,comparison,complex,"{schools:[Duke,Northwestern]}",comparison_engine,compare outcomes
+how recruiters view school prestige,advisor,guidance,medium,{},llm,career guidance
+schools with strong alumni referrals,advisor,campus_life_fit,llm_needed,{},llm,subjective fit
+national vs regional pipelines,advisor,guidance,complex,{},llm,conceptual
+career outcomes vs rankings,advisor,guidance,complex,{},llm,advising
+enterprise onboarding timeline,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+institutional profile api docs,college_b2b,profile_management,medium,{},b2b_portal,B2B
+analytics for admissions funnel,college_b2b,analytics_request,complex,{},analytics,B2B data
+benchmarking against peer set,college_b2b,comparison,complex,{},comparison_engine,B2B benchmarking
+integrate search into crm,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+student interest heatmaps,college_b2b,analytics_request,complex,{},analytics,B2B data
+how schools appear in recommendations,college_b2b,guidance,medium,{},llm,B2B logic
+optimize discoverability in search,college_b2b,recommendation,complex,{},agentic,B2B strategy
+partnership contract terms,college_b2b,b2b_partnership,short_circuit,{},sales_pipeline,B2B
+bulk data export options,college_b2b,profile_management,medium,{},b2b_portal,B2B
+yale,high_school_student,exact_lookup,short_circuit,{school:Yale},typesense_only,simple entity
+uc davis acceptance rate,high_school_student,attribute_lookup,short_circuit,"{school:UC Davis,metric:acceptance_rate}",typesense_only,single attribute
+schools in arizona,high_school_student,filtered_search,medium,{location:Arizona},search,1–2 filters
+low cost colleges with strong biology programs,high_school_student,multi_constraint,complex,"{program:biology,cost:low}",agentic,multi-constraint
+ucsb vs ucsd,high_school_student,comparison,complex,"{schools:[UCSB,UCSD]}",comparison_engine,compare entities
+schools like notre dame but not religious,high_school_student,recommendation,complex,"{reference:Notre Dame,exclude:religious}",agentic,needs recommendations
+does class rank matter for admissions,high_school_student,admissions_process,medium,{},llm,admissions weighting
+how to find local scholarships,high_school_student,cost_financial_aid,medium,{},llm,cost aid
+schools with friendly people,high_school_student,campus_life_fit,llm_needed,{},llm,subjective fit
+best colleges for biomedical engineering jobs,high_school_student,career_outcomes,medium,{program:BME},llm,outcomes
+middlebury,college_student,exact_lookup,short_circuit,{school:Middlebury},typesense_only,simple entity
+pepperdine tuition,college_student,attribute_lookup,short_circuit,"{school:Pepperdine,attribute:tuition}",typesense_only,single attribute
+schools in northern california,college_student,filtered_search,medium,{location:Northern California},search,1–2 filters
+colleges with strong humanities and research,college_student,multi_constraint,complex,"{field:humanities,research:true}",agentic,multi-constraint
+tufts vs brandeis,college_student,comparison,complex,"{schools:[Tufts,Brandeis]}",comparison_engine,compare entities
+schools like usc but smaller class sizes,college_student,recommendation,complex,"{reference:USC,class_size:small}",agentic,needs recommendations
+what is priority deadline,college_student,admissions_process,medium,{},llm,admissions concept
+how to qualify for in state tuition,college_student,cost_financial_aid,medium,{},llm,cost aid
+schools with strong academic communities,college_student,campus_life_fit,llm_needed,{},llm,subjective fit
+colleges with high phd placement rates,college_student,career_outcomes,medium,{},llm,outcomes
+georgetown,parent,exact_lookup,short_circuit,{school:Georgetown},typesense_only,simple entity
+does tulane require on campus housing,parent,attribute_lookup,short_circuit,"{school:Tulane,attribute:housing}",typesense_only,parent framing
+colleges within driving distance,parent,filtered_search,medium,{location:driving_distance},search,1–2 filters
+academically rigorous colleges with support services,parent,multi_constraint,complex,"{academics:rigorous,support:true}",agentic,multi-constraint
+nyu vs boston university cost,parent,comparison,complex,"{schools:[NYU,BU],metric:cost}",comparison_engine,compare cost
+colleges good for independent students,parent,recommendation,complex,{},agentic,needs recommendations
+how parent assets affect financial aid,parent,cost_financial_aid,medium,{},llm,cost aid
+schools with strong first year advising,parent,campus_life_fit,llm_needed,{},llm,subjective fit
+career outcomes for social science majors,parent,career_outcomes,medium,{},llm,outcomes
+waitlist decision timeline,parent,admissions_process,medium,{},llm,admissions timeline
+what is institutional priority,counselor_teacher,admissions_process,medium,{},llm,counselor terminology
+colleges in the plains states,counselor_teacher,filtered_search,medium,{location:Plains},search,1–2 filters
+examples of reach schools,counselor_teacher,guidance,medium,{},llm,advising
+schools known for academic rigor,counselor_teacher,attribute_lookup,medium,{},llm,academic rigor
+oxford style vs us colleges,counselor_teacher,guidance,complex,{},llm,conceptual
+caltech vs mit academics,counselor_teacher,comparison,complex,"{schools:[Caltech,MIT]}",comparison_engine,compare academics
+stem safety school examples,counselor_teacher,recommendation,complex,{program:STEM},agentic,recommendations
+schools that consider demonstrated interest heavily,counselor_teacher,filtered_search,medium,{},search,policy-based
+how context is evaluated in admissions,counselor_teacher,guidance,complex,{},llm,process
+prestige vs program quality,counselor_teacher,guidance,complex,{},llm,advising
+best schools for ux design careers,advisor,career_outcomes,medium,{},llm,outcomes
+top public universities for tech jobs,advisor,career_outcomes,medium,{},llm,outcomes
+schools like berkeley for research,advisor,recommendation,complex,{reference:Berkeley},agentic,needs recommendations
+top engineering programs midwest,advisor,filtered_search,medium,"{program:engineering,location:Midwest}",search,1–2 filters
+elite public universities list,advisor,filtered_search,medium,{},search,category
+washu vs vanderbilt outcomes,advisor,comparison,complex,"{schools:[WashU,Vanderbilt]}",comparison_engine,compare outcomes
+how employers weigh gpa vs school,advisor,guidance,medium,{},llm,career guidance
+schools with strong mentorship culture,advisor,campus_life_fit,llm_needed,{},llm,subjective fit
+regional alumni influence,advisor,guidance,complex,{},llm,conceptual
+ranking volatility over time,advisor,guidance,complex,{},llm,advising
+partner onboarding checklist,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+institutional data refresh schedule,college_b2b,profile_management,medium,{},b2b_portal,B2B
+market demand analytics by region,college_b2b,analytics_request,complex,{},analytics,B2B data
+compare application trends year over year,college_b2b,analytics_request,complex,{},analytics,B2B data
+integration with sis systems,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+visibility in recommendation engine,college_b2b,guidance,medium,{},llm,B2B logic
+peer institution grouping logic,college_b2b,comparison,complex,{},comparison_engine,B2B benchmarking
+improve student match quality,college_b2b,recommendation,complex,{},agentic,B2B strategy
+enterprise support options,college_b2b,b2b_partnership,short_circuit,{},sales_pipeline,B2B
+historical data export,college_b2b,profile_management,medium,{},b2b_portal,B2B
+columbia university,high_school_student,exact_lookup,short_circuit,{school:Columbia},typesense_only,simple entity
+uiuc acceptance rate,high_school_student,attribute_lookup,short_circuit,"{school:UIUC,metric:acceptance_rate}",typesense_only,single attribute
+schools in colorado,high_school_student,filtered_search,medium,{location:Colorado},search,1–2 filters
+affordable colleges with strong environmental science,high_school_student,multi_constraint,complex,"{program:environmental science,cost:low}",agentic,multi-constraint
+uw madison vs uiuc,high_school_student,comparison,complex,"{schools:[UW Madison,UIUC]}",comparison_engine,compare entities
+schools like northeastern but without co op,high_school_student,recommendation,complex,"{reference:Northeastern,exclude:co-op}",agentic,needs recommendations
+do colleges recalculate gpa,high_school_student,admissions_process,medium,{},llm,admissions evaluation
+how early should i start college essays,high_school_student,admissions_process,medium,{},llm,planning
+schools with low stress culture,high_school_student,campus_life_fit,llm_needed,{},llm,subjective fit
+best colleges for sustainability careers,high_school_student,career_outcomes,medium,{field:sustainability},llm,outcomes
+amherst college,college_student,exact_lookup,short_circuit,{school:Amherst},typesense_only,simple entity
+georgia tech housing,college_student,attribute_lookup,short_circuit,"{school:Georgia Tech,attribute:housing}",typesense_only,single attribute
+schools in the great lakes region,college_student,filtered_search,medium,{location:Great Lakes},search,1–2 filters
+small colleges with strong stem outcomes,college_student,multi_constraint,complex,"{school_type:small,program:STEM}",agentic,multi-constraint
+penn state vs ohio state,college_student,comparison,complex,"{schools:[Penn State,Ohio State]}",comparison_engine,compare entities
+schools like uva but less competitive,college_student,recommendation,complex,"{reference:UVA,selectivity:lower}",agentic,needs recommendations
+what is common app early action,college_student,admissions_process,medium,{},llm,admissions concept
+how to appeal merit scholarship decisions,college_student,cost_financial_aid,medium,{},llm,cost aid
+schools with strong peer collaboration,college_student,campus_life_fit,llm_needed,{},llm,subjective fit
+colleges with strong law school placement,college_student,career_outcomes,medium,{},llm,outcomes
+american university,parent,exact_lookup,short_circuit,{school:American University},typesense_only,simple entity
+does villanova require freshmen housing,parent,attribute_lookup,short_circuit,"{school:Villanova,attribute:housing}",typesense_only,parent framing
+colleges near major hospitals,parent,filtered_search,medium,{location:near_hospitals},search,1–2 filters
+academically challenging but supportive colleges,parent,multi_constraint,complex,"{academics:challenging,support:true}",agentic,multi-constraint
+tulane vs miami cost,parent,comparison,complex,"{schools:[Tulane,Miami],metric:cost}",comparison_engine,compare cost
+good colleges for undecided students,parent,recommendation,complex,{},agentic,needs recommendations
+how siblings affect financial aid,parent,cost_financial_aid,medium,{},llm,cost aid
+schools with strong disability services,parent,campus_life_fit,llm_needed,{},llm,subjective fit
+college job placement statistics,parent,career_outcomes,medium,{},llm,outcomes
+deposit deadline extensions,parent,admissions_process,medium,{},llm,admissions logistics
+average sat score ranges by tier,counselor_teacher,attribute_lookup,medium,{},llm,contextual metric
+colleges in the mid atlantic,counselor_teacher,filtered_search,medium,{location:Mid-Atlantic},search,1–2 filters
+how to build a balanced college list,counselor_teacher,guidance,medium,{},llm,advising
+schools known for collaborative grading,counselor_teacher,attribute_lookup,medium,{},llm,academic culture
+ivy league vs ivy plus,counselor_teacher,guidance,complex,{},llm,conceptual
+princeton vs yale academic culture,counselor_teacher,comparison,complex,"{schools:[Princeton,Yale]}",comparison_engine,compare culture
+stem programs with high retention,counselor_teacher,recommendation,complex,{program:STEM},agentic,recommendations
+schools that publish cds data,counselor_teacher,filtered_search,medium,{},search,policy-based
+how adversity is weighed in admissions,counselor_teacher,guidance,complex,{},llm,process
+fit vs outcomes in advising,counselor_teacher,guidance,complex,{},llm,advising
+best schools for biotech careers,advisor,career_outcomes,medium,{},llm,outcomes
+top public universities for consulting,advisor,career_outcomes,medium,{},llm,outcomes
+schools like mit for applied research,advisor,recommendation,complex,{reference:MIT},agentic,needs recommendations
+top information science programs,advisor,filtered_search,medium,{field:information science},search,1–2 filters
+high roi non ivy schools,advisor,recommendation,complex,{},agentic,recommendations
+ucla vs berkeley career placement,advisor,comparison,complex,"{schools:[UCLA,Berkeley]}",comparison_engine,compare outcomes
+how recruiters evaluate transcripts,advisor,guidance,medium,{},llm,career guidance
+schools with strong faculty industry ties,advisor,campus_life_fit,llm_needed,{},llm,subjective fit
+regional vs national job markets,advisor,guidance,complex,{},llm,conceptual
+program reputation vs school reputation,advisor,guidance,complex,{},llm,advising
+partner success metrics,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+institutional branding guidelines,college_b2b,profile_management,medium,{},b2b_portal,B2B
+enrollment funnel analytics,college_b2b,analytics_request,complex,{},analytics,B2B data
+compare inquiry to enrollment rates,college_b2b,analytics_request,complex,{},analytics,B2B data
+integration with marketing automation,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+ranking visibility insights,college_b2b,analytics_request,medium,{},analytics,B2B data
+recommendation weighting factors,college_b2b,guidance,medium,{},llm,B2B logic
+improve applicant quality signals,college_b2b,recommendation,complex,{},agentic,B2B strategy
+enterprise sla options,college_b2b,b2b_partnership,short_circuit,{},sales_pipeline,B2B
+historical admissions dataset access,college_b2b,profile_management,medium,{},b2b_portal,B2B
+harvey mudd,high_school_student,exact_lookup,short_circuit,{school:Harvey Mudd},typesense_only,simple entity
+uc irvine acceptance rate,high_school_student,attribute_lookup,short_circuit,"{school:UC Irvine,metric:acceptance_rate}",typesense_only,single attribute
+schools in nevada,high_school_student,filtered_search,medium,{location:Nevada},search,1–2 filters
+affordable colleges with strong data science,high_school_student,multi_constraint,complex,"{program:data science,cost:low}",agentic,multi-constraint
+uc berkeley vs stanford,high_school_student,comparison,complex,"{schools:[UC Berkeley,Stanford]}",comparison_engine,compare entities
+schools like rice but larger,high_school_student,recommendation,complex,"{reference:Rice,size:larger}",agentic,needs recommendations
+how much do aps actually help,high_school_student,admissions_process,medium,{},llm,admissions weighting
+when should i take the sat again,high_school_student,admissions_process,medium,{},llm,testing strategy
+schools with balanced academics and social life,high_school_student,campus_life_fit,llm_needed,{},llm,subjective fit
+best colleges for climate science careers,high_school_student,career_outcomes,medium,{field:climate science},llm,outcomes
+grinnell college,college_student,exact_lookup,short_circuit,{school:Grinnell},typesense_only,simple entity
+uc santa cruz housing,college_student,attribute_lookup,short_circuit,"{school:UC Santa Cruz,attribute:housing}",typesense_only,single attribute
+schools in the southwest,college_student,filtered_search,medium,{location:Southwest},search,1–2 filters
+liberal arts colleges with strong cs outcomes,college_student,multi_constraint,complex,"{school_type:LAC,program:CS}",agentic,multi-constraint
+colgate vs hamilton,college_student,comparison,complex,"{schools:[Colgate,Hamilton]}",comparison_engine,compare entities
+schools like boston college but public,college_student,recommendation,complex,"{reference:Boston College,school_type:public}",agentic,needs recommendations
+what is priority waitlist,college_student,admissions_process,medium,{},llm,admissions concept
+how work study affects aid package,college_student,cost_financial_aid,medium,{},llm,cost aid
+schools with strong writing culture,college_student,campus_life_fit,llm_needed,{},llm,subjective fit
+colleges with high fulbright placement,college_student,career_outcomes,medium,{},llm,outcomes
+loyola marymount,parent,exact_lookup,short_circuit,{school:Loyola Marymount},typesense_only,simple entity
+does fordham require on campus housing,parent,attribute_lookup,short_circuit,"{school:Fordham,attribute:housing}",typesense_only,parent framing
+colleges near military bases,parent,filtered_search,medium,{location:near_military_base},search,1–2 filters
+academically solid schools with small class sizes,parent,multi_constraint,complex,"{academics:solid,class_size:small}",agentic,multi-constraint
+case western vs rochester,parent,comparison,complex,"{schools:[Case Western,Rochester]}",comparison_engine,compare entities
+good colleges for students with adhd,parent,recommendation,complex,{},agentic,needs recommendations
+how home equity affects financial aid,parent,cost_financial_aid,medium,{},llm,cost aid
+schools with strong accessibility services,parent,campus_life_fit,llm_needed,{},llm,subjective fit
+job placement for engineering majors,parent,career_outcomes,medium,{program:engineering},llm,outcomes
+how long waitlist decisions take,parent,admissions_process,medium,{},llm,admissions timeline
+how colleges define academic rigor,counselor_teacher,guidance,medium,{},llm,advising
+schools in appalachian region,counselor_teacher,filtered_search,medium,{location:Appalachian},search,1–2 filters
+examples of likely schools,counselor_teacher,guidance,medium,{},llm,advising
+colleges known for grade deflation,counselor_teacher,attribute_lookup,medium,{},llm,academic rigor
+ivy plus vs elite publics,counselor_teacher,guidance,complex,{},llm,conceptual
+brown vs dartmouth academic culture,counselor_teacher,comparison,complex,"{schools:[Brown,Dartmouth]}",comparison_engine,compare culture
+stem programs with low attrition,counselor_teacher,recommendation,complex,{program:STEM},agentic,recommendations
+schools that allow counselor reports,counselor_teacher,admissions_process,medium,{},llm,policy
+how recommendations are weighted,counselor_teacher,guidance,complex,{},llm,process
+fit vs selectivity tradeoffs,counselor_teacher,guidance,complex,{},llm,advising
+best schools for cybersecurity careers,advisor,career_outcomes,medium,{},llm,outcomes
+top universities for entrepreneurship,advisor,career_outcomes,medium,{},llm,outcomes
+schools like mit for innovation,advisor,recommendation,complex,{reference:MIT},agentic,needs recommendations
+top applied math programs,advisor,filtered_search,medium,{field:applied math},search,1–2 filters
+elite stem focused universities,advisor,recommendation,complex,{},agentic,recommendations
+carnegie mellon vs berkeley outcomes,advisor,comparison,complex,"{schools:[CMU,Berkeley]}",comparison_engine,compare outcomes
+how companies screen resumes by school,advisor,guidance,medium,{},llm,career guidance
+schools with strong startup ecosystems,advisor,campus_life_fit,llm_needed,{},llm,subjective fit
+regional hiring pipelines,advisor,guidance,complex,{},llm,conceptual
+program rankings vs employer perception,advisor,guidance,complex,{},llm,advising
+institutional onboarding requirements,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+school profile data validation,college_b2b,profile_management,medium,{},b2b_portal,B2B
+enrollment forecasting analytics,college_b2b,analytics_request,complex,{},analytics,B2B data
+compare applicant interest year over year,college_b2b,analytics_request,complex,{},analytics,B2B data
+integration with enrollment crm,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+search impression analytics,college_b2b,analytics_request,medium,{},analytics,B2B data
+recommendation system explainability,college_b2b,guidance,medium,{},llm,B2B logic
+increase qualified applicant pool,college_b2b,recommendation,complex,{},agentic,B2B strategy
+enterprise support escalation paths,college_b2b,b2b_partnership,short_circuit,{},sales_pipeline,B2B
+archived admissions data access,college_b2b,profile_management,medium,{},b2b_portal,B2B
+williams college,high_school_student,exact_lookup,short_circuit,{school:Williams},typesense_only,simple entity
+uc riverside acceptance rate,high_school_student,attribute_lookup,short_circuit,"{school:UC Riverside,metric:acceptance_rate}",typesense_only,single attribute
+schools in new mexico,high_school_student,filtered_search,medium,{location:New Mexico},search,1–2 filters
+low cost colleges with strong neuroscience programs,high_school_student,multi_constraint,complex,"{program:neuroscience,cost:low}",agentic,multi-constraint
+iu bloomington vs purdue,high_school_student,comparison,complex,"{schools:[Indiana University,Purdue]}",comparison_engine,compare entities
+schools like villanova but public,high_school_student,recommendation,complex,"{reference:Villanova,school_type:public}",agentic,needs recommendations
+do colleges look at sophomore year grades,high_school_student,admissions_process,medium,{},llm,admissions evaluation
+when should i start visiting colleges,high_school_student,admissions_process,medium,{},llm,planning
+schools with relaxed grading,high_school_student,campus_life_fit,llm_needed,{},llm,subjective fit
+best colleges for public health careers,high_school_student,career_outcomes,medium,{field:public health},llm,outcomes
+pomona college,college_student,exact_lookup,short_circuit,{school:Pomona},typesense_only,simple entity
+texas a&m housing,college_student,attribute_lookup,short_circuit,"{school:Texas A&M,attribute:housing}",typesense_only,single attribute
+schools in the central valley,college_student,filtered_search,medium,{location:Central Valley},search,1–2 filters
+small universities with strong business analytics,college_student,multi_constraint,complex,"{program:business analytics,size:small}",agentic,multi-constraint
+uc denver vs colorado state,college_student,comparison,complex,"{schools:[CU Denver,Colorado State]}",comparison_engine,compare entities
+schools like ohio state but urban,college_student,recommendation,complex,"{reference:Ohio State,setting:urban}",agentic,needs recommendations
+what is early decision restriction,college_student,admissions_process,medium,{},llm,admissions concept
+how outside scholarships affect aid,college_student,cost_financial_aid,medium,{},llm,cost aid
+schools with strong debate culture,college_student,campus_life_fit,llm_needed,{},llm,subjective fit
+colleges with strong nonprofit career placement,college_student,career_outcomes,medium,{},llm,outcomes
+santa clara university,parent,exact_lookup,short_circuit,{school:Santa Clara},typesense_only,simple entity
+does depaul require freshmen housing,parent,attribute_lookup,short_circuit,"{school:DePaul,attribute:housing}",typesense_only,parent framing
+colleges near tech hubs,parent,filtered_search,medium,{location:tech hubs},search,1–2 filters
+academically strong colleges with internship access,parent,multi_constraint,complex,"{academics:strong,internships:true}",agentic,multi-constraint
+denison vs kenyon,parent,comparison,complex,"{schools:[Denison,Kenyon]}",comparison_engine,compare entities
+good colleges for late bloomers,parent,recommendation,complex,{},agentic,needs recommendations
+how parent income brackets affect aid,parent,cost_financial_aid,medium,{},llm,cost aid
+schools with strong career counseling,parent,campus_life_fit,llm_needed,{},llm,subjective fit
+college outcomes for psychology majors,parent,career_outcomes,medium,{},llm,outcomes
+how to decide between waitlist offers,parent,admissions_process,medium,{},llm,decision making
+what is academic index,counselor_teacher,admissions_process,medium,{},llm,counselor terminology
+schools in the ozarks region,counselor_teacher,filtered_search,medium,{location:Ozarks},search,1–2 filters
+how to advise gap year students,counselor_teacher,guidance,medium,{},llm,advising
+colleges with open curriculum,counselor_teacher,attribute_lookup,medium,{},llm,academic structure
+elite lac vs mid tier research,counselor_teacher,guidance,complex,{},llm,conceptual
+swarthmore vs haverford academics,counselor_teacher,comparison,complex,"{schools:[Swarthmore,Haverford]}",comparison_engine,compare academics
+stem programs with strong mentoring,counselor_teacher,recommendation,complex,{program:STEM},agentic,recommendations
+schools that require counselor recs,counselor_teacher,admissions_process,medium,{},llm,policy
+how schools contextualize test scores,counselor_teacher,guidance,complex,{},llm,process
+fit vs cost tradeoffs,counselor_teacher,guidance,complex,{},llm,advising
+best schools for health informatics,advisor,career_outcomes,medium,{},llm,outcomes
+top universities for supply chain careers,advisor,career_outcomes,medium,{},llm,outcomes
+schools like cornell for interdisciplinary study,advisor,recommendation,complex,{reference:Cornell},agentic,needs recommendations
+top operations research programs,advisor,filtered_search,medium,{field:operations research},search,1–2 filters
+elite non coastal universities,advisor,recommendation,complex,{},agentic,recommendations
+washington vs georgetown outcomes,advisor,comparison,complex,"{schools:[Washington Univ St Louis,Georgetown]}",comparison_engine,compare outcomes
+how recruiters value capstone projects,advisor,guidance,medium,{},llm,career guidance
+schools with strong industry sponsored research,advisor,campus_life_fit,llm_needed,{},llm,subjective fit
+regional salary differentials,advisor,guidance,complex,{},llm,conceptual
+program depth vs brand recognition,advisor,guidance,complex,{},llm,advising
+institutional api rate limits,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+school profile change approvals,college_b2b,profile_management,medium,{},b2b_portal,B2B
+predictive yield modeling,college_b2b,analytics_request,complex,{},analytics,B2B data
+compare admit to enroll conversion,college_b2b,analytics_request,complex,{},analytics,B2B data
+integration with email marketing tools,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+search ranking diagnostics,college_b2b,analytics_request,medium,{},analytics,B2B data
+recommendation fairness criteria,college_b2b,guidance,medium,{},llm,B2B logic
+increase rural student outreach,college_b2b,recommendation,complex,{},agentic,B2B strategy
+enterprise contract renewal terms,college_b2b,b2b_partnership,short_circuit,{},sales_pipeline,B2B
+longitudinal admissions data export,college_b2b,profile_management,medium,{},b2b_portal,B2B
+bowdoin college,high_school_student,exact_lookup,short_circuit,{school:Bowdoin},typesense_only,simple entity
+uc merced acceptance rate,high_school_student,attribute_lookup,short_circuit,"{school:UC Merced,metric:acceptance_rate}",typesense_only,single attribute
+schools in idaho,high_school_student,filtered_search,medium,{location:Idaho},search,1–2 filters
+low cost colleges with strong kinesiology programs,high_school_student,multi_constraint,complex,"{program:kinesiology,cost:low}",agentic,multi-constraint
+arizona state vs oregon state,high_school_student,comparison,complex,"{schools:[Arizona State,Oregon State]}",comparison_engine,compare entities
+schools like clemson but less rural,high_school_student,recommendation,complex,"{reference:Clemson,setting:less rural}",agentic,needs recommendations
+do colleges consider upward grade trends,high_school_student,admissions_process,medium,{},llm,admissions evaluation
+how many schools should i apply to,high_school_student,admissions_process,medium,{},llm,planning
+schools with collaborative grading systems,high_school_student,campus_life_fit,llm_needed,{},llm,subjective fit
+best colleges for sports management careers,high_school_student,career_outcomes,medium,{field:sports management},llm,outcomes
+reed college,college_student,exact_lookup,short_circuit,{school:Reed},typesense_only,simple entity
+virginia tech housing,college_student,attribute_lookup,short_circuit,"{school:Virginia Tech,attribute:housing}",typesense_only,single attribute
+schools in the deep south,college_student,filtered_search,medium,{location:Deep South},search,1–2 filters
+mid sized universities with strong policy programs,college_student,multi_constraint,complex,"{program:public policy,size:mid}",agentic,multi-constraint
+rutgers vs maryland,college_student,comparison,complex,"{schools:[Rutgers,Maryland]}",comparison_engine,compare entities
+schools like penn state but more selective,college_student,recommendation,complex,"{reference:Penn State,selectivity:higher}",agentic,needs recommendations
+what is priority consideration deadline,college_student,admissions_process,medium,{},llm,admissions concept
+how outside income affects financial aid,college_student,cost_financial_aid,medium,{},llm,cost aid
+schools with strong interdisciplinary culture,college_student,campus_life_fit,llm_needed,{},llm,subjective fit
+colleges with strong foreign service placement,college_student,career_outcomes,medium,{},llm,outcomes
+st johns university,parent,exact_lookup,short_circuit,{school:St Johns University},typesense_only,simple entity
+does marquette require on campus housing,parent,attribute_lookup,short_circuit,"{school:Marquette,attribute:housing}",typesense_only,parent framing
+colleges near state capitals,parent,filtered_search,medium,{location:state capitals},search,1–2 filters
+academically solid colleges with career pipelines,parent,multi_constraint,complex,"{academics:solid,career_pipeline:true}",agentic,multi-constraint
+lehigh vs lafayette,parent,comparison,complex,"{schools:[Lehigh,Lafayette]}",comparison_engine,compare entities
+good colleges for students who want flexibility,parent,recommendation,complex,{},agentic,needs recommendations
+how parental divorce affects financial aid,parent,cost_financial_aid,medium,{},llm,cost aid
+schools with strong tutoring programs,parent,campus_life_fit,llm_needed,{},llm,subjective fit
+job outcomes for economics majors,parent,career_outcomes,medium,{},llm,outcomes
+how to interpret financial aid award letters,parent,admissions_process,medium,{},llm,decision support
+what is academic match,counselor_teacher,guidance,medium,{},llm,advising
+schools in the piedmont region,counselor_teacher,filtered_search,medium,{location:Piedmont},search,1–2 filters
+how to advise students on early action,counselor_teacher,guidance,medium,{},llm,advising
+colleges with core curriculum requirements,counselor_teacher,attribute_lookup,medium,{},llm,academic structure
+research universities vs liberal arts colleges,counselor_teacher,guidance,complex,{},llm,conceptual
+claremont mckenna vs pomona outcomes,counselor_teacher,comparison,complex,"{schools:[Claremont McKenna,Pomona]}",comparison_engine,compare outcomes
+stem programs with strong peer tutoring,counselor_teacher,recommendation,complex,{program:STEM},agentic,recommendations
+schools that allow counselor calls,counselor_teacher,admissions_process,medium,{},llm,policy
+how socioeconomic context is reviewed,counselor_teacher,guidance,complex,{},llm,process
+fit vs ranking tradeoffs,counselor_teacher,guidance,complex,{},llm,advising
+best schools for environmental consulting careers,advisor,career_outcomes,medium,{},llm,outcomes
+top universities for real estate careers,advisor,career_outcomes,medium,{},llm,outcomes
+schools like duke for leadership programs,advisor,recommendation,complex,{reference:Duke},agentic,needs recommendations
+top public policy analytics programs,advisor,filtered_search,medium,{field:policy analytics},search,1–2 filters
+elite universities outside top 20 rankings,advisor,recommendation,complex,{},agentic,recommendations
+usc vs ucla alumni influence,advisor,comparison,complex,"{schools:[USC,UCLA]}",comparison_engine,compare outcomes
+how employers value experiential learning,advisor,guidance,medium,{},llm,career guidance
+schools with strong experiential learning models,advisor,campus_life_fit,llm_needed,{},llm,subjective fit
+regional cost of living vs salary outcomes,advisor,guidance,complex,{},llm,conceptual
+program focus vs general prestige,advisor,guidance,complex,{},llm,advising
+institutional permissions management,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+school data governance policies,college_b2b,profile_management,medium,{},b2b_portal,B2B
+admissions trend forecasting tools,college_b2b,analytics_request,complex,{},analytics,B2B data
+compare early vs regular decision yield,college_b2b,analytics_request,complex,{},analytics,B2B data
+integration with data warehouses,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+search performance by geography,college_b2b,analytics_request,medium,{},analytics,B2B data
+explainability of recommendation outputs,college_b2b,guidance,medium,{},llm,B2B logic
+expand access to underrepresented regions,college_b2b,recommendation,complex,{},agentic,B2B strategy
+enterprise compliance requirements,college_b2b,b2b_partnership,short_circuit,{},sales_pipeline,B2B
+historical applicant behavior exports,college_b2b,profile_management,medium,{},b2b_portal,B2B
+colgate university,high_school_student,exact_lookup,short_circuit,{school:Colgate},typesense_only,simple entity
+uc san bernardino acceptance rate,high_school_student,attribute_lookup,short_circuit,"{school:UC San Bernardino,metric:acceptance_rate}",typesense_only,single attribute
+schools in wyoming,high_school_student,filtered_search,medium,{location:Wyoming},search,1–2 filters
+affordable colleges with strong urban planning programs,high_school_student,multi_constraint,complex,"{program:urban planning,cost:low}",agentic,multi-constraint
+iowa state vs kansas state,high_school_student,comparison,complex,"{schools:[Iowa State,Kansas State]}",comparison_engine,compare entities
+schools like syracuse but warmer climate,high_school_student,recommendation,complex,"{reference:Syracuse,climate:warm}",agentic,needs recommendations
+do colleges value leadership roles,high_school_student,admissions_process,medium,{},llm,admissions evaluation
+how many ap classes is too many,high_school_student,admissions_process,medium,{},llm,course load
+schools with strong school spirit,high_school_student,campus_life_fit,llm_needed,{},llm,subjective fit
+best colleges for urban studies careers,high_school_student,career_outcomes,medium,{field:urban studies},llm,outcomes
+union college,college_student,exact_lookup,short_circuit,{school:Union College},typesense_only,simple entity
+north carolina state housing,college_student,attribute_lookup,short_circuit,"{school:NC State,attribute:housing}",typesense_only,single attribute
+schools in the low country,college_student,filtered_search,medium,{location:Low Country},search,1–2 filters
+mid sized colleges with strong economics programs,college_student,multi_constraint,complex,"{program:economics,size:mid}",agentic,multi-constraint
+ut austin vs texas a&m,college_student,comparison,complex,"{schools:[UT Austin,Texas A&M]}",comparison_engine,compare entities
+schools like ucla but quieter campus,college_student,recommendation,complex,"{reference:UCLA,environment:quiet}",agentic,needs recommendations
+what is deferral in admissions,college_student,admissions_process,medium,{},llm,admissions concept
+how summer earnings affect aid,college_student,cost_financial_aid,medium,{},llm,cost aid
+schools with strong honors programs,college_student,campus_life_fit,llm_needed,{},llm,subjective fit
+colleges with strong federal policy placement,college_student,career_outcomes,medium,{},llm,outcomes
+seton hall university,parent,exact_lookup,short_circuit,{school:Seton Hall},typesense_only,simple entity
+does loyola chicago require freshmen housing,parent,attribute_lookup,short_circuit,"{school:Loyola Chicago,attribute:housing}",typesense_only,parent framing
+colleges near public transportation,parent,filtered_search,medium,{location:public transportation},search,1–2 filters
+academically strong colleges with urban safety,parent,multi_constraint,complex,"{academics:strong,safety:urban}",agentic,multi-constraint
+drake vs creighton,parent,comparison,complex,"{schools:[Drake,Creighton]}",comparison_engine,compare entities
+good colleges for students who want flexibility in majors,parent,recommendation,complex,{},agentic,needs recommendations
+how grandparents assets affect financial aid,parent,cost_financial_aid,medium,{},llm,cost aid
+schools with strong learning support centers,parent,campus_life_fit,llm_needed,{},llm,subjective fit
+career outcomes for communications majors,parent,career_outcomes,medium,{},llm,outcomes
+how to compare aid packages across schools,parent,admissions_process,medium,{},llm,decision support
+what is academic rigor index,counselor_teacher,guidance,medium,{},llm,advising
+schools in the great plains,counselor_teacher,filtered_search,medium,{location:Great Plains},search,1–2 filters
+how to counsel students on waitlists,counselor_teacher,guidance,medium,{},llm,advising
+colleges with distribution requirements,counselor_teacher,attribute_lookup,medium,{},llm,academic structure
+selective lac vs flagship public,counselor_teacher,guidance,complex,{},llm,conceptual
+bates vs skidmore academics,counselor_teacher,comparison,complex,"{schools:[Bates,Skidmore]}",comparison_engine,compare academics
+stem programs with strong advising infrastructure,counselor_teacher,recommendation,complex,{program:STEM},agentic,recommendations
+schools that allow midyear reports,counselor_teacher,admissions_process,medium,{},llm,policy
+how hardship factors are reviewed,counselor_teacher,guidance,complex,{},llm,process
+fit vs affordability tradeoffs,counselor_teacher,guidance,complex,{},llm,advising
+best schools for public sector consulting,advisor,career_outcomes,medium,{},llm,outcomes
+top universities for operations careers,advisor,career_outcomes,medium,{},llm,outcomes
+schools like northwestern for interdisciplinary study,advisor,recommendation,complex,{reference:Northwestern},agentic,needs recommendations
+top industrial engineering programs,advisor,filtered_search,medium,{field:industrial engineering},search,1–2 filters
+elite universities outside major metros,advisor,recommendation,complex,{},agentic,recommendations
+emory vs vanderbilt alumni reach,advisor,comparison,complex,"{schools:[Emory,Vanderbilt]}",comparison_engine,compare outcomes
+how employers view minors vs majors,advisor,guidance,medium,{},llm,career guidance
+schools with strong capstone project culture,advisor,campus_life_fit,llm_needed,{},llm,subjective fit
+regional hiring concentration effects,advisor,guidance,complex,{},llm,conceptual
+program specificity vs brand strength,advisor,guidance,complex,{},llm,advising
+institutional permissions audit,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+school profile publishing workflow,college_b2b,profile_management,medium,{},b2b_portal,B2B
+admissions elasticity modeling,college_b2b,analytics_request,complex,{},analytics,B2B data
+compare interest signals across regions,college_b2b,analytics_request,complex,{},analytics,B2B data
+integration with analytics platforms,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+search demand forecasting,college_b2b,analytics_request,medium,{},analytics,B2B data
+recommendation ranking transparency,college_b2b,guidance,medium,{},llm,B2B logic
+increase engagement from rural applicants,college_b2b,recommendation,complex,{},agentic,B2B strategy
+enterprise account management options,college_b2b,b2b_partnership,short_circuit,{},sales_pipeline,B2B
+historical search interaction exports,college_b2b,profile_management,medium,{},b2b_portal,B2B
+carleton college,high_school_student,exact_lookup,short_circuit,{school:Carleton},typesense_only,simple entity
+uc santa barbara acceptance rate,high_school_student,attribute_lookup,short_circuit,"{school:UCSB,metric:acceptance_rate}",typesense_only,single attribute
+schools in montana,high_school_student,filtered_search,medium,{location:Montana},search,1–2 filters
+affordable colleges with strong geology programs,high_school_student,multi_constraint,complex,"{program:geology,cost:low}",agentic,multi-constraint
+missouri vs arkansas universities,high_school_student,comparison,complex,"{schools:[University of Missouri,University of Arkansas]}",comparison_engine,compare entities
+schools like baylor but non religious,high_school_student,recommendation,complex,"{reference:Baylor,exclude:religious}",agentic,needs recommendations
+do colleges care about senior year rigor,high_school_student,admissions_process,medium,{},llm,admissions evaluation
+how many extracurriculars are enough,high_school_student,admissions_process,medium,{},llm,application strategy
+schools with laid back academic culture,high_school_student,campus_life_fit,llm_needed,{},llm,subjective fit
+best colleges for earth science careers,high_school_student,career_outcomes,medium,{field:earth science},llm,outcomes
+skidmore college,college_student,exact_lookup,short_circuit,{school:Skidmore},typesense_only,simple entity
+university of arizona housing,college_student,attribute_lookup,short_circuit,"{school:University of Arizona,attribute:housing}",typesense_only,single attribute
+schools in the inland empire,college_student,filtered_search,medium,{location:Inland Empire},search,1–2 filters
+mid sized colleges with strong international relations,college_student,multi_constraint,complex,"{program:international relations,size:mid}",agentic,multi-constraint
+oregon vs washington universities,college_student,comparison,complex,"{schools:[University of Oregon,University of Washington]}",comparison_engine,compare entities
+schools like syracuse but smaller classes,college_student,recommendation,complex,"{reference:Syracuse,class_size:smaller}",agentic,needs recommendations
+what does conditional acceptance mean,college_student,admissions_process,medium,{},llm,admissions concept
+how freelance income affects financial aid,college_student,cost_financial_aid,medium,{},llm,cost aid
+schools with strong student journalism,college_student,campus_life_fit,llm_needed,{},llm,subjective fit
+colleges with strong diplomacy career placement,college_student,career_outcomes,medium,{},llm,outcomes
+quinnipiac university,parent,exact_lookup,short_circuit,{school:Quinnipiac},typesense_only,simple entity
+does belmont require on campus housing,parent,attribute_lookup,short_circuit,"{school:Belmont,attribute:housing}",typesense_only,parent framing
+colleges near state borders,parent,filtered_search,medium,{location:state borders},search,1–2 filters
+academically supportive colleges with internship pipelines,parent,multi_constraint,complex,"{academics:supportive,internships:true}",agentic,multi-constraint
+fairfield vs providence college,parent,comparison,complex,"{schools:[Fairfield,Providence College]}",comparison_engine,compare entities
+good colleges for students who change majors often,parent,recommendation,complex,{},agentic,needs recommendations
+how business ownership affects financial aid,parent,cost_financial_aid,medium,{},llm,cost aid
+schools with strong writing centers,parent,campus_life_fit,llm_needed,{},llm,subjective fit
+career outcomes for marketing majors,parent,career_outcomes,medium,{},llm,outcomes
+how to compare net price calculators,parent,admissions_process,medium,{},llm,decision support
+what is academic context index,counselor_teacher,guidance,medium,{},llm,advising
+schools in the upper midwest,counselor_teacher,filtered_search,medium,{location:Upper Midwest},search,1–2 filters
+how to advise undecided students,counselor_teacher,guidance,medium,{},llm,advising
+colleges with flexible gen ed requirements,counselor_teacher,attribute_lookup,medium,{},llm,academic structure
+flagship publics vs selective privates,counselor_teacher,guidance,complex,{},llm,conceptual
+oberlin vs grinnell academics,counselor_teacher,comparison,complex,"{schools:[Oberlin,Grinnell]}",comparison_engine,compare academics
+stem programs with strong retention support,counselor_teacher,recommendation,complex,{program:STEM},agentic,recommendations
+schools that require school reports,counselor_teacher,admissions_process,medium,{},llm,policy
+how admissions committees assess context,counselor_teacher,guidance,complex,{},llm,process
+fit vs outcomes in list building,counselor_teacher,guidance,complex,{},llm,advising
+best schools for health policy careers,advisor,career_outcomes,medium,{},llm,outcomes
+top universities for logistics careers,advisor,career_outcomes,medium,{},llm,outcomes
+schools like usc for media studies,advisor,recommendation,complex,{reference:USC},agentic,needs recommendations
+top transportation engineering programs,advisor,filtered_search,medium,{field:transportation engineering},search,1–2 filters
+elite universities with strong regional influence,advisor,recommendation,complex,{},agentic,recommendations
+texas vs ucla alumni networks,advisor,comparison,complex,"{schools:[University of Texas,UCLA]}",comparison_engine,compare outcomes
+how employers evaluate project portfolios,advisor,guidance,medium,{},llm,career guidance
+schools with strong cooperative education models,advisor,campus_life_fit,llm_needed,{},llm,subjective fit
+regional labor market specialization,advisor,guidance,complex,{},llm,conceptual
+program specialization vs generalist degrees,advisor,guidance,complex,{},llm,advising
+institutional access controls,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+school profile audit history,college_b2b,profile_management,medium,{},b2b_portal,B2B
+admissions volume forecasting,college_b2b,analytics_request,complex,{},analytics,B2B data
+compare early interest signals by channel,college_b2b,analytics_request,complex,{},analytics,B2B data
+integration with student success platforms,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+search demand by academic field,college_b2b,analytics_request,medium,{},analytics,B2B data
+recommendation bias monitoring,college_b2b,guidance,medium,{},llm,B2B logic
+increase transfer applicant visibility,college_b2b,recommendation,complex,{},agentic,B2B strategy
+enterprise data retention policy,college_b2b,b2b_partnership,short_circuit,{},sales_pipeline,B2B
+historical yield trend exports,college_b2b,profile_management,medium,{},b2b_portal,B2B
+macalester college,high_school_student,exact_lookup,short_circuit,{school:Macalester},typesense_only,simple entity
+uc santa cruz acceptance rate,high_school_student,attribute_lookup,short_circuit,"{school:UC Santa Cruz,metric:acceptance_rate}",typesense_only,single attribute
+schools in alaska,high_school_student,filtered_search,medium,{location:Alaska},search,1–2 filters
+affordable colleges with strong marine science programs,high_school_student,multi_constraint,complex,"{program:marine science,cost:low}",agentic,multi-constraint
+tennessee vs kentucky universities,high_school_student,comparison,complex,"{schools:[University of Tennessee,University of Kentucky]}",comparison_engine,compare entities
+schools like smu but public,high_school_student,recommendation,complex,"{reference:SMU,school_type:public}",agentic,needs recommendations
+do colleges weigh course rigor by school,high_school_student,admissions_process,medium,{},llm,admissions evaluation
+how important are recommendation letters,high_school_student,admissions_process,medium,{},llm,application strategy
+schools with strong sense of community,high_school_student,campus_life_fit,llm_needed,{},llm,subjective fit
+best colleges for environmental policy careers,high_school_student,career_outcomes,medium,{field:environmental policy},llm,outcomes
+whitman college,college_student,exact_lookup,short_circuit,{school:Whitman},typesense_only,simple entity
+san jose state housing,college_student,attribute_lookup,short_circuit,"{school:San Jose State,attribute:housing}",typesense_only,single attribute
+schools in the red river valley,college_student,filtered_search,medium,{location:Red River Valley},search,1–2 filters
+mid sized universities with strong information systems,college_student,multi_constraint,complex,"{program:information systems,size:mid}",agentic,multi-constraint
+boise state vs montana state,college_student,comparison,complex,"{schools:[Boise State,Montana State]}",comparison_engine,compare entities
+schools like michigan state but urban,college_student,recommendation,complex,"{reference:Michigan State,setting:urban}",agentic,needs recommendations
+what does deferred enrollment mean,college_student,admissions_process,medium,{},llm,admissions concept
+how stipends affect financial aid,college_student,cost_financial_aid,medium,{},llm,cost aid
+schools with strong undergraduate research culture,college_student,campus_life_fit,llm_needed,{},llm,subjective fit
+colleges with strong science communication placement,college_student,career_outcomes,medium,{},llm,outcomes
+roosevelt university,parent,exact_lookup,short_circuit,{school:Roosevelt University},typesense_only,simple entity
+does gonzaga require freshmen housing,parent,attribute_lookup,short_circuit,"{school:Gonzaga,attribute:housing}",typesense_only,parent framing
+colleges near national parks,parent,filtered_search,medium,{location:national parks},search,1–2 filters
+academically strong colleges with outdoor recreation access,parent,multi_constraint,complex,"{academics:strong,outdoors:true}",agentic,multi-constraint
+stonehill vs bentley,parent,comparison,complex,"{schools:[Stonehill,Bentley]}",comparison_engine,compare entities
+good colleges for students who want flexibility in schedules,parent,recommendation,complex,{},agentic,needs recommendations
+how rental properties affect financial aid,parent,cost_financial_aid,medium,{},llm,cost aid
+schools with strong math tutoring centers,parent,campus_life_fit,llm_needed,{},llm,subjective fit
+career outcomes for sociology majors,parent,career_outcomes,medium,{},llm,outcomes
+how to evaluate loan offers from colleges,parent,admissions_process,medium,{},llm,decision support
+what is academic fit threshold,counselor_teacher,guidance,medium,{},llm,advising
+schools in the intermountain west,counselor_teacher,filtered_search,medium,{location:Intermountain West},search,1–2 filters
+how to advise students considering transfers,counselor_teacher,guidance,medium,{},llm,advising
+colleges with pass fail grading options,counselor_teacher,attribute_lookup,medium,{},llm,academic structure
+regional publics vs national privates,counselor_teacher,guidance,complex,{},llm,conceptual
+lafayette vs bucknell academics,counselor_teacher,comparison,complex,"{schools:[Lafayette,Bucknell]}",comparison_engine,compare academics
+stem programs with strong peer mentoring,counselor_teacher,recommendation,complex,{program:STEM},agentic,recommendations
+schools that allow counselor follow ups,counselor_teacher,admissions_process,medium,{},llm,policy
+how admissions evaluates school context,counselor_teacher,guidance,complex,{},llm,process
+fit vs affordability balance,counselor_teacher,guidance,complex,{},llm,advising
+best schools for urban analytics careers,advisor,career_outcomes,medium,{},llm,outcomes
+top universities for sustainability consulting,advisor,career_outcomes,medium,{},llm,outcomes
+schools like tufts for interdisciplinary focus,advisor,recommendation,complex,{reference:Tufts},agentic,needs recommendations
+top systems engineering programs,advisor,filtered_search,medium,{field:systems engineering},search,1–2 filters
+elite universities with strong teaching focus,advisor,recommendation,complex,{},agentic,recommendations
+unc vs wake forest alumni outcomes,advisor,comparison,complex,"{schools:[UNC,Wake Forest]}",comparison_engine,compare outcomes
+how employers assess interdisciplinary majors,advisor,guidance,medium,{},llm,career guidance
+schools with strong civic engagement programs,advisor,campus_life_fit,llm_needed,{},llm,subjective fit
+regional employment clustering effects,advisor,guidance,complex,{},llm,conceptual
+program alignment vs prestige signaling,advisor,guidance,complex,{},llm,advising
+institutional audit logs access,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+school profile version history,college_b2b,profile_management,medium,{},b2b_portal,B2B
+admissions demand sensitivity modeling,college_b2b,analytics_request,complex,{},analytics,B2B data
+compare inquiry to application funnels,college_b2b,analytics_request,complex,{},analytics,B2B data
+integration with institutional research tools,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+search traffic by region reports,college_b2b,analytics_request,medium,{},analytics,B2B data
+recommendation relevance tuning,college_b2b,guidance,medium,{},llm,B2B logic
+increase awareness among first gen applicants,college_b2b,recommendation,complex,{},agentic,B2B strategy
+enterprise data access controls,college_b2b,b2b_partnership,short_circuit,{},sales_pipeline,B2B
+historical funnel performance exports,college_b2b,profile_management,medium,{},b2b_portal,B2B
+haverford college,high_school_student,exact_lookup,short_circuit,{school:Haverford},typesense_only,simple entity
+uc los angeles acceptance rate,high_school_student,attribute_lookup,short_circuit,"{school:UCLA,metric:acceptance_rate}",typesense_only,single attribute
+schools in south dakota,high_school_student,filtered_search,medium,{location:South Dakota},search,1–2 filters
+affordable colleges with strong meteorology programs,high_school_student,multi_constraint,complex,"{program:meteorology,cost:low}",agentic,multi-constraint
+nebraska vs kansas universities,high_school_student,comparison,complex,"{schools:[University of Nebraska,University of Kansas]}",comparison_engine,compare entities
+schools like pepperdine but less expensive,high_school_student,recommendation,complex,"{reference:Pepperdine,cost:lower}",agentic,needs recommendations
+do colleges value community service hours,high_school_student,admissions_process,medium,{},llm,admissions evaluation
+how early should i take ap exams,high_school_student,admissions_process,medium,{},llm,planning
+schools with strong peer collaboration,high_school_student,campus_life_fit,llm_needed,{},llm,subjective fit
+best colleges for atmospheric science careers,high_school_student,career_outcomes,medium,{field:atmospheric science},llm,outcomes
+knox college,college_student,exact_lookup,short_circuit,{school:Knox College},typesense_only,simple entity
+cal poly pomona housing,college_student,attribute_lookup,short_circuit,"{school:Cal Poly Pomona,attribute:housing}",typesense_only,single attribute
+schools in the fox river valley,college_student,filtered_search,medium,{location:Fox River Valley},search,1–2 filters
+mid sized colleges with strong supply chain programs,college_student,multi_constraint,complex,"{program:supply chain,size:mid}",agentic,multi-constraint
+toledo vs bowling green universities,college_student,comparison,complex,"{schools:[University of Toledo,Bowling Green]}",comparison_engine,compare entities
+schools like auburn but more urban,college_student,recommendation,complex,"{reference:Auburn,setting:urban}",agentic,needs recommendations
+what does rolling decision mean,college_student,admissions_process,medium,{},llm,admissions concept
+how commission income affects financial aid,college_student,cost_financial_aid,medium,{},llm,cost aid
+schools with strong undergraduate teaching focus,college_student,campus_life_fit,llm_needed,{},llm,subjective fit
+colleges with strong science policy placement,college_student,career_outcomes,medium,{},llm,outcomes
+mercy college,parent,exact_lookup,short_circuit,{school:Mercy College},typesense_only,simple entity
+does xavier require on campus housing,parent,attribute_lookup,short_circuit,"{school:Xavier,attribute:housing}",typesense_only,parent framing
+colleges near commuter rail lines,parent,filtered_search,medium,{location:commuter rail},search,1–2 filters
+academically strong colleges with flexible scheduling,parent,multi_constraint,complex,"{academics:strong,flexible_schedule:true}",agentic,multi-constraint
+st lawrence vs union college,parent,comparison,complex,"{schools:[St Lawrence,Union]}",comparison_engine,compare entities
+good colleges for students with changing interests,parent,recommendation,complex,{},agentic,needs recommendations
+how trust funds affect financial aid,parent,cost_financial_aid,medium,{},llm,cost aid
+schools with strong quantitative tutoring,parent,campus_life_fit,llm_needed,{},llm,subjective fit
+career outcomes for international relations majors,parent,career_outcomes,medium,{},llm,outcomes
+how to evaluate work study offers,parent,admissions_process,medium,{},llm,decision support
+what is academic reach definition,counselor_teacher,guidance,medium,{},llm,advising
+schools in the delmarva region,counselor_teacher,filtered_search,medium,{location:Delmarva},search,1–2 filters
+how to advise students on dual enrollment,counselor_teacher,guidance,medium,{},llm,advising
+colleges with narrative evaluations,counselor_teacher,attribute_lookup,medium,{},llm,academic structure
+selective publics vs private lacs,counselor_teacher,guidance,complex,{},llm,conceptual
+vassar vs wesleyan academics,counselor_teacher,comparison,complex,"{schools:[Vassar,Wesleyan]}",comparison_engine,compare academics
+stem programs with strong academic advising,counselor_teacher,recommendation,complex,{program:STEM},agentic,recommendations
+schools that accept additional counselor notes,counselor_teacher,admissions_process,medium,{},llm,policy
+how admissions weighs course availability,counselor_teacher,guidance,complex,{},llm,process
+fit vs opportunity tradeoffs,counselor_teacher,guidance,complex,{},llm,advising
+best schools for science communication careers,advisor,career_outcomes,medium,{},llm,outcomes
+top universities for nonprofit management careers,advisor,career_outcomes,medium,{},llm,outcomes
+schools like brown for open curriculum,advisor,recommendation,complex,{reference:Brown},agentic,needs recommendations
+top environmental engineering programs,advisor,filtered_search,medium,{field:environmental engineering},search,1–2 filters
+elite universities with strong undergraduate focus,advisor,recommendation,complex,{},agentic,recommendations
+virginia vs wisconsin alumni outcomes,advisor,comparison,complex,"{schools:[University of Virginia,University of Wisconsin]}",comparison_engine,compare outcomes
+how employers evaluate interdisciplinary resumes,advisor,guidance,medium,{},llm,career guidance
+schools with strong community engaged learning,advisor,campus_life_fit,llm_needed,{},llm,subjective fit
+regional industry clustering impacts,advisor,guidance,complex,{},llm,conceptual
+program alignment vs institutional prestige,advisor,guidance,complex,{},llm,advising
+institutional access provisioning,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+school profile moderation workflow,college_b2b,profile_management,medium,{},b2b_portal,B2B
+application volume trend modeling,college_b2b,analytics_request,complex,{},analytics,B2B data
+compare inquiry quality across channels,college_b2b,analytics_request,complex,{},analytics,B2B data
+integration with student lifecycle platforms,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+search demand by program area,college_b2b,analytics_request,medium,{},analytics,B2B data
+recommendation calibration settings,college_b2b,guidance,medium,{},llm,B2B logic
+increase engagement from transfer students,college_b2b,recommendation,complex,{},agentic,B2B strategy
+enterprise data governance options,college_b2b,b2b_partnership,short_circuit,{},sales_pipeline,B2B
+historical application behavior exports,college_b2b,profile_management,medium,{},b2b_portal,B2B
+bryn mawr college,high_school_student,exact_lookup,short_circuit,{school:Bryn Mawr},typesense_only,simple entity
+uc san diego acceptance rate,high_school_student,attribute_lookup,short_circuit,"{school:UC San Diego,metric:acceptance_rate}",typesense_only,single attribute
+schools in mississippi,high_school_student,filtered_search,medium,{location:Mississippi},search,1–2 filters
+affordable colleges with strong public policy programs,high_school_student,multi_constraint,complex,"{program:public policy,cost:low}",agentic,multi-constraint
+oklahoma vs texas tech universities,high_school_student,comparison,complex,"{schools:[University of Oklahoma,Texas Tech]}",comparison_engine,compare entities
+schools like tcu but less expensive,high_school_student,recommendation,complex,"{reference:TCU,cost:lower}",agentic,needs recommendations
+do colleges care about class difficulty,high_school_student,admissions_process,medium,{},llm,admissions evaluation
+how many recommendation letters should i submit,high_school_student,admissions_process,medium,{},llm,application strategy
+schools with supportive academic environment,high_school_student,campus_life_fit,llm_needed,{},llm,subjective fit
+best colleges for international affairs careers,high_school_student,career_outcomes,medium,{field:international affairs},llm,outcomes
+bard college,college_student,exact_lookup,short_circuit,{school:Bard},typesense_only,simple entity
+university of houston housing,college_student,attribute_lookup,short_circuit,"{school:University of Houston,attribute:housing}",typesense_only,single attribute
+schools in the rio grande valley,college_student,filtered_search,medium,{location:Rio Grande Valley},search,1–2 filters
+mid sized universities with strong computational biology,college_student,multi_constraint,complex,"{program:computational biology,size:mid}",agentic,multi-constraint
+new mexico vs new mexico state,college_student,comparison,complex,"{schools:[University of New Mexico,New Mexico State]}",comparison_engine,compare entities
+schools like indiana university but smaller campus,college_student,recommendation,complex,"{reference:Indiana University,size:smaller}",agentic,needs recommendations
+what does conditional admission mean,college_student,admissions_process,medium,{},llm,admissions concept
+how fellowship stipends affect aid,college_student,cost_financial_aid,medium,{},llm,cost aid
+schools with strong undergraduate seminar culture,college_student,campus_life_fit,llm_needed,{},llm,subjective fit
+colleges with strong public service placement,college_student,career_outcomes,medium,{},llm,outcomes
+pace university,parent,exact_lookup,short_circuit,{school:Pace University},typesense_only,simple entity
+does st josephs require freshmen housing,parent,attribute_lookup,short_circuit,"{school:St Josephs,attribute:housing}",typesense_only,parent framing
+colleges near international airports,parent,filtered_search,medium,{location:international airports},search,1–2 filters
+academically strong colleges with flexible majors,parent,multi_constraint,complex,"{academics:strong,flexible_majors:true}",agentic,multi-constraint
+suffolk vs pace university,parent,comparison,complex,"{schools:[Suffolk,Pace]}",comparison_engine,compare entities
+good colleges for students exploring multiple careers,parent,recommendation,complex,{},agentic,needs recommendations
+how retirement accounts affect financial aid,parent,cost_financial_aid,medium,{},llm,cost aid
+schools with strong academic advising centers,parent,campus_life_fit,llm_needed,{},llm,subjective fit
+career outcomes for political science majors,parent,career_outcomes,medium,{},llm,outcomes
+how to appeal waitlist decisions,parent,admissions_process,medium,{},llm,decision support
+what is academic match range,counselor_teacher,guidance,medium,{},llm,advising
+schools in the gulf coast region,counselor_teacher,filtered_search,medium,{location:Gulf Coast},search,1–2 filters
+how to advise students on test optional strategy,counselor_teacher,guidance,medium,{},llm,advising
+colleges with block scheduling,counselor_teacher,attribute_lookup,medium,{},llm,academic structure
+large publics vs small privates outcomes,counselor_teacher,guidance,complex,{},llm,conceptual
+middlebury vs colby academics,counselor_teacher,comparison,complex,"{schools:[Middlebury,Colby]}",comparison_engine,compare academics
+stem programs with strong first year support,counselor_teacher,recommendation,complex,{program:STEM},agentic,recommendations
+schools that accept counselor updates,counselor_teacher,admissions_process,medium,{},llm,policy
+how colleges evaluate academic opportunity,counselor_teacher,guidance,complex,{},llm,process
+fit vs cost efficiency in advising,counselor_teacher,guidance,complex,{},llm,advising
+best schools for health economics careers,advisor,career_outcomes,medium,{},llm,outcomes
+top universities for transportation planning careers,advisor,career_outcomes,medium,{},llm,outcomes
+schools like georgetown for public service,advisor,recommendation,complex,{reference:Georgetown},agentic,needs recommendations
+top computational social science programs,advisor,filtered_search,medium,{field:computational social science},search,1–2 filters
+elite universities with strong global focus,advisor,recommendation,complex,{},agentic,recommendations
+penn vs columbia alumni outcomes,advisor,comparison,complex,"{schools:[Penn,Columbia]}",comparison_engine,compare outcomes
+how employers view dual majors,advisor,guidance,medium,{},llm,career guidance
+schools with strong global study programs,advisor,campus_life_fit,llm_needed,{},llm,subjective fit
+regional policy job markets,advisor,guidance,complex,{},llm,conceptual
+program specialization vs flexibility,advisor,guidance,complex,{},llm,advising
+institutional permissions review,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+school profile change logs,college_b2b,profile_management,medium,{},b2b_portal,B2B
+admissions growth scenario modeling,college_b2b,analytics_request,complex,{},analytics,B2B data
+compare applicant intent signals,college_b2b,analytics_request,complex,{},analytics,B2B data
+integration with institutional dashboards,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+search interest by region analysis,college_b2b,analytics_request,medium,{},analytics,B2B data
+recommendation system tuning controls,college_b2b,guidance,medium,{},llm,B2B logic
+increase engagement from international applicants,college_b2b,recommendation,complex,{},agentic,B2B strategy
+enterprise compliance documentation,college_b2b,b2b_partnership,short_circuit,{},sales_pipeline,B2B
+historical search demand exports,college_b2b,profile_management,medium,{},b2b_portal,B2B
+smith college,high_school_student,exact_lookup,short_circuit,{school:Smith},typesense_only,simple entity
+uc santa clara acceptance rate,high_school_student,attribute_lookup,short_circuit,"{school:Santa Clara,metric:acceptance_rate}",typesense_only,single attribute
+schools in louisiana,high_school_student,filtered_search,medium,{location:Louisiana},search,1–2 filters
+affordable colleges with strong nutrition science programs,high_school_student,multi_constraint,complex,"{program:nutrition science,cost:low}",agentic,multi-constraint
+alabama vs mississippi state universities,high_school_student,comparison,complex,"{schools:[University of Alabama,Mississippi State]}",comparison_engine,compare entities
+schools like loyola marymount but cheaper,high_school_student,recommendation,complex,"{reference:Loyola Marymount,cost:lower}",agentic,needs recommendations
+do colleges value internships in high school,high_school_student,admissions_process,medium,{},llm,admissions evaluation
+how many honors classes should i take,high_school_student,admissions_process,medium,{},llm,course planning
+schools with strong student mentorship culture,high_school_student,campus_life_fit,llm_needed,{},llm,subjective fit
+best colleges for food science careers,high_school_student,career_outcomes,medium,{field:food science},llm,outcomes
+st olaf college,college_student,exact_lookup,short_circuit,{school:St Olaf},typesense_only,simple entity
+cal state long beach housing,college_student,attribute_lookup,short_circuit,"{school:CSU Long Beach,attribute:housing}",typesense_only,single attribute
+schools in the central plains,college_student,filtered_search,medium,{location:Central Plains},search,1–2 filters
+mid sized universities with strong human factors engineering,college_student,multi_constraint,complex,"{program:human factors engineering,size:mid}",agentic,multi-constraint
+north dakota vs south dakota universities,college_student,comparison,complex,"{schools:[University of North Dakota,South Dakota State]}",comparison_engine,compare entities
+schools like university of oregon but more academic,college_student,recommendation,complex,"{reference:University of Oregon,academics:stronger}",agentic,needs recommendations
+what is guaranteed transfer admission,college_student,admissions_process,medium,{},llm,admissions concept
+how freelance work affects fafsa,college_student,cost_financial_aid,medium,{},llm,cost aid
+schools with strong interdisciplinary minors,college_student,campus_life_fit,llm_needed,{},llm,subjective fit
+colleges with strong environmental advocacy placement,college_student,career_outcomes,medium,{},llm,outcomes
+adelphi university,parent,exact_lookup,short_circuit,{school:Adelphi},typesense_only,simple entity
+does seattle university require freshmen housing,parent,attribute_lookup,short_circuit,"{school:Seattle University,attribute:housing}",typesense_only,parent framing
+colleges near coastal towns,parent,filtered_search,medium,{location:coastal towns},search,1–2 filters
+academically supportive colleges with strong advising,parent,multi_constraint,complex,"{academics:supportive,advising:true}",agentic,multi-constraint
+elmhurst vs dominican university,parent,comparison,complex,"{schools:[Elmhurst,Dominican University]}",comparison_engine,compare entities
+good colleges for students who want flexibility in pacing,parent,recommendation,complex,{},agentic,needs recommendations
+how pensions affect financial aid,parent,cost_financial_aid,medium,{},llm,cost aid
+schools with strong academic success centers,parent,campus_life_fit,llm_needed,{},llm,subjective fit
+career outcomes for anthropology majors,parent,career_outcomes,medium,{},llm,outcomes
+how to compare scholarship renewal rules,parent,admissions_process,medium,{},llm,decision support
+what is academic match safety range,counselor_teacher,guidance,medium,{},llm,advising
+schools in the coastal southeast,counselor_teacher,filtered_search,medium,{location:Coastal Southeast},search,1–2 filters
+how to advise students applying internationally,counselor_teacher,guidance,medium,{},llm,advising
+colleges with trimester academic calendars,counselor_teacher,attribute_lookup,medium,{},llm,academic structure
+regional flagships vs private research universities,counselor_teacher,guidance,complex,{},llm,conceptual
+hamilton vs colgate academics,counselor_teacher,comparison,complex,"{schools:[Hamilton,Colgate]}",comparison_engine,compare academics
+stem programs with strong bridge programs,counselor_teacher,recommendation,complex,{program:STEM},agentic,recommendations
+schools that accept counselor supplemental letters,counselor_teacher,admissions_process,medium,{},llm,policy
+how admissions committees evaluate rigor differences,counselor_teacher,guidance,complex,{},llm,process
+fit vs opportunity cost discussions,counselor_teacher,guidance,complex,{},llm,advising
+best schools for disaster management careers,advisor,career_outcomes,medium,{},llm,outcomes
+top universities for healthcare administration careers,advisor,career_outcomes,medium,{},llm,outcomes
+schools like johns hopkins for public health,advisor,recommendation,complex,{reference:Johns Hopkins},agentic,needs recommendations
+top biomedical data science programs,advisor,filtered_search,medium,{field:biomedical data science},search,1–2 filters
+elite universities with strong policy impact,advisor,recommendation,complex,{},agentic,recommendations
+emory vs unc alumni outcomes,advisor,comparison,complex,"{schools:[Emory,UNC]}",comparison_engine,compare outcomes
+how employers evaluate certificates vs minors,advisor,guidance,medium,{},llm,career guidance
+schools with strong experiential policy labs,advisor,campus_life_fit,llm_needed,{},llm,subjective fit
+regional public sector hiring trends,advisor,guidance,complex,{},llm,conceptual
+program depth vs cross disciplinary breadth,advisor,guidance,complex,{},llm,advising
+institutional access audit reports,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+school profile approval queues,college_b2b,profile_management,medium,{},b2b_portal,B2B
+enrollment volatility scenario modeling,college_b2b,analytics_request,complex,{},analytics,B2B data
+compare applicant funnel drop off points,college_b2b,analytics_request,complex,{},analytics,B2B data
+integration with admissions operations tools,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+search behavior by academic interest,college_b2b,analytics_request,medium,{},analytics,B2B data
+recommendation weighting configuration,college_b2b,guidance,medium,{},llm,B2B logic
+increase engagement from adult learners,college_b2b,recommendation,complex,{},agentic,B2B strategy
+enterprise data access governance,college_b2b,b2b_partnership,short_circuit,{},sales_pipeline,B2B
+historical inquiry trend exports,college_b2b,profile_management,medium,{},b2b_portal,B2B
+wesleyan university,high_school_student,exact_lookup,short_circuit,{school:Wesleyan},typesense_only,simple entity
+uc davis tuition,high_school_student,attribute_lookup,short_circuit,"{school:UC Davis,attribute:tuition}",typesense_only,single attribute
+schools in west virginia,high_school_student,filtered_search,medium,{location:West Virginia},search,1–2 filters
+affordable colleges with strong occupational therapy programs,high_school_student,multi_constraint,complex,"{program:occupational therapy,cost:low}",agentic,multi-constraint
+kansas vs iowa universities,high_school_student,comparison,complex,"{schools:[University of Kansas,University of Iowa]}",comparison_engine,compare entities
+schools like fordham but less urban,high_school_student,recommendation,complex,"{reference:Fordham,setting:less urban}",agentic,needs recommendations
+do colleges consider course load senior year,high_school_student,admissions_process,medium,{},llm,admissions evaluation
+how many activities should i list on common app,high_school_student,admissions_process,medium,{},llm,application strategy
+schools with strong peer tutoring culture,high_school_student,campus_life_fit,llm_needed,{},llm,subjective fit
+best colleges for rehabilitation science careers,high_school_student,career_outcomes,medium,{field:rehabilitation science},llm,outcomes
+lake forest college,college_student,exact_lookup,short_circuit,{school:Lake Forest},typesense_only,simple entity
+cal state fullerton housing,college_student,attribute_lookup,short_circuit,"{school:CSU Fullerton,attribute:housing}",typesense_only,single attribute
+schools in the arkansas delta,college_student,filtered_search,medium,{location:Arkansas Delta},search,1–2 filters
+mid sized universities with strong bioinformatics programs,college_student,multi_constraint,complex,"{program:bioinformatics,size:mid}",agentic,multi-constraint
+idaho vs montana universities,college_student,comparison,complex,"{schools:[University of Idaho,University of Montana]}",comparison_engine,compare entities
+schools like michigan tech but less cold,college_student,recommendation,complex,"{reference:Michigan Tech,climate:warm}",agentic,needs recommendations
+what does provisional admission mean,college_student,admissions_process,medium,{},llm,admissions concept
+how side businesses affect financial aid,college_student,cost_financial_aid,medium,{},llm,cost aid
+schools with strong interdisciplinary capstones,college_student,campus_life_fit,llm_needed,{},llm,subjective fit
+colleges with strong energy policy placement,college_student,career_outcomes,medium,{},llm,outcomes
+hofstra university,parent,exact_lookup,short_circuit,{school:Hofstra},typesense_only,simple entity
+does regis university require on campus housing,parent,attribute_lookup,short_circuit,"{school:Regis University,attribute:housing}",typesense_only,parent framing
+colleges near medical research centers,parent,filtered_search,medium,{location:medical research centers},search,1–2 filters
+academically strong colleges with strong internships,parent,multi_constraint,complex,"{academics:strong,internships:true}",agentic,multi-constraint
+millersville vs kutztown,parent,comparison,complex,"{schools:[Millersville,Kutztown]}",comparison_engine,compare entities
+good colleges for students who want schedule flexibility,parent,recommendation,complex,{},agentic,needs recommendations
+how disability benefits affect financial aid,parent,cost_financial_aid,medium,{},llm,cost aid
+schools with strong academic coaching programs,parent,campus_life_fit,llm_needed,{},llm,subjective fit
+career outcomes for history majors,parent,career_outcomes,medium,{},llm,outcomes
+how to interpret award letter terminology,parent,admissions_process,medium,{},llm,decision support
+what is academic competitiveness index,counselor_teacher,guidance,medium,{},llm,advising
+schools in the shenandoah valley,counselor_teacher,filtered_search,medium,{location:Shenandoah Valley},search,1–2 filters
+how to advise students on ed vs ea,counselor_teacher,guidance,medium,{},llm,advising
+colleges with modular curriculum design,counselor_teacher,attribute_lookup,medium,{},llm,academic structure
+flagship publics vs regional privates,counselor_teacher,guidance,complex,{},llm,conceptual
+trinity college vs connecticut college academics,counselor_teacher,comparison,complex,"{schools:[Trinity College,Connecticut College]}",comparison_engine,compare academics
+stem programs with strong learning communities,counselor_teacher,recommendation,complex,{program:STEM},agentic,recommendations
+schools that allow counselor updates post submission,counselor_teacher,admissions_process,medium,{},llm,policy
+how admissions weighs academic context,counselor_teacher,guidance,complex,{},llm,process
+fit vs reach balance discussions,counselor_teacher,guidance,complex,{},llm,advising
+best schools for risk management careers,advisor,career_outcomes,medium,{},llm,outcomes
+top universities for public administration careers,advisor,career_outcomes,medium,{},llm,outcomes
+schools like rice for small research focus,advisor,recommendation,complex,{reference:Rice},agentic,needs recommendations
+top environmental policy analytics programs,advisor,filtered_search,medium,{field:environmental policy analytics},search,1–2 filters
+elite universities with strong regional policy impact,advisor,recommendation,complex,{},agentic,recommendations
+wisconsin vs minnesota alumni outcomes,advisor,comparison,complex,"{schools:[University of Wisconsin,University of Minnesota]}",comparison_engine,compare outcomes
+how employers view interdisciplinary certificates,advisor,guidance,medium,{},llm,career guidance
+schools with strong applied research labs,advisor,campus_life_fit,llm_needed,{},llm,subjective fit
+regional government hiring trends,advisor,guidance,complex,{},llm,conceptual
+program depth vs market signaling,advisor,guidance,complex,{},llm,advising
+institutional role based access,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+school profile review queues,college_b2b,profile_management,medium,{},b2b_portal,B2B
+admissions seasonality modeling,college_b2b,analytics_request,complex,{},analytics,B2B data
+compare funnel velocity across terms,college_b2b,analytics_request,complex,{},analytics,B2B data
+integration with admissions scheduling tools,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+search demand by geographic segment,college_b2b,analytics_request,medium,{},analytics,B2B data
+recommendation explainability controls,college_b2b,guidance,medium,{},llm,B2B logic
+increase engagement from rural high schools,college_b2b,recommendation,complex,{},agentic,B2B strategy
+enterprise audit compliance options,college_b2b,b2b_partnership,short_circuit,{},sales_pipeline,B2B
+historical applicant interaction exports,college_b2b,profile_management,medium,{},b2b_portal,B2B
+scripps college,high_school_student,exact_lookup,short_circuit,{school:Scripps},typesense_only,simple entity
+uc irvine tuition,high_school_student,attribute_lookup,short_circuit,"{school:UC Irvine,attribute:tuition}",typesense_only,single attribute
+schools in maine,high_school_student,filtered_search,medium,{location:Maine},search,1–2 filters
+affordable colleges with strong speech pathology programs,high_school_student,multi_constraint,complex,"{program:speech pathology,cost:low}",agentic,multi-constraint
+utah vs colorado universities,high_school_student,comparison,complex,"{schools:[University of Utah,University of Colorado]}",comparison_engine,compare entities
+schools like santa clara but not religious,high_school_student,recommendation,complex,"{reference:Santa Clara,exclude:religious}",agentic,needs recommendations
+do colleges look at grade trends over time,high_school_student,admissions_process,medium,{},llm,admissions evaluation
+how many colleges should i apply early to,high_school_student,admissions_process,medium,{},llm,planning
+schools with strong undergraduate advising culture,high_school_student,campus_life_fit,llm_needed,{},llm,subjective fit
+best colleges for speech therapy careers,high_school_student,career_outcomes,medium,{field:speech therapy},llm,outcomes
+franklin and marshall college,college_student,exact_lookup,short_circuit,{school:Franklin and Marshall},typesense_only,simple entity
+cal poly slo housing,college_student,attribute_lookup,short_circuit,"{school:Cal Poly SLO,attribute:housing}",typesense_only,single attribute
+schools in the lehigh valley,college_student,filtered_search,medium,{location:Lehigh Valley},search,1–2 filters
+mid sized universities with strong user experience design,college_student,multi_constraint,complex,"{program:UX design,size:mid}",agentic,multi-constraint
+north texas vs texas state,college_student,comparison,complex,"{schools:[University of North Texas,Texas State]}",comparison_engine,compare entities
+schools like virginia tech but more urban,college_student,recommendation,complex,"{reference:Virginia Tech,setting:urban}",agentic,needs recommendations
+what does spring admission mean,college_student,admissions_process,medium,{},llm,admissions concept
+how contract work income affects fafsa,college_student,cost_financial_aid,medium,{},llm,cost aid
+schools with strong interdisciplinary studios,college_student,campus_life_fit,llm_needed,{},llm,subjective fit
+colleges with strong civic tech placement,college_student,career_outcomes,medium,{},llm,outcomes
+manhattan college,parent,exact_lookup,short_circuit,{school:Manhattan College},typesense_only,simple entity
+does st edwards require freshmen housing,parent,attribute_lookup,short_circuit,"{school:St Edwards,attribute:housing}",typesense_only,parent framing
+colleges near research parks,parent,filtered_search,medium,{location:research parks},search,1–2 filters
+academically strong colleges with strong mentorship,parent,multi_constraint,complex,"{academics:strong,mentorship:true}",agentic,multi-constraint
+lycoming vs susquehanna,parent,comparison,complex,"{schools:[Lycoming,Susquehanna]}",comparison_engine,compare entities
+good colleges for students who want close faculty access,parent,recommendation,complex,{},agentic,needs recommendations
+how business losses affect financial aid,parent,cost_financial_aid,medium,{},llm,cost aid
+schools with strong academic recovery programs,parent,campus_life_fit,llm_needed,{},llm,subjective fit
+career outcomes for criminology majors,parent,career_outcomes,medium,{},llm,outcomes
+how to interpret cost of attendance breakdowns,parent,admissions_process,medium,{},llm,decision support
+what is academic match framework,counselor_teacher,guidance,medium,{},llm,advising
+schools in the blue ridge region,counselor_teacher,filtered_search,medium,{location:Blue Ridge},search,1–2 filters
+how to advise students on rolling admissions,counselor_teacher,guidance,medium,{},llm,advising
+colleges with competency based education,counselor_teacher,attribute_lookup,medium,{},llm,academic structure
+regional privates vs national publics,counselor_teacher,guidance,complex,{},llm,conceptual
+colby vs bowdoin academics,counselor_teacher,comparison,complex,"{schools:[Colby,Bowdoin]}",comparison_engine,compare academics
+stem programs with strong learning assistants,counselor_teacher,recommendation,complex,{program:STEM},agentic,recommendations
+schools that allow counselor follow up emails,counselor_teacher,admissions_process,medium,{},llm,policy
+how admissions weighs school resources,counselor_teacher,guidance,complex,{},llm,process
+fit vs return on investment discussions,counselor_teacher,guidance,complex,{},llm,advising
+best schools for water resources careers,advisor,career_outcomes,medium,{},llm,outcomes
+top universities for urban planning careers,advisor,career_outcomes,medium,{},llm,outcomes
+schools like ucla for interdisciplinary research,advisor,recommendation,complex,{reference:UCLA},agentic,needs recommendations
+top human centered design programs,advisor,filtered_search,medium,{field:human centered design},search,1–2 filters
+elite universities with strong civic engagement,advisor,recommendation,complex,{},agentic,recommendations
+arizona vs arizona state alumni outcomes,advisor,comparison,complex,"{schools:[University of Arizona,Arizona State]}",comparison_engine,compare outcomes
+how employers value applied research experience,advisor,guidance,medium,{},llm,career guidance
+schools with strong public interest labs,advisor,campus_life_fit,llm_needed,{},llm,subjective fit
+regional infrastructure hiring trends,advisor,guidance,complex,{},llm,conceptual
+program focus vs brand signaling,advisor,guidance,complex,{},llm,advising
+institutional user provisioning,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+school profile publishing permissions,college_b2b,profile_management,medium,{},b2b_portal,B2B
+application demand forecasting models,college_b2b,analytics_request,complex,{},analytics,B2B data
+compare engagement by recruitment channel,college_b2b,analytics_request,complex,{},analytics,B2B data
+integration with institutional data lakes,college_b2b,b2b_partnership,medium,{},sales_pipeline,B2B
+search interest by major analytics,college_b2b,analytics_request,medium,{},analytics,B2B data
+recommendation confidence scoring controls,college_b2b,guidance,medium,{},llm,B2B logic
+increase engagement from community college transfers,college_b2b,recommendation,complex,{},agentic,B2B strategy
+enterprise audit trail configuration,college_b2b,b2b_partnership,short_circuit,{},sales_pipeline,B2B
+historical enrollment trend exports,college_b2b,profile_management,medium,{},b2b_portal,B2B

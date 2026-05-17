@@ -1,7 +1,7 @@
 # Step 3 Validation Package
 
-This package implements the current step-3 workflow only. It does not depend on
-older project code or older phase outputs.
+This folder contains the standalone Step 3 validation work. The runnable Python
+package lives in `step3_validation/`.
 
 ## What it does
 
@@ -12,17 +12,17 @@ older project code or older phase outputs.
 - includes a mock prediction generator so you can show a successful dry run now
 - guards against ambiguous query-based joins and conflicting duplicate benchmark queries
 
-## Package layout
+## Package Layout
 
-- `scripts/create_validation_benchmark.py`
-- `scripts/mock_prediction_export.py`
-- `scripts/evaluate_classifier.py`
-- `scripts/run_demo_pipeline.py`
-- `config/intent_to_route_tier.json`
-- `templates/predictions_template.csv`
-- `fixtures/sample_clean_dataset.csv`
-- `CONTRACT.md`
-- `tests/run_smoke_test.py`
+- `step3_validation/scripts/create_validation_benchmark.py`
+- `step3_validation/scripts/mock_prediction_export.py`
+- `step3_validation/scripts/evaluate_classifier.py`
+- `step3_validation/scripts/run_demo_pipeline.py`
+- `step3_validation/config/intent_to_route_tier.json`
+- `step3_validation/templates/predictions_template.csv`
+- `step3_validation/fixtures/sample_clean_dataset.csv`
+- `step3_validation/CONTRACT.md`
+- `step3_validation/tests/run_smoke_test.py`
 
 ## Required input dataset
 
@@ -60,7 +60,7 @@ The evaluator expects prediction exports with these columns:
 ## Route derivation
 
 The evaluator derives route tier from intent using
-`config/intent_to_route_tier.json`.
+`step3_validation/config/intent_to_route_tier.json`.
 
 Route tiers:
 
@@ -141,9 +141,9 @@ simulated or illustrative, not as real model performance.
 
 The current illustrative sample run is already generated here:
 
-- `reports/sample_fixture_run/benchmark/`
-- `reports/sample_fixture_run/evaluation/`
-- `reports/sample_fixture_run/mock_predictions.csv`
+- `step3_validation/reports/sample_fixture_run/benchmark/`
+- `step3_validation/reports/sample_fixture_run/evaluation/`
+- `step3_validation/reports/sample_fixture_run/mock_predictions.csv`
 
 The sample run includes:
 

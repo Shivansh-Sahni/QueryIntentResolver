@@ -1,0 +1,1111 @@
+Query,Persona,Intent,Complexity,Entities,Route,Notes
+transfer from community college to cs program,College student,multi_constraint,medium,major:computer_science; pathway:transfer,pathway_search,Transfer planning
+best minors with computer science,College student,advisory,llm_needed,major:computer_science; attribute:minor_combinations,llm_advisory,Major pairing
+double major cs and business worth it,College student,advisory,llm_needed,major:computer_science; major:business,llm_advisory,ROI question
+easiest engineering majors,College student,advisory,llm_needed,major:engineering; attribute:difficulty,llm_advisory,Difficulty perception
+engineering internships sophomore year,College student,attribute_lookup,medium,major:engineering; attribute:internships,opportunity_search,Early internships
+best colleges for switching into cs,College student,filtered_search,medium,major:computer_science; attribute:internal_transfer,filter_search,Internal transfer friendly
+cs programs without weed out classes,College student,attribute_lookup,medium,major:computer_science; attribute:no_weeder,filter_search,Anti-weeder focus
+data science vs computer engineering,College student,comparison,medium,major:data_science; major:computer_engineering,compare_majors,Field comparison
+fastest growing tech majors,College student,advisory,llm_needed,field:technology; attribute:job_growth,llm_advisory,Labor trends
+schools with paid undergrad research,College student,multi_constraint,complex,attribute:paid_research; level:undergraduate,filter_search,Funding filter
+affordable out of state engineering schools,Parent,multi_constraint,complex,major:engineering; attribute:out_of_state; attribute:affordable,filter_search,Budget focus
+colleges with strong pre med advising,Parent,attribute_lookup,medium,track:pre_med; attribute:advising,filter_search,Support focus
+safest large public universities,Parent,filtered_search,medium,attribute:public; attribute:large_enrollment; attribute:safety,filter_search,Safety priority
+colleges with high graduation rates,Parent,attribute_lookup,short_circuit,attribute:graduation_rate,metric_lookup,Direct metric
+universities generous with merit aid,Parent,filtered_search,medium,attribute:merit_aid,filter_search,Aid search
+engineering schools with small classes,Parent,multi_constraint,medium,major:engineering; attribute:small_class_size,filter_search,Class size
+colleges with strong mental health support,Parent,attribute_lookup,medium,attribute:mental_health_support,filter_search,Wellness concern
+best roi public universities,Parent,attribute_lookup,medium,attribute:roi; attribute:public,filter_search,ROI ranking
+schools good for first generation students,Parent,filtered_search,medium,attribute:first_gen_support,filter_search,Support programs
+colleges with guaranteed housing,Parent,attribute_lookup,medium,attribute:guaranteed_housing,filter_search,Housing stability
+colleges with strong cs outcomes in our state,Counselor/Teacher,multi_constraint,complex,major:computer_science; attribute:career_outcomes; filter:state,filter_search,Regional filter
+mid tier engineering schools for high gpa students,Counselor/Teacher,filtered_search,medium,major:engineering; attribute:mid_tier,filter_search,Match guidance
+colleges that accept many ap credits,Counselor/Teacher,attribute_lookup,short_circuit,attribute:ap_credit_policy,policy_lookup,Credit transfer
+best colleges for undecided stem students,Counselor/Teacher,advisory,llm_needed,field:stem; attribute:undecided_friendly,llm_recommendation,Flexibility
+cs programs with strong retention,Counselor/Teacher,attribute_lookup,medium,major:computer_science; attribute:retention_rate,filter_search,Persistence metric
+schools with strong career centers,Counselor/Teacher,attribute_lookup,medium,attribute:career_services,filter_search,Employment focus
+universities with bridge programs,Counselor/Teacher,attribute_lookup,medium,attribute:bridge_programs,filter_search,Transition support
+colleges good for introverted students,Counselor/Teacher,emotional_advisory,llm_needed,attribute:student_culture; trait:introvert_friendly,llm_recommendation,Culture fit
+engineering programs with co op,Counselor/Teacher,multi_constraint,medium,major:engineering; attribute:co_op,filter_search,Experiential
+colleges with strong writing across curriculum,Counselor/Teacher,attribute_lookup,medium,attribute:writing_intensive,filter_search,Academic rigor
+universities strong in ai research undergrad,Advisor,multi_constraint,complex,major:computer_science; field:ai; level:undergraduate,filter_search,AI focus
+schools with flexible gen ed for engineers,Advisor,multi_constraint,medium,major:engineering; attribute:flexible_gen_ed,filter_search,Curriculum flexibility
+cs programs supportive of startups,Advisor,attribute_lookup,medium,major:computer_science; attribute:startup_culture,filter_search,Entrepreneurship
+colleges combining cs and neuroscience,Advisor,multi_constraint,complex,major:computer_science; major:neuroscience,filter_search,Interdisciplinary
+best schools for product management path,Advisor,advisory,llm_needed,career:product_management; field:technology,llm_advisory,Career mapping
+universities with industry sponsored capstones,Advisor,attribute_lookup,medium,attribute:industry_partnerships,filter_search,Applied learning
+strong alumni networks in tech hubs,Advisor,attribute_lookup,medium,attribute:alumni_network; field:technology,filter_search,Network strength
+cs schools strong in human computer interaction,Advisor,multi_constraint,complex,major:computer_science; field:hci,filter_search,Subfield filter
+colleges good for triple major flexibility,Advisor,advisory,llm_needed,attribute:academic_flexibility,llm_advisory,Policy nuance
+engineering schools with semester abroad,Advisor,multi_constraint,medium,major:engineering; attribute:study_abroad,filter_search,Global exposure
+benchmark our engineering program against peers,Colleges (B2B),comparison,complex,major:engineering; attribute:peer_institutions,analytics_route,Competitive analysis
+increase cs applicant diversity strategies,Colleges (B2B),advisory,llm_needed,major:computer_science; attribute:diversity,llm_strategy,Enrollment strategy
+improve retention in stem majors,Colleges (B2B),advisory,llm_needed,field:stem; attribute:retention,llm_strategy,Persistence focus
+marketing engineering to female students,Colleges (B2B),advisory,llm_needed,major:engineering; demographic:female_students,llm_strategy,Outreach strategy
+top competitors for our business program,Colleges (B2B),comparison,medium,major:business; attribute:peer_institutions,analytics_route,Competitive intel
+states sending most cs applicants,Colleges (B2B),attribute_lookup,medium,major:computer_science; attribute:geography,analytics_route,Funnel analytics
+analyze yield rate trends,Colleges (B2B),attribute_lookup,medium,attribute:yield_rate,analytics_route,Enrollment metric
+identify growth markets for stem recruitment,Colleges (B2B),advisory,llm_needed,field:stem; attribute:geography,llm_strategy,Market expansion
+compare tuition to peer tech schools,Colleges (B2B),comparison,medium,attribute:tuition; attribute:peer_institutions,analytics_route,Pricing analysis
+highlight differentiators for our cs program,Colleges (B2B),advisory,llm_needed,major:computer_science; attribute:program_strengths,llm_strategy,Branding focus
+engineering schools where undergrads publish before senior year,High school student,multi_constraint,complex,major:engineering;attribute:undergrad_publication,filter_search,Research intensity
+cs programs that don’t require physics 2,High school student,multi_constraint,complex,major:computer_science;policy:curriculum_requirements,filter_search,Curriculum nuance
+colleges where pre med students actually collaborate,High school student,emotional_advisory,llm_needed,track:pre_med;attribute:collaborative_culture,llm_recommendation,Anti-competitive vibe
+universities with startup accelerators open to freshmen,High school student,multi_constraint,complex,attribute:startup_accelerator;level:freshman_access,filter_search,Early access
+schools where cs majors can take film production,High school student,multi_constraint,complex,major:computer_science;major:film,filter_search,Cross-disciplinary
+small engineering colleges with division I sports,High school student,multi_constraint,complex,major:engineering;attribute:small_enrollment;attribute:division_i,filter_search,Size + athletics
+colleges where dorms have private bathrooms guaranteed,High school student,attribute_lookup,medium,attribute:private_bathroom_dorms,filter_search,Housing spec
+universities that allow cs + design double counting credits,High school student,policy_lookup,complex,major:computer_science;major:design;policy:double_counting,policy_lookup,Academic flexibility
+tech schools with required internships for graduation,High school student,multi_constraint,complex,attribute:mandatory_internship;field:technology,filter_search,Experiential
+campuses where 50%+ students study abroad in stem,High school student,multi_constraint,complex,field:stem;metric:study_abroad_rate,analytics_filter,Rare stat
+engineering colleges with no weed out calculus sequence,High school student,attribute_lookup,medium,major:engineering;attribute:no_weeder,filter_search,Retention culture
+colleges where cs lectures are capped under 60 students,High school student,multi_constraint,complex,major:computer_science;attribute:lecture_size_cap,filter_search,Class size control
+universities with on campus venture capital funds,High school student,attribute_lookup,medium,attribute:campus_vc_fund,filter_search,Entrepreneurship
+schools where pre med acceptance rates are published transparently,High school student,attribute_lookup,medium,track:pre_med;attribute:data_transparency,filter_search,Transparency
+colleges offering paid lab research first semester,High school student,multi_constraint,complex,attribute:paid_research;level:first_semester,filter_search,Early funding
+cs departments known for low attrition after freshman year,High school student,attribute_lookup,medium,major:computer_science;metric:attrition_rate,analytics_filter,Persistence
+universities where engineering seniors mentor freshmen formally,High school student,attribute_lookup,medium,major:engineering;attribute:peer_mentorship,filter_search,Mentorship
+schools with project based cs curriculum only,High school student,attribute_lookup,medium,major:computer_science;attribute:project_based,filter_search,Teaching style
+campuses where undergrads can patent inventions,High school student,attribute_lookup,medium,attribute:student_patent_support,filter_search,IP support
+colleges with strong AI ethics coursework built into cs,High school student,multi_constraint,complex,major:computer_science;field:ai_ethics,filter_search,Ethics integration
+transferring from business to engineering internally,College student,pathway,complex,major:business;major:engineering;policy:internal_transfer,pathway_search,Internal switch
+cs degree paths that avoid heavy theory focus,College student,advisory,llm_needed,major:computer_science;attribute:applied_focus,llm_advisory,Curriculum fit
+universities where engineering co ops extend graduation but increase salary,College student,advisory,llm_needed,major:engineering;attribute:co_op;metric:salary,llm_advisory,ROI nuance
+double majoring cs and philosophy workload reality,College student,advisory,llm_needed,major:computer_science;major:philosophy,llm_advisory,Workload concern
+stem majors with lowest burnout rates,College student,advisory,llm_needed,field:stem;attribute:burnout_rate,llm_advisory,Wellness
+schools where engineering curves don’t crush GPAs,College student,emotional_advisory,llm_needed,major:engineering;policy:grading_curve,llm_recommendation,Grade culture
+cs programs prioritizing teamwork grading,College student,attribute_lookup,medium,major:computer_science;attribute:team_based_assessment,filter_search,Collaboration grading
+engineering programs with mandatory humanities minors,College student,attribute_lookup,medium,major:engineering;policy:humanities_requirement,policy_lookup,Breadth requirement
+colleges where switching majors is administratively simple,College student,attribute_lookup,medium,policy:major_switch_flexibility,filter_search,Bureaucracy level
+universities offering remote internships integrated into credits,College student,multi_constraint,complex,attribute:credit_internship;attribute:remote_option,filter_search,Modern format
+affordable cs programs with above average starting salaries,Parent,multi_constraint,complex,major:computer_science;metric:starting_salary;attribute:affordable,analytics_filter,ROI
+engineering schools with 4 year graduation guarantee,Parent,attribute_lookup,medium,major:engineering;policy:grad_guarantee,filter_search,Completion assurance
+colleges with transparent cost breakdown by major,Parent,attribute_lookup,medium,policy:cost_transparency,policy_lookup,Budget clarity
+universities where freshmen cannot be cut from engineering,Parent,attribute_lookup,medium,major:engineering;policy:no_internal_weeding,filter_search,Retention policy
+schools publishing post grad salary by department,Parent,attribute_lookup,medium,metric:department_salary,analytics_filter,Department data
+colleges where internships are coordinated centrally,Parent,attribute_lookup,medium,attribute:centralized_internship_support,filter_search,Structured support
+engineering programs with highest 5 year salary growth,Parent,attribute_lookup,medium,major:engineering;metric:salary_growth,analytics_filter,Long term ROI
+cs degrees with integrated cybersecurity track,Parent,multi_constraint,complex,major:computer_science;major:cybersecurity,filter_search,Specialization
+universities that limit class registration bottlenecks,Parent,attribute_lookup,medium,policy:registration_capacity,filter_search,Access reliability
+colleges where housing costs are capped annually,Parent,attribute_lookup,medium,policy:housing_cost_cap,policy_lookup,Budget predictability
+colleges matching students to research by algorithm,Counselor/Teacher,attribute_lookup,medium,attribute:research_matching_system,filter_search,Structured research
+stem schools with documented mentorship outcomes,Counselor/Teacher,attribute_lookup,medium,field:stem;metric:mentorship_outcomes,analytics_filter,Impact tracking
+universities with bridge math before engineering sequence,Counselor/Teacher,attribute_lookup,medium,major:engineering;policy:math_bridge,filter_search,Academic ramp
+colleges where 1st gen stem students persist at higher rates,Counselor/Teacher,multi_constraint,complex,field:stem;attribute:first_gen_support;metric:persistence_rate,analytics_filter,Equity
+cs departments integrating ethics across 4 years,Counselor/Teacher,attribute_lookup,medium,major:computer_science;field:ethics,filter_search,Vertical curriculum
+engineering colleges with capstone industry sponsorship rate above 70%,Counselor/Teacher,multi_constraint,complex,major:engineering;metric:industry_sponsorship_rate,analytics_filter,Industry depth
+colleges publishing internal major change success rates,Counselor/Teacher,attribute_lookup,medium,policy:major_change_data,analytics_filter,Transparency
+stem programs with dedicated academic coaches,Counselor/Teacher,attribute_lookup,medium,field:stem;attribute:academic_coaching,filter_search,Support
+universities measuring collaborative learning impact,Counselor/Teacher,attribute_lookup,medium,attribute:collaborative_learning_metrics,analytics_filter,Outcomes
+cs schools tracking internship conversion to full time,Counselor/Teacher,attribute_lookup,medium,major:computer_science;metric:internship_conversion_rate,analytics_filter,Pipeline strength
+benchmarking our engineering admit yield against peer tech schools,Colleges (B2B),comparison,complex,major:engineering;metric:yield_rate;attribute:peer_institutions,analytics_route,Competitive benchmarking
+which regions underperform in our cs applicant funnel,Colleges (B2B),attribute_lookup,complex,major:computer_science;metric:applicant_funnel;attribute:region,analytics_route,Recruitment gaps
+modeling financial aid elasticity for stem applicants,Colleges (B2B),advisory,complex,field:stem;metric:financial_aid_elasticity,llm_strategy,Pricing strategy
+retention impact of removing calculus weeder,Colleges (B2B),advisory,complex,major:engineering;policy:weeder_course,llm_strategy,Academic reform
+competitor analysis of co op participation rates,Colleges (B2B),comparison,complex,attribute:co_op;attribute:peer_institutions,analytics_route,Program strength
+predicting cs enrollment growth over 5 years,Colleges (B2B),advisory,complex,major:computer_science;metric:enrollment_projection,llm_strategy,Forecasting
+impact of startup incubator on engineering yield,Colleges (B2B),advisory,complex,major:engineering;attribute:startup_incubator;metric:yield_rate,analytics_route,Enrollment lever
+mapping internship density by metro proximity,Colleges (B2B),attribute_lookup,complex,attribute:internship_density;attribute:metro_proximity,analytics_route,Geographic factor
+identifying high ROI messaging for first gen stem,Colleges (B2B),advisory,complex,field:stem;attribute:first_gen;metric:roi,llm_strategy,Marketing
+analyzing dorm satisfaction impact on cs retention,Colleges (B2B),advisory,complex,major:computer_science;metric:dorm_satisfaction;metric:retention_rate,analytics_route,Housing effect
+mechanical engineering programs strong in robotics but not huge lecture halls,High school student,multi_constraint,high,major:mechanical_engineering; attribute:robotics_focus; attribute:small_class_size,filtered_search,Academic + environment constraint
+cs programs with strong peer tutoring culture,High school student,attribute_lookup,medium,major:computer_science; attribute:peer_tutoring,filtered_search,Support culture focus
+colleges where engineers still study abroad easily,High school student,multi_constraint,high,major:engineering; attribute:study_abroad_friendly,filtered_search,Flexibility for engineers
+engineering schools with project based freshman year,High school student,attribute_lookup,medium,major:engineering; attribute:project_based_learning,filtered_search,Curriculum structure
+tech focused colleges with strong art scene,High school student,multi_constraint,high,attribute:technology_focus; attribute:arts_culture,llm_recommendation,Culture blend
+cs schools where internships start freshman year,High school student,attribute_lookup,medium,major:computer_science; attribute:early_internships,filtered_search,Early career exposure
+engineering colleges with strong maker spaces,High school student,attribute_lookup,medium,major:engineering; attribute:makerspace,filtered_search,Facilities driven
+mid sized universities where cs students collaborate not compete,High school student,emotional_advisory,high,major:computer_science; attribute:collaborative_culture; attribute:medium_enrollment,llm_recommendation,Culture nuance
+engineering programs with strong alumni mentorship networks,High school student,attribute_lookup,medium,major:engineering; attribute:alumni_network,filtered_search,Networking focus
+cs colleges with low dropout rates,High school student,attribute_lookup,medium,major:computer_science; attribute:retention_rate,filtered_search,Completion concern
+engineering programs that integrate business courses,High school student,attribute_lookup,medium,major:engineering; attribute:business_integration,filtered_search,Interdisciplinary
+cs schools strong in cybersecurity but not military heavy,High school student,multi_constraint,high,major:computer_science; specialization:cybersecurity; attribute:non_military_culture,llm_recommendation,Cultural filter
+engineering colleges with active undergraduate research funding,High school student,attribute_lookup,medium,major:engineering; attribute:undergrad_research_funding,filtered_search,Research opportunity
+cs departments known for ethical ai focus,High school student,attribute_lookup,medium,major:computer_science; specialization:ai_ethics,filtered_search,Thematic emphasis
+engineering schools with strong mental health support,High school student,multi_constraint,high,major:engineering; attribute:mental_health_resources,filtered_search,Wellness concern
+cs programs where students build startups during undergrad,High school student,attribute_lookup,medium,major:computer_science; attribute:entrepreneurship_support,filtered_search,Startup pipeline
+engineering colleges with hands on labs first semester,High school student,attribute_lookup,medium,major:engineering; attribute:early_lab_exposure,filtered_search,Experiential learning
+schools combining environmental engineering and policy,High school student,multi_constraint,high,major:environmental_engineering; attribute:policy_integration,filtered_search,Dual interest
+cs programs with strong women in tech communities,High school student,attribute_lookup,medium,major:computer_science; attribute:women_in_tech_support,filtered_search,Inclusion focus
+engineering schools with co op built into curriculum,High school student,attribute_lookup,medium,major:engineering; attribute:co_op_program,filtered_search,Structured work model
+is switching from biology to biomedical engineering risky junior year,College student,advisory,high,major:biology; major:biomedical_engineering,llm_advisory,Late major pivot
+cs double major with philosophy worth extra semester,College student,advisory,high,major:computer_science; major:philosophy,llm_advisory,Interdisciplinary ROI
+engineering internships vs research for grad school prep,College student,comparison,medium,major:engineering; attribute:internships; attribute:research_experience,llm_advisory,Career trajectory
+dropping minor to graduate early in engineering,College student,advisory,medium,major:engineering; attribute:minor,llm_advisory,Timeline tradeoff
+cs major burnout what alternatives in tech,College student,advisory,high,major:computer_science; field:technology,llm_advisory,Career redirection
+staying fifth year for masters in engineering worth it,College student,advisory,high,major:engineering; degree:masters,llm_advisory,Accelerated masters
+engineering gpa 2.9 career options,College student,advisory,medium,major:engineering; attribute:gpa_2_9,llm_advisory,GPA anxiety
+cs internship unpaid vs paid startup choice,College student,comparison,medium,major:computer_science; attribute:internship_type,llm_advisory,Compensation tradeoff
+engineering to consulting pathway realistic,College student,advisory,medium,major:engineering; career:consulting,llm_advisory,Industry pivot
+cs major add statistics minor helpful,College student,advisory,medium,major:computer_science; major:statistics,llm_advisory,Skill complement
+should my kid choose engineering at smaller liberal arts college,Parent,advisory,high,major:engineering; attribute:liberal_arts_college,llm_advisory,Fit question
+worried about daughter in male dominated engineering program,Parent,emotional_advisory,high,major:engineering; attribute:gender_balance,llm_advisory,Inclusion concern
+comparing cs salary outcomes across regions for my son,Parent,attribute_lookup,medium,major:computer_science; attribute:regional_salary,filtered_search,Regional ROI
+engineering degree with heavy loans responsible decision,Parent,advisory,high,major:engineering; attribute:student_loans,llm_advisory,Financial caution
+best ways to evaluate campus safety for tech schools,Parent,advisory,medium,attribute:campus_safety; attribute:technology_focus,llm_advisory,Due diligence
+engineering programs with strong advising support,Parent,attribute_lookup,medium,major:engineering; attribute:academic_advising,filtered_search,Support systems
+cs schools with strong job placement transparency,Parent,attribute_lookup,medium,major:computer_science; attribute:career_outcomes_transparency,filtered_search,Data reliability
+engineering colleges balancing rigor and wellbeing,Parent,emotional_advisory,high,major:engineering; attribute:student_wellbeing,llm_recommendation,Culture balance
+tech focused universities with strong housing systems,Parent,attribute_lookup,medium,attribute:technology_focus; attribute:campus_housing,filtered_search,Residential life
+cs major realistic earnings five years out,Parent,attribute_lookup,medium,major:computer_science; attribute:five_year_salary,filtered_search,Long term ROI
+how to guide student interested in both aerospace and physics,Counselor,advisory,high,major:aerospace_engineering; major:physics,llm_advisory,Overlapping interests
+supporting first gen student applying to engineering schools,Counselor,emotional_advisory,high,major:engineering; attribute:first_generation,llm_advisory,Access support
+helping student compare co op vs traditional engineering path,Counselor,comparison,medium,major:engineering; attribute:co_op_program,llm_advisory,Program structure
+advising student concerned about cs oversaturation,Counselor,advisory,medium,major:computer_science; attribute:job_market,llm_advisory,Labor trend context
+best metrics to evaluate undergraduate engineering strength,Counselor,advisory,medium,major:engineering; attribute:program_quality_metrics,llm_advisory,Evaluation criteria
+student wants tech career but dislikes coding,Counselor,advisory,high,field:technology; major:computer_science,llm_advisory,Alternative pathways
+balancing rigor and extracurricular load in engineering,Counselor,advisory,medium,major:engineering; attribute:workload_balance,llm_advisory,Time management
+student considering transfer into cs sophomore year,Counselor,advisory,medium,major:computer_science; attribute:transfer_process,llm_advisory,Transfer feasibility
+guiding athlete interested in mechanical engineering,Counselor,advisory,medium,major:mechanical_engineering; attribute:student_athlete,llm_advisory,Dual commitment
+advising on gap year before starting engineering,Counselor,advisory,medium,major:engineering; attribute:gap_year,llm_advisory,Timing choice
+improving yield among admitted computer science students,College admissions officer,strategy,high,major:computer_science; attribute:yield_rate,llm_strategy,Enrollment management
+messaging collaborative culture in engineering marketing,College admissions officer,strategy,medium,major:engineering; attribute:collaborative_culture,llm_strategy,Branding
+increasing diversity in tech applicant pool,College admissions officer,strategy,high,field:technology; attribute:diversity,llm_strategy,Recruitment strategy
+reducing melt for engineering admits,College admissions officer,strategy,medium,major:engineering; attribute:summer_melt,llm_strategy,Retention pre enrollment
+showcasing undergraduate research in cs outreach,College admissions officer,strategy,medium,major:computer_science; attribute:undergrad_research,llm_strategy,Differentiation
+highlighting career outcomes without rankings emphasis,College admissions officer,strategy,medium,attribute:career_outcomes; attribute:rankings,llm_strategy,Messaging nuance
+communicating rigor without scaring applicants,College admissions officer,strategy,high,attribute:academic_rigor,llm_strategy,Tone balance
+promoting co op engineering model nationally,College admissions officer,strategy,medium,major:engineering; attribute:co_op_program,llm_strategy,Expansion
+attracting startup minded cs students,College admissions officer,strategy,medium,major:computer_science; attribute:entrepreneurship,llm_strategy,Target persona
+repositioning regional tech university brand perception,College admissions officer,strategy,high,attribute:technology_focus; attribute:brand_perception,llm_strategy,Market positioning
+best engineering schools for introverted students,High school student,emotional_advisory,high,major:engineering; attribute:student_personality_fit,llm_recommendation,Personality fit
+cs programs where grading is not curved harshly,High school student,attribute_lookup,medium,major:computer_science; attribute:grading_policy,filtered_search,Academic climate
+engineering colleges with strong sustainability focus,High school student,attribute_lookup,medium,major:engineering; attribute:sustainability,filtered_search,Thematic interest
+tech universities with vibrant debate clubs,High school student,multi_constraint,high,attribute:technology_focus; attribute:debate_club,llm_recommendation,Academic + extracurricular
+engineering programs with strong patent output,High school student,attribute_lookup,medium,major:engineering; attribute:patent_activity,filtered_search,Innovation metric
+cs schools emphasizing human computer interaction,High school student,attribute_lookup,medium,major:computer_science; specialization:hci,filtered_search,Specialty interest
+engineering colleges offering design build competitions,High school student,attribute_lookup,medium,major:engineering; attribute:design_build,filtered_search,Competition culture
+cs departments with strong teaching reputation,High school student,attribute_lookup,medium,major:computer_science; attribute:teaching_quality,filtered_search,Instruction focus
+engineering programs supportive of interdisciplinary minors,High school student,attribute_lookup,medium,major:engineering; attribute:minor_flexibility,filtered_search,Flexibility
+tech schools with strong alumni startup exits,High school student,attribute_lookup,medium,attribute:technology_focus; attribute:startup_exits,filtered_search,Entrepreneurial metric
+engineering major with interest in public service pathways,College student,advisory,high,major:engineering; career:public_service,llm_advisory,Nontraditional path
+cs student debating grad school vs industry immediately,College student,comparison,medium,major:computer_science; degree:graduate_school,llm_advisory,Career fork
+engineering student considering product management career,College student,advisory,medium,major:engineering; career:product_management,llm_advisory,Role pivot
+cs major feeling behind peers in coding interviews,College student,emotional_advisory,high,major:computer_science; attribute:technical_interviews,llm_advisory,Confidence issue
+biomedical engineering vs pre med long term flexibility,College student,comparison,medium,major:biomedical_engineering; track:pre_med,llm_advisory,Career optionality
+mechanical engineering to renewable energy transition,College student,advisory,medium,major:mechanical_engineering; field:renewable_energy,llm_advisory,Sector shift
+cs major building portfolio without internships,College student,advisory,medium,major:computer_science; attribute:portfolio,llm_advisory,Experience gap
+engineering honors program worth extra workload,College student,advisory,medium,major:engineering; attribute:honors_program,llm_advisory,Rigor tradeoff
+cs major worried about ai replacing entry level jobs,College student,advisory,high,major:computer_science; field:artificial_intelligence,llm_advisory,Automation anxiety
+engineering student balancing startup and coursework,College student,advisory,medium,major:engineering; attribute:entrepreneurship,llm_advisory,Time tradeoff
+mechancial engeneering schools good for robotics but not cutthroat,High school student,multi_constraint,high,major:mechanical_engineering; attribute:robotics_focus; attribute:collaborative_culture,llm_recommendation,Academic + culture
+cs collages w strong peer mentroing not super compeditive,High school student,multi_constraint,high,major:computer_science; attribute:peer_mentoring; attribute:low_competitiveness,llm_recommendation,Supportive CS
+engineering programs w hands on frshman projects,High school student,attribute_lookup,medium,major:engineering; attribute:project_based_learning,filtered_search,Early projects
+tech univrsities w good music scene,High school student,multi_constraint,medium,attribute:technology_focus; attribute:music_scene,llm_recommendation,Culture blend
+cs schools strong in cyber secuirty but chill vibe,High school student,multi_constraint,high,major:computer_science; specialization:cybersecurity; attribute:relaxed_culture,llm_recommendation,Specialty + vibe
+engineering colleges w small class sze first year,High school student,attribute_lookup,medium,major:engineering; attribute:small_class_size,filtered_search,Class size
+enviromental engeneering programs w policy focus,High school student,multi_constraint,high,major:environmental_engineering; attribute:policy_integration,filtered_search,Dual focus
+cs departments known for good teaching not just research,High school student,attribute_lookup,medium,major:computer_science; attribute:teaching_quality,filtered_search,Instruction focus
+engineering schools w strong alum mentorship,High school student,attribute_lookup,medium,major:engineering; attribute:alumni_network,filtered_search,Networking
+tech schools underrated but good job placment,High school student,attribute_lookup,medium,attribute:technology_focus; attribute:career_outcomes,filtered_search,Outcome driven
+swtiching from chem eng to comp sci sophmore year bad idea,College student,advisory,high,major:chemical_engineering; major:computer_science,llm_advisory,Major pivot
+cs major gpa 2.8 internship chances realstic,College student,advisory,medium,major:computer_science; attribute:gpa_2_8; attribute:internships,llm_advisory,GPA concern
+engeneering 5th year masters worth extra tution,College student,advisory,high,major:engineering; degree:masters,llm_advisory,Cost tradeoff
+comp sci double major econ too much workload,College student,advisory,medium,major:computer_science; major:economics,llm_advisory,Workload balance
+mech eng to product mangement path possible,College student,advisory,medium,major:mechanical_engineering; career:product_management,llm_advisory,Career shift
+cs burnout what other tech carrers exist,College student,advisory,high,major:computer_science; field:technology,llm_advisory,Alternatives
+biomedical eng vs premed flexiblity long term,College student,comparison,medium,major:biomedical_engineering; track:pre_med,llm_advisory,Career choice
+engeneering honors progarm worth stress,College student,advisory,medium,major:engineering; attribute:honors_program,llm_advisory,Rigor concern
+cs internships unpaid startup or paid corp,College student,comparison,medium,major:computer_science; attribute:internship_type,llm_advisory,Compensation
+civil engeneering jobs stable in 2030,College student,advisory,high,major:civil_engineering; attribute:job_stability,llm_advisory,Future outlook
+is engeneering degree too stressfull for my son,Parent,emotional_advisory,high,major:engineering; attribute:academic_rigor,llm_advisory,Parent concern
+cs salary 5 yrs out realistc numbers,Parent,attribute_lookup,medium,major:computer_science; attribute:five_year_salary,filtered_search,ROI
+tech focused univrsity safe dorms,Parent,multi_constraint,medium,attribute:technology_focus; attribute:campus_housing; attribute:campus_safety,filtered_search,Safety + housing
+mech eng programs good for introverted kids,Parent,emotional_advisory,high,major:mechanical_engineering; attribute:personality_fit,llm_recommendation,Fit focus
+engineering school w good advising suport,Parent,attribute_lookup,medium,major:engineering; attribute:academic_advising,filtered_search,Support
+cs oversaturted job market worry,Parent,advisory,high,major:computer_science; attribute:job_market,llm_advisory,Market anxiety
+engineering co op vs traditonal path diffrence,Parent,comparison,medium,major:engineering; attribute:co_op_program,llm_advisory,Program structure
+daughter in male domnated eng field safe,Parent,emotional_advisory,high,major:engineering; attribute:gender_balance,llm_advisory,Inclusion
+tech colleges w strong mental health resorces,Parent,attribute_lookup,medium,attribute:technology_focus; attribute:mental_health_resources,filtered_search,Wellness
+cs grad school worth more debt,Parent,advisory,high,major:computer_science; degree:graduate_school,llm_advisory,Debt decision
+advising student intrested aerospace + physics overlap,Counselor,advisory,high,major:aerospace_engineering; major:physics,llm_advisory,Dual interest
+first gen studnt applying engineering help,Counselor,emotional_advisory,high,major:engineering; attribute:first_generation,llm_advisory,Access
+cs student worried ai replace entry lvl jobs,Counselor,advisory,high,major:computer_science; field:artificial_intelligence,llm_advisory,Automation
+engeneering athlete workload managment,Counselor,advisory,medium,major:engineering; attribute:student_athlete,llm_advisory,Balance
+transfer into comp sci soph year feasable,Counselor,advisory,medium,major:computer_science; attribute:transfer_process,llm_advisory,Transfer
+gap yr before engineering smart move,Counselor,advisory,medium,major:engineering; attribute:gap_year,llm_advisory,Timing
+cs + philosphy combo guidance,Counselor,advisory,medium,major:computer_science; major:philosophy,llm_advisory,Interdisciplinary
+engineering student overloaded extracuriculars,Counselor,advisory,medium,major:engineering; attribute:workload_balance,llm_advisory,Time mgmt
+mech eng interested renewable enegy pathway,Counselor,advisory,medium,major:mechanical_engineering; field:renewable_energy,llm_advisory,Sector
+biomedical eng student unsure med school,Counselor,advisory,medium,major:biomedical_engineering; track:pre_med,llm_advisory,Direction
+improve yield comp sci admits strategy,College admissions officer,strategy,high,major:computer_science; attribute:yield_rate,llm_strategy,Enrollment
+marketing collaborative eng culture better,College admissions officer,strategy,medium,major:engineering; attribute:collaborative_culture,llm_strategy,Branding
+reduce summer melt engeneering students,College admissions officer,strategy,medium,major:engineering; attribute:summer_melt,llm_strategy,Retention
+attract more women to tech aplicants,College admissions officer,strategy,high,field:technology; attribute:gender_diversity,llm_strategy,Diversity
+showcase undergrad reserch cs outreach,College admissions officer,strategy,medium,major:computer_science; attribute:undergrad_research,llm_strategy,Differentiation
+communicate rigor w out scaring aplicants,College admissions officer,strategy,high,attribute:academic_rigor,llm_strategy,Tone
+highlight career outcomes not rankings,College admissions officer,strategy,medium,attribute:career_outcomes; attribute:rankings,llm_strategy,Messaging
+reposition regional tech brand percepetion,College admissions officer,strategy,high,attribute:technology_focus; attribute:brand_perception,llm_strategy,Branding
+expand co op eng model nationlly,College admissions officer,strategy,medium,major:engineering; attribute:co_op_program,llm_strategy,Expansion
+attract startup minded cs studnts,College admissions officer,strategy,medium,major:computer_science; attribute:entrepreneurship,llm_strategy,Persona targeting
+computer engeneering vs electrical for robotics,High school student,comparison,medium,major:computer_engineering; major:electrical_engineering; attribute:robotics_focus,llm_advisory,Major compare
+data sci vs comp sci better flexiblity,High school student,comparison,medium,major:data_science; major:computer_science,llm_advisory,Optionality
+engeneering schools w strong desgin compettions,High school student,attribute_lookup,medium,major:engineering; attribute:design_competitions,filtered_search,Competition
+cs colleges w strong hackathon culture,High school student,attribute_lookup,medium,major:computer_science; attribute:hackathons,filtered_search,Student life
+tech universties w good debate + coding mix,High school student,multi_constraint,high,attribute:technology_focus; attribute:debate_club; major:computer_science,llm_recommendation,Mixed interest
+eng programs w sustainablity focus strong,High school student,attribute_lookup,medium,major:engineering; attribute:sustainability,filtered_search,Theme
+cs dept known for ethical ai emphsis,High school student,attribute_lookup,medium,major:computer_science; specialization:ai_ethics,filtered_search,Specialty
+engineering collages w early lab expereince,High school student,attribute_lookup,medium,major:engineering; attribute:early_lab_exposure,filtered_search,Labs
+tech schools w strong alum startup exits,High school student,attribute_lookup,medium,attribute:technology_focus; attribute:startup_exits,filtered_search,Entrepreneurship
+mech eng programs w flexible minors,High school student,attribute_lookup,medium,major:mechanical_engineering; attribute:minor_flexibility,filtered_search,Flexibility
+cs major feel behind coding interveiws,College student,emotional_advisory,high,major:computer_science; attribute:technical_interviews,llm_advisory,Confidence
+engeneering student balancing startup + clasess,College student,advisory,medium,major:engineering; attribute:entrepreneurship,llm_advisory,Time
+civil eng vs enviro eng long term demnd,College student,comparison,medium,major:civil_engineering; major:environmental_engineering,llm_advisory,Market
+cs student build portfollio no internships,College student,advisory,medium,major:computer_science; attribute:portfolio,llm_advisory,Experience gap
+mech eng to aerospace masters smart,College student,advisory,medium,major:mechanical_engineering; major:aerospace_engineering,llm_advisory,Grad path
+comp sci + stats minor helpful job markeet,College student,advisory,medium,major:computer_science; major:statistics,llm_advisory,Skill pairing
+engineering gpa 3.0 grad school chances,College student,advisory,medium,major:engineering; attribute:gpa_3_0; degree:graduate_school,llm_advisory,Admissions concern
+cs major remote jobs realstic first year,College student,advisory,medium,major:computer_science; attribute:remote_work,llm_advisory,Work model
+chemical engeneering demand future outlook,College student,advisory,high,major:chemical_engineering; attribute:job_market,llm_advisory,Trend
+software eng vs comp sci degree diffrence,College student,comparison,medium,major:software_engineering; major:computer_science,llm_advisory,Clarification
+is engeneering too hard for avg student,Parent,emotional_advisory,high,major:engineering; attribute:academic_difficulty,llm_advisory,Parent worry
+cs degree oversaturtion myth or real,Parent,advisory,high,major:computer_science; attribute:job_market,llm_advisory,Market myth
+tech school campus safety stats reliabe,Parent,attribute_lookup,medium,attribute:technology_focus; attribute:campus_safety,filtered_search,Data check
+engeneering w heavy loans responsble,Parent,advisory,high,major:engineering; attribute:student_loans,llm_advisory,Financial
+cs career longetivity in ai era,Parent,advisory,high,major:computer_science; field:artificial_intelligence,llm_advisory,Longevity
+mech eng schools supportive enviroment,Parent,emotional_advisory,high,major:mechanical_engineering; attribute:supportive_culture,llm_recommendation,Fit
+eng programs w strong internship pipelines,Parent,attribute_lookup,medium,major:engineering; attribute:internship_pipeline,filtered_search,Outcomes
+comp sci grad school roi calcualtion,Parent,advisory,high,major:computer_science; degree:graduate_school; attribute:roi,llm_advisory,Cost benefit
+tech focused collages w stable housing,Parent,attribute_lookup,medium,attribute:technology_focus; attribute:campus_housing,filtered_search,Stability
+enviro engeneering careers stable,Parent,advisory,medium,major:environmental_engineering; attribute:job_stability,llm_advisory,Outlook
+mech eng good $?,High school student,advisory,medium,major:mechanical_engineering; attribute:roi,llm_advisory,Salary intent
+cs 2 compettive now?,High school student,advisory,medium,major:computer_science; attribute:competitiveness,llm_advisory,Market concern
+eng small skl not city,High school student,multi_constraint,high,major:engineering; attribute:small_enrollment; attribute:non_urban,filtered_search,Size + location
+tech but artsy vibe?,High school student,multi_constraint,high,attribute:technology_focus; attribute:arts_culture,llm_recommendation,Culture blend
+robotics major or nah,High school student,advisory,medium,field:robotics; major:engineering,llm_advisory,Major decision
+cs no calc heavy,High school student,multi_constraint,high,major:computer_science; attribute:low_math_intensity,llm_recommendation,Curriculum concern
+eng not weed out school,High school student,attribute_lookup,high,major:engineering; attribute:low_attrition,llm_recommendation,Retention focus
+cybersec vs cs diff,High school student,comparison,medium,specialization:cybersecurity; major:computer_science,llm_advisory,Clarification
+eng w study abrod ez,High school student,attribute_lookup,high,major:engineering; attribute:study_abroad_friendly,filtered_search,Flexibility
+tech univ safe dorms?,High school student,multi_constraint,medium,attribute:technology_focus; attribute:campus_housing; attribute:campus_safety,filtered_search,Safety concern
+switch bio 2 biomed eng jr yr dumb?,College student,advisory,high,major:biology; major:biomedical_engineering,llm_advisory,Late switch
+cs gpa 2.7 screwed?,College student,emotional_advisory,high,major:computer_science; attribute:gpa_2_7,llm_advisory,Anxiety
+eng 5yr ms worth??,College student,advisory,high,major:engineering; degree:masters,llm_advisory,Accelerated masters
+mech eng remote jobs real,College student,advisory,medium,major:mechanical_engineering; attribute:remote_work,llm_advisory,Work model
+cs no internship bad,College student,emotional_advisory,medium,major:computer_science; attribute:internships,llm_advisory,Experience gap
+eng to consulitng how,College student,advisory,medium,major:engineering; career:consulting,llm_advisory,Career pivot
+comp sci oversat??,College student,advisory,high,major:computer_science; attribute:job_market,llm_advisory,Market fear
+civil eng future ok,College student,advisory,medium,major:civil_engineering; attribute:job_stability,llm_advisory,Outlook
+stats minor w cs help,College student,advisory,medium,major:computer_science; major:statistics,llm_advisory,Skill pairing
+eng burnout alt path,College student,advisory,high,major:engineering,llm_advisory,Redirection
+son eng too stress?,Parent,emotional_advisory,high,major:engineering; attribute:academic_rigor,llm_advisory,Concern
+cs pay 5yrs out?,Parent,attribute_lookup,medium,major:computer_science; attribute:five_year_salary,filtered_search,ROI
+tech skl safe area,Parent,multi_constraint,medium,attribute:technology_focus; attribute:campus_safety,filtered_search,Safety
+mech eng jobs stable,Parent,advisory,medium,major:mechanical_engineering; attribute:job_stability,llm_advisory,Stability
+eng loans dumb idea?,Parent,advisory,high,major:engineering; attribute:student_loans,llm_advisory,Debt
+cs ai replace kids?,Parent,advisory,high,major:computer_science; field:artificial_intelligence,llm_advisory,Automation worry
+eng co op better?,Parent,comparison,medium,major:engineering; attribute:co_op_program,llm_advisory,Structure
+daughter eng male dom ok?,Parent,emotional_advisory,high,major:engineering; attribute:gender_balance,llm_advisory,Inclusion
+tech univ good housing,Parent,attribute_lookup,medium,attribute:technology_focus; attribute:campus_housing,filtered_search,Residential
+cs grad skl debt worth,Parent,advisory,high,major:computer_science; degree:graduate_school,llm_advisory,Cost
+student aero + phys lost,Counselor,emotional_advisory,high,major:aerospace_engineering; major:physics,llm_advisory,Dual path
+first gen eng apps help,Counselor,advisory,high,major:engineering; attribute:first_generation,llm_advisory,Access
+cs ai fear talk pts,Counselor,advisory,high,major:computer_science; field:artificial_intelligence,llm_advisory,Talking points
+eng athlete sched mess,Counselor,advisory,medium,major:engineering; attribute:student_athlete,llm_advisory,Time mgmt
+comp sci transfer odds,Counselor,advisory,medium,major:computer_science; attribute:transfer_process,llm_advisory,Transfer
+gap yr b4 eng smart?,Counselor,advisory,medium,major:engineering; attribute:gap_year,llm_advisory,Timing
+cs + phil combo good,Counselor,advisory,medium,major:computer_science; major:philosophy,llm_advisory,Interdisciplinary
+eng overload ecs,Counselor,advisory,medium,major:engineering; attribute:workload_balance,llm_advisory,Balance
+mech eng green energy,Counselor,advisory,medium,major:mechanical_engineering; field:renewable_energy,llm_advisory,Sector
+biomed eng or med?,Counselor,comparison,medium,major:biomedical_engineering; track:pre_med,llm_advisory,Direction
+cs yield down why,College admissions officer,strategy,high,major:computer_science; attribute:yield_rate,llm_strategy,Enrollment
+eng brand weak fix,College admissions officer,strategy,high,major:engineering; attribute:brand_perception,llm_strategy,Branding
+melt eng admits stop,College admissions officer,strategy,medium,major:engineering; attribute:summer_melt,llm_strategy,Retention
+women tech apps low,College admissions officer,strategy,high,field:technology; attribute:gender_diversity,llm_strategy,Diversity
+cs research sell better,College admissions officer,strategy,medium,major:computer_science; attribute:undergrad_research,llm_strategy,Messaging
+rigor scare kids,College admissions officer,strategy,high,attribute:academic_rigor,llm_strategy,Tone
+outcomes > rankings msg,College admissions officer,strategy,medium,attribute:career_outcomes; attribute:rankings,llm_strategy,Framing
+co op scale natl,College admissions officer,strategy,medium,major:engineering; attribute:co_op_program,llm_strategy,Expansion
+startup vibe attract cs,College admissions officer,strategy,medium,major:computer_science; attribute:entrepreneurship,llm_strategy,Persona
+tech rep midwest meh,College admissions officer,strategy,high,attribute:technology_focus; attribute:regional_brand,llm_strategy,Positioning
+comp eng vs ee robots,High school student,comparison,medium,major:computer_engineering; major:electrical_engineering; field:robotics,llm_advisory,Compare
+data sci fad?,High school student,advisory,medium,major:data_science; attribute:job_market,llm_advisory,Trend
+eng design comps good?,High school student,attribute_lookup,medium,major:engineering; attribute:design_competitions,filtered_search,Competition
+cs hackathons big deal,High school student,advisory,medium,major:computer_science; attribute:hackathons,llm_advisory,Culture
+tech + debate rare?,High school student,multi_constraint,high,attribute:technology_focus; attribute:debate_club,llm_recommendation,Mixed interest
+eng sustanbl focus,High school student,attribute_lookup,medium,major:engineering; attribute:sustainability,filtered_search,Theme
+ethical ai schools,High school student,attribute_lookup,medium,major:computer_science; specialization:ai_ethics,filtered_search,Specialty
+eng labs early pls,High school student,attribute_lookup,medium,major:engineering; attribute:early_lab_exposure,filtered_search,Labs
+tech alum startups $?,High school student,attribute_lookup,medium,attribute:technology_focus; attribute:startup_exits,filtered_search,Entrepreneurship
+mech eng minor flex?,High school student,attribute_lookup,medium,major:mechanical_engineering; attribute:minor_flexibility,filtered_search,Flexibility
+cs interveiw fail lot,College student,emotional_advisory,high,major:computer_science; attribute:technical_interviews,llm_advisory,Confidence
+eng startup + gpa tank,College student,emotional_advisory,high,major:engineering; attribute:entrepreneurship,llm_advisory,Balance
+civil vs enviro pay,College student,comparison,medium,major:civil_engineering; major:environmental_engineering,llm_advisory,Salary compare
+cs portfolio no exp,College student,advisory,medium,major:computer_science; attribute:portfolio,llm_advisory,Experience
+mech to aero ms?,College student,advisory,medium,major:mechanical_engineering; major:aerospace_engineering,llm_advisory,Grad path
+cs stats dbl major crazy,College student,advisory,medium,major:computer_science; major:statistics,llm_advisory,Workload
+eng gpa 3.1 phd shot,College student,advisory,high,major:engineering; degree:phd; attribute:gpa_3_1,llm_advisory,Admissions
+cs remote 1st job myth,College student,advisory,medium,major:computer_science; attribute:remote_work,llm_advisory,Work model
+chem eng decline?,College student,advisory,medium,major:chemical_engineering; attribute:job_market,llm_advisory,Trend
+sw eng vs cs same?,College student,comparison,medium,major:software_engineering; major:computer_science,llm_advisory,Clarify
+eng avg kid survive,Parent,emotional_advisory,high,major:engineering; attribute:academic_difficulty,llm_advisory,Worry
+cs bubble burst?,Parent,advisory,high,major:computer_science; attribute:job_market,llm_advisory,Market
+tech campus crime real,Parent,attribute_lookup,medium,attribute:technology_focus; attribute:campus_safety,filtered_search,Safety
+eng debt trap?,Parent,advisory,high,major:engineering; attribute:student_loans,llm_advisory,Debt
+cs long term safe,Parent,advisory,high,major:computer_science; attribute:career_longevity,llm_advisory,Stability
+mech eng soft skills?,Parent,advisory,medium,major:mechanical_engineering; attribute:career_skills,llm_advisory,Skills
+eng internships early?,Parent,attribute_lookup,medium,major:engineering; attribute:early_internships,filtered_search,Pipeline
+cs masters roi math,Parent,advisory,high,major:computer_science; degree:masters; attribute:roi,llm_advisory,Cost benefit
+tech dorm quality,Parent,attribute_lookup,medium,attribute:technology_focus; attribute:campus_housing,filtered_search,Housing
+enviro eng stable $,Parent,advisory,medium,major:environmental_engineering; attribute:roi,llm_advisory,Outlook
+transfer mech eng credits 2 year to 4 year pain?,Transfer student,advisory,high,major:mechanical_engineering; attribute:credit_transfer,llm_advisory,Credit mobility
+cs transfer jr yr too late?,Transfer student,advisory,medium,major:computer_science; attribute:transfer_process,llm_advisory,Timing concern
+eng prereqs diff univ mess,Transfer student,attribute_lookup,high,major:engineering; attribute:prerequisites,filtered_search,Curriculum mismatch
+comp sci gpa reset after transfer?,Transfer student,advisory,medium,major:computer_science; attribute:gpa_policy,llm_advisory,GPA rules
+aero eng transfer acceptance low?,Transfer student,advisory,medium,major:aerospace_engineering; attribute:transfer_acceptance_rate,filtered_search,Selectivity
+cc to cs pipeline legit,Community college student,advisory,medium,major:computer_science; attribute:transfer_pathway,llm_advisory,Mobility path
+2yr eng degree job ready?,Community college student,advisory,high,major:engineering; degree:associate_degree,llm_advisory,Employability
+cc calc 2 not same as univ?,Community college student,advisory,medium,major:engineering; attribute:course_equivalency,llm_advisory,Transfer equivalency
+cs from cc internship chances,Community college student,advisory,medium,major:computer_science; attribute:internships,llm_advisory,Opportunity gap
+eng tech vs eng diff career,Community college student,comparison,medium,major:engineering_technology; major:engineering,llm_advisory,Degree clarity
+intl student cs opt chances,International student,advisory,high,major:computer_science; attribute:opt_employment,llm_advisory,Visa employment
+eng h1b realistic now,International student,advisory,high,major:engineering; attribute:h1b_visa,llm_advisory,Immigration concern
+us cs masters vs canada better visa,International student,comparison,high,major:computer_science; degree:masters; country:united_states; country:canada,llm_advisory,Migration strategy
+mech eng jobs sponsor rare?,International student,advisory,high,major:mechanical_engineering; attribute:visa_sponsorship,llm_advisory,Hiring barrier
+data sci stem opt ext?,International student,attribute_lookup,medium,major:data_science; attribute:stem_opt_extension,filtered_search,Policy check
+phd mech eng industry exit good,Graduate applicant,advisory,high,major:mechanical_engineering; degree:phd,llm_advisory,Career outcome
+cs thesis vs non thesis masters,Graduate applicant,comparison,medium,major:computer_science; degree:masters,llm_advisory,Program structure
+funded eng ms rare?,Graduate applicant,advisory,medium,major:engineering; degree:masters; attribute:funding,llm_advisory,Financing
+biomed eng phd oversupply?,Graduate applicant,advisory,high,major:biomedical_engineering; degree:phd; attribute:job_market,llm_advisory,Academic market
+ai phd vs industry lab diff,Graduate applicant,comparison,high,field:artificial_intelligence; degree:phd,llm_advisory,Career fork
+30yr old learn cs dumb?,Career changer,emotional_advisory,high,major:computer_science,llm_advisory,Age concern
+mech eng to software bootcamp risky,Career changer,advisory,high,major:mechanical_engineering; major:software_engineering,llm_advisory,Pivot risk
+eng degree stale 10yrs update how,Career changer,advisory,high,major:engineering; attribute:continuing_education,llm_advisory,Skill refresh
+civil eng to tech pm possible,Career changer,advisory,medium,major:civil_engineering; career:product_management,llm_advisory,Industry switch
+math teacher to data sci path,Career changer,advisory,medium,major:data_science; profession:teacher,llm_advisory,Transition path
+cs grads cant explain systems well why,Employer,advisory,high,major:computer_science; attribute:systems_knowledge,llm_advisory,Skills gap
+eng hires weak comms skills,Employer,advisory,medium,major:engineering; attribute:communication_skills,llm_advisory,Soft skills
+mech eng grads cad strong but no field exp,Employer,advisory,medium,major:mechanical_engineering; attribute:practical_experience,llm_advisory,Experience gap
+data sci grads stats light,Employer,advisory,medium,major:data_science; attribute:statistics_depth,llm_advisory,Curriculum gap
+cs interns need less leetcode more design,Employer,advisory,high,major:computer_science; attribute:software_design,llm_advisory,Hiring signal
+entry level eng salary inflation trend,Industry hiring manager,attribute_lookup,high,major:engineering; attribute:entry_level_salary,filtered_search,Compensation trend
+cs grads expect remote only realistic,Industry hiring manager,advisory,high,major:computer_science; attribute:remote_work,llm_advisory,Expectation gap
+mech eng supply chain knowledge lacking,Industry hiring manager,advisory,medium,major:mechanical_engineering; attribute:supply_chain_knowledge,llm_advisory,Skill gap
+ai grads theory heavy prod light,Industry hiring manager,advisory,high,field:artificial_intelligence; attribute:production_experience,llm_advisory,Practical gap
+eng interns value co op vs summer diff,Industry hiring manager,comparison,medium,major:engineering; attribute:co_op_program,llm_advisory,Hiring preference
+cs students need better portfolio tools,EdTech founder,strategy,high,major:computer_science; attribute:portfolio,llm_strategy,Product design
+eng lab sim software market opp,EdTech founder,strategy,high,major:engineering; attribute:lab_simulation,llm_strategy,Market gap
+data sci project marketplace viable,EdTech founder,strategy,high,major:data_science; attribute:project_based_learning,llm_strategy,Platform idea
+ai ethics curriculum demand rising,EdTech founder,attribute_lookup,high,specialization:ai_ethics; field:artificial_intelligence,filtered_search,Trend validation
+mech eng virtual prototyping demand,EdTech founder,attribute_lookup,medium,major:mechanical_engineering; attribute:virtual_prototyping,filtered_search,Market research
+eng scholarship roi measurable?,Scholarship foundation officer,advisory,high,major:engineering; attribute:roi,llm_advisory,Impact evaluation
+cs low income grantee grad rates,Scholarship foundation officer,attribute_lookup,high,major:computer_science; attribute:graduation_rate,filtered_search,Outcome tracking
+fund women in mech eng impact,Scholarship foundation officer,advisory,high,major:mechanical_engineering; attribute:gender_diversity,llm_advisory,Equity
+rural students tech degree mobility,Scholarship foundation officer,advisory,high,field:technology; attribute:social_mobility,llm_advisory,Access
+biomed eng research grant leverage,Scholarship foundation officer,advisory,medium,major:biomedical_engineering; attribute:research_funding,llm_advisory,Multiplier effect
+regional eng grad shortage 2035,Government workforce analyst,forecast,high,major:engineering; attribute:workforce_demand,filtered_search,Projection
+cs labor market cyclical pattern,Government workforce analyst,attribute_lookup,high,major:computer_science; attribute:job_market,filtered_search,Trend data
+mech eng automation displacement risk,Government workforce analyst,advisory,high,major:mechanical_engineering; attribute:automation_risk,llm_advisory,Risk model
+data sci workforce oversupply metro areas,Government workforce analyst,attribute_lookup,high,major:data_science; attribute:regional_job_market,filtered_search,Geographic imbalance
+civil eng infrastructure bill demand spike,Government workforce analyst,attribute_lookup,high,major:civil_engineering; attribute:public_infrastructure,filtered_search,Policy impact
+transfer cs credits lost?,Transfer student,advisory,high,major:computer_science; attribute:credit_transfer,llm_advisory,Concern over lost credits
+mech eng 2 yr to 4 yr worth?,Transfer student,advisory,high,major:mechanical_engineering; attribute:degree_transfer,llm_advisory,ROI question
+cc physics hard to match univ,Community college student,advisory,medium,major:physics; attribute:transfer,llm_advisory,Difficulty concern
+cs gap in cc classes,Community college student,advisory,medium,major:computer_science; attribute:curriculum_gap,llm_advisory,Preparation
+intl student visa eng jobs,International student,advisory,high,major:engineering; attribute:visa; career:employment,llm_advisory,Immigration worry
+ai phd abroad worth?,International student,advisory,high,degree:phd; field:ai; country:foreign,llm_advisory,ROI + migration
+mech eng grad late 20s,Graduate applicant,advisory,medium,major:mechanical_engineering; age:late_20s,llm_advisory,Career timing
+cs ms thesis vs nonthesis,Graduate applicant,comparison,medium,major:computer_science; degree:masters; option:thesis,llm_advisory,Program choice
+career changer law 2 cs dumb?,Career changer,emotional_advisory,high,prior_degree:law; major:computer_science,llm_advisory,Anxiety about pivot
+eng prof no industry skill,Employer / Recruiter,advisory,medium,major:engineering; attribute:practical_experience,llm_advisory,Hiring concern
+cs grads low teamwork,Employer / Recruiter,advisory,medium,major:computer_science; attribute:teamwork,llm_advisory,Soft skill gap
+mech eng hires remote ok?,Employer / Recruiter,advisory,medium,major:mechanical_engineering; attribute:remote_work,llm_advisory,Work model
+eng interns need co-op,Industry hiring manager,advisory,medium,major:engineering; attribute:co_op,llm_advisory,Internship structure
+cs grads code strong soft weak,Industry hiring manager,advisory,medium,major:computer_science; attribute:technical; attribute:soft_skills,llm_advisory,Hiring gap
+ai hires theory heavy prod light,Industry hiring manager,advisory,high,field:artificial_intelligence; attribute:applied_experience,llm_advisory,Skills mismatch
+edtech build cs portfolio tool,EdTech founder,strategy,high,major:computer_science; attribute:portfolio_tool,llm_strategy,Product idea
+eng lab sim software needed,EdTech founder,strategy,high,major:engineering; attribute:simulation,llm_strategy,Market research
+data sci project platform ok?,EdTech founder,strategy,high,major:data_science; attribute:project_based_learning,llm_strategy,Feasibility
+ai ethics course demand,EdTech founder,attribute_lookup,medium,specialization:ai_ethics; field:ai,filtered_search,Trend check
+mech eng VR labs chance?,EdTech founder,attribute_lookup,medium,major:mechanical_engineering; attribute:virtual_labs,filtered_search,Innovation focus
+eng scholar ROI measure,Scholarship foundation officer,advisory,high,major:engineering; attribute:roi,llm_advisory,Grant impact
+cs low-income grad rates,Scholarship foundation officer,attribute_lookup,high,major:computer_science; attribute:graduation_rate,filtered_search,Outcome tracking
+women mech eng impact?,Scholarship foundation officer,advisory,high,major:mechanical_engineering; attribute:gender_equity,llm_advisory,Inclusion metric
+rural tech students help,Scholarship foundation officer,advisory,high,field:technology; attribute:rural_access,llm_advisory,Equity
+biomed eng grant leverage,Scholarship foundation officer,advisory,medium,major:biomedical_engineering; attribute:research_grant,llm_advisory,Fund multiplier
+eng shortage 2035 region,Government workforce analyst,forecast,high,major:engineering; attribute:regional_demand,filtered_search,Projection
+cs labor market cycle,Government workforce analyst,attribute_lookup,high,major:computer_science; attribute:job_trends,filtered_search,Trend
+mech eng automation risk,Government workforce analyst,advisory,high,major:mechanical_engineering; attribute:automation,llm_advisory,Workforce risk
+data sci oversupply cities,Government workforce analyst,attribute_lookup,high,major:data_science; attribute:regional_job_market,filtered_search,Geographic imbalance
+civil eng infra bill spike,Government workforce analyst,attribute_lookup,high,major:civil_engineering; attribute:public_infrastructure,filtered_search,Policy effect
+transfer student cs minor conflict,Transfer student,advisory,high,major:computer_science; attribute:minor_conflict,llm_advisory,Scheduling
+cc student labs lack,Community college student,advisory,medium,major:engineering; attribute:lab_access,llm_advisory,Resource gap
+intl student opt cap stress,International student,emotional_advisory,high,major:computer_science; attribute:opt_limit,llm_advisory,Visa stress
+grad applicant late apps?,Graduate applicant,advisory,medium,degree:masters; timing:late_application,llm_advisory,Timing
+career changer eng burnout,Career changer,emotional_advisory,high,major:engineering,llm_advisory,Stress
+employer dev interns shortfall,Employer / Recruiter,advisory,medium,position:intern; field:software_development,llm_advisory,Recruitment issue
+industry hiring manager ai jr too weak,Industry hiring manager,advisory,medium,field:ai; attribute:junior_skill,llm_advisory,Candidate quality
+edtech product students like?,EdTech founder,strategy,high,attribute:student_engagement; product:edtech_platform,llm_strategy,Adoption
+scholarship officer measure impact,Scholarship foundation officer,advisory,high,attribute:program_efficacy,llm_advisory,Evaluation
+gov analyst cs grad shortage,Government workforce analyst,forecast,high,major:computer_science; attribute:shortage,filtered_search,Supply-demand
+transfer student eng prereq gap,Transfer student,advisory,high,major:engineering; attribute:prerequisites,llm_advisory,Course mapping
+cc student transfer GPA low,Community college student,emotional_advisory,high,major:computer_science; attribute:gpa,llm_advisory,Stress
+intl student funding scarce,International student,advisory,medium,attribute:scholarship; major:engineering,llm_advisory,Financial concern
+grad applicant phd admit low,Graduate applicant,emotional_advisory,high,degree:phd; major:mechanical_engineering,llm_advisory,Anxiety
+career changer late career risky,Career changer,advisory,medium,attribute:career_shift,llm_advisory,Risk evaluation
+employer eng grads soft weak,Employer / Recruiter,advisory,medium,major:engineering; attribute:soft_skills,llm_advisory,Hiring concern
+industry hiring manager remote prep,Industry hiring manager,advisory,medium,major:engineering; attribute:remote_work,llm_advisory,Remote readiness
+edtech founder microlearning demand,EdTech founder,strategy,medium,attribute:learning; style:microlearning,llm_strategy,Market
+scholarship officer rural student impact,Scholarship foundation officer,advisory,high,attribute:accessibility; location:rural,llm_advisory,Outcome
+government analyst mech eng pay trends,Government workforce analyst,attribute_lookup,high,major:mechanical_engineering; attribute:salary,filtered_search,Compensation
+transf cs cred lost univ?,Transfer student,advisory,high,major:computer_science; attribute:credit_transfer,llm_advisory,Concern about credit transfer
+cc chem class not match,Community college student,advisory,medium,major:chemistry; attribute:course_equivalency,llm_advisory,Misalignment worry
+intl eng grad visa stresser,International student,emotional_advisory,high,major:engineering; attribute:visa,llm_advisory,Visa anxiety
+grad ms late appl?,Graduate applicant,advisory,medium,degree:masters,llm_advisory,Late application concern
+career change mech2cs risk,Career changer,advisory,high,major:mechanical_engineering; major:computer_science,llm_advisory,Pivot risk
+employer eng grads weak comm,Employer / Recruiter,advisory,medium,major:engineering; attribute:communication,llm_advisory,Skill gap
+hiring mgr cs interns poor design,Industry hiring manager,advisory,medium,major:computer_science; attribute:design_skill,llm_advisory,Weak design skills
+edtech build ai bootcamp,EdTech founder,strategy,high,field:artificial_intelligence; attribute:bootcamp,llm_strategy,Product idea
+scholarship officer rural cs poor,Scholarship foundation officer,advisory,high,major:computer_science; location:rural,llm_advisory,Access issue
+gov analyst eng jobs gap,Government workforce analyst,forecast,high,major:engineering; attribute:job_gap,filtered_search,Workforce projection
+transf aero prereq clash,Transfer student,advisory,high,major:aerospace_engineering; attribute:prerequisites,llm_advisory,Course clash
+cc bio lab missing,Community college student,advisory,medium,major:biology; attribute:lab_access,llm_advisory,Resource concern
+intl cs opt cap fear,International student,emotional_advisory,high,major:computer_science; attribute:opt_limit,llm_advisory,Visa stress
+grad mech phd vs industry,Graduate applicant,comparison,high,major:mechanical_engineering; degree:phd,llm_advisory,Career path choice
+career switch law2ai?,Career changer,emotional_advisory,high,prior_degree:law; major:ai,llm_advisory,Anxiety over pivot
+employer eng cad weak,Employer / Recruiter,advisory,medium,major:engineering; attribute:CAD_skill,llm_advisory,Skill gap
+hiring mgr ai grads theory > practice,Industry hiring manager,advisory,high,field:ai; attribute:applied,llm_advisory,Practical experience lacking
+edtech cs microlearning tool,EdTech founder,strategy,medium,major:computer_science; attribute:microlearning,llm_strategy,Product concept
+scholarship fund impact measure,Scholarship foundation officer,advisory,high,attribute:impact,llm_advisory,Program assessment
+gov analyst cs shortage midwest,Government workforce analyst,forecast,high,major:computer_science; region:midwest,filtered_search,Supply-demand
+transf eng course mismatch,Transfer student,advisory,high,major:engineering; attribute:prerequisites,llm_advisory,Transfer gap
+cc math 3 diff univ,Community college student,advisory,medium,major:mathematics; attribute:course_equivalence,llm_advisory,Transfer difficulty
+intl mech eng jobs rare,International student,advisory,medium,major:mechanical_engineering; attribute:employment,llm_advisory,Job market concern
+grad ai thesis vs project,Graduate applicant,comparison,medium,field:artificial_intelligence; degree:masters,llm_advisory,Program choice
+career changer late 30s learn cs,Career changer,emotional_advisory,high,major:computer_science; age:30s,llm_advisory,Age anxiety
+employer data interns weak stats,Employer / Recruiter,advisory,medium,major:data_science; attribute:statistics,llm_advisory,Skill gap
+hiring mgr eng grads soft skills low,Industry hiring manager,advisory,medium,major:engineering; attribute:soft_skills,llm_advisory,Team skills
+edtech ai ethics course need,EdTech founder,strategy,high,specialization:ai_ethics; field:ai,llm_strategy,Trend product
+scholarship officer women eng support,Scholarship foundation officer,advisory,high,major:engineering; attribute:gender_equity,llm_advisory,Equity measure
+gov analyst civil infra bill 2030,Government workforce analyst,forecast,high,major:civil_engineering; attribute:policy_impact,filtered_search,Workforce need
+transf cs minor clash,Transfer student,advisory,high,major:computer_science; attribute:minor_conflict,llm_advisory,Scheduling
+cc chem lab limited,Community college student,advisory,medium,major:chemistry; attribute:lab_access,llm_advisory,Resource gap
+intl data sci jobs h1b,International student,advisory,medium,major:data_science; attribute:visa,llm_advisory,Hiring concern
+grad mech phd funding low,Graduate applicant,advisory,medium,major:mechanical_engineering; degree:phd,llm_advisory,Funding concern
+career change eng2pm possible,Career changer,advisory,medium,prior_degree:engineering; career:product_management,llm_advisory,Career pivot
+employer cs grads weak coding,Employer / Recruiter,advisory,medium,major:computer_science; attribute:coding,llm_advisory,Skill gap
+hiring mgr mech grads CAD low,Industry hiring manager,advisory,medium,major:mechanical_engineering; attribute:CAD,llm_advisory,Weak practical skills
+edtech build mech VR labs,EdTech founder,strategy,medium,major:mechanical_engineering; attribute:virtual_labs,llm_strategy,Innovation idea
+scholarship fund rural cs support,Scholarship foundation officer,advisory,high,major:computer_science; attribute:rural_access,llm_advisory,Inclusion
+gov analyst eng pay trend,Government workforce analyst,attribute_lookup,high,major:engineering; attribute:salary,filtered_search,Compensation trends
+transf aero prereq missing,Transfer student,advisory,high,major:aerospace_engineering; attribute:prerequisites,llm_advisory,Gap concern
+cc student lab access poor,Community college student,advisory,medium,major:biology; attribute:lab_access,llm_advisory,Facility issue
+intl student stem OPT stress,International student,emotional_advisory,high,major:STEM; attribute:opt,llm_advisory,Visa anxiety
+grad applicant ms late accept,Graduate applicant,advisory,medium,degree:masters; timing:late_acceptance,llm_advisory,Acceptance worry
+career changer late 20s phd risk,Career changer,advisory,high,age:late_20s; degree:phd,llm_advisory,Career timing risk
+employer eng grads teamwork poor,Employer / Recruiter,advisory,medium,major:engineering; attribute:teamwork,llm_advisory,Team skill gap
+hiring mgr data sci grads weak,Industry hiring manager,advisory,medium,major:data_science; attribute:practical,llm_advisory,Practical skills
+edtech founder project-based CS tool,EdTech founder,strategy,high,major:computer_science; attribute:project_based_learning,llm_strategy,Product design
+scholarship officer undergrad outcomes,Scholarship foundation officer,advisory,high,degree:undergraduate; attribute:outcomes,llm_advisory,Program effectiveness
+gov analyst AI grads oversupply,Government workforce analyst,attribute_lookup,high,field:AI; attribute:job_market,filtered_search,Supply-demand check
+transf CS prereq fail,Transfer student,advisory,high,major:computer_science; attribute:prerequisites,llm_advisory,Transfer risk
+cc student Calc 3 diff,Community college student,advisory,medium,major:mathematics; attribute:course_equivalence,llm_advisory,Transfer gap
+intl eng jobs sponsor rare,International student,advisory,medium,major:engineering; attribute:visa_sponsorship,llm_advisory,Hiring barrier
+grad applicant AI thesis risk,Graduate applicant,advisory,high,field:AI; degree:masters,llm_advisory,Thesis worry
+career changer teacher2data,Career changer,advisory,medium,prior_profession:teacher; major:data_science,llm_advisory,Transition path
+employer interns weak stat,Employer / Recruiter,advisory,medium,major:data_science; attribute:statistics,llm_advisory,Curriculum gap
+hiring mgr CS grads remote expectation,Industry hiring manager,advisory,medium,major:computer_science; attribute:remote_work,llm_advisory,Candidate expectation
+edtech founder lab sim software,EdTech founder,strategy,high,major:engineering; attribute:lab_sim,llm_strategy,Market opportunity
+scholarship officer women STEM,Scholarship foundation officer,advisory,high,major:STEM; attribute:gender_equity,llm_advisory,Equity focus
+gov analyst civil eng infra jobs,Government workforce analyst,forecast,high,major:civil_engineering; attribute:policy_demand,filtered_search,Future demand
+transf cs gpa req?,Transfer student,exact_lookup,medium,major:computer_science; attribute:gpa,short_circuit,GPA requirement for transfer
+cc student eng proj labs?,Community college student,advisory,medium,major:engineering; attribute:project_labs,llm_advisory,Lab access concern
+intl mech jobs sponsor?,International student,advisory,medium,major:mechanical_engineering; attribute:visa_sponsorship,llm_advisory,Job eligibility
+grad ai appl late ok?,Graduate applicant,advisory,medium,major:artificial_intelligence; timing:late_application,llm_advisory,Late app question
+career switch law2cs viable?,Career changer,advisory,high,prior_degree:law; major:computer_science,llm_advisory,Pivot feasibility
+employer cs grads soft low,Employer / Recruiter,advisory,medium,major:computer_science; attribute:soft_skills,llm_advisory,Soft skills issue
+hiring mgr eng grads CAD weak,Industry hiring manager,advisory,medium,major:engineering; attribute:CAD,llm_advisory,Practical skills concern
+edtech founder cs bootcamp tool,EdTech founder,strategy,high,major:computer_science; attribute:bootcamp,llm_strategy,Product idea
+scholarship officer rural eng low grad,Scholarship foundation officer,advisory,high,major:engineering; attribute:graduation_rate; location:rural,llm_advisory,Outcomes concern
+gov analyst data sci oversupply,Government workforce analyst,forecast,high,major:data_science; attribute:job_market,filtered_search,Supply-demand issue
+transf aero class missing prereq,Transfer student,advisory,high,major:aerospace_engineering; attribute:prerequisites,llm_advisory,Course mismatch
+cc chem lab access?,Community college student,advisory,medium,major:chemistry; attribute:lab_access,llm_advisory,Facilities concern
+intl cs OPT stress,International student,emotional_advisory,high,major:computer_science; attribute:opt,llm_advisory,Visa stress
+grad mech phd funding?,Graduate applicant,advisory,medium,major:mechanical_engineering; degree:phd,llm_advisory,Funding question
+career changer late 30s cs,Career changer,emotional_advisory,high,major:computer_science; age:30s,llm_advisory,Age worry
+employer data interns weak,Employer / Recruiter,advisory,medium,major:data_science; attribute:practical,llm_advisory,Skill gap
+hiring mgr AI grads weak app,Industry hiring manager,advisory,medium,field:AI; attribute:applied,llm_advisory,Skills concern
+edtech microlearning mech tool,EdTech founder,strategy,high,major:mechanical_engineering; attribute:microlearning,llm_strategy,Product design
+scholarship officer women cs,Scholarship foundation officer,advisory,high,major:computer_science; attribute:gender_equity,llm_advisory,Equity focus
+gov analyst eng shortage region,Government workforce analyst,forecast,high,major:engineering; attribute:shortage; region:specified,filtered_search,Workforce prediction
+transf cs minor conflict?,Transfer student,advisory,high,major:computer_science; attribute:minor_conflict,llm_advisory,Scheduling
+cc student math 3 diff?,Community college student,advisory,medium,major:mathematics; attribute:course_equivalence,llm_advisory,Transfer difficulty
+intl mech eng jobs rare?,International student,advisory,medium,major:mechanical_engineering; attribute:employment,llm_advisory,Job market
+grad ai thesis vs proj,Graduate applicant,comparison,medium,field:artificial_intelligence; degree:masters,llm_advisory,Program choice
+career change teacher2data,Career changer,advisory,medium,prior_profession:teacher; major:data_science,llm_advisory,Transition path
+employer eng grads weak team,Employer / Recruiter,advisory,medium,major:engineering; attribute:teamwork,llm_advisory,Team skill gap
+hiring mgr cs grads coding low,Industry hiring manager,advisory,medium,major:computer_science; attribute:coding,llm_advisory,Practical skill
+edtech founder ai ethics course,EdTech founder,strategy,high,specialization:ai_ethics; field:ai,llm_strategy,Product trend
+scholarship officer rural STEM,Scholarship foundation officer,advisory,high,major:STEM; location:rural,llm_advisory,Equity
+gov analyst civil eng infra,Government workforce analyst,attribute_lookup,high,major:civil_engineering; attribute:infrastructure,filtered_search,Workforce trend
+transf eng credits lost?,Transfer student,advisory,high,major:engineering; attribute:credit_transfer,llm_advisory,Credit loss
+cc bio labs limited,Community college student,advisory,medium,major:biology; attribute:lab_access,llm_advisory,Facility gap
+intl student stem visa?,International student,advisory,medium,major:STEM; attribute:visa,llm_advisory,Legal concern
+grad appl late accept,Graduate applicant,advisory,medium,degree:masters; timing:late_acceptance,llm_advisory,Admission concern
+career changer eng2pm,Career changer,advisory,medium,prior_degree:engineering; career:product_management,llm_advisory,Pivot
+employer cs grads weak comm,Employer / Recruiter,advisory,medium,major:computer_science; attribute:communication,llm_advisory,Soft skills
+hiring mgr data grads weak,Industry hiring manager,advisory,medium,major:data_science; attribute:practical,llm_advisory,Skills concern
+edtech founder mech VR lab,EdTech founder,strategy,high,major:mechanical_engineering; attribute:VR_labs,llm_strategy,Innovation
+scholarship officer women eng,Scholarship foundation officer,advisory,high,major:engineering; attribute:gender_equity,llm_advisory,Diversity focus
+gov analyst AI grads shortage,Government workforce analyst,forecast,high,field:AI; attribute:job_market,filtered_search,Supply-demand
+transf aero prereq missing,Transfer student,advisory,high,major:aerospace_engineering; attribute:prerequisites,llm_advisory,Gap
+cc student lab poor,Community college student,advisory,medium,major:biology; attribute:lab_access,llm_advisory,Resource
+intl student OPT panic,International student,emotional_advisory,high,major:STEM; attribute:opt,llm_advisory,Visa stress
+grad mech phd late,Graduate applicant,advisory,medium,major:mechanical_engineering; degree:phd,llm_advisory,Late concern
+career change late 20s phd,Career changer,advisory,high,age:late_20s; degree:phd,llm_advisory,Timing risk
+employer eng grads teamwork poor,Employer / Recruiter,advisory,medium,major:engineering; attribute:teamwork,llm_advisory,Team skill gap
+hiring mgr AI grads weak,Industry hiring manager,advisory,medium,field:AI; attribute:applied,llm_advisory,Practical concern
+edtech founder cs project tool,EdTech founder,strategy,high,major:computer_science; attribute:project_based_learning,llm_strategy,Product idea
+scholarship officer undergrad outcomes,Scholarship foundation officer,advisory,high,degree:undergraduate; attribute:outcomes,llm_advisory,Program evaluation
+transf eng lab miss?,Transfer student,advisory,high,major:engineering; attribute:lab_access,llm_advisory,Missing lab concern
+cc bio course full,Community college student,advisory,medium,major:biology; attribute:course_availability,llm_advisory,Full course issue
+intl cs visa OPT?,International student,emotional_advisory,high,major:computer_science; attribute:visa_opt,llm_advisory,Visa/OPT stress
+grad appl AI late accept,Graduate applicant,advisory,medium,major:AI; timing:late_acceptance,llm_advisory,Late application
+career switch law2data ok?,Career changer,advisory,high,prior_degree:law; major:data_science,llm_advisory,Pivot feasibility
+employer CS grads poor comm,Employer / Recruiter,advisory,medium,major:computer_science; attribute:soft_skills,llm_advisory,Communication gap
+hiring mgr Eng grads CAD low,Industry hiring manager,advisory,medium,major:engineering; attribute:CAD,llm_advisory,Practical skill gap
+edtech founder microlearn AI,EdTech founder,strategy,high,field:AI; attribute:microlearning,llm_strategy,Product idea
+scholarship fund STEM women,Scholarship foundation officer,advisory,high,major:STEM; attribute:gender_equity,llm_advisory,Equity program
+transf CS minor conflict,Transfer student,advisory,high,major:computer_science; attribute:minor_conflict,llm_advisory,Schedule conflict
+cc math3 prereq miss,Community college student,advisory,medium,major:mathematics; attribute:prerequisites,llm_advisory,Transfer issue
+intl mech jobs sponsor?,International student,advisory,medium,major:mechanical_engineering; attribute:visa_sponsorship,llm_advisory,Sponsorship worry
+grad appl Mech vs industry,Graduate applicant,comparison,high,major:mechanical_engineering; degree:masters,llm_advisory,Career path decision
+career switch teach2CS risk,Career changer,emotional_advisory,high,prior_profession:teaching; major:computer_science,llm_advisory,Anxiety about pivot
+employer data interns stats weak,Employer / Recruiter,advisory,medium,major:data_science; attribute:statistics,llm_advisory,Skill gap
+hiring mgr AI grads theory > prac,Industry hiring manager,advisory,high,major:AI; attribute:applied,llm_advisory,Applied skill concern
+edtech VR lab mech,EdTech founder,strategy,medium,major:mechanical_engineering; attribute:VR_labs,llm_strategy,Product innovation
+scholarship officer rural eng,Scholarship foundation officer,advisory,high,major:engineering; location:rural,llm_advisory,Access equity
+transf Aero prereq fail,Transfer student,advisory,high,major:aerospace_engineering; attribute:prerequisites,llm_advisory,Course mismatch
+cc chem lab access poor,Community college student,advisory,medium,major:chemistry; attribute:lab_access,llm_advisory,Facility limitation
+intl student STEM OPT panic,International student,emotional_advisory,high,major:STEM; attribute:opt,llm_advisory,Visa stress
+grad AI thesis vs project,Graduate applicant,comparison,medium,major:AI; degree:masters,llm_advisory,Thesis decision
+career change late 30s CS,Career changer,emotional_advisory,high,major:computer_science; age:30s,llm_advisory,Age anxiety
+employer eng grads teamwork poor,Employer / Recruiter,advisory,medium,major:engineering; attribute:teamwork,llm_advisory,Collaboration concern
+hiring mgr CS grads coding weak,Industry hiring manager,advisory,medium,major:computer_science; attribute:coding,llm_advisory,Skill gap
+edtech founder project CS,EdTech founder,strategy,high,major:computer_science; attribute:project_based,llm_strategy,Product concept
+scholarship officer undergrad outcomes,Scholarship foundation officer,advisory,high,degree:undergraduate; attribute:outcomes,llm_advisory,Program evaluation
+transf Eng class conflict,Transfer student,advisory,high,major:engineering; attribute:class_schedule,llm_advisory,Scheduling conflict
+cc student labs full,Community college student,advisory,medium,major:biology; attribute:lab_availability,llm_advisory,Resource issue
+intl CS grads rare job,International student,advisory,medium,major:computer_science; attribute:job_market,llm_advisory,Job scarcity
+grad appl late AI admit,Graduate applicant,advisory,medium,major:AI; timing:late_admit,llm_advisory,Application timing
+career changer engineer2PM,Career changer,advisory,medium,prior_degree:engineering; career:product_management,llm_advisory,Transition path
+employer data interns weak stat,Employer / Recruiter,advisory,medium,major:data_science; attribute:statistics,llm_advisory,Curriculum gap
+hiring mgr mech grads CAD low,Industry hiring manager,advisory,medium,major:mechanical_engineering; attribute:CAD,llm_advisory,Practical concern
+edtech founder microlearning mech,EdTech founder,strategy,high,major:mechanical_engineering; attribute:microlearning,llm_strategy,Product concept
+scholarship officer women STEM rural,Scholarship foundation officer,advisory,high,major:STEM; location:rural,llm_advisory,Equity measure
+transf CS prereq missing,Transfer student,advisory,high,major:computer_science; attribute:prerequisites,llm_advisory,Course gap
+cc math3 diff transfer,Community college student,advisory,medium,major:mathematics; attribute:transfer_equivalence,llm_advisory,Course mismatch
+intl mech visa limit,International student,advisory,medium,major:mechanical_engineering; attribute:visa_limit,llm_advisory,Legal issue
+grad applicant mech funding,Graduate applicant,advisory,medium,major:mechanical_engineering; degree:masters,llm_advisory,Funding worry
+career switch late 20s phd,Career changer,advisory,high,age:late_20s; degree:phd,llm_advisory,Timing concern
+employer eng grads weak soft,Employer / Recruiter,advisory,medium,major:engineering; attribute:soft_skills,llm_advisory,Collaboration gap
+hiring mgr AI grads applied weak,Industry hiring manager,advisory,high,major:AI; attribute:applied,llm_advisory,Practical gap
+edtech founder VR lab mech,EdTech founder,strategy,high,major:mechanical_engineering; attribute:VR_labs,llm_strategy,Innovation
+scholarship officer rural CS,Scholarship foundation officer,advisory,high,major:computer_science; location:rural,llm_advisory,Access concern
+transf Aero prereq missing,Transfer student,advisory,high,major:aerospace_engineering; attribute:prerequisites,llm_advisory,Scheduling
+cc student lab access low,Community college student,advisory,medium,major:chemistry; attribute:lab_access,llm_advisory,Facility gap
+intl student OPT panic,International student,emotional_advisory,high,major:STEM; attribute:opt,llm_advisory,Stress
+grad applicant late accept,Graduate applicant,advisory,medium,degree:masters; timing:late_acceptance,llm_advisory,Timing issue
+career changer teach2CS,Career changer,advisory,medium,prior_profession:teaching; major:computer_science,llm_advisory,Transition path
+employer CS grads weak comm,Employer / Recruiter,advisory,medium,major:computer_science; attribute:communication,llm_advisory,Skill gap
+hiring mgr data grads weak,Industry hiring manager,advisory,medium,major:data_science; attribute:applied,llm_advisory,Practical gap
+edtech founder project CS lab,EdTech founder,strategy,high,major:computer_science; attribute:project_based_learning,llm_strategy,Product idea
+scholarship officer undergrad success,Scholarship foundation officer,advisory,high,degree:undergraduate; attribute:success_rate,llm_advisory,Program evaluation
+transf cs night classes?,Transfer student,advisory,medium,major:computer_science; attribute:night_classes,llm_advisory,Scheduling concern
+cc econ prof online?,Community college student,advisory,medium,major:economics; attribute:online,llm_advisory,Remote learning query
+intl mech eng coop visa?,International student,advisory,high,major:mechanical_engineering; attribute:coop; visa:required,llm_advisory,Internship visa question
+grad appl fintech cert late,Graduate applicant,advisory,medium,field:fintech; credential:certificate,llm_advisory,Admission/timing
+career change HR2UX possible?,Career changer,advisory,medium,prior_profession:HR; major:UX_design,llm_advisory,Feasibility of switch
+employer design grads portfolio bad,Employer / Recruiter,advisory,medium,major:design; attribute:portfolio_quality,llm_advisory,Hiring concern
+hiring mgr eng grads AutoCAD fail,Industry hiring manager,advisory,medium,major:engineering; attribute:AutoCAD,llm_advisory,Skills deficiency
+edtech founder math app cc,EdTech founder,strategy,high,major:mathematics; audience:community_college,llm_strategy,Product idea
+scholarship officer rural STEM gap,Scholarship foundation officer,advisory,high,major:STEM; location:rural,llm_advisory,Equity program
+transf bio prereq confict?,Transfer student,advisory,high,major:biology; attribute:prerequisites,llm_advisory,Course mismatch
+cc chem online lab?,Community college student,advisory,medium,major:chemistry; attribute:online_lab,llm_advisory,Online lab concern
+intl CS GPA req flex?,International student,advisory,medium,major:computer_science; attribute:gpa,llm_advisory,GPA flexibility
+grad appl data sci bootcamp,Graduate applicant,advisory,medium,major:data_science; credential:bootcamp,llm_advisory,Supplementary credential
+career change nurse2CS salary,Career changer,advisory,medium,prior_profession:nursing; major:computer_science,llm_advisory,Compensation concern
+employer finance interns weak SQL,Employer / Recruiter,advisory,medium,field:finance; attribute:SQL,llm_advisory,Skill gap
+hiring mgr AI grads theory low,Industry hiring manager,advisory,medium,major:AI; attribute:theory,llm_advisory,Knowledge issue
+edtech founder remote STEM lab,EdTech founder,strategy,high,major:STEM; attribute:remote_lab,llm_strategy,Product development
+scholarship officer urban eng low grad,Scholarship foundation officer,advisory,high,major:engineering; location:urban; attribute:graduation_rate,llm_advisory,Program evaluation
+transf mech credits lost?,Transfer student,advisory,high,major:mechanical_engineering; attribute:credit_transfer,llm_advisory,Credit transfer concern
+cc hist course night?,Community college student,advisory,medium,major:history; attribute:night_classes,llm_advisory,Scheduling concern
+intl eng jobs rare?,International student,advisory,medium,major:engineering; attribute:job_market,llm_advisory,Employment concern
+grad appl psych lab fund,Graduate applicant,advisory,medium,major:psychology; attribute:lab_funding,llm_advisory,Research funding
+career switch econ2PM,Career changer,advisory,medium,prior_degree:economics; career:product_management,llm_advisory,Transition question
+employer CS grads weak Python,Employer / Recruiter,advisory,medium,major:computer_science; attribute:Python,llm_advisory,Programming skill gap
+hiring mgr data grads weak R,Industry hiring manager,advisory,medium,major:data_science; attribute:R,llm_advisory,Software skill concern
+edtech founder art VR collab,EdTech founder,strategy,high,major:art; attribute:VR_collaboration,llm_strategy,Product idea
+scholarship officer STEM girls low rural,Scholarship foundation officer,advisory,high,major:STEM; attribute:gender_equity; location:rural,llm_advisory,Equity concern
+transf aero prereq mess,Transfer student,advisory,high,major:aerospace_engineering; attribute:prerequisites,llm_advisory,Course mismatch
+cc bio labs limited,Community college student,advisory,medium,major:biology; attribute:lab_access,llm_advisory,Resource issue
+intl student OPT panic,International student,emotional_advisory,high,major:STEM; attribute:opt,llm_advisory,Visa stress
+grad mech phd late,Graduate applicant,advisory,medium,major:mechanical_engineering; degree:phd,llm_advisory,Timing concern
+career change late 20s law2CS,Career changer,emotional_advisory,high,age:late_20s; prior_degree:law; major:CS,llm_advisory,Pivot worry
+employer eng grads teamwork poor,Employer / Recruiter,advisory,medium,major:engineering; attribute:teamwork,llm_advisory,Collaboration concern
+hiring mgr AI grads applied weak,Industry hiring manager,advisory,high,major:AI; attribute:applied,llm_advisory,Applied skill concern
+edtech founder VR mech lab,EdTech founder,strategy,high,major:mechanical_engineering; attribute:VR_lab,llm_strategy,Innovation
+scholarship officer rural CS,Scholarship foundation officer,advisory,high,major:computer_science; location:rural,llm_advisory,Access concern
+transf aero prereq missing,Transfer student,advisory,high,major:aerospace_engineering; attribute:prerequisites,llm_advisory,Scheduling
+cc student lab access low,Community college student,advisory,medium,major:chemistry; attribute:lab_access,llm_advisory,Facility gap
+intl student OPT panic 2,International student,emotional_advisory,high,major:STEM; attribute:opt,llm_advisory,Visa stress repeat variant
+grad appl late accept AI,Graduate applicant,advisory,medium,major:AI; timing:late_acceptance,llm_advisory,Timing issue
+career changer teach2UX,Career changer,advisory,medium,prior_profession:teaching; major:UX_design,llm_advisory,Transition path
+employer CS grads comm weak,Employer / Recruiter,advisory,medium,major:computer_science; attribute:communication,llm_advisory,Communication gap
+hiring mgr data grads weak Python,Industry hiring manager,advisory,medium,major:data_science; attribute:Python,llm_advisory,Skill gap
+edtech founder project CS lab 2,EdTech founder,strategy,high,major:computer_science; attribute:project_based_learning,llm_strategy,Product idea variant
+scholarship officer undergrad success,Scholarship foundation officer,advisory,high,degree:undergraduate; attribute:success_rate,llm_advisory,Program evaluation
+How can I transfer my computer science credits from another university?,Transfer student,advisory,medium,major:computer_science; attribute:credit_transfer,llm_advisory,Course equivalency question
+What online economics courses are available at my community college?,Community college student,advisory,medium,major:economics; attribute:online_courses,llm_advisory,Remote learning options
+How can international students secure an internship in mechanical engineering?,International student,advisory,high,major:mechanical_engineering; attribute:internship; visa:required,llm_advisory,Visa and internship
+Are there late admissions for graduate applicants in fintech programs?,Graduate applicant,advisory,medium,field:fintech; timing:late_admission,llm_advisory,Application timing
+Is it feasible to switch from a career in HR to UX design?,Career changer,advisory,medium,prior_profession:HR; major:UX_design,llm_advisory,Career pivot
+How do design graduates improve weak portfolios for employment?,Employer / Recruiter,advisory,medium,major:design; attribute:portfolio_quality,llm_advisory,Hiring guidance
+What practical AutoCAD skills are missing in engineering graduates?,Industry hiring manager,advisory,medium,major:engineering; attribute:AutoCAD,llm_advisory,Skill gap assessment
+How can I create a math learning app for community college students?,EdTech founder,strategy,high,major:mathematics; audience:community_college,llm_strategy,Product concept
+What scholarships support rural STEM students?,Scholarship foundation officer,advisory,high,major:STEM; location:rural,llm_advisory,Equity program
+What should I do if my biology prerequisites do not transfer as a transfer student?,Transfer student,advisory,high,major:biology; attribute:prerequisites,llm_advisory,Transfer issue
+Are there online lab options for chemistry at community colleges?,Community college student,advisory,medium,major:chemistry; attribute:online_lab,llm_advisory,Lab access options
+Can international students with a lower GPA still be admitted to CS programs?,International student,advisory,medium,major:computer_science; attribute:gpa,llm_advisory,Admission flexibility
+Should graduate applicants take a data science bootcamp to strengthen applications?,Graduate applicant,advisory,medium,major:data_science; credential:bootcamp,llm_advisory,Credential evaluation
+What salary expectations exist for career changers moving from nursing to computer science?,Career changer,advisory,medium,prior_profession:nursing; major:computer_science,llm_advisory,Compensation guidance
+How can finance interns improve weak SQL skills?,Employer / Recruiter,advisory,medium,field:finance; attribute:SQL,llm_advisory,Training guidance
+How prepared are AI graduates in applied projects versus theory?,Industry hiring manager,advisory,high,major:AI; attribute:applied,llm_advisory,Skill assessment
+How can a VR lab improve collaboration in mechanical engineering courses?,EdTech founder,strategy,high,major:mechanical_engineering; attribute:VR_lab,llm_strategy,Innovation strategy
+What programs support rural computer science students with low graduation rates?,Scholarship foundation officer,advisory,high,major:computer_science; location:rural; attribute:graduation_rate,llm_advisory,Program evaluation
+How do transfer students handle lost mechanical engineering credits?,Transfer student,advisory,high,major:mechanical_engineering; attribute:credit_transfer,llm_advisory,Credit recovery guidance
+What night classes are available for history courses at community colleges?,Community college student,advisory,medium,major:history; attribute:night_classes,llm_advisory,Scheduling guidance
+What job opportunities exist for international engineering students?,International student,advisory,medium,major:engineering; attribute:job_market,llm_advisory,Career guidance
+How can graduate applicants secure funding for psychology lab research?,Graduate applicant,advisory,medium,major:psychology; attribute:lab_funding,llm_advisory,Funding guidance
+What challenges exist in switching from economics to product management?,Career changer,advisory,medium,prior_degree:economics; career:product_management,llm_advisory,Transition guidance
+How can computer science graduates improve communication skills?,Employer / Recruiter,advisory,medium,major:computer_science; attribute:communication,llm_advisory,Skill improvement
+How do data science graduates improve practical R skills?,Industry hiring manager,advisory,medium,major:data_science; attribute:R,llm_advisory,Skill assessment
+How can project-based CS labs enhance learning outcomes?,EdTech founder,strategy,high,major:computer_science; attribute:project_based_learning,llm_strategy,Curriculum design
+How do scholarship programs measure undergraduate success rates?,Scholarship foundation officer,advisory,high,degree:undergraduate; attribute:success_rate,llm_advisory,Program evaluation
+How do transfer students resolve conflicts in aerospace prerequisites?,Transfer student,advisory,high,major:aerospace_engineering; attribute:prerequisites,llm_advisory,Scheduling conflicts
+Are lab facilities adequate for biology courses at community colleges?,Community college student,advisory,medium,major:biology; attribute:lab_access,llm_advisory,Resource adequacy
+How do international students manage OPT stress in STEM programs?,International student,emotional_advisory,high,major:STEM; attribute:OPT,llm_advisory,Visa/employment concern
+Are late admissions available for mechanical engineering PhD applicants?,Graduate applicant,advisory,medium,major:mechanical_engineering; degree:PhD; timing:late_admissions,llm_advisory,Application timing
+What are the risks of switching from law to computer science in your 20s?,Career changer,emotional_advisory,high,age:20s; prior_degree:law; major:CS,llm_advisory,Career pivot
+How can engineering graduates improve teamwork skills?,Employer / Recruiter,advisory,medium,major:engineering; attribute:teamwork,llm_advisory,Collaboration improvement
+How strong are AI graduates in applied projects compared to theory?,Industry hiring manager,advisory,high,major:AI; attribute:applied,llm_advisory,Skill evaluation
+How can VR labs enhance collaboration for mechanical engineering students?,EdTech founder,strategy,high,major:mechanical_engineering; attribute:VR_lab,llm_strategy,Innovation
+How can rural computer science students increase graduation rates?,Scholarship foundation officer,advisory,high,major:computer_science; location:rural; attribute:graduation_rate,llm_advisory,Program guidance
+How do transfer students handle missing aerospace prerequisites?,Transfer student,advisory,high,major:aerospace_engineering; attribute:prerequisites,llm_advisory,Academic planning
+How can community college students access chemistry labs?,Community college student,advisory,medium,major:chemistry; attribute:lab_access,llm_advisory,Resource access
+How do international students manage OPT deadlines and stress?,International student,emotional_advisory,high,major:STEM; attribute:OPT,llm_advisory,Visa management
+How do graduate applicants strengthen late AI applications?,Graduate applicant,advisory,medium,major:AI; timing:late_application,llm_advisory,Application support
+What resources help teachers transition to UX design careers?,Career changer,advisory,medium,prior_profession:teaching; major:UX_design,llm_advisory,Career resources
+How can employers help CS graduates improve communication skills?,Employer / Recruiter,advisory,medium,major:computer_science; attribute:communication,llm_advisory,Training advice
+How can data science graduates improve applied R experience?,Industry hiring manager,advisory,medium,major:data_science; attribute:R,llm_advisory,Skill building
+How do project-based computer science labs improve learning?,EdTech founder,strategy,high,major:computer_science; attribute:project_based_learning,llm_strategy,Curriculum development
+How are undergraduate success rates measured for scholarship programs?,Scholarship foundation officer,advisory,high,degree:undergraduate; attribute:success_rate,llm_advisory,Program evaluation
+How do transfer students apply for honors programs at their new university?,Transfer student,advisory,medium,program:honors,llm_advisory,Academic enhancement
+Can community college students take cross-listed courses at universities?,Community college student,advisory,medium,attribute:cross-listed_courses,llm_advisory,Course access
+What are the visa requirements for international students doing research abroad?,International student,advisory,high,attribute:research; visa:required,llm_advisory,Research travel guidance
+Are there bridge programs for graduate applicants from unrelated undergraduate majors?,Graduate applicant,advisory,high,attribute:bridge_program; prior_degree:unrelated,llm_advisory,Admission pathways
+How can career changers leverage certificates to enter data analytics?,Career changer,advisory,medium,credential:certificate; career:data_analytics,llm_advisory,Career transition
+How do employers evaluate soft skills for recent graduates in marketing?,Employer / Recruiter,advisory,medium,major:marketing; attribute:soft_skills,llm_advisory,Hiring evaluation
+What competencies are most important for industry hiring managers in cybersecurity roles?,Industry hiring manager,advisory,high,field:cybersecurity; attribute:competencies,llm_advisory,Skill prioritization
+How can an EdTech founder design a coding bootcamp for adult learners?,EdTech founder,strategy,high,audience:adult_learners; course:coding_bootcamp,llm_strategy,Program design
+How can scholarship officers identify students from underrepresented communities?,Scholarship foundation officer,advisory,high,attribute:underrepresented; program:scholarship,llm_advisory,Equity identification
+What are the challenges transfer students face with financial aid?,Transfer student,advisory,high,attribute:financial_aid,llm_advisory,Funding guidance
+How can community college students prepare for university STEM labs?,Community college student,advisory,medium,major:STEM; attribute:lab_preparation,llm_advisory,Academic readiness
+Can international students apply for paid internships during their studies?,International student,advisory,medium,attribute:internship; visa:required,llm_advisory,Work eligibility
+How can graduate applicants strengthen their statement of purpose?,Graduate applicant,advisory,medium,attribute:statement_of_purpose,llm_advisory,Application improvement
+What resources help career changers learn cloud computing quickly?,Career changer,advisory,medium,career:cloud_computing,llm_advisory,Skill acquisition
+How can employers assess teamwork in virtual environments?,Employer / Recruiter,advisory,medium,attribute:teamwork; environment:virtual,llm_advisory,Hiring guidance
+"What technical skills are most lacking in AI graduates, according to hiring managers?",Industry hiring manager,advisory,medium,major:AI; attribute:technical_skills,llm_advisory,Skill assessment
+How can EdTech founders design interactive VR experiences for physics courses?,EdTech founder,strategy,high,major:physics; attribute:VR,llm_strategy,Product innovation
+How do scholarship officers track alumni success post-graduation?,Scholarship foundation officer,advisory,medium,attribute:alumni_success,llm_advisory,Program evaluation
+What strategies help transfer students adapt to new campus cultures?,Transfer student,advisory,medium,attribute:campus_culture,llm_advisory,Social integration
+How can community college students find research opportunities at universities?,Community college student,advisory,medium,attribute:research_opportunities,llm_advisory,Academic growth
+Can international students receive scholarships for STEM fields?,International student,advisory,medium,major:STEM; attribute:scholarship,llm_advisory,Funding guidance
+What are best practices for graduate applicants networking in their field?,Graduate applicant,advisory,medium,attribute:networking,llm_advisory,Professional preparation
+How do career changers transition from marketing to UX research?,Career changer,advisory,medium,prior_career:marketing; career:UX_research,llm_advisory,Career pivot
+How can employers improve onboarding for remote hires?,Employer / Recruiter,advisory,medium,attribute:onboarding; environment:remote,llm_advisory,HR process
+What are key evaluation metrics for hiring managers when assessing software engineers?,Industry hiring manager,advisory,medium,field:software_engineering; attribute:evaluation_metrics,llm_advisory,Recruitment assessment
+How can EdTech founders incorporate AI tutors into online courses?,EdTech founder,strategy,high,attribute:AI_tutors; course:online,llm_strategy,Product design
+How can scholarship officers support first-generation college students?,Scholarship foundation officer,advisory,high,attribute:first_generation,llm_advisory,Equity support
+What transfer credit policies exist for engineering students moving universities?,Transfer student,advisory,high,major:engineering; attribute:credit_transfer,llm_advisory,Academic planning
+How can community college students access library resources at universities?,Community college student,advisory,medium,attribute:library_access,llm_advisory,Resource access
+Can international students participate in campus leadership programs?,International student,advisory,medium,attribute:leadership_programs,llm_advisory,Engagement
+How can graduate applicants improve GRE scores for top programs?,Graduate applicant,advisory,medium,attribute:GRE; target:top_programs,llm_advisory,Application strengthening
+What strategies help career changers build portfolios in graphic design?,Career changer,advisory,medium,career:graphic_design; attribute:portfolio,llm_advisory,Career pivot
+How do employers evaluate candidates’ problem-solving skills?,Employer / Recruiter,advisory,medium,attribute:problem_solving,llm_advisory,Hiring assessment
+What technical competencies are most valued by hiring managers for data science roles?,Industry hiring manager,advisory,high,field:data_science; attribute:technical_competencies,llm_advisory,Skill prioritization
+How can EdTech founders create collaborative coding projects for students?,EdTech founder,strategy,high,attribute:collaboration; course:coding,llm_strategy,Product design
+How can scholarship officers increase applications from rural students?,Scholarship foundation officer,advisory,high,attribute:rural_students,llm_advisory,Outreach
+How do transfer students adjust to differences in academic rigor?,Transfer student,advisory,medium,attribute:academic_rigor,llm_advisory,Academic adaptation
+How can community college students prepare for technical interviews?,Community college student,advisory,medium,attribute:technical_interviews,llm_advisory,Career readiness
+Can international students join university clubs and organizations?,International student,advisory,medium,attribute:student_clubs,llm_advisory,Engagement opportunities
+How should graduate applicants structure research proposals?,Graduate applicant,advisory,medium,attribute:research_proposal,llm_advisory,Application guidance
+How do career changers find mentorship in new industries?,Career changer,advisory,medium,attribute:mentorship,llm_advisory,Professional growth
+How can employers evaluate cultural fit during recruitment?,Employer / Recruiter,advisory,medium,attribute:cultural_fit,llm_advisory,Hiring guidance
+What are the top skills hiring managers look for in cloud computing applicants?,Industry hiring manager,advisory,high,field:cloud_computing; attribute:skills,llm_advisory,Recruitment guidance
+How can EdTech founders integrate gamification into STEM learning?,EdTech founder,strategy,high,field:STEM; attribute:gamification,llm_strategy,Learning design
+How can scholarship officers monitor equity outcomes in STEM scholarships?,Scholarship foundation officer,advisory,high,major:STEM; attribute:equity_outcomes,llm_advisory,Program evaluation
+How do transfer students manage course scheduling conflicts?,Transfer student,advisory,medium,attribute:course_scheduling,llm_advisory,Planning advice
+How can community college students improve public speaking skills?,Community college student,advisory,medium,attribute:public_speaking,llm_advisory,Skill development
+What are the employment restrictions for international students on OPT?,International student,advisory,high,attribute:OPT; employment:restrictions,llm_advisory,Compliance guidance
+How can graduate applicants find funding for independent research projects?,Graduate applicant,advisory,high,attribute:research_funding,llm_advisory,Financial guidance
+How can career changers leverage LinkedIn for new industry opportunities?,Career changer,advisory,medium,attribute:LinkedIn; career:transition,llm_advisory,Networking guidance
+How do employers assess remote collaboration skills during interviews?,Employer / Recruiter,advisory,medium,attribute:remote_collaboration,llm_advisory,Hiring evaluation
+What are the most critical coding skills hiring managers require for AI roles?,Industry hiring manager,advisory,high,field:AI; attribute:coding_skills,llm_advisory,Recruitment guidance
+How can EdTech founders implement peer review in online courses?,EdTech founder,strategy,high,attribute:peer_review; course:online,llm_strategy,Curriculum innovation
+How can scholarship officers provide mentorship for underrepresented students?,Scholarship foundation officer,advisory,high,attribute:mentorship; population:underrepresented,llm_advisory,Program guidance
+How can transfer students ensure their general education credits transfer smoothly?,Transfer student,advisory,medium,attribute:general_education; action:credit_transfer,llm_advisory,Academic planning
+What are the best strategies for community college students to improve their GPA before transferring?,Community college student,advisory,medium,attribute:GPA; action:improvement,llm_advisory,Transfer competitiveness
+Can international graduate students get assistantships at top research universities?,Graduate applicant,advisory,high,status:international; attribute:assistantship,llm_advisory,Funding and opportunity
+How do transfer students find peer study groups at their new university?,Transfer student,advisory,medium,attribute:peer_study_groups,llm_advisory,Academic integration
+What scholarships are available specifically for community college students transferring to STEM programs?,Community college student,advisory,high,attribute:scholarship; major:STEM,llm_advisory,Funding guidance
+How can graduate applicants improve their CV for competitive biology PhD programs?,Graduate applicant,advisory,high,field:biology; attribute:CV,llm_advisory,Application preparation
+How do transfer students navigate differences in grading policies between colleges?,Transfer student,advisory,medium,attribute:grading_policies,llm_advisory,Academic adaptation
+Are there online courses community college students can take to prepare for university-level statistics?,Community college student,advisory,medium,major:statistics; attribute:online_courses,llm_advisory,Preparation guidance
+Can international graduate applicants work part-time while studying?,Graduate applicant,advisory,medium,status:international; attribute:part_time_work,llm_advisory,Work authorization
+How can transfer students identify majors that best fit their previous coursework?,Transfer student,advisory,medium,attribute:major_selection; action:course_alignment,llm_advisory,Degree planning
+How do community college students find professors to write strong recommendation letters?,Community college student,advisory,medium,attribute:recommendation_letters,llm_advisory,Application support
+What additional exams might international graduate students need for STEM programs?,Graduate applicant,advisory,medium,field:STEM; status:international; attribute:exam,llm_advisory,Admission guidance
+How do transfer students manage overlapping course schedules in a new university?,Transfer student,advisory,medium,attribute:course_scheduling,llm_advisory,Planning
+What tutoring resources are most effective for community college students transferring into engineering?,Community college student,advisory,medium,major:engineering; attribute:tutoring,llm_advisory,Academic support
+How can graduate applicants improve research experience if they are coming from non-research backgrounds?,Graduate applicant,advisory,high,attribute:research_experience; prior_background:non_research,llm_advisory,Application strengthening
+How do transfer students verify prerequisite equivalency at a new school?,Transfer student,advisory,medium,attribute:prerequisite_equivalency,llm_advisory,Academic verification
+Are there summer programs for community college students to gain university lab experience?,Community college student,advisory,medium,attribute:summer_program; major:lab_experience,llm_advisory,Preparation opportunities
+Can international graduate students apply for external funding from their home country?,Graduate applicant,advisory,high,status:international; attribute:external_funding,llm_advisory,Funding options
+How do transfer students handle differences in major requirements between colleges?,Transfer student,advisory,medium,attribute:major_requirements,llm_advisory,Academic planning
+What are the best online tools for community college students to track transfer applications?,Community college student,advisory,medium,attribute:application_tracking; medium:online_tools,llm_advisory,Organization guidance
+How can graduate applicants highlight interdisciplinary experience on applications?,Graduate applicant,advisory,medium,attribute:interdisciplinary_experience,llm_advisory,Application enhancement
+How do transfer students select advisors who understand transfer-specific issues?,Transfer student,advisory,medium,attribute:advisor_selection,llm_advisory,Mentorship
+Can community college students attend university career fairs before transferring?,Community college student,advisory,medium,attribute:career_fairs,llm_advisory,Networking
+What strategies help international graduate students adjust to research culture in a new country?,Graduate applicant,advisory,high,status:international; attribute:research_culture,llm_advisory,Cultural adaptation
+How can transfer students strengthen their application for competitive programs?,Transfer student,advisory,medium,attribute:application_strength,llm_advisory,Competitive positioning
+Are there mentorship programs for community college students transitioning to engineering majors?,Community college student,advisory,medium,attribute:mentorship; major:engineering,llm_advisory,Support guidance
+How do graduate applicants identify faculty who align with their research interests?,Graduate applicant,advisory,medium,attribute:faculty_matching; research:interests,llm_advisory,Academic guidance
+What are common challenges transfer students face with housing at new universities?,Transfer student,advisory,medium,attribute:housing,llm_advisory,Logistical planning
+How can community college students enhance portfolios before applying to art programs?,Community college student,advisory,medium,major:art; attribute:portfolio,llm_advisory,Application enhancement
+Can international graduate students request deferment if visas are delayed?,Graduate applicant,advisory,medium,status:international; attribute:visa,llm_advisory,Admission timing
+How do transfer students find opportunities to join campus clubs?,Transfer student,advisory,medium,attribute:campus_clubs,llm_advisory,Social integration
+Are there accelerated programs for community college students to finish degrees faster?,Community college student,advisory,medium,attribute:accelerated_program,llm_advisory,Degree completion
+How can graduate applicants demonstrate leadership in research projects?,Graduate applicant,advisory,medium,attribute:leadership; field:research,llm_advisory,Application guidance
+What support services exist for transfer students with disabilities?,Transfer student,advisory,medium,attribute:disability_support,llm_advisory,Inclusion guidance
+How do community college students find research internships for summer?,Community college student,advisory,medium,attribute:research_internship; period:summer,llm_advisory,Opportunities
+Can international graduate students switch advisors if research interests change?,Graduate applicant,advisory,medium,status:international; attribute:advisor_switch,llm_advisory,Mentorship flexibility
+How do transfer students handle GPA differences between schools when applying for graduate programs?,Transfer student,advisory,high,attribute:GPA; target:graduate_program,llm_advisory,Application evaluation
+How can community college students improve STEM lab skills before transferring?,Community college student,advisory,medium,major:STEM; attribute:lab_skills,llm_advisory,Academic preparation
+Are there special orientation programs for international graduate students?,Graduate applicant,advisory,medium,status:international; attribute:orientation,llm_advisory,Adjustment support
+How can transfer students maintain scholarships after moving schools?,Transfer student,advisory,medium,attribute:scholarship,llm_advisory,Funding continuity
+What workshops help community college students develop leadership skills?,Community college student,advisory,medium,attribute:leadership_workshops,llm_advisory,Personal development
+How do graduate applicants find interdisciplinary research collaborations?,Graduate applicant,advisory,medium,attribute:research_collaboration; field:interdisciplinary,llm_advisory,Academic networking
+How can transfer students get involved in undergraduate research quickly?,Transfer student,advisory,medium,attribute:undergraduate_research,llm_advisory,Research integration
+Can community college students apply for dual-enrollment programs at universities?,Community college student,advisory,medium,attribute:dual_enrollment,llm_advisory,Academic opportunity
+How do graduate applicants prepare for oral exams in STEM fields?,Graduate applicant,advisory,medium,field:STEM; attribute:oral_exam,llm_advisory,Exam preparation
+What support exists for transfer students who experience culture shock at large universities?,Transfer student,emotional_advisory,medium,attribute:culture_shock,llm_advisory,Adjustment support
+How can community college students access online research databases before transferring?,Community college student,advisory,medium,attribute:research_database_access,llm_advisory,Academic resources
+Can international graduate applicants negotiate start dates based on visa processing?,Graduate applicant,advisory,medium,status:international; attribute:visa; action:negotiation,llm_advisory,Admission planning
+How do transfer students navigate major-specific course sequencing at a new school?,Transfer student,advisory,medium,attribute:course_sequencing; major:specific,llm_advisory,Degree planning
+How can community college students prepare for competitive science fairs?,Community college student,advisory,medium,attribute:science_fair; major:STEM,llm_advisory,Preparation guidance
+What funding options exist for graduate applicants doing unpaid internships?,Graduate applicant,advisory,high,attribute:funding; opportunity:unpaid_internship,llm_advisory,Financial guidance
+How do transfer students find campus resources for mental health support?,Transfer student,advisory,medium,attribute:mental_health,llm_advisory,Support guidance
+How can community college students connect with university alumni for mentorship?,Community college student,advisory,medium,attribute:mentorship; network:alumni,llm_advisory,Networking
+Can international graduate students take professional development workshops while studying?,Graduate applicant,advisory,medium,status:international; attribute:workshop,llm_advisory,Skill building
+How do transfer students prepare for graduate-level course expectations?,Transfer student,advisory,high,attribute:graduate_course_prep,llm_advisory,Academic readiness
+What strategies help community college students secure research assistant positions?,Community college student,advisory,medium,attribute:research_assistant,llm_advisory,Career preparation
+How can graduate applicants demonstrate teaching experience for assistantship applications?,Graduate applicant,advisory,medium,attribute:teaching_experience; opportunity:assistantship,llm_advisory,Funding & experience
+How do transfer students adapt to larger class sizes at their new university?,Transfer student,advisory,medium,attribute:class_size,llm_advisory,Academic adaptation
+Are there bridge courses for community college students entering high-level STEM courses?,Community college student,advisory,medium,attribute:bridge_course; major:STEM,llm_advisory,Academic preparation
+How can international graduate students manage time differences for virtual research meetings?,Graduate applicant,advisory,medium,status:international; attribute:virtual_meetings,llm_advisory,Productivity guidance
+How do transfer students handle differences in campus technology platforms?,Transfer student,advisory,medium,attribute:technology_platforms,llm_advisory,Academic integration
+Are there programs for community college students to shadow professionals in their field?,Community college student,advisory,medium,attribute:shadowing; career_field,llm_advisory,Career prep
+How can graduate applicants improve publication record before applying?,Graduate applicant,advisory,high,attribute:publications; field:research,llm_advisory,Application strengthening
+What social resources help transfer students make friends quickly?,Transfer student,emotional_advisory,medium,attribute:social_integration,llm_advisory,Campus life
+Can community college students get early access to university labs?,Community college student,advisory,medium,attribute:lab_access,llm_advisory,Academic preparation
+How do graduate applicants find interdisciplinary workshops in their field?,Graduate applicant,advisory,medium,attribute:workshops; field:interdisciplinary,llm_advisory,Professional development
+What are the best ways for transfer students to advocate for credit exceptions?,Transfer student,advisory,medium,attribute:credit_exception,llm_advisory,Academic strategy
+How can community college students prepare for portfolio reviews in art or design programs?,Community college student,advisory,medium,attribute:portfolio_review; major:art/design,llm_advisory,Application prep
+Are there funding programs for international graduate students attending conferences?,Graduate applicant,advisory,high,status:international; attribute:conference_funding,llm_advisory,Networking & funding
+How do transfer students find academic clubs that fit their interests?,Transfer student,advisory,medium,attribute:clubs,llm_advisory,Campus engagement
+What mentorship programs exist for community college STEM students?,Community college student,advisory,medium,attribute:mentorship; major:STEM,llm_advisory,Academic support
+How can graduate applicants demonstrate leadership in collaborative research projects?,Graduate applicant,advisory,medium,attribute:leadership; action:collaboration,llm_advisory,Application enhancement
+How do transfer students handle being in smaller social networks initially?,Transfer student,emotional_advisory,medium,attribute:social_networks,llm_advisory,Social integration
+Are there summer bootcamps for community college students entering engineering?,Community college student,advisory,medium,attribute:summer_bootcamp; major:engineering,llm_advisory,Academic prep
+Can graduate applicants receive recommendation letters from industry mentors?,Graduate applicant,advisory,medium,attribute:recommendation; source:industry,llm_advisory,Application guidance
+How do transfer students manage double majors with conflicting course requirements?,Transfer student,advisory,high,attribute:double_major; action:course_planning,llm_advisory,Degree planning
+How can community college students get research experience remotely?,Community college student,advisory,medium,attribute:remote_research,llm_advisory,Academic opportunity
+What strategies help graduate applicants secure competitive fellowships?,Graduate applicant,advisory,high,attribute:fellowships; action:application_strategy,llm_advisory,Funding
+How do transfer students learn about departmental events quickly?,Transfer student,advisory,medium,attribute:department_events,llm_advisory,Engagement
+Are there university programs that pair community college students with graduate mentors?,Community college student,advisory,medium,attribute:mentorship_program; mentor_type:graduate,llm_advisory,Academic support
+How can graduate applicants demonstrate technical skills in non-STEM fields?,Graduate applicant,advisory,medium,attribute:technical_skills; field:non-STEM,llm_advisory,Application enhancement
+How do transfer students find affordable housing options near campus?,Transfer student,advisory,medium,attribute:housing; action:affordable,llm_advisory,Logistics
+Can community college students audit university courses before transferring?,Community college student,advisory,medium,attribute:course_audit,llm_advisory,Academic prep
+How do graduate applicants prepare for interdisciplinary oral defenses?,Graduate applicant,advisory,high,attribute:oral_defense; field:interdisciplinary,llm_advisory,Exam preparation
+How do transfer students navigate differences in campus culture?,Transfer student,emotional_advisory,medium,attribute:campus_culture,llm_advisory,Social adaptation
+Are there accelerated research programs for community college students?,Community college student,advisory,medium,attribute:accelerated_research,llm_advisory,Academic opportunity
+How can graduate applicants strengthen teaching portfolios for assistantships?,Graduate applicant,advisory,medium,attribute:teaching_portfolio; opportunity:assistantship,llm_advisory,Funding support
+How do transfer students adjust to larger lecture-style courses?,Transfer student,advisory,medium,attribute:lecture_courses,llm_advisory,Academic adaptation
+Can community college students participate in university hackathons?,Community college student,advisory,medium,attribute:hackathon_participation,llm_advisory,Skill development
+How do graduate applicants manage time for coursework and research simultaneously?,Graduate applicant,advisory,medium,attribute:time_management,llm_advisory,Academic balance
+How do transfer students access academic advising for specialized majors?,Transfer student,advisory,medium,attribute:academic_advising; major:specialized,llm_advisory,Degree planning
+What programs help community college students build professional networks?,Community college student,advisory,medium,attribute:networking_programs,llm_advisory,Career prep
+How can graduate applicants improve grant-writing skills?,Graduate applicant,advisory,high,attribute:grant_writing,llm_advisory,Funding preparation
+How do transfer students find community service opportunities on campus?,Transfer student,advisory,medium,attribute:community_service,llm_advisory,Engagement
+Are there scholarships for community college students pursuing research-heavy majors?,Community college student,advisory,high,attribute:scholarship; major:research_heavy,llm_advisory,Funding
+How do graduate applicants find interdisciplinary research groups to join?,Graduate applicant,advisory,medium,attribute:research_group; field:interdisciplinary,llm_advisory,Academic networking
+How can transfer students manage differences in extracurricular opportunities?,Transfer student,advisory,medium,attribute:extracurriculars,llm_advisory,Engagement
+Are there mentorship opportunities for community college students in business majors?,Community college student,advisory,medium,attribute:mentorship; major:business,llm_advisory,Career prep
+How do graduate applicants prepare teaching statements for applications?,Graduate applicant,advisory,medium,attribute:teaching_statement,llm_advisory,Application enhancement
+How do transfer students handle gaps in prerequisite knowledge?,Transfer student,advisory,medium,attribute:prerequisite_gaps,llm_advisory,Academic support
+Can community college students take summer research internships at universities?,Community college student,advisory,medium,attribute:summer_internship; major:research,llm_advisory,Academic opportunity
+How can graduate applicants highlight industry experience in research-focused applications?,Graduate applicant,advisory,medium,attribute:industry_experience; field:research,llm_advisory,Application strategy
+How do transfer students find advisors for independent study projects?,Transfer student,advisory,medium,attribute:independent_study,llm_advisory,Academic planning
+What programs help community college students explore emerging tech fields?,Community college student,advisory,medium,attribute:emerging_tech_programs,llm_advisory,Skill development
+Can graduate applicants apply for teaching assistantships while completing coursework?,Graduate applicant,advisory,medium,attribute:assistantship; action:concurrent,llm_advisory,Funding opportunity
+How do transfer students navigate differences in grading scales?,Transfer student,advisory,medium,attribute:grading_scale,llm_advisory,Academic adaptation
+Are there summer workshops for community college students in data science?,Community college student,advisory,medium,attribute:summer_workshop; major:data_science,llm_advisory,Preparation
+How do graduate applicants find interdisciplinary lab collaborations?,Graduate applicant,advisory,medium,attribute:lab_collaboration; field:interdisciplinary,llm_advisory,Academic networking
+How can transfer students build leadership experience quickly?,Transfer student,advisory,medium,attribute:leadership_experience,llm_advisory,Campus involvement
+Can community college students participate in university entrepreneurship programs?,Community college student,advisory,medium,attribute:entrepreneurship_program,llm_advisory,Skill building
+How do graduate applicants balance lab work with teaching duties?,Graduate applicant,advisory,medium,attribute:time_management; responsibility:lab_and_teaching,llm_advisory,Productivity guidance
+How do transfer students find research opportunities in small departments?,Transfer student,advisory,medium,attribute:research_opportunity; dept_size:small,llm_advisory,Academic integration
+What programs help community college students improve coding skills before transferring?,Community college student,advisory,medium,attribute:program; skill:coding,llm_advisory,Academic prep
+Can graduate applicants take online professional development courses while enrolled?,Graduate applicant,advisory,medium,attribute:online_courses; purpose:professional_dev,llm_advisory,Skill enhancement
+How do transfer students adjust to different advising structures?,Transfer student,advisory,medium,attribute:advising_structure,llm_advisory,Academic adaptation
+How can community college students find internships in competitive fields?,Community college student,advisory,high,attribute:internship; field:competitive,llm_advisory,Career prep
+How do graduate applicants showcase research impact in applications?,Graduate applicant,advisory,medium,attribute:research_impact,llm_advisory,Application guidance
+How do transfer students connect with student organizations after arriving?,Transfer student,advisory,medium,attribute:student_organizations,llm_advisory,Social integration
+Are there programs to help community college students develop soft skills for transfer?,Community college student,advisory,medium,attribute:soft_skills,llm_advisory,Personal development
+How can graduate applicants prepare for comprehensive exams in interdisciplinary programs?,Graduate applicant,advisory,high,attribute:comprehensive_exam; field:interdisciplinary,llm_advisory,Exam prep
+Transfer credits accepted?,Transfer student,exact_lookup,short_circuit,attribute:credits,llm_advisory,Academic planning
+Community college STEM clubs?,Community college student,attribute_lookup,medium,attribute:clubs; major:STEM,llm_advisory,Campus engagement
+Grad assistantship pay?,Graduate applicant,exact_lookup,medium,attribute:assistantship_pay,llm_advisory,Funding info
+Transfer orientation schedule?,Transfer student,exact_lookup,short_circuit,attribute:orientation,llm_advisory,Campus integration
+Community college housing options?,Community college student,exact_lookup,medium,attribute:housing,llm_advisory,Logistics
+Grad programs with research?,Graduate applicant,attribute_lookup,medium,attribute:research_programs,llm_advisory,Academic fit
+Transfer student clubs?,Transfer student,attribute_lookup,medium,attribute:clubs,llm_advisory,Social integration
+Community college scholarships?,Community college student,exact_lookup,medium,attribute:scholarships,llm_advisory,Funding
+Grad teaching assistantships?,Graduate applicant,exact_lookup,medium,attribute:assistantship,llm_advisory,Academic funding
+Transfer student mentors?,Transfer student,attribute_lookup,medium,attribute:mentorship,llm_advisory,Guidance
+Community college internships?,Community college student,attribute_lookup,medium,attribute:internship,llm_advisory,Career prep
+Grad application deadlines?,Graduate applicant,exact_lookup,short_circuit,attribute:application_deadline,llm_advisory,Timing
+Transfer GPA requirement?,Transfer student,exact_lookup,short_circuit,attribute:GPA,llm_advisory,Eligibility
+Community college labs?,Community college student,attribute_lookup,medium,attribute:labs,llm_advisory,Academic prep
+Grad funding options?,Graduate applicant,attribute_lookup,medium,attribute:funding,llm_advisory,Financial planning
+Transfer housing costs?,Transfer student,exact_lookup,medium,attribute:housing_cost,llm_advisory,Budgeting
+Community college online courses?,Community college student,attribute_lookup,medium,attribute:online_courses,llm_advisory,Flexibility
+Grad programs ranking?,Graduate applicant,exact_lookup,medium,attribute:ranking,llm_advisory,Selection
+Transfer student social events?,Transfer student,attribute_lookup,medium,attribute:social_events,llm_advisory,Engagement
+Community college study groups?,Community college student,attribute_lookup,medium,attribute:study_groups,llm_advisory,Academic support
+Grad lab rotations?,Graduate applicant,exact_lookup,medium,attribute:lab_rotation,llm_advisory,Research prep
+Transfer student advising?,Transfer student,attribute_lookup,medium,attribute:advising,llm_advisory,Academic guidance
+Community college career fairs?,Community college student,attribute_lookup,medium,attribute:career_fair,llm_advisory,Career prep
+Grad interdisciplinary programs?,Graduate applicant,attribute_lookup,medium,attribute:interdisciplinary_programs,llm_advisory,Academic fit
+Transfer student clubs near me?,Transfer student,attribute_lookup,medium,attribute:clubs,llm_advisory,Social integration
+Community college coding bootcamps?,Community college student,attribute_lookup,medium,attribute:bootcamp; skill:coding,llm_advisory,Skill development
+Grad assistantship benefits?,Graduate applicant,exact_lookup,medium,attribute:assistantship_benefits,llm_advisory,Funding
+Transfer credit evaluation?,Transfer student,exact_lookup,medium,attribute:credit_evaluation,llm_advisory,Academic planning
+Community college research help?,Community college student,attribute_lookup,medium,attribute:research_support,llm_advisory,Academic prep
+Grad seminars for research?,Graduate applicant,attribute_lookup,medium,attribute:seminar; field:research,llm_advisory,Academic growth
+Transfer student campus maps?,Transfer student,exact_lookup,short_circuit,attribute:campus_map,llm_advisory,Logistics
+Community college STEM workshops?,Community college student,attribute_lookup,medium,attribute:workshops; major:STEM,llm_advisory,Skill development
+Grad networking events?,Graduate applicant,attribute_lookup,medium,attribute:networking,llm_advisory,Professional growth
+Transfer GPA for honors?,Transfer student,exact_lookup,short_circuit,attribute:GPA; action:honors,llm_advisory,Academic planning
+Community college job placement?,Community college student,attribute_lookup,medium,attribute:job_placement,llm_advisory,Career outcomes
+Grad program prerequisites?,Graduate applicant,exact_lookup,medium,attribute:prerequisites,llm_advisory,Application prep
+Transfer student library access?,Transfer student,exact_lookup,medium,attribute:library_access,llm_advisory,Academic resources
+Community college lab safety?,Community college student,attribute_lookup,medium,attribute:lab_safety,llm_advisory,Academic prep
+Grad research grants?,Graduate applicant,attribute_lookup,medium,attribute:research_grants,llm_advisory,Funding
+Transfer student housing deadline?,Transfer student,exact_lookup,short_circuit,attribute:housing_deadline,llm_advisory,Logistics
+Community college tutoring programs?,Community college student,attribute_lookup,medium,attribute:tutoring,llm_advisory,Academic support
+Grad publication requirements?,Graduate applicant,exact_lookup,medium,attribute:publications,llm_advisory,Application prep
+Transfer student health services?,Transfer student,exact_lookup,medium,attribute:health_services,llm_advisory,Well-being
+Community college scholarships STEM?,Community college student,attribute_lookup,medium,attribute:scholarship; major:STEM,llm_advisory,Funding
+Grad thesis deadlines?,Graduate applicant,exact_lookup,short_circuit,attribute:thesis_deadline,llm_advisory,Timeline
+Transfer student orientation events?,Transfer student,attribute_lookup,medium,attribute:orientation_events,llm_advisory,Social integration
+Community college industry partnerships?,Community college student,attribute_lookup,medium,attribute:industry_partnership,llm_advisory,Career prep
+Grad application materials?,Graduate applicant,exact_lookup,medium,attribute:application_materials,llm_advisory,Prep checklist
+Transfer student scholarship apps?,Transfer student,exact_lookup,medium,attribute:scholarships,llm_advisory,Funding
+Community college summer programs?,Community college student,attribute_lookup,medium,attribute:summer_programs,llm_advisory,Skill building
+Grad lab equipment access?,Graduate applicant,attribute_lookup,medium,attribute:lab_equipment,llm_advisory,Research prep
+Transfer student advising appointments?,Transfer student,exact_lookup,medium,attribute:advising,llm_advisory,Academic planning
+Community college student organizations?,Community college student,attribute_lookup,medium,attribute:student_organizations,llm_advisory,Engagement
+Grad interdisciplinary workshops?,Graduate applicant,attribute_lookup,medium,attribute:workshops; field:interdisciplinary,llm_advisory,Academic prep
+Transfer student campus clubs?,Transfer student,attribute_lookup,medium,attribute:clubs,llm_advisory,Social integration
+Community college online labs?,Community college student,attribute_lookup,medium,attribute:online_labs,llm_advisory,Academic prep
+Grad assistantship hours?,Graduate applicant,exact_lookup,medium,attribute:assistantship_hours,llm_advisory,Scheduling
+Transfer student course transfer?,Transfer student,exact_lookup,medium,attribute:course_transfer,llm_advisory,Academic planning
+Community college mentorship programs?,Community college student,attribute_lookup,medium,attribute:mentorship,llm_advisory,Guidance
+Grad lab assistantships?,Graduate applicant,exact_lookup,medium,attribute:assistantship; type:lab,llm_advisory,Funding
+Transfer student campus tours?,Transfer student,exact_lookup,short_circuit,attribute:campus_tours,llm_advisory,Orientation
+Community college career counseling?,Community college student,attribute_lookup,medium,attribute:career_counseling,llm_advisory,Career support
+Grad research assistantships?,Graduate applicant,exact_lookup,medium,attribute:research_assistantship,llm_advisory,Funding
+Transfer student GPA calculator?,Transfer student,exact_lookup,short_circuit,attribute:GPA,llm_advisory,Academic planning
+Community college credit evaluation?,Community college student,exact_lookup,medium,attribute:credit_evaluation,llm_advisory,Transfer prep
+Grad funding deadlines?,Graduate applicant,exact_lookup,short_circuit,attribute:funding_deadline,llm_advisory,Financial planning
+Transfer student campus resources?,Transfer student,attribute_lookup,medium,attribute:resources,llm_advisory,Academic support
+Community college STEM research?,Community college student,attribute_lookup,medium,attribute:research; major:STEM,llm_advisory,Experience building
+Grad interdisciplinary labs?,Graduate applicant,attribute_lookup,medium,attribute:lab; field:interdisciplinary,llm_advisory,Research
+Transfer student course planner?,Transfer student,exact_lookup,medium,attribute:course_planner,llm_advisory,Academic guidance
+Community college summer research?,Community college student,attribute_lookup,medium,attribute:summer_research,llm_advisory,Academic prep
+Grad assistantship eligibility?,Graduate applicant,exact_lookup,medium,attribute:eligibility; assistantship,llm_advisory,Funding
+Transfer student orientation guide?,Transfer student,exact_lookup,short_circuit,attribute:orientation_guide,llm_advisory,Integration
+Community college internships STEM?,Community college student,attribute_lookup,medium,attribute:internship; major:STEM,llm_advisory,Career prep
+Grad research conferences?,Graduate applicant,attribute_lookup,medium,attribute:conference; field:research,llm_advisory,Networking
+Transfer student club fairs?,Transfer student,exact_lookup,short_circuit,attribute:club_fair,llm_advisory,Social engagement
+Transfer deadlines fall term?,Transfer student,exact_lookup,short_circuit,attribute:deadline; term:fall,llm_advisory,Academic planning
+Community college STEM scholarships?,Community college student,exact_lookup,medium,attribute:scholarships; major:STEM,llm_advisory,Funding
+Grad program online options?,Graduate applicant,attribute_lookup,medium,attribute:program_type; mode:online,llm_advisory,Flexibility
+Transfer student credit limit?,Transfer student,exact_lookup,short_circuit,attribute:credit_limit,llm_advisory,Academic planning
+Community college lab schedules?,Community college student,attribute_lookup,medium,attribute:lab_schedule,llm_advisory,Academic planning
+Grad assistantship stipend?,Graduate applicant,exact_lookup,medium,attribute:assistantship_stipend,llm_advisory,Funding info
+Transfer student course load?,Transfer student,exact_lookup,short_circuit,attribute:course_load,llm_advisory,Planning
+Community college student council?,Community college student,attribute_lookup,medium,attribute:student_council,llm_advisory,Engagement
+Grad program funding packages?,Graduate applicant,attribute_lookup,medium,attribute:funding_package,llm_advisory,Financial planning
+Transfer GPA for honors?,Transfer student,exact_lookup,short_circuit,attribute:GPA; action:honors,llm_advisory,Academic goal
+Community college STEM clubs?,Community college student,attribute_lookup,medium,attribute:clubs; major:STEM,llm_advisory,Social engagement
+Grad program scholarships?,Graduate applicant,exact_lookup,medium,attribute:scholarship,llm_advisory,Funding
+Transfer student counseling?,Transfer student,attribute_lookup,medium,attribute:counseling,llm_advisory,Well-being
+Community college research labs?,Community college student,attribute_lookup,medium,attribute:research_lab,llm_advisory,Academic prep
+Grad program ranking US?,Graduate applicant,exact_lookup,medium,attribute:ranking; region:US,llm_advisory,Selection
+Transfer student housing waitlist?,Transfer student,exact_lookup,medium,attribute:housing_waitlist,llm_advisory,Logistics
+Community college tutoring STEM?,Community college student,attribute_lookup,medium,attribute:tutoring; major:STEM,llm_advisory,Academic support
+Grad program deadlines spring?,Graduate applicant,exact_lookup,short_circuit,attribute:deadline; term:spring,llm_advisory,Application timing
+Transfer student library hours?,Transfer student,exact_lookup,medium,attribute:library_hours,llm_advisory,Campus resources
+Community college industry internships?,Community college student,attribute_lookup,medium,attribute:internship; sector:industry,llm_advisory,Career prep
+Grad program research focus?,Graduate applicant,attribute_lookup,medium,attribute:research_focus,llm_advisory,Academic fit
+Transfer student campus shuttle?,Transfer student,exact_lookup,medium,attribute:transportation,llm_advisory,Logistics
+Community college career workshops?,Community college student,attribute_lookup,medium,attribute:career_workshop,llm_advisory,Career prep
+Grad program lab access?,Graduate applicant,exact_lookup,medium,attribute:lab_access,llm_advisory,Research prep
+Transfer student honors courses?,Transfer student,exact_lookup,medium,attribute:honors_courses,llm_advisory,Academic planning
+Community college STEM events?,Community college student,attribute_lookup,medium,attribute:events; major:STEM,llm_advisory,Engagement
+Grad student conference funding?,Graduate applicant,exact_lookup,medium,attribute:conference_funding,llm_advisory,Professional development
+Transfer student study rooms?,Transfer student,exact_lookup,medium,attribute:study_room,llm_advisory,Academic prep
+Community college student clubs STEM?,Community college student,attribute_lookup,medium,attribute:clubs; major:STEM,llm_advisory,Engagement
+Grad program teaching requirements?,Graduate applicant,exact_lookup,medium,attribute:teaching_requirement,llm_advisory,Academic prep
+Transfer student online registration?,Transfer student,exact_lookup,short_circuit,attribute:registration; mode:online,llm_advisory,Enrollment
+Community college lab safety rules?,Community college student,attribute_lookup,medium,attribute:lab_safety,llm_advisory,Academic prep
+Grad student lab schedules?,Graduate applicant,attribute_lookup,medium,attribute:lab_schedule,llm_advisory,Research planning
+Transfer student advisor meeting?,Transfer student,exact_lookup,medium,attribute:advisor_meeting,llm_advisory,Academic guidance
+Community college summer STEM program?,Community college student,attribute_lookup,medium,attribute:summer_program; major:STEM,llm_advisory,Skill building
+Grad student application materials?,Graduate applicant,exact_lookup,medium,attribute:application_materials,llm_advisory,Prep checklist
+Transfer student campus safety?,Transfer student,exact_lookup,medium,attribute:campus_safety,llm_advisory,Well-being
+Community college mentorship STEM?,Community college student,attribute_lookup,medium,attribute:mentorship; major:STEM,llm_advisory,Guidance
+Grad student research publications?,Graduate applicant,exact_lookup,medium,attribute:publications,llm_advisory,Academic record
+Transfer student course catalog?,Transfer student,exact_lookup,medium,attribute:course_catalog,llm_advisory,Academic planning
+Community college internship prep?,Community college student,attribute_lookup,medium,attribute:internship_prep,llm_advisory,Career readiness
+Grad student assistantship benefits?,Graduate applicant,exact_lookup,medium,attribute:assistantship_benefits,llm_advisory,Funding
+Transfer student club registration?,Transfer student,exact_lookup,medium,attribute:club_registration,llm_advisory,Social engagement
+Community college student orgs STEM?,Community college student,attribute_lookup,medium,attribute:student_orgs; major:STEM,llm_advisory,Engagement
+Grad student conference applications?,Graduate applicant,exact_lookup,medium,attribute:conference_application,llm_advisory,Networking
+Transfer student campus email setup?,Transfer student,exact_lookup,short_circuit,attribute:email_setup,llm_advisory,Communication
+Community college STEM competitions?,Community college student,attribute_lookup,medium,attribute:competition; major:STEM,llm_advisory,Skill building
+Grad student seminar registration?,Graduate applicant,exact_lookup,medium,attribute:seminar_registration,llm_advisory,Academic prep
+Transfer student housing waitlist date?,Transfer student,exact_lookup,short_circuit,attribute:housing_waitlist,llm_advisory,Logistics
+Community college STEM lab projects?,Community college student,attribute_lookup,medium,attribute:lab_project; major:STEM,llm_advisory,Academic prep
+Grad student research assistant deadlines?,Graduate applicant,exact_lookup,short_circuit,attribute:research_assistant_deadline,llm_advisory,Funding prep
+Transfer student campus events?,Transfer student,attribute_lookup,medium,attribute:events,llm_advisory,Engagement
+Community college career mentoring?,Community college student,attribute_lookup,medium,attribute:mentoring,llm_advisory,Career prep
+Grad student funding deadlines?,Graduate applicant,exact_lookup,short_circuit,attribute:funding_deadline,llm_advisory,Financial planning
+Transfer student GPA tracking?,Transfer student,exact_lookup,short_circuit,attribute:GPA_tracking,llm_advisory,Academic monitoring
+Community college lab assistant positions?,Community college student,attribute_lookup,medium,attribute:assistant_position; location:lab,llm_advisory,Work experience
+Grad student scholarship deadlines?,Graduate applicant,exact_lookup,short_circuit,attribute:scholarship_deadline,llm_advisory,Funding
+Transfer student campus resources map?,Transfer student,exact_lookup,medium,attribute:resources_map,llm_advisory,Logistics
+Community college STEM summer internships?,Community college student,attribute_lookup,medium,attribute:internship; major:STEM,llm_advisory,Career prep
+Grad student teaching load?,Graduate applicant,exact_lookup,medium,attribute:teaching_load,llm_advisory,Scheduling
+Transfer student orientation checklist?,Transfer student,exact_lookup,short_circuit,attribute:orientation_checklist,llm_advisory,Integration
+Community college research grant apps?,Community college student,attribute_lookup,medium,attribute:research_grant_application,llm_advisory,Funding
+Grad student lab safety rules?,Graduate applicant,attribute_lookup,medium,attribute:lab_safety,llm_advisory,Research prep
+Transfer student student orgs?,Transfer student,attribute_lookup,medium,attribute:student_organizations,llm_advisory,Engagement
+Community college career workshops STEM?,Community college student,attribute_lookup,medium,attribute:career_workshop; major:STEM,llm_advisory,Career prep
+Grad student interdisciplinary seminars?,Graduate applicant,attribute_lookup,medium,attribute:seminar; field:interdisciplinary,llm_advisory,Academic growth
+Transfer student course registration online?,Transfer student,exact_lookup,short_circuit,attribute:registration; mode:online,llm_advisory,Enrollment
+Community college student union access?,Community college student,exact_lookup,medium,attribute:student_union,llm_advisory,Engagement
+Grad student lab reservation?,Graduate applicant,exact_lookup,medium,attribute:lab_reservation,llm_advisory,Research prep
+Transfer student academic calendar?,Transfer student,exact_lookup,short_circuit,attribute:academic_calendar,llm_advisory,Planning
+Community college STEM conference apps?,Community college student,attribute_lookup,medium,attribute:conference_application; major:STEM,llm_advisory,Networking
+Grad student assistantship application?,Graduate applicant,exact_lookup,medium,attribute:assistantship_application,llm_advisory,Funding prep
+Transfer student campus WiFi access?,Transfer student,exact_lookup,short_circuit,attribute:WiFi_access,llm_advisory,Logistics
+Community college lab equipment access?,Community college student,attribute_lookup,medium,attribute:lab_equipment,llm_advisory,Academic prep
+Grad student funding package details?,Graduate applicant,exact_lookup,medium,attribute:funding_package,llm_advisory,Financial planning
+Transfer student financial aid options?,Transfer student,attribute_lookup,medium,attribute:financial_aid,llm_advisory,Funding options
+Community college student STEM mentorship?,Community college student,attribute_lookup,medium,attribute:mentorship; major:STEM,llm_advisory,Guidance programs
+Graduate applicant part-time programs?,Graduate applicant,attribute_lookup,medium,attribute:program_type; mode:part-time,llm_advisory,Flexibility
+Transfer student waitlisted courses?,Transfer student,exact_lookup,medium,attribute:course_waitlist,llm_advisory,Enrollment planning
+Community college student career fairs?,Community college student,attribute_lookup,medium,attribute:career_fair,llm_advisory,Career readiness
+Grad student postdoc opportunities?,Graduate applicant,attribute_lookup,medium,attribute:postdoc_opportunities,llm_advisory,Academic planning
+Transfer student transcript submission?,Transfer student,exact_lookup,short_circuit,attribute:transcript_submission,llm_advisory,Documentation
+Community college STEM faculty contacts?,Community college student,attribute_lookup,medium,attribute:faculty_contacts; major:STEM,llm_advisory,Networking
+Grad student course prerequisites?,Graduate applicant,exact_lookup,medium,attribute:prerequisites,llm_advisory,Academic planning
+Transfer student application fee waiver?,Transfer student,exact_lookup,short_circuit,attribute:application_fee_waiver,llm_advisory,Financial planning
+Community college research assistantships?,Community college student,attribute_lookup,medium,attribute:assistantship; sector:research,llm_advisory,Academic prep
+Grad student international program options?,Graduate applicant,attribute_lookup,medium,attribute:program_type; scope:international,llm_advisory,Flexibility
+Transfer student campus WiFi map?,Transfer student,exact_lookup,medium,attribute:WiFi_map,llm_advisory,Campus logistics
+Community college STEM job boards?,Community college student,attribute_lookup,medium,attribute:job_board; major:STEM,llm_advisory,Career prep
+Grad student fellowship deadlines?,Graduate applicant,exact_lookup,short_circuit,attribute:fellowship_deadline,llm_advisory,Funding
+Transfer student online course access?,Transfer student,exact_lookup,short_circuit,attribute:online_access,llm_advisory,Enrollment
+Community college STEM certificate programs?,Community college student,attribute_lookup,medium,attribute:certificate_program; major:STEM,llm_advisory,Credentialing
+Grad student teaching assistant application?,Graduate applicant,exact_lookup,medium,attribute:TA_application,llm_advisory,Academic prep
+Transfer student orientation modules?,Transfer student,exact_lookup,short_circuit,attribute:orientation_module,llm_advisory,Integration
+Community college lab hours?,Community college student,exact_lookup,medium,attribute:lab_hours,llm_advisory,Academic prep
+Grad student cross-department seminars?,Graduate applicant,attribute_lookup,medium,attribute:seminar; scope:cross_department,llm_advisory,Academic exposure
+Transfer student housing deposit?,Transfer student,exact_lookup,short_circuit,attribute:housing_deposit,llm_advisory,Logistics
+Community college STEM online forums?,Community college student,attribute_lookup,medium,attribute:online_forum; major:STEM,llm_advisory,Engagement
+Grad student lab rotation schedule?,Graduate applicant,attribute_lookup,medium,attribute:lab_rotation,llm_advisory,Research planning
+Transfer student course overload policy?,Transfer student,exact_lookup,short_circuit,attribute:course_overload,llm_advisory,Academic rules
+Community college STEM alumni network?,Community college student,attribute_lookup,medium,attribute:alumni_network; major:STEM,llm_advisory,Networking
+Grad student language requirement?,Graduate applicant,exact_lookup,medium,attribute:language_requirement,llm_advisory,Academic prep
+Transfer student tuition refund?,Transfer student,exact_lookup,short_circuit,attribute:tuition_refund,llm_advisory,Finance
+Community college STEM workshops?,Community college student,attribute_lookup,medium,attribute:workshop; major:STEM,llm_advisory,Skill development
+Grad student dissertation submission?,Graduate applicant,exact_lookup,medium,attribute:dissertation_submission,llm_advisory,Academic milestone
+Transfer student meal plan options?,Transfer student,exact_lookup,medium,attribute:meal_plan,llm_advisory,Campus life
+Community college STEM lab safety training?,Community college student,attribute_lookup,medium,attribute:safety_training; major:STEM,llm_advisory,Compliance
+Grad student research funding sources?,Graduate applicant,attribute_lookup,medium,attribute:funding_source,llm_advisory,Financial planning
+Transfer student commuter pass?,Transfer student,exact_lookup,short_circuit,attribute:commuter_pass,llm_advisory,Campus logistics
+Community college STEM scholarship eligibility?,Community college student,exact_lookup,medium,attribute:scholarship_eligibility; major:STEM,llm_advisory,Funding
+Grad student interdisciplinary projects?,Graduate applicant,attribute_lookup,medium,attribute:projects; scope:interdisciplinary,llm_advisory,Academic prep
+Transfer student waitlist notifications?,Transfer student,exact_lookup,short_circuit,attribute:waitlist_notification,llm_advisory,Enrollment updates
+Community college STEM mentorship program?,Community college student,attribute_lookup,medium,attribute:mentorship_program; major:STEM,llm_advisory,Guidance
+Grad student summer research?,Graduate applicant,attribute_lookup,medium,attribute:summer_research,llm_advisory,Academic prep
+Transfer student course equivalency?,Transfer student,exact_lookup,medium,attribute:course_equivalency,llm_advisory,Credit transfer
+Community college STEM grant applications?,Community college student,attribute_lookup,medium,attribute:grant_application; major:STEM,llm_advisory,Funding prep
+Grad student academic calendar,Graduate applicant,exact_lookup,short_circuit,attribute:academic_calendar,llm_advisory,Planning
+Transfer student course registration deadlines?,Transfer student,exact_lookup,short_circuit,attribute:registration_deadline,llm_advisory,Enrollment
+Community college STEM career paths?,Community college student,attribute_lookup,medium,attribute:career_path; major:STEM,llm_advisory,Career guidance
+Grad student lab safety certification?,Graduate applicant,exact_lookup,medium,attribute:safety_certification,llm_advisory,Compliance
+Transfer student parking permit?,Transfer student,exact_lookup,short_circuit,attribute:parking_permit,llm_advisory,Logistics
+Community college STEM internships abroad?,Community college student,attribute_lookup,medium,attribute:internship; major:STEM; location:international,llm_advisory,Career prep
+Grad student scholarship applications?,Graduate applicant,exact_lookup,short_circuit,attribute:scholarship_application,llm_advisory,Funding
+Transfer student GPA calculation method?,Transfer student,exact_lookup,short_circuit,attribute:GPA_method,llm_advisory,Academic tracking
+Community college STEM research symposium?,Community college student,attribute_lookup,medium,attribute:symposium; major:STEM,llm_advisory,Networking
+Grad student thesis submission date?,Graduate applicant,exact_lookup,short_circuit,attribute:thesis_submission,llm_advisory,Milestone
+Transfer student campus map?,Transfer student,exact_lookup,short_circuit,attribute:campus_map,llm_advisory,Logistics
+Community college STEM faculty office hours?,Community college student,attribute_lookup,medium,attribute:faculty_hours; major:STEM,llm_advisory,Academic access
+Grad student conference travel grant?,Graduate applicant,exact_lookup,medium,attribute:travel_grant; purpose:conference,llm_advisory,Funding
+Transfer student financial aid portal?,Transfer student,exact_lookup,short_circuit,attribute:financial_aid_portal,llm_advisory,Funding access
+Community college STEM lab project submissions?,Community college student,attribute_lookup,medium,attribute:project_submission; major:STEM,llm_advisory,Academic prep
+Grad student cross-institution collaboration?,Graduate applicant,attribute_lookup,medium,attribute:collaboration; scope:cross_institution,llm_advisory,Research networking
+Transfer student orientation session times?,Transfer student,exact_lookup,short_circuit,attribute:orientation_session,llm_advisory,Integration
+Community college STEM online classes?,Community college student,attribute_lookup,medium,attribute:online_class; major:STEM,llm_advisory,Flexibility
+Grad student lab equipment booking?,Graduate applicant,exact_lookup,medium,attribute:lab_booking,llm_advisory,Research prep
+Transfer student transcript request form?,Transfer student,exact_lookup,short_circuit,attribute:transcript_request,llm_advisory,Documentation
+Community college STEM workshops schedule?,Community college student,attribute_lookup,medium,attribute:workshop_schedule; major:STEM,llm_advisory,Academic prep
+Grad student interdisciplinary lab projects?,Graduate applicant,attribute_lookup,medium,attribute:lab_project; scope:interdisciplinary,llm_advisory,Research prep
+Transfer student credit evaluation?,Transfer student,exact_lookup,medium,attribute:credit_evaluation,llm_advisory,Academic planning
+Community college STEM career mentoring sessions?,Community college student,attribute_lookup,medium,attribute:mentoring_session; major:STEM,llm_advisory,Guidance
+Grad student lab safety inspections?,Graduate applicant,exact_lookup,medium,attribute:safety_inspection,llm_advisory,Compliance
+Transfer student campus shuttle times?,Transfer student,exact_lookup,medium,attribute:shuttle_schedule,llm_advisory,Logistics
+Community college STEM student publications?,Community college student,attribute_lookup,medium,attribute:publication; major:STEM,llm_advisory,Academic output
+Transfer student advisor contact?,Transfer student,exact_lookup,short_circuit,attribute:advisor_contact,llm_advisory,Guidance
+Community college student study abroad eligibility?,Community college student,exact_lookup,medium,attribute:study_abroad; student_type:CC,llm_advisory,Program access
+Graduate applicant interdisciplinary workshops?,Graduate applicant,attribute_lookup,medium,attribute:workshop; scope:interdisciplinary,llm_advisory,Academic exposure
+Transfer student scholarship deadline?,Transfer student,exact_lookup,short_circuit,attribute:scholarship_deadline,llm_advisory,Funding
+Community college student STEM career panels?,Community college student,attribute_lookup,medium,attribute:career_panel; major:STEM,llm_advisory,Networking
+Graduate applicant lab rotation application?,Graduate applicant,exact_lookup,medium,attribute:lab_rotation_application,llm_advisory,Research prep
+Transfer student immunization records submission?,Transfer student,exact_lookup,short_circuit,attribute:immunization_records,llm_advisory,Compliance
+Community college student research grant guidance?,Community college student,attribute_lookup,medium,attribute:grant_guidance; major:STEM,llm_advisory,Funding
+Graduate applicant online course registration?,Graduate applicant,exact_lookup,medium,attribute:online_registration,llm_advisory,Enrollment
+Transfer student campus club list?,Transfer student,exact_lookup,medium,attribute:club_list,llm_advisory,Campus life
+Community college student lab safety manual?,Community college student,exact_lookup,medium,attribute:safety_manual; major:STEM,llm_advisory,Compliance
+Graduate applicant research assistant positions?,Graduate applicant,attribute_lookup,medium,attribute:RA_positions,llm_advisory,Research prep
+Transfer student orientation schedule?,Transfer student,exact_lookup,short_circuit,attribute:orientation_schedule,llm_advisory,Integration
+Community college student mentorship matching?,Community college student,attribute_lookup,medium,attribute:mentorship_matching; major:STEM,llm_advisory,Guidance

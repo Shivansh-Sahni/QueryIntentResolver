@@ -1,3 +1,0 @@
-row_id,source_row_number,source_query_sha1,query,gold_persona,gold_intent,gold_entities_json,gold_route_tier,gold_short_circuit,label_status,reviewer_notes
-step3_0001,1,209e675bb47b780a379739ae707e905a8220b4a7,compare northeastern and bu,high_school_student,comparison,[],agentic,false,todo,
-step3_0002,3,4f1384974c4c3132e2007fa2b04ed66938da3e1e,find colleges in chicago,parent,filtered_search,[],standard_search,false,todo,

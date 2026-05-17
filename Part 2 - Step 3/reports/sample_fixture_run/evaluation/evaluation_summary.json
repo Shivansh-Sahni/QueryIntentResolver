@@ -1,0 +1,592 @@
+{
+  "dataset": {
+    "total_labels": 18,
+    "matched_predictions": 18,
+    "missing_predictions": 0,
+    "missing_prediction_row_ids": [],
+    "matched_by_row_id": 18,
+    "matched_by_query": 0
+  },
+  "metrics": {
+    "persona_accuracy": 0.8888888888888888,
+    "intent_accuracy": 0.9444444444444444,
+    "joint_accuracy": 0.8333333333333334,
+    "route_tier_accuracy": 1.0,
+    "short_circuit_precision": 1.0,
+    "short_circuit_recall": 1.0,
+    "short_circuit_boolean_accuracy": 1.0,
+    "short_circuit_confusion": {
+      "true_positive": 2,
+      "true_negative": 16,
+      "false_positive": 0,
+      "false_negative": 0
+    }
+  },
+  "latency_ms": {
+    "count": 18,
+    "avg": 1065.1666666666667,
+    "p50": 1064.0,
+    "p95": 1612.3,
+    "max": 1631.0
+  },
+  "tokens": {
+    "avg_prompt_tokens": 210.05555555555554,
+    "avg_completion_tokens": 46.888888888888886,
+    "avg_total_tokens": 256.94444444444446,
+    "total_tokens": 4625.0
+  },
+  "cost_usd": {
+    "total": 0.005549,
+    "avg": 0.00030827777777777776
+  },
+  "confidence_bands": {
+    "0.85-1.00": {
+      "count": 10,
+      "coverage": 0.5555555555555556,
+      "persona_accuracy": 1.0,
+      "intent_accuracy": 1.0,
+      "joint_accuracy": 1.0,
+      "route_tier_accuracy": 1.0
+    },
+    "0.65-0.84": {
+      "count": 7,
+      "coverage": 0.3888888888888889,
+      "persona_accuracy": 0.8571428571428571,
+      "intent_accuracy": 0.8571428571428571,
+      "joint_accuracy": 0.7142857142857143,
+      "route_tier_accuracy": 1.0
+    },
+    "0.40-0.64": {
+      "count": 1,
+      "coverage": 0.05555555555555555,
+      "persona_accuracy": 0.0,
+      "intent_accuracy": 1.0,
+      "joint_accuracy": 0.0,
+      "route_tier_accuracy": 1.0
+    },
+    "<0.40": {
+      "count": 0,
+      "coverage": 0.0,
+      "persona_accuracy": 0.0,
+      "intent_accuracy": 0.0,
+      "joint_accuracy": 0.0,
+      "route_tier_accuracy": 0.0
+    }
+  },
+  "operating_counts": {
+    "proceed_high_confidence": 10,
+    "proceed_medium_confidence": 7,
+    "escalate_low_confidence": 1,
+    "fallback_insufficient_confidence": 0,
+    "fallback_unknown_intent": 0
+  },
+  "routing_health": {
+    "unknown_predicted_intents": [],
+    "unknown_predicted_intent_count": 0,
+    "fallback_confidence_below": 0.4,
+    "rows_forced_to_fallback_due_to_unknown_intent": 0,
+    "rows_forced_to_fallback_due_to_low_confidence": 0
+  },
+  "distribution": {
+    "gold_personas": {
+      "college_student": 2,
+      "high_school_student": 6,
+      "college_b2b": 2,
+      "parent": 2,
+      "advisor": 3,
+      "counselor_teacher": 3
+    },
+    "predicted_personas": {
+      "college_student": 3,
+      "high_school_student": 6,
+      "college_b2b": 2,
+      "parent": 1,
+      "advisor": 2,
+      "counselor_teacher": 4
+    },
+    "gold_intents": {
+      "admissions_process": 1,
+      "attribute_lookup": 1,
+      "b2b_partnership": 2,
+      "campus_life_fit": 1,
+      "career_outcomes": 1,
+      "comparison": 3,
+      "cost_financial_aid": 1,
+      "exact_lookup": 1,
+      "filtered_search": 2,
+      "multi_constraint": 2,
+      "recommendation": 2,
+      "rewrite_needed": 1
+    },
+    "predicted_intents": {
+      "admissions_process": 1,
+      "attribute_lookup": 1,
+      "b2b_partnership": 2,
+      "campus_life_fit": 1,
+      "career_outcomes": 1,
+      "comparison": 3,
+      "cost_financial_aid": 1,
+      "exact_lookup": 1,
+      "filtered_search": 2,
+      "multi_constraint": 3,
+      "recommendation": 2
+    },
+    "gold_route_tiers": {
+      "agentic": 14,
+      "short_circuit": 2,
+      "standard_search": 2
+    },
+    "predicted_route_tiers": {
+      "agentic": 14,
+      "short_circuit": 2,
+      "standard_search": 2
+    },
+    "models": {
+      "unsloth-step2-v1": 17,
+      "unsloth-step2-v1-escalated": 1
+    },
+    "join_methods": {
+      "row_id": 18
+    },
+    "per_persona_accuracy": {
+      "advisor": {
+        "count": 3,
+        "accuracy": 0.6666666666666666
+      },
+      "college_b2b": {
+        "count": 2,
+        "accuracy": 1.0
+      },
+      "college_student": {
+        "count": 2,
+        "accuracy": 1.0
+      },
+      "counselor_teacher": {
+        "count": 3,
+        "accuracy": 1.0
+      },
+      "high_school_student": {
+        "count": 6,
+        "accuracy": 1.0
+      },
+      "parent": {
+        "count": 2,
+        "accuracy": 0.5
+      }
+    },
+    "per_intent_accuracy": {
+      "admissions_process": {
+        "count": 1,
+        "accuracy": 1.0
+      },
+      "attribute_lookup": {
+        "count": 1,
+        "accuracy": 1.0
+      },
+      "b2b_partnership": {
+        "count": 2,
+        "accuracy": 1.0
+      },
+      "campus_life_fit": {
+        "count": 1,
+        "accuracy": 1.0
+      },
+      "career_outcomes": {
+        "count": 1,
+        "accuracy": 1.0
+      },
+      "comparison": {
+        "count": 3,
+        "accuracy": 1.0
+      },
+      "cost_financial_aid": {
+        "count": 1,
+        "accuracy": 1.0
+      },
+      "exact_lookup": {
+        "count": 1,
+        "accuracy": 1.0
+      },
+      "filtered_search": {
+        "count": 2,
+        "accuracy": 1.0
+      },
+      "multi_constraint": {
+        "count": 2,
+        "accuracy": 1.0
+      },
+      "recommendation": {
+        "count": 2,
+        "accuracy": 1.0
+      },
+      "rewrite_needed": {
+        "count": 1,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "confusion_matrices": {
+    "persona": {
+      "advisor": {
+        "advisor": 2,
+        "college_b2b": 0,
+        "college_student": 1,
+        "counselor_teacher": 0,
+        "high_school_student": 0,
+        "parent": 0
+      },
+      "college_b2b": {
+        "advisor": 0,
+        "college_b2b": 2,
+        "college_student": 0,
+        "counselor_teacher": 0,
+        "high_school_student": 0,
+        "parent": 0
+      },
+      "college_student": {
+        "advisor": 0,
+        "college_b2b": 0,
+        "college_student": 2,
+        "counselor_teacher": 0,
+        "high_school_student": 0,
+        "parent": 0
+      },
+      "counselor_teacher": {
+        "advisor": 0,
+        "college_b2b": 0,
+        "college_student": 0,
+        "counselor_teacher": 3,
+        "high_school_student": 0,
+        "parent": 0
+      },
+      "high_school_student": {
+        "advisor": 0,
+        "college_b2b": 0,
+        "college_student": 0,
+        "counselor_teacher": 0,
+        "high_school_student": 6,
+        "parent": 0
+      },
+      "parent": {
+        "advisor": 0,
+        "college_b2b": 0,
+        "college_student": 0,
+        "counselor_teacher": 1,
+        "high_school_student": 0,
+        "parent": 1
+      }
+    },
+    "intent": {
+      "admissions_process": {
+        "admissions_process": 1,
+        "attribute_lookup": 0,
+        "b2b_partnership": 0,
+        "campus_life_fit": 0,
+        "career_outcomes": 0,
+        "comparison": 0,
+        "cost_financial_aid": 0,
+        "exact_lookup": 0,
+        "filtered_search": 0,
+        "multi_constraint": 0,
+        "recommendation": 0,
+        "rewrite_needed": 0
+      },
+      "attribute_lookup": {
+        "admissions_process": 0,
+        "attribute_lookup": 1,
+        "b2b_partnership": 0,
+        "campus_life_fit": 0,
+        "career_outcomes": 0,
+        "comparison": 0,
+        "cost_financial_aid": 0,
+        "exact_lookup": 0,
+        "filtered_search": 0,
+        "multi_constraint": 0,
+        "recommendation": 0,
+        "rewrite_needed": 0
+      },
+      "b2b_partnership": {
+        "admissions_process": 0,
+        "attribute_lookup": 0,
+        "b2b_partnership": 2,
+        "campus_life_fit": 0,
+        "career_outcomes": 0,
+        "comparison": 0,
+        "cost_financial_aid": 0,
+        "exact_lookup": 0,
+        "filtered_search": 0,
+        "multi_constraint": 0,
+        "recommendation": 0,
+        "rewrite_needed": 0
+      },
+      "campus_life_fit": {
+        "admissions_process": 0,
+        "attribute_lookup": 0,
+        "b2b_partnership": 0,
+        "campus_life_fit": 1,
+        "career_outcomes": 0,
+        "comparison": 0,
+        "cost_financial_aid": 0,
+        "exact_lookup": 0,
+        "filtered_search": 0,
+        "multi_constraint": 0,
+        "recommendation": 0,
+        "rewrite_needed": 0
+      },
+      "career_outcomes": {
+        "admissions_process": 0,
+        "attribute_lookup": 0,
+        "b2b_partnership": 0,
+        "campus_life_fit": 0,
+        "career_outcomes": 1,
+        "comparison": 0,
+        "cost_financial_aid": 0,
+        "exact_lookup": 0,
+        "filtered_search": 0,
+        "multi_constraint": 0,
+        "recommendation": 0,
+        "rewrite_needed": 0
+      },
+      "comparison": {
+        "admissions_process": 0,
+        "attribute_lookup": 0,
+        "b2b_partnership": 0,
+        "campus_life_fit": 0,
+        "career_outcomes": 0,
+        "comparison": 3,
+        "cost_financial_aid": 0,
+        "exact_lookup": 0,
+        "filtered_search": 0,
+        "multi_constraint": 0,
+        "recommendation": 0,
+        "rewrite_needed": 0
+      },
+      "cost_financial_aid": {
+        "admissions_process": 0,
+        "attribute_lookup": 0,
+        "b2b_partnership": 0,
+        "campus_life_fit": 0,
+        "career_outcomes": 0,
+        "comparison": 0,
+        "cost_financial_aid": 1,
+        "exact_lookup": 0,
+        "filtered_search": 0,
+        "multi_constraint": 0,
+        "recommendation": 0,
+        "rewrite_needed": 0
+      },
+      "exact_lookup": {
+        "admissions_process": 0,
+        "attribute_lookup": 0,
+        "b2b_partnership": 0,
+        "campus_life_fit": 0,
+        "career_outcomes": 0,
+        "comparison": 0,
+        "cost_financial_aid": 0,
+        "exact_lookup": 1,
+        "filtered_search": 0,
+        "multi_constraint": 0,
+        "recommendation": 0,
+        "rewrite_needed": 0
+      },
+      "filtered_search": {
+        "admissions_process": 0,
+        "attribute_lookup": 0,
+        "b2b_partnership": 0,
+        "campus_life_fit": 0,
+        "career_outcomes": 0,
+        "comparison": 0,
+        "cost_financial_aid": 0,
+        "exact_lookup": 0,
+        "filtered_search": 2,
+        "multi_constraint": 0,
+        "recommendation": 0,
+        "rewrite_needed": 0
+      },
+      "multi_constraint": {
+        "admissions_process": 0,
+        "attribute_lookup": 0,
+        "b2b_partnership": 0,
+        "campus_life_fit": 0,
+        "career_outcomes": 0,
+        "comparison": 0,
+        "cost_financial_aid": 0,
+        "exact_lookup": 0,
+        "filtered_search": 0,
+        "multi_constraint": 2,
+        "recommendation": 0,
+        "rewrite_needed": 0
+      },
+      "recommendation": {
+        "admissions_process": 0,
+        "attribute_lookup": 0,
+        "b2b_partnership": 0,
+        "campus_life_fit": 0,
+        "career_outcomes": 0,
+        "comparison": 0,
+        "cost_financial_aid": 0,
+        "exact_lookup": 0,
+        "filtered_search": 0,
+        "multi_constraint": 0,
+        "recommendation": 2,
+        "rewrite_needed": 0
+      },
+      "rewrite_needed": {
+        "admissions_process": 0,
+        "attribute_lookup": 0,
+        "b2b_partnership": 0,
+        "campus_life_fit": 0,
+        "career_outcomes": 0,
+        "comparison": 0,
+        "cost_financial_aid": 0,
+        "exact_lookup": 0,
+        "filtered_search": 0,
+        "multi_constraint": 1,
+        "recommendation": 0,
+        "rewrite_needed": 0
+      }
+    },
+    "route_tier": {
+      "agentic": {
+        "agentic": 14,
+        "short_circuit": 0,
+        "standard_search": 0
+      },
+      "short_circuit": {
+        "agentic": 0,
+        "short_circuit": 2,
+        "standard_search": 0
+      },
+      "standard_search": {
+        "agentic": 0,
+        "short_circuit": 0,
+        "standard_search": 2
+      }
+    }
+  },
+  "top_persona_confusions": [
+    {
+      "gold": "parent",
+      "predicted": "counselor_teacher",
+      "count": 1,
+      "row_rate": 0.5
+    },
+    {
+      "gold": "advisor",
+      "predicted": "college_student",
+      "count": 1,
+      "row_rate": 0.3333333333333333
+    }
+  ],
+  "top_intent_confusions": [
+    {
+      "gold": "rewrite_needed",
+      "predicted": "multi_constraint",
+      "count": 1,
+      "row_rate": 1.0
+    }
+  ],
+  "highest_confidence_wrong_predictions": [
+    {
+      "row_id": "step3_0018",
+      "query": "rewrite my why college essay opening",
+      "predicted_confidence": 0.796,
+      "gold_persona": "high_school_student",
+      "predicted_persona": "high_school_student",
+      "gold_intent": "rewrite_needed",
+      "predicted_intent": "multi_constraint",
+      "error_types": "intent_mismatch"
+    },
+    {
+      "row_id": "step3_0010",
+      "query": "what are FAFSA deadlines",
+      "predicted_confidence": 0.764,
+      "gold_persona": "parent",
+      "predicted_persona": "counselor_teacher",
+      "gold_intent": "cost_financial_aid",
+      "predicted_intent": "cost_financial_aid",
+      "error_types": "persona_mismatch"
+    },
+    {
+      "row_id": "step3_0016",
+      "query": "recommend colleges with exploratory studies programs for undecided students",
+      "predicted_confidence": 0.582,
+      "gold_persona": "advisor",
+      "predicted_persona": "college_student",
+      "gold_intent": "recommendation",
+      "predicted_intent": "recommendation",
+      "error_types": "persona_mismatch"
+    }
+  ],
+  "acceptance": {
+    "overall_passed": true,
+    "checks": {
+      "intent_accuracy": {
+        "threshold": 0.9,
+        "actual": 0.9444444444444444,
+        "passed": true
+      },
+      "persona_accuracy": {
+        "threshold": 0.85,
+        "actual": 0.8888888888888888,
+        "passed": true
+      },
+      "joint_accuracy": {
+        "threshold": 0.8,
+        "actual": 0.8333333333333334,
+        "passed": true
+      },
+      "route_tier_accuracy": {
+        "threshold": 0.9,
+        "actual": 1.0,
+        "passed": true
+      },
+      "short_circuit_precision": {
+        "threshold": 0.95,
+        "actual": 1.0,
+        "passed": true
+      }
+    }
+  },
+  "label_refinement_candidates": {
+    "persona_slices_below_0_80": [
+      {
+        "persona": "parent",
+        "count": 2,
+        "accuracy": 0.5
+      },
+      {
+        "persona": "advisor",
+        "count": 3,
+        "accuracy": 0.6666666666666666
+      }
+    ],
+    "intent_slices_below_0_80": [],
+    "top_persona_confusions": [
+      {
+        "gold": "parent",
+        "predicted": "counselor_teacher",
+        "count": 1,
+        "row_rate": 0.5
+      },
+      {
+        "gold": "advisor",
+        "predicted": "college_student",
+        "count": 1,
+        "row_rate": 0.3333333333333333
+      }
+    ],
+    "top_intent_confusions": [
+      {
+        "gold": "rewrite_needed",
+        "predicted": "multi_constraint",
+        "count": 1,
+        "row_rate": 1.0
+      }
+    ]
+  },
+  "recommendations": [
+    "Intent accuracy meets the 90% baseline. Keep the current schema unless repeated confusion pairs remain operationally costly.",
+    "Review persona slices with weak accuracy: advisor, parent."
+  ]
+}

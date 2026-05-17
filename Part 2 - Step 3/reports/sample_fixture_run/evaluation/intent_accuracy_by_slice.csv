@@ -1,0 +1,13 @@
+intent,count,accuracy
+rewrite_needed,1,0.0
+comparison,3,1.0
+b2b_partnership,2,1.0
+filtered_search,2,1.0
+multi_constraint,2,1.0
+recommendation,2,1.0
+admissions_process,1,1.0
+attribute_lookup,1,1.0
+campus_life_fit,1,1.0
+career_outcomes,1,1.0
+cost_financial_aid,1,1.0
+exact_lookup,1,1.0

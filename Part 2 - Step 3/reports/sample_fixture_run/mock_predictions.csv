@@ -1,0 +1,19 @@
+row_id,query,predicted_persona,predicted_intent,predicted_confidence,predicted_entities_json,model,latency_ms,prompt_tokens,completion_tokens,total_tokens,estimated_cost_usd
+step3_0001,how do transfer credits work at ASU,college_student,admissions_process,0.967,"[""ASU""]",unsloth-step2-v1,1490,209,53,262,0.000314
+step3_0002,MIT housing,high_school_student,attribute_lookup,0.891,"[""MIT"", ""housing""]",unsloth-step2-v1,831,228,75,303,0.000364
+step3_0003,how does your platform help with retention outreach,college_b2b,b2b_partnership,0.948,"[""retention"", ""outreach""]",unsloth-step2-v1,535,238,65,303,0.000364
+step3_0004,request demo for our counseling department,college_b2b,b2b_partnership,0.936,"[""demo"", ""counseling department""]",unsloth-step2-v1,480,233,35,268,0.000322
+step3_0005,is Northeastern safe for women,parent,campus_life_fit,0.96,"[""Northeastern"", ""safety""]",unsloth-step2-v1,1400,226,26,252,0.000302
+step3_0006,what percentage of Purdue grads get engineering jobs,advisor,career_outcomes,0.85,"[""Purdue"", ""engineering jobs""]",unsloth-step2-v1,459,187,56,243,0.000292
+step3_0007,programs similar to human-centered design at CMU,advisor,comparison,0.98,"[""CMU"", ""human-centered design""]",unsloth-step2-v1,970,257,30,287,0.000344
+step3_0008,compare dorm life at UCLA and USC,college_student,comparison,0.822,"[""UCLA"", ""USC"", ""dorm life""]",unsloth-step2-v1,1270,248,31,279,0.000335
+step3_0009,compare support services at Marquette and DePaul for transfer students,counselor_teacher,comparison,0.813,"[""Marquette"", ""DePaul"", ""transfer students""]",unsloth-step2-v1,887,237,25,262,0.000314
+step3_0010,what are FAFSA deadlines,counselor_teacher,cost_financial_aid,0.764,"[""FAFSA"", ""deadline""]",unsloth-step2-v1,1609,203,29,232,0.000278
+step3_0011,Carnegie Mellon,high_school_student,exact_lookup,0.825,"[""Carnegie Mellon""]",unsloth-step2-v1,1289,192,25,217,0.00026
+step3_0012,which colleges waive application fees for first-gen students,counselor_teacher,filtered_search,0.827,"[""application fee"", ""first-gen""]",unsloth-step2-v1,1447,157,54,211,0.000253
+step3_0013,schools in Texas with low student-to-faculty ratio,high_school_student,filtered_search,0.842,"[""Texas"", ""student-to-faculty ratio""]",unsloth-step2-v1,718,243,74,317,0.00038
+step3_0014,can you find colleges with data science and strong co-op programs under 40k,counselor_teacher,multi_constraint,0.978,"[""data science"", ""co-op""]",unsloth-step2-v1,1072,150,42,192,0.00023
+step3_0015,colleges with low Greek life and strong CS,high_school_student,multi_constraint,0.979,"[""Greek life"", ""computer science""]",unsloth-step2-v1,1631,227,66,293,0.000352
+step3_0016,recommend colleges with exploratory studies programs for undecided students,college_student,recommendation,0.582,"[""exploratory studies"", ""undecided students""]",unsloth-step2-v1-escalated,1056,228,46,274,0.000329
+step3_0017,best colleges for a shy student who likes robotics,high_school_student,recommendation,0.918,"[""robotics"", ""campus fit""]",unsloth-step2-v1,1205,151,63,214,0.000257
+step3_0018,rewrite my why college essay opening,high_school_student,multi_constraint,0.796,"[""essay""]",unsloth-step2-v1,824,167,49,216,0.000259

@@ -1,7 +1,0 @@
-{
-  "persona_accuracy": 0.48,
-  "intent_accuracy": 0.37,
-  "route_accuracy": 0.37,
-  "avg_persona_confidence": 0.5005446951530901,
-  "avg_intent_confidence": 0.5531190127232698
-}

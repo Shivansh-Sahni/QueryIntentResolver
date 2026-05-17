@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Step 3 Evaluation Dashboard</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 32px;
+      color: #1f2937;
+      background: #f8fafc;
+    }
+    h1, h2 {
+      margin-bottom: 12px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #dbe2ea;
+      border-radius: 10px;
+      padding: 16px;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+    }
+    .metric {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background: white;
+      margin-bottom: 24px;
+    }
+    th, td {
+      border: 1px solid #dbe2ea;
+      text-align: left;
+      padding: 8px 10px;
+      vertical-align: top;
+    }
+    th {
+      background: #eef2f7;
+    }
+    ul {
+      background: white;
+      border: 1px solid #dbe2ea;
+      border-radius: 10px;
+      padding: 16px 28px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Step 3 Evaluation Dashboard</h1>
+  <div class="grid">
+    <div class="card"><div>Persona Accuracy</div><div class="metric">88.9%</div></div>
+    <div class="card"><div>Intent Accuracy</div><div class="metric">94.4%</div></div>
+    <div class="card"><div>Joint Accuracy</div><div class="metric">83.3%</div></div>
+    <div class="card"><div>Route Tier Accuracy</div><div class="metric">100.0%</div></div>
+    <div class="card"><div>Short-Circuit Precision</div><div class="metric">100.0%</div></div>
+    <div class="card"><div>Missing Predictions</div><div class="metric">0</div></div>
+  </div>
+  <h2>Join Integrity</h2>
+  <table><thead><tr><th>Category</th><th>Count</th></tr></thead><tbody><tr><td>Matched by row_id</td><td>18</td></tr><tr><td>Matched by query fallback</td><td>0</td></tr></tbody></table>
+  <h2>Acceptance Status</h2>
+  <p><strong>Overall:</strong> PASS</p>
+  <table><thead><tr><th>Metric</th><th>Actual</th><th>Threshold</th><th>Passed</th></tr></thead><tbody><tr><td>intent_accuracy</td><td>94.4%</td><td>90.0%</td><td>yes</td></tr><tr><td>persona_accuracy</td><td>88.9%</td><td>85.0%</td><td>yes</td></tr><tr><td>joint_accuracy</td><td>83.3%</td><td>80.0%</td><td>yes</td></tr><tr><td>route_tier_accuracy</td><td>100.0%</td><td>90.0%</td><td>yes</td></tr><tr><td>short_circuit_precision</td><td>100.0%</td><td>95.0%</td><td>yes</td></tr></tbody></table>
+  <h2>Confidence Bands</h2>
+  <table><thead><tr><th>Band</th><th>Count</th><th>Intent Accuracy</th><th>Joint Accuracy</th><th>Route Tier Accuracy</th></tr></thead><tbody><tr><td>0.85-1.00</td><td>10</td><td>100.0%</td><td>100.0%</td><td>100.0%</td></tr><tr><td>0.65-0.84</td><td>7</td><td>85.7%</td><td>71.4%</td><td>100.0%</td></tr><tr><td>0.40-0.64</td><td>1</td><td>100.0%</td><td>0.0%</td><td>100.0%</td></tr><tr><td>&lt;0.40</td><td>0</td><td>0.0%</td><td>0.0%</td><td>0.0%</td></tr></tbody></table>
+  <h2>Operating Counts</h2>
+  <table><thead><tr><th>Category</th><th>Count</th></tr></thead><tbody><tr><td>Proceed high-confidence</td><td>10</td></tr><tr><td>Proceed medium-confidence</td><td>7</td></tr><tr><td>Escalate low-confidence</td><td>1</td></tr><tr><td>Fallback insufficient-confidence</td><td>0</td></tr><tr><td>Fallback unknown-intent</td><td>0</td></tr></tbody></table>
+  <h2>Routing Health</h2>
+  <table><thead><tr><th>Signal</th><th>Value</th></tr></thead><tbody><tr><td>Fallback threshold</td><td>0.40</td></tr><tr><td>Unknown predicted intent count</td><td>0</td></tr><tr><td>Unknown predicted intents</td><td>none</td></tr></tbody></table>
+  <h2>Recommendations</h2>
+  <ul><li>Intent accuracy meets the 90% baseline. Keep the current schema unless repeated confusion pairs remain operationally costly.</li><li>Review persona slices with weak accuracy: advisor, parent.</li></ul>
+  <h2>Worst-Performing Personas</h2>
+  <table><thead><tr><th>Persona</th><th>Count</th><th>Accuracy</th></tr></thead><tbody><tr><td>parent</td><td>2</td><td>50.0%</td></tr><tr><td>advisor</td><td>3</td><td>66.7%</td></tr><tr><td>high_school_student</td><td>6</td><td>100.0%</td></tr><tr><td>counselor_teacher</td><td>3</td><td>100.0%</td></tr><tr><td>college_b2b</td><td>2</td><td>100.0%</td></tr></tbody></table>
+  <h2>Worst-Performing Intents</h2>
+  <table><thead><tr><th>Intent</th><th>Count</th><th>Accuracy</th></tr></thead><tbody><tr><td>rewrite_needed</td><td>1</td><td>0.0%</td></tr><tr><td>comparison</td><td>3</td><td>100.0%</td></tr><tr><td>b2b_partnership</td><td>2</td><td>100.0%</td></tr><tr><td>filtered_search</td><td>2</td><td>100.0%</td></tr><tr><td>multi_constraint</td><td>2</td><td>100.0%</td></tr><tr><td>recommendation</td><td>2</td><td>100.0%</td></tr><tr><td>admissions_process</td><td>1</td><td>100.0%</td></tr><tr><td>attribute_lookup</td><td>1</td><td>100.0%</td></tr></tbody></table>
+  <h2>Top Persona Confusions</h2>
+  <table><thead><tr><th>Gold Persona</th><th>Predicted Persona</th><th>Count</th><th>Row Rate</th></tr></thead><tbody><tr><td>parent</td><td>counselor_teacher</td><td>1</td><td>50.0%</td></tr><tr><td>advisor</td><td>college_student</td><td>1</td><td>33.3%</td></tr></tbody></table>
+  <h2>Top Intent Confusions</h2>
+  <table><thead><tr><th>Gold Intent</th><th>Predicted Intent</th><th>Count</th><th>Row Rate</th></tr></thead><tbody><tr><td>rewrite_needed</td><td>multi_constraint</td><td>1</td><td>100.0%</td></tr></tbody></table>
+  <h2>Persona Confusion Matrix</h2>
+  <table><thead><tr><th>Gold \ Predicted</th><th>advisor</th><th>college_b2b</th><th>college_student</th><th>counselor_teacher</th><th>high_school_student</th><th>parent</th></tr></thead><tbody><tr><td>advisor</td><td>2</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr><tr><td>college_b2b</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>college_student</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td></tr><tr><td>counselor_teacher</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0</td><td>0</td></tr><tr><td>high_school_student</td><td>0</td><td>0</td><td>0</td><td>0</td><td>6</td><td>0</td></tr><tr><td>parent</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td></tr></tbody></table>
+  <h2>Intent Confusion Matrix</h2>
+  <table><thead><tr><th>Gold \ Predicted</th><th>admissions_process</th><th>attribute_lookup</th><th>b2b_partnership</th><th>campus_life_fit</th><th>career_outcomes</th><th>comparison</th><th>cost_financial_aid</th><th>exact_lookup</th><th>filtered_search</th><th>multi_constraint</th><th>recommendation</th><th>rewrite_needed</th></tr></thead><tbody><tr><td>admissions_process</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>attribute_lookup</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>b2b_partnership</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>campus_life_fit</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>career_outcomes</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>comparison</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>cost_financial_aid</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>exact_lookup</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>filtered_search</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td></tr><tr><td>multi_constraint</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td></tr><tr><td>recommendation</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td></tr><tr><td>rewrite_needed</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr></tbody></table>
+  <h2>Route Tier Confusion Matrix</h2>
+  <table><thead><tr><th>Gold \ Predicted</th><th>agentic</th><th>short_circuit</th><th>standard_search</th></tr></thead><tbody><tr><td>agentic</td><td>14</td><td>0</td><td>0</td></tr><tr><td>short_circuit</td><td>0</td><td>2</td><td>0</td></tr><tr><td>standard_search</td><td>0</td><td>0</td><td>2</td></tr></tbody></table>
+  <h2>Highest Confidence Wrong Predictions</h2>
+  <table><thead><tr><th>Row ID</th><th>Confidence</th><th>Gold Persona</th><th>Pred Persona</th><th>Gold Intent</th><th>Pred Intent</th><th>Query</th></tr></thead><tbody><tr><td>step3_0018</td><td>0.796</td><td>high_school_student</td><td>high_school_student</td><td>rewrite_needed</td><td>multi_constraint</td><td>rewrite my why college essay opening</td></tr><tr><td>step3_0010</td><td>0.764</td><td>parent</td><td>counselor_teacher</td><td>cost_financial_aid</td><td>cost_financial_aid</td><td>what are FAFSA deadlines</td></tr><tr><td>step3_0016</td><td>0.582</td><td>advisor</td><td>college_student</td><td>recommendation</td><td>recommendation</td><td>recommend colleges with exploratory studies programs for undecided students</td></tr></tbody></table>
+</body>
+</html>

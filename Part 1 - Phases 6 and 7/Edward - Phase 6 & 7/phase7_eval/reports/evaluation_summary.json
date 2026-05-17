@@ -1,0 +1,218 @@
+﻿{
+    "dataset":  {
+                    "total_labels":  300,
+                    "matched_predictions":  300,
+                    "missing_predictions":  0
+                },
+    "metrics":  {
+                    "route_accuracy":  0.88666666666666671,
+                    "short_circuit_correct_rate":  0.95121951219512191,
+                    "short_circuit_precision":  0.88636363636363635,
+                    "short_circuit_boolean_accuracy":  0.97666666666666668,
+                    "short_circuit_confusion":  {
+                                                    "true_positive":  39,
+                                                    "true_negative":  254,
+                                                    "false_positive":  5,
+                                                    "false_negative":  2
+                                                }
+                },
+    "latency_ms":  {
+                       "count":  300,
+                       "avg":  1042.7366666666667,
+                       "p50":  1059,
+                       "p95":  1791.2,
+                       "max":  1899
+                   },
+    "tokens":  {
+                   "avg_total_tokens":  303.99666666666667,
+                   "avg_prompt_tokens":  244.14,
+                   "avg_completion_tokens":  59.856666666666669,
+                   "total_tokens":  91199
+               },
+    "cost_usd":  {
+                     "total":  0.10915599999999995,
+                     "avg":  0.00036385333333333313
+                 },
+    "distribution":  {
+                         "gold_routes":  {
+                                             "academic_advising":  2,
+                                             "academic_policy_info":  7,
+                                             "academic_program_info":  124,
+                                             "campus_services_info":  126,
+                                             "college_search":  34,
+                                             "financial_aid_advising":  3,
+                                             "housing_advising":  2,
+                                             "study_abroad_advising":  1,
+                                             "transfer_advising":  1
+                                         },
+                         "predicted_routes":  {
+                                                  "academic_advising":  5,
+                                                  "academic_policy_info":  7,
+                                                  "academic_program_info":  108,
+                                                  "campus_services_info":  125,
+                                                  "college_search":  33,
+                                                  "financial_aid_advising":  9,
+                                                  "housing_advising":  6,
+                                                  "study_abroad_advising":  3,
+                                                  "transfer_advising":  4
+                                              },
+                         "routing_paths":  {
+                                               "llm:academic_advising":  5,
+                                               "llm:academic_policy_info":  7,
+                                               "llm:academic_program_info":  107,
+                                               "llm:campus_services_info":  83,
+                                               "llm:college_search":  33,
+                                               "llm:financial_aid_advising":  8,
+                                               "llm:housing_advising":  6,
+                                               "llm:study_abroad_advising":  3,
+                                               "llm:transfer_advising":  4,
+                                               "short_circuit":  44
+                                           },
+                         "models":  {
+                                        "gpt-4.1-mini":  256,
+                                        "heuristic-router":  44
+                                    },
+                         "per_route_accuracy":  {
+                                                    "academic_advising":  {
+                                                                              "count":  2,
+                                                                              "accuracy":  0.5
+                                                                          },
+                                                    "academic_policy_info":  {
+                                                                                 "count":  7,
+                                                                                 "accuracy":  0.7142857142857143
+                                                                             },
+                                                    "academic_program_info":  {
+                                                                                  "count":  124,
+                                                                                  "accuracy":  0.86290322580645162
+                                                                              },
+                                                    "campus_services_info":  {
+                                                                                 "count":  126,
+                                                                                 "accuracy":  0.95238095238095233
+                                                                             },
+                                                    "college_search":  {
+                                                                           "count":  34,
+                                                                           "accuracy":  0.76470588235294112
+                                                                       },
+                                                    "financial_aid_advising":  {
+                                                                                   "count":  3,
+                                                                                   "accuracy":  1
+                                                                               },
+                                                    "housing_advising":  {
+                                                                             "count":  2,
+                                                                             "accuracy":  1
+                                                                         },
+                                                    "study_abroad_advising":  {
+                                                                                  "count":  1,
+                                                                                  "accuracy":  1
+                                                                              },
+                                                    "transfer_advising":  {
+                                                                              "count":  1,
+                                                                              "accuracy":  1
+                                                                          }
+                                                }
+                     },
+    "confusion_matrix":  {
+                             "academic_advising":  {
+                                                       "academic_advising":  1,
+                                                       "academic_policy_info":  0,
+                                                       "academic_program_info":  0,
+                                                       "campus_services_info":  0,
+                                                       "college_search":  1,
+                                                       "financial_aid_advising":  0,
+                                                       "housing_advising":  0,
+                                                       "study_abroad_advising":  0,
+                                                       "transfer_advising":  0
+                                                   },
+                             "academic_policy_info":  {
+                                                          "academic_advising":  1,
+                                                          "academic_policy_info":  5,
+                                                          "academic_program_info":  1,
+                                                          "campus_services_info":  0,
+                                                          "college_search":  0,
+                                                          "financial_aid_advising":  0,
+                                                          "housing_advising":  0,
+                                                          "study_abroad_advising":  0,
+                                                          "transfer_advising":  0
+                                                      },
+                             "academic_program_info":  {
+                                                           "academic_advising":  2,
+                                                           "academic_policy_info":  2,
+                                                           "academic_program_info":  107,
+                                                           "campus_services_info":  2,
+                                                           "college_search":  5,
+                                                           "financial_aid_advising":  3,
+                                                           "housing_advising":  2,
+                                                           "study_abroad_advising":  0,
+                                                           "transfer_advising":  1
+                                                       },
+                             "campus_services_info":  {
+                                                          "academic_advising":  0,
+                                                          "academic_policy_info":  0,
+                                                          "academic_program_info":  0,
+                                                          "campus_services_info":  120,
+                                                          "college_search":  1,
+                                                          "financial_aid_advising":  3,
+                                                          "housing_advising":  0,
+                                                          "study_abroad_advising":  1,
+                                                          "transfer_advising":  1
+                                                      },
+                             "college_search":  {
+                                                    "academic_advising":  1,
+                                                    "academic_policy_info":  0,
+                                                    "academic_program_info":  0,
+                                                    "campus_services_info":  3,
+                                                    "college_search":  26,
+                                                    "financial_aid_advising":  0,
+                                                    "housing_advising":  2,
+                                                    "study_abroad_advising":  1,
+                                                    "transfer_advising":  1
+                                                },
+                             "financial_aid_advising":  {
+                                                            "academic_advising":  0,
+                                                            "academic_policy_info":  0,
+                                                            "academic_program_info":  0,
+                                                            "campus_services_info":  0,
+                                                            "college_search":  0,
+                                                            "financial_aid_advising":  3,
+                                                            "housing_advising":  0,
+                                                            "study_abroad_advising":  0,
+                                                            "transfer_advising":  0
+                                                        },
+                             "housing_advising":  {
+                                                      "academic_advising":  0,
+                                                      "academic_policy_info":  0,
+                                                      "academic_program_info":  0,
+                                                      "campus_services_info":  0,
+                                                      "college_search":  0,
+                                                      "financial_aid_advising":  0,
+                                                      "housing_advising":  2,
+                                                      "study_abroad_advising":  0,
+                                                      "transfer_advising":  0
+                                                  },
+                             "study_abroad_advising":  {
+                                                           "academic_advising":  0,
+                                                           "academic_policy_info":  0,
+                                                           "academic_program_info":  0,
+                                                           "campus_services_info":  0,
+                                                           "college_search":  0,
+                                                           "financial_aid_advising":  0,
+                                                           "housing_advising":  0,
+                                                           "study_abroad_advising":  1,
+                                                           "transfer_advising":  0
+                                                       },
+                             "transfer_advising":  {
+                                                       "academic_advising":  0,
+                                                       "academic_policy_info":  0,
+                                                       "academic_program_info":  0,
+                                                       "campus_services_info":  0,
+                                                       "college_search":  0,
+                                                       "financial_aid_advising":  0,
+                                                       "housing_advising":  0,
+                                                       "study_abroad_advising":  0,
+                                                       "transfer_advising":  1
+                                                   }
+                         },
+    "missing_prediction_queries":  [
+
+                                   ]
+}

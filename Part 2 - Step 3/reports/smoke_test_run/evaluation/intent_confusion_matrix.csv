@@ -1,0 +1,13 @@
+Gold \ Predicted,admissions_process,attribute_lookup,b2b_partnership,campus_life_fit,career_outcomes,comparison,cost_financial_aid,exact_lookup,filtered_search,multi_constraint,recommendation,rewrite_needed
+admissions_process,1,0,0,0,0,0,0,0,0,0,0,0
+attribute_lookup,0,1,0,0,0,0,0,0,0,0,0,0
+b2b_partnership,0,0,1,0,0,0,0,0,0,0,0,0
+campus_life_fit,0,0,0,1,0,0,0,0,0,0,0,0
+career_outcomes,0,0,0,0,1,0,0,0,0,0,0,0
+comparison,0,0,0,0,0,1,0,0,0,0,0,0
+cost_financial_aid,0,0,0,0,0,0,1,0,0,0,0,0
+exact_lookup,0,0,0,0,0,0,0,1,0,0,0,0
+filtered_search,0,0,0,0,0,0,0,0,1,0,0,0
+multi_constraint,0,0,0,0,0,0,0,0,0,1,0,0
+recommendation,0,0,0,0,0,0,0,0,0,0,1,0
+rewrite_needed,0,0,0,0,0,0,0,0,0,0,0,1

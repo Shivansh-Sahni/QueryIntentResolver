@@ -1,0 +1,17 @@
+{
+  "fallback_confidence_below": 0.4,
+  "intent_to_route_tier": {
+    "exact_lookup": "short_circuit",
+    "attribute_lookup": "short_circuit",
+    "filtered_search": "standard_search",
+    "multi_constraint": "agentic",
+    "comparison": "agentic",
+    "recommendation": "agentic",
+    "rewrite_needed": "agentic",
+    "campus_life_fit": "agentic",
+    "career_outcomes": "agentic",
+    "cost_financial_aid": "agentic",
+    "admissions_process": "agentic",
+    "b2b_partnership": "agentic"
+  }
+}

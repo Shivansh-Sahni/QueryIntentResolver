@@ -1,0 +1,54 @@
+{
+  "raw_source_rows": 5,
+  "usable_source_rows": 5,
+  "unique_query_groups": 3,
+  "duplicate_same_label_query_rows_dropped": 1,
+  "conflicting_query_groups_excluded": 1,
+  "conflicting_query_rows_excluded": 2,
+  "benchmark_pool_rows": 2,
+  "benchmark_size": 2,
+  "seed": 42,
+  "intent_allocation": {
+    "comparison": 1,
+    "filtered_search": 1
+  },
+  "intent_coverage": {
+    "comparison": 1,
+    "filtered_search": 1
+  },
+  "persona_coverage": {
+    "high_school_student": 1,
+    "parent": 1
+  },
+  "route_tier_coverage": {
+    "agentic": 1,
+    "standard_search": 1
+  },
+  "benchmark_size_ratio": 1.0,
+  "selection_policy": {
+    "intent_sampling": "proportional_with_minimum_one_per_intent",
+    "persona_sampling_within_intent": "round_robin_after_shuffle",
+    "duplicate_query_handling": "drop_exact-query duplicates with same label; exclude exact-query conflicts with different labels"
+  },
+  "conflicting_query_preview": [
+    {
+      "query": "best schools for design",
+      "rows": 2,
+      "label_signatures": [
+        {
+          "persona": "advisor",
+          "intent": "recommendation"
+        },
+        {
+          "persona": "parent",
+          "intent": "recommendation"
+        }
+      ]
+    }
+  ],
+  "files": {
+    "benchmark_gold": "/Users/shivanshsahni/Downloads/Personal/MascotGO/Shiv - Phase 6 + 7 Initial Results - 03:11:2026/step3_validation/reports/smoke_test_run/benchmark_dedup_check/benchmark_gold.csv",
+    "benchmark_review_template": "/Users/shivanshsahni/Downloads/Personal/MascotGO/Shiv - Phase 6 + 7 Initial Results - 03:11:2026/step3_validation/reports/smoke_test_run/benchmark_dedup_check/benchmark_review_template.csv",
+    "benchmark_exclusion_manifest": "/Users/shivanshsahni/Downloads/Personal/MascotGO/Shiv - Phase 6 + 7 Initial Results - 03:11:2026/step3_validation/reports/smoke_test_run/benchmark_dedup_check/benchmark_exclusion_manifest.csv"
+  }
+}

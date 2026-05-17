@@ -1,0 +1,64 @@
+{
+  "raw_source_rows": 24,
+  "usable_source_rows": 24,
+  "unique_query_groups": 24,
+  "duplicate_same_label_query_rows_dropped": 0,
+  "conflicting_query_groups_excluded": 0,
+  "conflicting_query_rows_excluded": 0,
+  "benchmark_pool_rows": 24,
+  "benchmark_size": 18,
+  "seed": 42,
+  "intent_allocation": {
+    "admissions_process": 1,
+    "attribute_lookup": 1,
+    "b2b_partnership": 2,
+    "campus_life_fit": 1,
+    "career_outcomes": 1,
+    "comparison": 3,
+    "cost_financial_aid": 1,
+    "exact_lookup": 1,
+    "filtered_search": 2,
+    "multi_constraint": 2,
+    "recommendation": 2,
+    "rewrite_needed": 1
+  },
+  "intent_coverage": {
+    "admissions_process": 1,
+    "attribute_lookup": 1,
+    "b2b_partnership": 2,
+    "campus_life_fit": 1,
+    "career_outcomes": 1,
+    "comparison": 3,
+    "cost_financial_aid": 1,
+    "exact_lookup": 1,
+    "filtered_search": 2,
+    "multi_constraint": 2,
+    "recommendation": 2,
+    "rewrite_needed": 1
+  },
+  "persona_coverage": {
+    "college_student": 2,
+    "high_school_student": 6,
+    "college_b2b": 2,
+    "parent": 2,
+    "advisor": 3,
+    "counselor_teacher": 3
+  },
+  "route_tier_coverage": {
+    "agentic": 14,
+    "short_circuit": 2,
+    "standard_search": 2
+  },
+  "benchmark_size_ratio": 0.75,
+  "selection_policy": {
+    "intent_sampling": "proportional_with_minimum_one_per_intent",
+    "persona_sampling_within_intent": "round_robin_after_shuffle",
+    "duplicate_query_handling": "drop_exact-query duplicates with same label; exclude exact-query conflicts with different labels"
+  },
+  "conflicting_query_preview": [],
+  "files": {
+    "benchmark_gold": "step3_validation/reports/sample_fixture_run/benchmark/benchmark_gold.csv",
+    "benchmark_review_template": "step3_validation/reports/sample_fixture_run/benchmark/benchmark_review_template.csv",
+    "benchmark_exclusion_manifest": "step3_validation/reports/sample_fixture_run/benchmark/benchmark_exclusion_manifest.csv"
+  }
+}

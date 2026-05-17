@@ -1,9 +1,0 @@
-{
-  "split_type": "random_row_split",
-  "dataset_variant": "drop_high_query_plus_persona",
-  "high_strategy": "drop",
-  "use_persona": true,
-  "model_name": "linear_svc_calibrated",
-  "accuracy": 0.7976929902395741,
-  "avg_confidence": 0.7785606966871879
-}

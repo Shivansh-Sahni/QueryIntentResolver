@@ -1,9 +1,0 @@
-Complexity classification sweep summary
-
-Best random-row accuracy: 0.7977
-Best random-row setup: drop_high_query_plus_persona + linear_svc_calibrated
-Best grouped-query accuracy: 0.8024
-Best grouped-query setup: drop_high_query_plus_persona + sgd_log
-
-Note: random-row split can benefit from repeated queries across train/test.
-Grouped-query split is the stricter estimate for generalization to unseen query strings.

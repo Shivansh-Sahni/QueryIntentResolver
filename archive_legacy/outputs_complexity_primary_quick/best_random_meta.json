@@ -1,8 +1,0 @@
-{
-  "variant": "high_to_complex_query_plus_persona",
-  "high_strategy": "to_complex",
-  "use_persona": true,
-  "model": "char_word_logreg",
-  "accuracy": 0.7758099352051836,
-  "avg_confidence": 0.7297488034907256
-}

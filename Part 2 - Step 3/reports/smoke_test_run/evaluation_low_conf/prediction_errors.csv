@@ -1,0 +1,2 @@
+row_id,query,gold_persona,predicted_persona,gold_intent,predicted_intent,gold_route_tier,predicted_route_tier,gold_short_circuit,predicted_short_circuit,predicted_confidence,join_method,predicted_intent_known,fallback_due_to_confidence,fallback_due_to_unknown_intent,model,latency_ms,total_tokens,estimated_cost_usd,error_types
+step3_0001,how do transfer credits work at ASU,college_student,college_student,admissions_process,admissions_process,agentic,fallback,False,False,0.31,row_id,True,True,False,unsloth-step2-v1,642.0,218.0,0.000262,route_tier_mismatch

@@ -1,0 +1,5 @@
+confidence_band,count,coverage,persona_accuracy,intent_accuracy,joint_accuracy,route_tier_accuracy
+0.85-1.00,7,0.5833333333333334,1.0,1.0,1.0,1.0
+0.65-0.84,4,0.3333333333333333,1.0,1.0,1.0,1.0
+0.40-0.64,0,0.0,0.0,0.0,0.0,0.0
+<0.40,1,0.08333333333333333,1.0,1.0,1.0,0.0

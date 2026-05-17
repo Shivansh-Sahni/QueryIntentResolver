@@ -1,0 +1,7 @@
+persona,count,accuracy
+parent,2,0.5
+advisor,3,0.6666666666666666
+high_school_student,6,1.0
+counselor_teacher,3,1.0
+college_b2b,2,1.0
+college_student,2,1.0

@@ -1,6 +1,0 @@
-Best grouped-query complexity model
-
-accuracy: 0.816829
-avg_confidence_proxy: 0.599674
-setup: drop_high + query_only + linear_svc_stats
-features: word tf-idf + char tf-idf + lightweight query stats

@@ -1,0 +1,1 @@
+row_id,query,predicted_route,predicted_short_circuit,latency_ms,prompt_tokens,completion_tokens,total_tokens,estimated_cost_usd,routing_path,model

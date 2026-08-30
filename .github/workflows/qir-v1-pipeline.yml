@@ -1,0 +1,142 @@
+name: Query Intent Resolver V1
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_zero_shot:
+        description: Run the local zero-shot language-model baseline
+        required: false
+        default: true
+        type: boolean
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/qir-v1-pipeline.yml'
+      - 'v1/**'
+      - '!v1/artifacts/**'
+      - 'Part 1 - Phases 6 and 7/Data/**'
+
+concurrency:
+  group: qir-v1-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  build-evaluate-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      PYTHONPATH: v1/src
+      TOKENIZERS_PARALLELISM: 'false'
+      HF_HOME: ${{ github.workspace }}/.cache/huggingface
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: |
+            v1/requirements.txt
+            v1/requirements-zero-shot.txt
+
+      - name: Cache Hugging Face model
+        uses: actions/cache@v4
+        with:
+          path: .cache/huggingface
+          key: qir-v1-hf-distilbert-mnli-v1
+
+      - name: Install core dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r v1/requirements.txt
+
+      - name: Run unit tests
+        run: pytest -q v1/tests
+
+      - name: Build core V1 artifacts
+        run: python v1/scripts/run_v1_pipeline.py --benchmark-size 300
+
+      - name: Install zero-shot baseline dependencies
+        id: zero_deps
+        if: ${{ github.event_name == 'push' || inputs.run_zero_shot }}
+        continue-on-error: true
+        run: python -m pip install -r v1/requirements-zero-shot.txt
+
+      - name: Run zero-shot language-model baseline
+        id: zero_shot
+        if: ${{ (github.event_name == 'push' || inputs.run_zero_shot) && steps.zero_deps.outcome == 'success' }}
+        continue-on-error: true
+        run: |
+          python v1/scripts/run_zero_shot_baseline.py \
+            --benchmark v1/artifacts/benchmark/benchmark_gold.csv \
+            --output-dir v1/artifacts/models/zero_shot \
+            --policy v1/config/route_policy.json \
+            --batch-size 16
+
+      - name: Refresh model shootout and release
+        run: |
+          python v1/scripts/compare_models.py \
+            --metrics-root v1/artifacts/models \
+            --output-dir v1/artifacts/shootout \
+            --benchmark-manifest v1/artifacts/benchmark/benchmark_manifest.json \
+            --policy v1/config/route_policy.json
+          python v1/scripts/finalize_release.py \
+            --artifacts-dir v1/artifacts \
+            --policy v1/config/route_policy.json
+          python v1/scripts/validate_v1_artifacts.py \
+            --artifacts-dir v1/artifacts
+
+      - name: Record workflow status
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          payload = {
+              "workflow_run_id": "${{ github.run_id }}",
+              "source_commit_sha": "${{ github.sha }}",
+              "zero_shot_dependency_outcome": "${{ steps.zero_deps.outcome }}",
+              "zero_shot_run_outcome": "${{ steps.zero_shot.outcome }}",
+          }
+          Path("v1/artifacts/BUILD_STATUS.json").write_text(
+              json.dumps(payload, indent=2, sort_keys=True), encoding="utf-8"
+          )
+          PY
+
+      - name: Package complete release
+        run: |
+          tar -czf qir-v1-complete.tar.gz \
+            v1/artifacts \
+            v1/CONTRACT.md \
+            v1/IMPLEMENTATION_SPEC.md \
+            v1/ROUTING_LABEL_POLICY.md \
+            v1/TEAM_HANDOFF.md \
+            v1/README.md \
+            v1/schemas \
+            v1/docs
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: qir-v1-complete
+          path: qir-v1-complete.tar.gz
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Commit generated V1 artifacts
+        run: |
+          git config user.name "qir-v1-bot"
+          git config user.email "qir-v1-bot@users.noreply.github.com"
+          git add -f v1/artifacts
+          if git diff --cached --quiet; then
+            echo "No generated artifact changes to commit"
+          else
+            git commit -m "Generate Query Intent Resolver V1 artifacts [skip ci]"
+            git push
+          fi

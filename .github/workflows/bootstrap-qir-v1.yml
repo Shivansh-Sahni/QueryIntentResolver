@@ -32,6 +32,9 @@ jobs:
           printf '%s\n' "${parts[@]}" | sort | xargs cat > /tmp/qir-v1-source.tar.gz.b64
           base64 --decode /tmp/qir-v1-source.tar.gz.b64 > /tmp/qir-v1-source.tar.gz
           tar -xzf /tmp/qir-v1-source.tar.gz
+          # The repository token cannot create a second workflow. Install all source
+          # first, then add the production workflow separately through the GitHub app.
+          rm -f .github/workflows/qir-v1-pipeline.yml
           rm -f .bootstrap/qir-v1-source.part-* .bootstrap/qir-v1-source.ready
 
       - name: Commit complete V1 source

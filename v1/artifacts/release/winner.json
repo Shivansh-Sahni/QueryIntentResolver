@@ -1,0 +1,38 @@
+{
+  "benchmark_rows": 300,
+  "benchmark_sha256": "591a31c4947d73fa7d77d2a94f32a69e689281c48a564d08317865b826bd84c6",
+  "finalization_rule": "Final only after the required number of real models are verified against the identical frozen benchmark.",
+  "schema_version": "1.0.0",
+  "selection_policy": {
+    "max_false_short_circuit_rate": 0.05,
+    "min_accuracy": 0.7,
+    "min_macro_f1": 0.6,
+    "min_short_circuit_recall": 0.65,
+    "minimum_real_models_for_final": 2,
+    "score_weights": {
+      "accuracy": 0.25,
+      "macro_f1": 0.45,
+      "short_circuit_recall": 0.1,
+      "short_circuit_safety": 0.2
+    },
+    "selection_score": "0.45*macro_f1 + 0.25*accuracy + 0.20*(1-false_short_rate) + 0.10*short_recall"
+  },
+  "status": "provisional",
+  "verified_real_models_evaluated": 2,
+  "winner": {
+    "accuracy": 0.84,
+    "benchmark_verified": true,
+    "coverage": 1.0,
+    "eligible": false,
+    "estimated_cost_per_1000_queries_usd": 0.0,
+    "false_short_circuit_rate": 0.1527777777777778,
+    "macro_f1": 0.8401854778683479,
+    "metrics_path": "v1/artifacts/models/linearsvc/raw_model/metrics.json",
+    "model_name": "calibrated_word_char_shape_linearsvc_raw",
+    "model_status": "diagnostic",
+    "p95_latency_ms": 4.4449871000040275,
+    "rank": 1,
+    "selection_score": 0.8388612428185344,
+    "short_circuit_recall": 0.8133333333333334
+  }
+}

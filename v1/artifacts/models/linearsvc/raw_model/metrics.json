@@ -1,0 +1,49 @@
+{
+  "accuracy": 0.84,
+  "benchmark_rows": 300,
+  "benchmark_sha256": "591a31c4947d73fa7d77d2a94f32a69e689281c48a564d08317865b826bd84c6",
+  "coverage": 1.0,
+  "estimated_cost_per_1000_queries_usd": 0.0,
+  "expected_calibration_error": 0.07255846524312053,
+  "false_short_circuit_count": 11,
+  "false_short_circuit_overall_rate": 0.03666666666666667,
+  "false_short_circuit_rate": 0.1527777777777778,
+  "macro_f1": 0.8401854778683479,
+  "mean_confidence": 0.7804385955982811,
+  "mean_latency_ms": 4.054082456666919,
+  "median_latency_ms": 4.001338500003726,
+  "model_name": "calibrated_word_char_shape_linearsvc_raw",
+  "model_status": "diagnostic",
+  "p95_latency_ms": 4.4449871000040275,
+  "per_route": {
+    "complex": {
+      "f1": 0.912751677852349,
+      "precision": 0.918918918918919,
+      "recall": 0.9066666666666666,
+      "support": 75
+    },
+    "llm_needed": {
+      "f1": 0.8366013071895425,
+      "precision": 0.8205128205128205,
+      "recall": 0.8533333333333334,
+      "support": 75
+    },
+    "medium": {
+      "f1": 0.7814569536423841,
+      "precision": 0.7763157894736842,
+      "recall": 0.7866666666666666,
+      "support": 75
+    },
+    "short_circuit": {
+      "f1": 0.8299319727891157,
+      "precision": 0.8472222222222222,
+      "recall": 0.8133333333333334,
+      "support": 75
+    }
+  },
+  "predicted_short_circuit_count": 72,
+  "schema_version": "1.0.0",
+  "short_circuit_precision": 0.8472222222222222,
+  "short_circuit_recall": 0.8133333333333334,
+  "total_estimated_cost_usd": 0.0
+}

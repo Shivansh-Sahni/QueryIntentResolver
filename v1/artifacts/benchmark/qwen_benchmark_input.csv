@@ -1,0 +1,301 @@
+benchmark_id,benchmark_row_id,query_id,query_text,instruction
+qirv1-0001,qirv1-0001,3b9f8f47e431645a,what schools should i apply to for nursing not Florida under 40k,Classify this college-related query. Return persona and intent.
+qirv1-0002,qirv1-0002,b4521e66ebe09d8f,colleges on the East Coast under 30k with strong research and internships,Classify this college-related query. Return persona and intent.
+qirv1-0003,qirv1-0003,0400ac4ceff3aa72,can we integrate your platform with our CRM system,Classify this college-related query. Return persona and intent.
+qirv1-0004,qirv1-0004,5d0bc196497e70f1,affordable political science schools in Texas with good job placement,Classify this college-related query. Return persona and intent.
+qirv1-0005,qirv1-0005,6d61f025e104a1f1,what is the helicopter parent trap and how to avoid it,Classify this college-related query. Return persona and intent.
+qirv1-0006,qirv1-0006,952dcaf6392fdcca,do colleges consider course load senior year,Classify this college-related query. Return persona and intent.
+qirv1-0007,qirv1-0007,e0da91823fd164b4,how employers view interdisciplinary certificates,Classify this college-related query. Return persona and intent.
+qirv1-0008,qirv1-0008,a296ec02e7ceeb39,how to advise students about the value of internships and when to pursue them,Classify this college-related query. Return persona and intent.
+qirv1-0009,qirv1-0009,7fd98a5676790124,does Duke have data science,Classify this college-related query. Return persona and intent.
+qirv1-0010,qirv1-0010,9687890832257857,how to counsel students on negotiating their first salary,Classify this college-related query. Return persona and intent.
+qirv1-0011,qirv1-0011,7b80daaaf7c4038b,which universities have strong programs placing students in rural health corps positions,Classify this college-related query. Return persona and intent.
+qirv1-0012,qirv1-0012,9eb48d246441bcae,how to write an email to a professor that doesn't sound dumb,Classify this college-related query. Return persona and intent.
+qirv1-0013,qirv1-0013,a46c32400ae1cec7,what is a holds advisor and what kinds of holds affect students most,Classify this college-related query. Return persona and intent.
+qirv1-0014,qirv1-0014,da93aa7f97553ffb,what essays does Columbia require,Classify this college-related query. Return persona and intent.
+qirv1-0015,qirv1-0015,8c8ab5748f07e8eb,affordable computer science schools near Chicago with good internships,Classify this college-related query. Return persona and intent.
+qirv1-0016,qirv1-0016,524d61e17e357686,Arizona State,Classify this college-related query. Return persona and intent.
+qirv1-0017,qirv1-0017,947b5030f8c7b108,schools with mental health resources,Classify this college-related query. Return persona and intent.
+qirv1-0018,qirv1-0018,7c1a92dfd094b137,what jobs hire people with history degrees,Classify this college-related query. Return persona and intent.
+qirv1-0019,qirv1-0019,c64a6d14bbdf407a,what role should teachers play in college counseling conversations,Classify this college-related query. Return persona and intent.
+qirv1-0020,qirv1-0020,c9720398654d70f3,how to build a robust institutional advancement and fundraising office,Classify this college-related query. Return persona and intent.
+qirv1-0021,qirv1-0021,02ae62b4add038e6,How do design graduates improve weak portfolios for employment?,Classify this college-related query. Return persona and intent.
+qirv1-0022,qirv1-0022,5f5f4d30730cdbea,how to create a retention dashboard to track institutional progress,Classify this college-related query. Return persona and intent.
+qirv1-0023,qirv1-0023,53333db75d7d2eb8,how to tailor advising approaches for adult learners returning to college,Classify this college-related query. Return persona and intent.
+qirv1-0024,qirv1-0024,0808f3c939926fc3,universities with low textbook costs,Classify this college-related query. Return persona and intent.
+qirv1-0025,qirv1-0025,97981feafbe26568,edtech build ai bootcamp,Classify this college-related query. Return persona and intent.
+qirv1-0026,qirv1-0026,213b81af95304278,UC Berkeley vibe,Classify this college-related query. Return persona and intent.
+qirv1-0027,qirv1-0027,2cb6aa429b15e11a,what to do if my roommate and I don't get along,Classify this college-related query. Return persona and intent.
+qirv1-0028,qirv1-0028,1779acb47ca5dabb,University of Florida internships,Classify this college-related query. Return persona and intent.
+qirv1-0029,qirv1-0029,bfd8338264ff591c,institutional branding guidelines,Classify this college-related query. Return persona and intent.
+qirv1-0030,qirv1-0030,b06f1c09c139cba7,Stanford tuition vs UC Berkeley tuition,Classify this college-related query. Return persona and intent.
+qirv1-0031,qirv1-0031,5ad3c3f9c879c3c8,recommend medium-sized colleges near a major tech hub for aerospace engineering reach schools,Classify this college-related query. Return persona and intent.
+qirv1-0032,qirv1-0032,51eaaa6550887c77,how to appeal waitlist decisions,Classify this college-related query. Return persona and intent.
+qirv1-0033,qirv1-0033,95c38609200d027a,universities with strong linguistics research,Classify this college-related query. Return persona and intent.
+qirv1-0034,qirv1-0034,8f019668a887d788,schools with campus-wide language exchange programs,Classify this college-related query. Return persona and intent.
+qirv1-0035,qirv1-0035,b5255a77b69a281c,University of Washington scholarships,Classify this college-related query. Return persona and intent.
+qirv1-0036,qirv1-0036,eb20888e3dd74966,large computer science colleges near a major tech hub under 40k not too competitive,Classify this college-related query. Return persona and intent.
+qirv1-0037,qirv1-0037,f55d8880534f6c75,best biology schools in Texas,Classify this college-related query. Return persona and intent.
+qirv1-0038,qirv1-0038,8095165ca59b0105,good schools for kids who are smart but not great test takers,Classify this college-related query. Return persona and intent.
+qirv1-0039,qirv1-0039,1a055ea9425b2406,colleges with strong literacy education programs,Classify this college-related query. Return persona and intent.
+qirv1-0040,qirv1-0040,54d9a43114ae3d42,affordable mechanical engineering schools near a tech hub with good internships,Classify this college-related query. Return persona and intent.
+qirv1-0041,qirv1-0041,b3f0d31b5c8a67ff,urban universities with strong practicum placements in city schools,Classify this college-related query. Return persona and intent.
+qirv1-0042,qirv1-0042,6d73544aa022e282,colleges where alumni commonly return to give back to their communities,Classify this college-related query. Return persona and intent.
+qirv1-0043,qirv1-0043,14548b70b21a2266,what is the FAFSA and when should we fill it out,Classify this college-related query. Return persona and intent.
+qirv1-0044,qirv1-0044,05d3837270e671e7,application volume trend modeling,Classify this college-related query. Return persona and intent.
+qirv1-0045,qirv1-0045,a7955f28929cdefc,Can graduate applicants receive recommendation letters from industry mentors?,Classify this college-related query. Return persona and intent.
+qirv1-0046,qirv1-0046,aafcfd95fb9b80ab,Vanderbilt vs Princeton for philosophy,Classify this college-related query. Return persona and intent.
+qirv1-0047,qirv1-0047,202d1f805744ab63,hiring mgr AI grads applied weak,Classify this college-related query. Return persona and intent.
+qirv1-0048,qirv1-0048,5f419d54f346d5ec,affordable private + good dorms,Classify this college-related query. Return persona and intent.
+qirv1-0049,qirv1-0049,bc563b633a1ffa67,schools in colorado,Classify this college-related query. Return persona and intent.
+qirv1-0050,qirv1-0050,17b220811ffce736,how employers evaluate certificates vs minors,Classify this college-related query. Return persona and intent.
+qirv1-0051,qirv1-0051,33efef71cee6f963,universities with strong psychology,Classify this college-related query. Return persona and intent.
+qirv1-0052,qirv1-0052,5d2a54ddc406c958,Community college housing options?,Classify this college-related query. Return persona and intent.
+qirv1-0053,qirv1-0053,f9154bfc76868471,schools where public health majors get field placements not just lectures,Classify this college-related query. Return persona and intent.
+qirv1-0054,qirv1-0054,33f9e68a3cb2ed49,how to get more colleges to visit or engage with your high school,Classify this college-related query. Return persona and intent.
+qirv1-0055,qirv1-0055,7aa7805abf1f7b15,eng to consulitng how,Classify this college-related query. Return persona and intent.
+qirv1-0056,qirv1-0056,949b936ce84c98a5,Brown vs Stanford for computer science,Classify this college-related query. Return persona and intent.
+qirv1-0057,qirv1-0057,32840d06393fa4f9,how to advise students preparing for behavioral job interviews,Classify this college-related query. Return persona and intent.
+qirv1-0058,qirv1-0058,e88b98f4fb900861,Columbia vs NYU,Classify this college-related query. Return persona and intent.
+qirv1-0059,qirv1-0059,5b034c846f7bc696,Brown tuition vs UC Irvine tuition,Classify this college-related query. Return persona and intent.
+qirv1-0060,qirv1-0060,d31a310033358519,does Caltech have biology,Classify this college-related query. Return persona and intent.
+qirv1-0061,qirv1-0061,8179baaa7bdea545,cs schools w good social life pls,Classify this college-related query. Return persona and intent.
+qirv1-0062,qirv1-0062,1a76a3d23a408224,schools like University of Florida but cheaper,Classify this college-related query. Return persona and intent.
+qirv1-0063,qirv1-0063,551d54428129421a,schools with health administration programs aligned with regional hospital needs,Classify this college-related query. Return persona and intent.
+qirv1-0064,qirv1-0064,e3681fa197f93132,schools with campus zip lines or adventure courses,Classify this college-related query. Return persona and intent.
+qirv1-0065,qirv1-0065,4a9fc5ff75b57ae8,Caltech vs USC for chemistry,Classify this college-related query. Return persona and intent.
+qirv1-0066,qirv1-0066,868086d63eb0b8c9,recommend small colleges in the Midwest for chemistry not too competitive,Classify this college-related query. Return persona and intent.
+qirv1-0067,qirv1-0067,3ae0c5ffa4c31ef4,scholarship officer undergrad success,Classify this college-related query. Return persona and intent.
+qirv1-0068,qirv1-0068,18c77e9a71b2cf75,how do i apply to NYU,Classify this college-related query. Return persona and intent.
+qirv1-0069,qirv1-0069,57621245452aab2f,universities with strong interfaith community service programs,Classify this college-related query. Return persona and intent.
+qirv1-0070,qirv1-0070,ac81328e3afb5958,colleges near a major tech hub full ride options with strong research and internships,Classify this college-related query. Return persona and intent.
+qirv1-0071,qirv1-0071,5e61222de7f07ece,schools with on-campus escape rooms,Classify this college-related query. Return persona and intent.
+qirv1-0072,qirv1-0072,911ed1e14af36ecf,is a biology degree useful if i dont want to be a doctor,Classify this college-related query. Return persona and intent.
+qirv1-0073,qirv1-0073,c3e4f9753b0693dd,UT Austin vs Purdue for pre-med,Classify this college-related query. Return persona and intent.
+qirv1-0074,qirv1-0074,36f8b29442be468a,transf CS prereq missing,Classify this college-related query. Return persona and intent.
+qirv1-0075,qirv1-0075,30f78dcb4b260b21,Are there mentorship opportunities for community college students in business majors?,Classify this college-related query. Return persona and intent.
+qirv1-0076,qirv1-0076,35eefda69722e67f,what are the social pressures at selective universities and how do parents help,Classify this college-related query. Return persona and intent.
+qirv1-0077,qirv1-0077,92419668bb02d7b6,universities with public transportation access,Classify this college-related query. Return persona and intent.
+qirv1-0078,qirv1-0078,6d12ddeceebf8864,college fit vs prestige,Classify this college-related query. Return persona and intent.
+qirv1-0079,qirv1-0079,8a225e0e7876ce9a,scholarship officer rural cs poor,Classify this college-related query. Return persona and intent.
+qirv1-0080,qirv1-0080,390a189868116719,UC San Diego job placement for architecture,Classify this college-related query. Return persona and intent.
+qirv1-0081,qirv1-0081,8b9d3fbe9fd908d6,universities with public policy undergraduate programs,Classify this college-related query. Return persona and intent.
+qirv1-0082,qirv1-0082,0decd83a9ef32282,large public health colleges in warm states good financial aid reach schools,Classify this college-related query. Return persona and intent.
+qirv1-0083,qirv1-0083,d75d37af5064229e,cs yield down why,Classify this college-related query. Return persona and intent.
+qirv1-0084,qirv1-0084,a5651c4800d0a718,schools that support communication with families students and have accessible housing,Classify this college-related query. Return persona and intent.
+qirv1-0085,qirv1-0085,c54d6650d4b651c3,engineering schools where undergrads publish before senior year,Classify this college-related query. Return persona and intent.
+qirv1-0086,qirv1-0086,a880557d20182818,how to structure a first semester advising appointment for a new freshman,Classify this college-related query. Return persona and intent.
+qirv1-0087,qirv1-0087,7d983aca7e88908f,how to evaluate the impact of campus employment on student retention,Classify this college-related query. Return persona and intent.
+qirv1-0088,qirv1-0088,080e32dc8be56efc,which colleges produce the most teachers who go on to become instructional coaches,Classify this college-related query. Return persona and intent.
+qirv1-0089,qirv1-0089,57ee9429d33b9dbd,eng debt trap?,Classify this college-related query. Return persona and intent.
+qirv1-0090,qirv1-0090,426390f38da9d45d,affordable colleges with strong data science,Classify this college-related query. Return persona and intent.
+qirv1-0091,qirv1-0091,1c8261b026d51397,what is a tuition payment plan,Classify this college-related query. Return persona and intent.
+qirv1-0092,qirv1-0092,01177784523b7aae,what is deferral in admissions,Classify this college-related query. Return persona and intent.
+qirv1-0093,qirv1-0093,aa574f3bc1098bbf,how to help students navigate roommate conflicts,Classify this college-related query. Return persona and intent.
+qirv1-0094,qirv1-0094,63ff8751253ad471,career changer law 2 cs dumb?,Classify this college-related query. Return persona and intent.
+qirv1-0095,qirv1-0095,7af46f1c6cfee9c7,how to request an extension on an assignment,Classify this college-related query. Return persona and intent.
+qirv1-0096,qirv1-0096,5fb9cb513e4e6018,schools with active running or track clubs,Classify this college-related query. Return persona and intent.
+qirv1-0097,qirv1-0097,31a83b7de52aeb40,universities with social work degrees,Classify this college-related query. Return persona and intent.
+qirv1-0098,qirv1-0098,28fa239a0e94f363,How can transfer students manage differences in extracurricular opportunities?,Classify this college-related query. Return persona and intent.
+qirv1-0099,qirv1-0099,f08b6bde2ea32500,mech eng 2 yr to 4 yr worth?,Classify this college-related query. Return persona and intent.
+qirv1-0100,qirv1-0100,176956e9e1c587d5,universities with cultural exchange programs,Classify this college-related query. Return persona and intent.
+qirv1-0101,qirv1-0101,796f2dad6575b323,Princeton financial aid for out of state,Classify this college-related query. Return persona and intent.
+qirv1-0102,qirv1-0102,5b0a38d9ec0d75a1,universities with research in computational biology,Classify this college-related query. Return persona and intent.
+qirv1-0103,qirv1-0103,c78476a725e7b332,colleges with rooftop yogahigh,Classify this college-related query. Return persona and intent.
+qirv1-0104,qirv1-0104,0682d4ed720c5fc2,universities where freshmen cannot be cut from engineering,Classify this college-related query. Return persona and intent.
+qirv1-0105,qirv1-0105,8226823fc69fb7a3,schools with strong bioinformatics programs,Classify this college-related query. Return persona and intent.
+qirv1-0106,qirv1-0106,52525c0adea26706,colleges that provide strong alumni mentoring for first gen students,Classify this college-related query. Return persona and intent.
+qirv1-0107,qirv1-0107,8370621ed402a1ee,four year cost of University of Washington including housing,Classify this college-related query. Return persona and intent.
+qirv1-0108,qirv1-0108,0b9f9e17db407820,best colleges for on-campus housing with high graduation rates in California,Classify this college-related query. Return persona and intent.
+qirv1-0109,qirv1-0109,4e56d52c459500af,what colleges fit a student with a 3.5 gpa,Classify this college-related query. Return persona and intent.
+qirv1-0110,qirv1-0110,64b9019b2a10fd06,how do we keep our admissions staff account access up to date when team members leave or join,Classify this college-related query. Return persona and intent.
+qirv1-0111,qirv1-0111,bb57671c13254ded,how to advocate for systemic changes in curriculum or policy that affect students,Classify this college-related query. Return persona and intent.
+qirv1-0112,qirv1-0112,fed3b773785f35cd,job placement for Northwestern,Classify this college-related query. Return persona and intent.
+qirv1-0113,qirv1-0113,73150c804ba4b092,How can community college students connect with university alumni for mentorship?,Classify this college-related query. Return persona and intent.
+qirv1-0114,qirv1-0114,b784919b862d6c4e,Boston University vs Columbia,Classify this college-related query. Return persona and intent.
+qirv1-0115,qirv1-0115,1b721ba038375fda,universities with peer-led study programs,Classify this college-related query. Return persona and intent.
+qirv1-0116,qirv1-0116,9312906a7a9dc34c,MIT acceptance rate,Classify this college-related query. Return persona and intent.
+qirv1-0117,qirv1-0117,ba697a14a8308350,create reach target safety list for film in Texas under 40k,Classify this college-related query. Return persona and intent.
+qirv1-0118,qirv1-0118,9518c2660cbfbc62,career changer teacher2data,Classify this college-related query. Return persona and intent.
+qirv1-0119,qirv1-0119,ca05659c5667d051,how to support international students who are academically struggling,Classify this college-related query. Return persona and intent.
+qirv1-0120,qirv1-0120,ca78bb2c078ba5f9,Duke tuition vs Purdue tuition,Classify this college-related query. Return persona and intent.
+qirv1-0121,qirv1-0121,455aac8687b13da5,schools with strong programs in philosophy and logic,Classify this college-related query. Return persona and intent.
+qirv1-0122,qirv1-0122,0f1c7741c924aefc,career outcomes for anthropology majors,Classify this college-related query. Return persona and intent.
+qirv1-0123,qirv1-0123,635a35514efdd148,switch bio 2 biomed eng jr yr dumb?,Classify this college-related query. Return persona and intent.
+qirv1-0124,qirv1-0124,11726805d19cf43d,small engineering colleges with division I sports,Classify this college-related query. Return persona and intent.
+qirv1-0125,qirv1-0125,3dd8048b0ef54735,Cornell campus culture,Classify this college-related query. Return persona and intent.
+qirv1-0126,qirv1-0126,3c1512fc5ca6288b,how to build institutional infrastructure for a study abroad office,Classify this college-related query. Return persona and intent.
+qirv1-0127,qirv1-0127,909f56cdb2e10701,Transfer student social events?,Classify this college-related query. Return persona and intent.
+qirv1-0128,qirv1-0128,7d70054e62a58ecf,internships for Stanford,Classify this college-related query. Return persona and intent.
+qirv1-0129,qirv1-0129,942e329a3293404f,how to build a campus recreation center that serves all students equitably,Classify this college-related query. Return persona and intent.
+qirv1-0130,qirv1-0130,16aec004adbfa8a2,Boston University vs UC Irvine for finance,Classify this college-related query. Return persona and intent.
+qirv1-0131,qirv1-0131,91f8c8d1dff2a13a,schools with explicit racial equity programs for campus inclusion,Classify this college-related query. Return persona and intent.
+qirv1-0132,qirv1-0132,3fd71ba6ed8f6e7a,how to engage parents who are over-involved in their student's applications,Classify this college-related query. Return persona and intent.
+qirv1-0133,qirv1-0133,1e103fdeb16ccc3e,Columbia,Classify this college-related query. Return persona and intent.
+qirv1-0134,qirv1-0134,285b25bb30d716dc,does UC San Diego have philosophy,Classify this college-related query. Return persona and intent.
+qirv1-0135,qirv1-0135,a7422b301e4ef47d,what are common mistakes students make in the college application process,Classify this college-related query. Return persona and intent.
+qirv1-0136,qirv1-0136,9e38a4ee87b9b00e,colleges that support mental health well,Classify this college-related query. Return persona and intent.
+qirv1-0137,qirv1-0137,ca176957f19b74a1,schools with 3D printing labs open to all students,Classify this college-related query. Return persona and intent.
+qirv1-0138,qirv1-0138,3bd8a4a3c55452da,what is your platform's approach to supporting community colleges specifically,Classify this college-related query. Return persona and intent.
+qirv1-0139,qirv1-0139,1cf4facb000234fe,create reach target safety list for economics in California under 30k,Classify this college-related query. Return persona and intent.
+qirv1-0140,qirv1-0140,324b50a30067d4ed,feeling overwhelmed in college what should I do,Classify this college-related query. Return persona and intent.
+qirv1-0141,qirv1-0141,b981a35ed74be267,what is the best practice for responding to student inquiries through your system,Classify this college-related query. Return persona and intent.
+qirv1-0142,qirv1-0142,3cb70c515310d8a4,schools with art and creative talent scholarships,Classify this college-related query. Return persona and intent.
+qirv1-0143,qirv1-0143,5b123fe707bd5239,how to deal with a professor who gives confusing instructions,Classify this college-related query. Return persona and intent.
+qirv1-0144,qirv1-0144,996f0f56ba9fb5fe,schools with active intramural esports leagues,Classify this college-related query. Return persona and intent.
+qirv1-0145,qirv1-0145,ed3fabdc84bae143,does USC have electrical engineering,Classify this college-related query. Return persona and intent.
+qirv1-0146,qirv1-0146,06c2eb5e1d296e32,colleges with strong parental communication policies,Classify this college-related query. Return persona and intent.
+qirv1-0147,qirv1-0147,1850316812fc133f,what extracurriculars do top colleges actually care about,Classify this college-related query. Return persona and intent.
+qirv1-0148,qirv1-0148,b48db612f199cb8b,colleges with hidden libraries,Classify this college-related query. Return persona and intent.
+qirv1-0149,qirv1-0149,d5189f829991f10d,what is the drop add period and how do I use it,Classify this college-related query. Return persona and intent.
+qirv1-0150,qirv1-0150,e83593ee04328843,colleges near research parks,Classify this college-related query. Return persona and intent.
+qirv1-0151,qirv1-0151,9ab4ea03cbac9488,colleges emphasizing culturally responsive teaching curricula,Classify this college-related query. Return persona and intent.
+qirv1-0152,qirv1-0152,1cd9ae10698c12d9,how to evaluate the impact of guaranteed admission programs on enrollment quality,Classify this college-related query. Return persona and intent.
+qirv1-0153,qirv1-0153,7c3df0d8834deef8,comparing cs salary outcomes across regions for my son,Classify this college-related query. Return persona and intent.
+qirv1-0154,qirv1-0154,a7983cf31f1794b9,does baylor have good support services for students from low income backgrounds,Classify this college-related query. Return persona and intent.
+qirv1-0155,qirv1-0155,210e546b1c7c4e8c,how to design a campus food pantry to address student hunger,Classify this college-related query. Return persona and intent.
+qirv1-0156,qirv1-0156,24f425d8d4cd3d77,USC vs UC San Diego for nursing,Classify this college-related query. Return persona and intent.
+qirv1-0157,qirv1-0157,62194659860a3c27,how to network as an introvert in college,Classify this college-related query. Return persona and intent.
+qirv1-0158,qirv1-0158,d84703caddbbd664,does Harvard have business,Classify this college-related query. Return persona and intent.
+qirv1-0159,qirv1-0159,4c3308853e6a6b6f,archived admissions data access,Classify this college-related query. Return persona and intent.
+qirv1-0160,qirv1-0160,936ad80f7bc3b7cb,what schools should i apply to for mechanical engineering near the beach low tuition,Classify this college-related query. Return persona and intent.
+qirv1-0161,qirv1-0161,99f3e3e1ca08964b,schools with honors programs that aren’t stressful,Classify this college-related query. Return persona and intent.
+qirv1-0162,qirv1-0162,6101a526c7fceb7a,Duke tuition vs University of Maryland tuition,Classify this college-related query. Return persona and intent.
+qirv1-0163,qirv1-0163,1d39b5112612e4d9,University of Maryland average ACT,Classify this college-related query. Return persona and intent.
+qirv1-0164,qirv1-0164,2f6991564513fdea,colleges near state borders,Classify this college-related query. Return persona and intent.
+qirv1-0165,qirv1-0165,2f0cb1bc44dced89,recommend large colleges in the Midwest for economics not too competitive,Classify this college-related query. Return persona and intent.
+qirv1-0166,qirv1-0166,6d8e5b52501e07fd,universities with student-run environmental law organizations,Classify this college-related query. Return persona and intent.
+qirv1-0167,qirv1-0167,fbe4638101802eb8,recommend medium-sized colleges near a major tech hub for economics reach schools,Classify this college-related query. Return persona and intent.
+qirv1-0168,qirv1-0168,a6aefda9352925c7,affordable nursing schools in Texas with good job placement,Classify this college-related query. Return persona and intent.
+qirv1-0169,qirv1-0169,bb423e39d4b0b1d5,help me compare colleges for entrepreneurship resources based on robust internships and online course options,Classify this college-related query. Return persona and intent.
+qirv1-0170,qirv1-0170,d36cd70a16d28378,Community college STEM faculty office hours?,Classify this college-related query. Return persona and intent.
+qirv1-0171,qirv1-0171,1727d078605058bd,how do we position our school against peer institutions on your platform,Classify this college-related query. Return persona and intent.
+qirv1-0172,qirv1-0172,79b5a4c2d318de0e,Princeton job placement for biology,Classify this college-related query. Return persona and intent.
+qirv1-0173,qirv1-0173,83d7d1808d1a8a2f,Community college STEM lab safety training?,Classify this college-related query. Return persona and intent.
+qirv1-0174,qirv1-0174,44162869e01615f1,colleges that accept community college associate degrees,Classify this college-related query. Return persona and intent.
+qirv1-0175,qirv1-0175,a293fa8c17d0bfcb,which schools offer campus culture and inclusion and allow early application deadlines,Classify this college-related query. Return persona and intent.
+qirv1-0176,qirv1-0176,2acc96a119c2bc84,Grad program funding packages?,Classify this college-related query. Return persona and intent.
+qirv1-0177,qirv1-0177,4c47a9ce1eee9e92,colleges where graduates frequently enter community service roles,Classify this college-related query. Return persona and intent.
+qirv1-0178,qirv1-0178,5c4fa5af668371a9,how to build a comprehensive new staff and administrator onboarding program,Classify this college-related query. Return persona and intent.
+qirv1-0179,qirv1-0179,602c7d4aabf66704,how to train faculty in active learning and inclusive pedagogy,Classify this college-related query. Return persona and intent.
+qirv1-0180,qirv1-0180,044666f47bd5c495,elite non coastal universities,Classify this college-related query. Return persona and intent.
+qirv1-0181,qirv1-0181,146c63efebf87e35,schools with strong writing culture,Classify this college-related query. Return persona and intent.
+qirv1-0182,qirv1-0182,7bb9ddcbf141ad76,Rice University research opportunities,Classify this college-related query. Return persona and intent.
+qirv1-0183,qirv1-0183,b4e8f550f6179aee,how do I advise a student who did their CC online and wants a rural residential experience,Classify this college-related query. Return persona and intent.
+qirv1-0184,qirv1-0184,6d6a94daa7c4f113,create reach target safety list for psychology in California full ride options,Classify this college-related query. Return persona and intent.
+qirv1-0185,qirv1-0185,18969e73afe7f7ff,best colleges for honors seminar quality with robust internships in California,Classify this college-related query. Return persona and intent.
+qirv1-0186,qirv1-0186,4ab85d68c034240f,which universities cap class sizes early,Classify this college-related query. Return persona and intent.
+qirv1-0187,qirv1-0187,afc5ea957a778685,good colleges for students who want flexibility in pacing,Classify this college-related query. Return persona and intent.
+qirv1-0188,qirv1-0188,2c7d64e6392ad1b4,edtech founder project CS,Classify this college-related query. Return persona and intent.
+qirv1-0189,qirv1-0189,0d2f1e847ad1efed,rankings for Georgia Tech,Classify this college-related query. Return persona and intent.
+qirv1-0190,qirv1-0190,c9d1bed90cdb9507,how to build a more racially and ethnically diverse incoming class,Classify this college-related query. Return persona and intent.
+qirv1-0191,qirv1-0191,ea9d40f91fe95aa8,good schools if you want to start a startup eventually,Classify this college-related query. Return persona and intent.
+qirv1-0192,qirv1-0192,213e47fd9965099c,MIT financial aid for out of state,Classify this college-related query. Return persona and intent.
+qirv1-0193,qirv1-0193,b1a10cc17732f8a0,how to develop a student success technology ecosystem,Classify this college-related query. Return persona and intent.
+qirv1-0194,qirv1-0194,9bfa927933c04b9d,small electrical engineering colleges near Chicago under 30k,Classify this college-related query. Return persona and intent.
+qirv1-0195,qirv1-0195,84b29eee2f36cf1b,comp sci gpa reset after transfer?,Classify this college-related query. Return persona and intent.
+qirv1-0196,qirv1-0196,74d13d2e6f88dc2c,how to conduct an effective sophomore year check-in about college planning,Classify this college-related query. Return persona and intent.
+qirv1-0197,qirv1-0197,5604c58da9d5e1c3,how to document and share college counseling resources with students digitally,Classify this college-related query. Return persona and intent.
+qirv1-0198,qirv1-0198,7c1632e30a454c99,How can project-based CS labs enhance learning outcomes?,Classify this college-related query. Return persona and intent.
+qirv1-0199,qirv1-0199,24522fae6d6a9f7f,NYU average SAT,Classify this college-related query. Return persona and intent.
+qirv1-0200,qirv1-0200,2bd01ddef65d7857,civil eng infrastructure bill demand spike,Classify this college-related query. Return persona and intent.
+qirv1-0201,qirv1-0201,c062a4547dc26b08,how to advise students who want to transfer from a 4-year to a community college,Classify this college-related query. Return persona and intent.
+qirv1-0202,qirv1-0202,46caf52faa2af1ac,cheapest architecture schools near a tech hub,Classify this college-related query. Return persona and intent.
+qirv1-0203,qirv1-0203,3b3ab72b0d740cac,engineering programs with strong alumni mentorship networks,Classify this college-related query. Return persona and intent.
+qirv1-0204,qirv1-0204,b1ace66383c3464e,how to get leadership positions in student clubs,Classify this college-related query. Return persona and intent.
+qirv1-0205,qirv1-0205,7c8662bafe8ce252,how to evaluate and improve campus climate survey results,Classify this college-related query. Return persona and intent.
+qirv1-0206,qirv1-0206,9db7c2e250152753,University of Florida job placement for engineering,Classify this college-related query. Return persona and intent.
+qirv1-0207,qirv1-0207,38a4790159e77dcc,edtech build cs portfolio tool,Classify this college-related query. Return persona and intent.
+qirv1-0208,qirv1-0208,79deefc291b045b2,student wants tech career but dislikes coding,Classify this college-related query. Return persona and intent.
+qirv1-0209,qirv1-0209,4015989df9463919,how to help a student who is academically capable but unmotivated,Classify this college-related query. Return persona and intent.
+qirv1-0210,qirv1-0210,ee3016a3265463d2,Purdue vs MIT,Classify this college-related query. Return persona and intent.
+qirv1-0211,qirv1-0211,c04f6777b8c726e5,intl student stem OPT stress,Classify this college-related query. Return persona and intent.
+qirv1-0212,qirv1-0212,f9c00c703199b4e2,universities with research in sociogenomics,Classify this college-related query. Return persona and intent.
+qirv1-0213,qirv1-0213,bb63b04da47d8670,cc student lab access low,Classify this college-related query. Return persona and intent.
+qirv1-0214,qirv1-0214,29cd26cae92f6f18,schools with campus ambassador programs,Classify this college-related query. Return persona and intent.
+qirv1-0215,qirv1-0215,e4ea2aa553fd4080,schools w strong programs for students intersted in rural journalism or local news,Classify this college-related query. Return persona and intent.
+qirv1-0216,qirv1-0216,31631378981385ac,How can community college students find research opportunities at universities?,Classify this college-related query. Return persona and intent.
+qirv1-0217,qirv1-0217,0a9a1c24f257513d,how does your platform support community college and transfer student pathways,Classify this college-related query. Return persona and intent.
+qirv1-0218,qirv1-0218,70610cccbe94fa73,how to run effective group advising or workshop sessions,Classify this college-related query. Return persona and intent.
+qirv1-0219,qirv1-0219,d709daa610964a05,how to build a resource library for advisors that includes major and career information,Classify this college-related query. Return persona and intent.
+qirv1-0220,qirv1-0220,ff6bfe0c3028f679,University of Washington vs UCLA for business,Classify this college-related query. Return persona and intent.
+qirv1-0221,qirv1-0221,f69b611a17c95374,small philosophy colleges in California low tuition,Classify this college-related query. Return persona and intent.
+qirv1-0222,qirv1-0222,3888a0dd7fd6494d,colleges near a major tech hub low tuition with strong research and internships,Classify this college-related query. Return persona and intent.
+qirv1-0223,qirv1-0223,f5f24029a3c91b46,what is Phi Beta Kappa and is it worth pursuing,Classify this college-related query. Return persona and intent.
+qirv1-0224,qirv1-0224,ddf1e1c1fe837412,best practices for running a career advising drop-in,Classify this college-related query. Return persona and intent.
+qirv1-0225,qirv1-0225,5903ad31f0f02874,how does your platform handle colleges going through accreditation review,Classify this college-related query. Return persona and intent.
+qirv1-0226,qirv1-0226,3ba847a375c5c8c1,how to help students communicate with financial aid about appeal or special circumstances,Classify this college-related query. Return persona and intent.
+qirv1-0227,qirv1-0227,e897f8d72719c0fd,how to help a student who is a strong writer but low test scores decide where to apply,Classify this college-related query. Return persona and intent.
+qirv1-0228,qirv1-0228,1fd72d9859baf9d6,which schools offer study abroad options and allow no SAT requirement,Classify this college-related query. Return persona and intent.
+qirv1-0229,qirv1-0229,ec876077af575c09,school profile publishing workflow,Classify this college-related query. Return persona and intent.
+qirv1-0230,qirv1-0230,12c1c6312e4c06d1,longitudinal admissions data export,Classify this college-related query. Return persona and intent.
+qirv1-0231,qirv1-0231,9748d9bc39295ebf,cs major building portfolio without internships,Classify this college-related query. Return persona and intent.
+qirv1-0232,qirv1-0232,759ba5dcdb276107,UC Berkeley vs USC for finance,Classify this college-related query. Return persona and intent.
+qirv1-0233,qirv1-0233,ec664bca8992ec55,mid sized universities with strong human factors engineering,Classify this college-related query. Return persona and intent.
+qirv1-0234,qirv1-0234,18dac85e786f5a10,what tools are available to advisors for tracking student academic progress,Classify this college-related query. Return persona and intent.
+qirv1-0235,qirv1-0235,e9a21b332b1b9868,visibility in recommendation engine,Classify this college-related query. Return persona and intent.
+qirv1-0236,qirv1-0236,c05cdd6b39de4a5c,schools with strong programs for students who grew up abroad or are third culture kids,Classify this college-related query. Return persona and intent.
+qirv1-0237,qirv1-0237,6e0e59a35b18a823,can I take grad-level classes as an undergrad,Classify this college-related query. Return persona and intent.
+qirv1-0238,qirv1-0238,3348614fa20bf621,affordable architecture schools in Texas with good internships,Classify this college-related query. Return persona and intent.
+qirv1-0239,qirv1-0239,32baaa712b1edc1c,does wake forest track student progress well,Classify this college-related query. Return persona and intent.
+qirv1-0240,qirv1-0240,1901a216bd8894f7,universities that train graduates for local government leadership roles,Classify this college-related query. Return persona and intent.
+qirv1-0241,qirv1-0241,b8b4644271cbe25e,recommend small colleges near Chicago for psychology,Classify this college-related query. Return persona and intent.
+qirv1-0242,qirv1-0242,2ebca07aae96a5e2,engineering schools with 4 year graduation guarantee,Classify this college-related query. Return persona and intent.
+qirv1-0243,qirv1-0243,85ca377cdb0c638a,Columbia chill campus,Classify this college-related query. Return persona and intent.
+qirv1-0244,qirv1-0244,e2f2e6eb75685a02,colleges where students often study multiple fields by graduation,Classify this college-related query. Return persona and intent.
+qirv1-0245,qirv1-0245,71e0c2aa05e143da,what is college access work and how does it differ from traditional counseling,Classify this college-related query. Return persona and intent.
+qirv1-0246,qirv1-0246,96df81f7c3d3eea3,what college rankings actually matter and what are misleading,Classify this college-related query. Return persona and intent.
+qirv1-0247,qirv1-0247,7fdd3cf06d6ff34b,marketing collaborative eng culture better,Classify this college-related query. Return persona and intent.
+qirv1-0248,qirv1-0248,90d0b2e9d164e415,colleges near Chicago good financial aid with strong research and internships,Classify this college-related query. Return persona and intent.
+qirv1-0249,qirv1-0249,4a045a854b85c8f9,how to build institutional capacity for trauma-informed student services,Classify this college-related query. Return persona and intent.
+qirv1-0250,qirv1-0250,40e89aa8bd521810,top public universities for tech jobs,Classify this college-related query. Return persona and intent.
+qirv1-0251,qirv1-0251,db98e09b088723d6,does University of Maryland have political science,Classify this college-related query. Return persona and intent.
+qirv1-0252,qirv1-0252,3f76281eea878903,do college rankings matter when you plan to work internationally after graduating,Classify this college-related query. Return persona and intent.
+qirv1-0253,qirv1-0253,b01159e73b8fb6bb,improve student match quality,Classify this college-related query. Return persona and intent.
+qirv1-0254,qirv1-0254,f26951432d626684,Boston University admissions profile average sat and gpa,Classify this college-related query. Return persona and intent.
+qirv1-0255,qirv1-0255,ea7f1ed733357092,campuses with strong diversity in stem,Classify this college-related query. Return persona and intent.
+qirv1-0256,qirv1-0256,1537ec245c457a34,analytics for admissions funnel,Classify this college-related query. Return persona and intent.
+qirv1-0257,qirv1-0257,1d0f0fdd829f9377,colleges in old mill towns or historic small cities,Classify this college-related query. Return persona and intent.
+qirv1-0258,qirv1-0258,bd9ef4450c043ec9,good schools if i like problem solving more than coding,Classify this college-related query. Return persona and intent.
+qirv1-0259,qirv1-0259,d6635d359b38ce95,Carnegie Mellon financial aid for out of state,Classify this college-related query. Return persona and intent.
+qirv1-0260,qirv1-0260,b00a67b9efa78ab9,Are there programs for community college students to shadow professionals in their field?,Classify this college-related query. Return persona and intent.
+qirv1-0261,qirv1-0261,340e819950017994,schools with zero homework classes,Classify this college-related query. Return persona and intent.
+qirv1-0262,qirv1-0262,3b644f7b300e30ed,how to respond to external rankings and their impact on institutional reputation,Classify this college-related query. Return persona and intent.
+qirv1-0263,qirv1-0263,4d719eb86716ef80,data sci grads stats light,Classify this college-related query. Return persona and intent.
+qirv1-0264,qirv1-0264,41fd9811d7ee876d,NYU vs Columbia business,Classify this college-related query. Return persona and intent.
+qirv1-0265,qirv1-0265,dd1de572dfed9d2c,schools like Vanderbilt but cheaper,Classify this college-related query. Return persona and intent.
+qirv1-0266,qirv1-0266,934bb907f78d6cc4,colleges with actual roller coasters nearby,Classify this college-related query. Return persona and intent.
+qirv1-0267,qirv1-0267,6456e0323dbe40b3,good school not scary,Classify this college-related query. Return persona and intent.
+qirv1-0268,qirv1-0268,bef5d9c9941c21d0,schools that prepare future teachers with strong trauma informed approaches,Classify this college-related query. Return persona and intent.
+qirv1-0269,qirv1-0269,67f77d22516ab4d8,melt eng admits stop,Classify this college-related query. Return persona and intent.
+qirv1-0270,qirv1-0270,f9dc849bed0b1e55,is UT Austin good for cs,Classify this college-related query. Return persona and intent.
+qirv1-0271,qirv1-0271,080174d10a1b9e1f,selectivity vs acceptance rate,Classify this college-related query. Return persona and intent.
+qirv1-0272,qirv1-0272,d4b97d0a208840b2,cc hist course night?,Classify this college-related query. Return persona and intent.
+qirv1-0273,qirv1-0273,6f44b5d66f3a0a7d,Boston University tuition vs MIT tuition,Classify this college-related query. Return persona and intent.
+qirv1-0274,qirv1-0274,74a79c5668feabb4,how to write effective advising case notes and summaries,Classify this college-related query. Return persona and intent.
+qirv1-0275,qirv1-0275,db3f5ab8c14999c5,NYU tuition vs Caltech tuition,Classify this college-related query. Return persona and intent.
+qirv1-0276,qirv1-0276,4cc3b37a24b2da6f,iowa state vs kansas state,Classify this college-related query. Return persona and intent.
+qirv1-0277,qirv1-0277,08e560a87a7f8633,schools with active student government,Classify this college-related query. Return persona and intent.
+qirv1-0278,qirv1-0278,282b961075423f6d,does your platform allow us to run surveys of students who viewed our profile,Classify this college-related query. Return persona and intent.
+qirv1-0279,qirv1-0279,cf8ab0771d2dc7b1,medium-sized economics colleges near the beach under 20k,Classify this college-related query. Return persona and intent.
+qirv1-0280,qirv1-0280,b9516ad2188df690,colleges with strong cognitive science + philosophy programs,Classify this college-related query. Return persona and intent.
+qirv1-0281,qirv1-0281,215617fd275140d0,unis w big hackathon culture,Classify this college-related query. Return persona and intent.
+qirv1-0282,qirv1-0282,c3b8a4c7565d5d78,how to advise students about apprenticeship programs as alternatives to traditional degrees,Classify this college-related query. Return persona and intent.
+qirv1-0283,qirv1-0283,79c74441c3274fd3,universities with strong electrical engineering,Classify this college-related query. Return persona and intent.
+qirv1-0284,qirv1-0284,4bcffae13dcb53cf,advising student intrested aerospace + physics overlap,Classify this college-related query. Return persona and intent.
+qirv1-0285,qirv1-0285,18dc63fa33d68f78,schools in west virginia,Classify this college-related query. Return persona and intent.
+qirv1-0286,qirv1-0286,ba0eadfc4fc46144,wisconsin vs minnesota alumni outcomes,Classify this college-related query. Return persona and intent.
+qirv1-0287,qirv1-0287,307b4ef2c090cb94,universities with peer-led tutoring programs,Classify this college-related query. Return persona and intent.
+qirv1-0288,qirv1-0288,b885a9a9de173f21,how to build an accelerated degree pathway for high-performing students,Classify this college-related query. Return persona and intent.
+qirv1-0289,qirv1-0289,69cea04cd7636be1,Caltech tuition vs Cornell tuition,Classify this college-related query. Return persona and intent.
+qirv1-0290,qirv1-0290,b0e82bd140c197a8,University of Michigan vs Purdue for nursing,Classify this college-related query. Return persona and intent.
+qirv1-0291,qirv1-0291,70349999798bd381,schools with strong industrial engineering programs,Classify this college-related query. Return persona and intent.
+qirv1-0292,qirv1-0292,3c6d5bf0eed1b139,what is the nearest airport to schools in really remote locations,Classify this college-related query. Return persona and intent.
+qirv1-0293,qirv1-0293,b6a09b3c3ee8c084,schools with collaborative culture,Classify this college-related query. Return persona and intent.
+qirv1-0294,qirv1-0294,be61cdb2593cdea9,colleges with military veteran tuition benefits,Classify this college-related query. Return persona and intent.
+qirv1-0295,qirv1-0295,b253016902f8f734,regional hiring concentration effects,Classify this college-related query. Return persona and intent.
+qirv1-0296,qirv1-0296,7309c946b8a02f23,how to implement intrusive advising to support struggling students,Classify this college-related query. Return persona and intent.
+qirv1-0297,qirv1-0297,92ab330736b45e96,medium-sized nursing colleges in Texas low tuition,Classify this college-related query. Return persona and intent.
+qirv1-0298,qirv1-0298,d16db84e1708130e,millersville vs kutztown,Classify this college-related query. Return persona and intent.
+qirv1-0299,qirv1-0299,54bd1d47af29caeb,schools with cooperative education programs and top accounting majors,Classify this college-related query. Return persona and intent.
+qirv1-0300,qirv1-0300,1378980107287dc4,universities with high numbers of NSF fellowship winners,Classify this college-related query. Return persona and intent.

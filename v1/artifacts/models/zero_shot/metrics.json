@@ -1,0 +1,59 @@
+{
+  "accuracy": 0.24333333333333335,
+  "batch_size": 16,
+  "benchmark_rows": 300,
+  "benchmark_sha256": "591a31c4947d73fa7d77d2a94f32a69e689281c48a564d08317865b826bd84c6",
+  "compute_hourly_usd_assumption": 0.06,
+  "coverage": 1.0,
+  "deployment_policy": {
+    "global_low_confidence_threshold": 0.45,
+    "low_confidence_route": "llm_needed",
+    "short_circuit_min_confidence": 0.8,
+    "unsafe_short_circuit_route": "medium"
+  },
+  "estimated_cost_per_1000_queries_usd": 0.0017122872436666672,
+  "expected_calibration_error": 0.22606887648502985,
+  "false_short_circuit_count": 0,
+  "false_short_circuit_overall_rate": 0.0,
+  "false_short_circuit_rate": 0.0,
+  "macro_f1": 0.17996289424860853,
+  "mean_confidence": 0.46940220981836317,
+  "mean_latency_ms": 102.68211490999998,
+  "median_latency_ms": 102.86805643749908,
+  "model_name": "zero_shot::typeform/distilbert-base-uncased-mnli",
+  "model_status": "real",
+  "model_type": "local_zero_shot_nli_language_model_baseline",
+  "p95_latency_ms": 107.27552062499868,
+  "per_route": {
+    "complex": {
+      "f1": 0.061224489795918366,
+      "precision": 0.13043478260869565,
+      "recall": 0.04,
+      "support": 75
+    },
+    "llm_needed": {
+      "f1": 0.3116883116883117,
+      "precision": 0.23076923076923078,
+      "recall": 0.48,
+      "support": 75
+    },
+    "medium": {
+      "f1": 0.3469387755102041,
+      "precision": 0.2809917355371901,
+      "recall": 0.4533333333333333,
+      "support": 75
+    },
+    "short_circuit": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 75
+    }
+  },
+  "predicted_short_circuit_count": 0,
+  "schema_version": "1.0.0",
+  "short_circuit_precision": 0.0,
+  "short_circuit_recall": 0.0,
+  "total_estimated_cost_usd": 0.0005136861731000001,
+  "total_inference_seconds": 30.821170386000006
+}

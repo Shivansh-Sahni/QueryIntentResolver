@@ -1,0 +1,10 @@
+{
+  "benchmark_status": "frozen_immutable",
+  "diagnostic_rules_evaluated": true,
+  "linear_model_evaluated": true,
+  "llm_api_status": "optional_credentials_not_supplied",
+  "qwen_status": "awaiting_gpu_export",
+  "release_manifest": "/home/runner/work/QueryIntentResolver/QueryIntentResolver/v1/artifacts/release/release_manifest.json",
+  "status": "complete",
+  "zero_shot_requested": false
+}

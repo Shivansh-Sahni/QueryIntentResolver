@@ -1,0 +1,62 @@
+{
+  "pipeline_version": "1.0.0",
+  "raw_rows": 11575,
+  "source_files": [
+    {
+      "file": "Data - Anika.csv",
+      "rows_read": 960,
+      "sha256": "b12aa261526a72bf486f12f4565c4cfea3a4f5959adfa8db98fb2ab7334a9e7b"
+    },
+    {
+      "file": "Data - Edward.csv",
+      "rows_read": 2230,
+      "sha256": "022fa08b7d14d9d40f8d856b8fa85c70554687f3ce5fb53763f67d2b321a24ed"
+    },
+    {
+      "file": "Data - Nimisha.csv",
+      "rows_read": 1110,
+      "sha256": "83b1f282c3ea02815d92e5c0a525fd9d8ae9e806e99c81799db2d6eeeeacce29"
+    },
+    {
+      "file": "Data - Ridhi.csv",
+      "rows_read": 1268,
+      "sha256": "5dcab208023a2506d261bd97f916f1f45627a763b749e5d40fc33a9b6c820060"
+    },
+    {
+      "file": "Data - Shivansh.csv",
+      "rows_read": 4500,
+      "sha256": "a7f36e14443c5e28e384c2235e3ddccf06e9d04df8a65a75b09a6bebf2c622a0"
+    },
+    {
+      "file": "Data Anthony.csv",
+      "rows_read": 1508,
+      "sha256": "fba139cffe504601d82c5ad2c9a68004b5fc7020b7b34d57fcb87ad4d63c9ae8"
+    }
+  ],
+  "unique_normalized_queries": 8226,
+  "resolved_unique_queries": 8171,
+  "manual_review_unique_queries": 55,
+  "manual_review_share": 0.006686,
+  "conflicting_unique_queries_before_resolution": 164,
+  "invalid_route_rows": 308,
+  "manual_overrides_loaded": 25,
+  "resolution_methods": {
+    "intent_policy": 7683,
+    "unanimous_observed": 460,
+    "manual_review": 55,
+    "manual_override": 25,
+    "strong_observed_majority": 3
+  },
+  "resolved_route_distribution": {
+    "medium": 2215,
+    "short_circuit": 2166,
+    "llm_needed": 2115,
+    "complex": 1675
+  },
+  "valid_routes": [
+    "complex",
+    "llm_needed",
+    "medium",
+    "short_circuit"
+  ]
+}

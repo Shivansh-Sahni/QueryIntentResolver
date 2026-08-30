@@ -1,0 +1,15 @@
+{
+  "benchmark_rows_excluded": 300,
+  "overlap_normalized_queries": 0,
+  "overlap_query_ids": 0,
+  "source_cleaned_file": "/home/runner/work/QueryIntentResolver/QueryIntentResolver/v1/artifacts/data_cleanup/cleaned_unique_queries.csv",
+  "source_cleaned_sha256": "5f0a85069d36a8ea35ac9e2fc2c528ebb2196c4d0dfe67f75ff3264a667723ec",
+  "training_clean_sha256": "25e8d908547db11ac0776efffdf6069a83ff56a0b3f81f5ecd409da05068a96e",
+  "training_route_distribution": {
+    "complex": 1600,
+    "llm_needed": 2040,
+    "medium": 2140,
+    "short_circuit": 2091
+  },
+  "training_rows": 7871
+}

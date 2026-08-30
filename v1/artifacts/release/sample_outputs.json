@@ -1,0 +1,104 @@
+[
+  {
+    "debug_response": {
+      "confidence": 0.870334,
+      "context_used": false,
+      "entities": {},
+      "intent": null,
+      "latency_ms": 4.218664,
+      "policy_reason": "accepted_model_prediction",
+      "raw_route": "short_circuit",
+      "route": "short_circuit"
+    },
+    "query_text": "MIT",
+    "response": {
+      "confidence": 0.870334,
+      "route": "short_circuit"
+    }
+  },
+  {
+    "debug_response": {
+      "confidence": 0.887645,
+      "context_used": false,
+      "entities": {},
+      "intent": null,
+      "latency_ms": 4.063099,
+      "policy_reason": "accepted_model_prediction",
+      "raw_route": "short_circuit",
+      "route": "short_circuit"
+    },
+    "query_text": "UCLA tuition",
+    "response": {
+      "confidence": 0.887645,
+      "route": "short_circuit"
+    }
+  },
+  {
+    "debug_response": {
+      "confidence": 0.95133,
+      "context_used": false,
+      "entities": {},
+      "intent": null,
+      "latency_ms": 3.921596,
+      "policy_reason": "accepted_model_prediction",
+      "raw_route": "medium",
+      "route": "medium"
+    },
+    "query_text": "colleges in California",
+    "response": {
+      "confidence": 0.95133,
+      "route": "medium"
+    }
+  },
+  {
+    "debug_response": {
+      "confidence": 0.977652,
+      "context_used": false,
+      "entities": {},
+      "intent": null,
+      "latency_ms": 4.113575,
+      "policy_reason": "accepted_model_prediction",
+      "raw_route": "complex",
+      "route": "complex"
+    },
+    "query_text": "UCLA vs USC for engineering",
+    "response": {
+      "confidence": 0.977652,
+      "route": "complex"
+    }
+  },
+  {
+    "debug_response": {
+      "confidence": 0.970344,
+      "context_used": false,
+      "entities": {},
+      "intent": null,
+      "latency_ms": 37.107206,
+      "policy_reason": "accepted_model_prediction",
+      "raw_route": "llm_needed",
+      "route": "llm_needed"
+    },
+    "query_text": "schools with normal people",
+    "response": {
+      "confidence": 0.970344,
+      "route": "llm_needed"
+    }
+  },
+  {
+    "debug_response": {
+      "confidence": 0.962393,
+      "context_used": false,
+      "entities": {},
+      "intent": null,
+      "latency_ms": 4.219065,
+      "policy_reason": "accepted_model_prediction",
+      "raw_route": "complex",
+      "route": "complex"
+    },
+    "query_text": "affordable engineering schools near the beach with good job placement",
+    "response": {
+      "confidence": 0.962393,
+      "route": "complex"
+    }
+  }
+]

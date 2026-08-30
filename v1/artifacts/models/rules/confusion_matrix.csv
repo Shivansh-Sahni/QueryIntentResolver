@@ -1,0 +1,5 @@
+,short_circuit,medium,complex,llm_needed
+short_circuit,12,60,1,2
+medium,5,62,6,2
+complex,11,14,49,1
+llm_needed,5,60,3,7

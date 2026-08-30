@@ -1,0 +1,41 @@
+name: Bootstrap Query Intent Resolver V1 Source
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.bootstrap/qir-v1-source.tar.gz.b64'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  unpack-source:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Unpack source bundle
+        id: unpack
+        shell: bash
+        run: |
+          if [[ ! -f .bootstrap/qir-v1-source.tar.gz.b64 ]]; then
+            echo "bundle_present=false" >> "$GITHUB_OUTPUT"
+            echo "No bootstrap bundle present; nothing to do."
+            exit 0
+          fi
+          echo "bundle_present=true" >> "$GITHUB_OUTPUT"
+          base64 --decode .bootstrap/qir-v1-source.tar.gz.b64 > /tmp/qir-v1-source.tar.gz
+          tar -xzf /tmp/qir-v1-source.tar.gz
+          rm -f .bootstrap/qir-v1-source.tar.gz.b64
+
+      - name: Commit complete V1 source
+        if: steps.unpack.outputs.bundle_present == 'true'
+        run: |
+          git config user.name "qir-v1-bootstrap"
+          git config user.email "qir-v1-bootstrap@users.noreply.github.com"
+          git add -A
+          git commit -m "Install complete Query Intent Resolver V1 source"
+          git push

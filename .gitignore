@@ -1,6 +1,19 @@
 .DS_Store
 __pycache__/
 *.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.cache/
+*.egg-info/
+dist/
+build/
+
+# Local V1 scratch outputs; canonical CI outputs live in v1/artifacts/
+v1/local_artifacts/
+v1/tmp/
+qir-v1-complete.tar.gz
 
 # Generated Step 3 smoke-test artifacts
 Part 2 - Step 3/step3_validation/reports/smoke_test_run/

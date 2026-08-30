@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "query-intent-resolver-v1"
+version = "1.0.0"
+description = "Query-only handling-complexity and routing classifier for MascotGO"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "joblib>=1.4,<2",
+  "numpy>=2.0,<3",
+  "pandas>=2.2,<3",
+  "pydantic>=2.8,<3",
+  "scikit-learn>=1.5,<2",
+  "scipy>=1.13,<2",
+  "uvicorn[standard]>=0.30,<1",
+]
+
+[project.scripts]
+qir-resolve = "qir_v1.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

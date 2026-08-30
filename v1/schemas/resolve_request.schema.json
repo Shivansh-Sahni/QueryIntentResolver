@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mascotgo.example/schemas/qir-v1-resolve-request.json",
+  "title": "Query Intent Resolver V1 Request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["query_text"],
+  "properties": {
+    "query_text": {"type": "string", "minLength": 1, "maxLength": 4000},
+    "persona": {"type": ["string", "null"]},
+    "page": {"type": ["string", "null"]},
+    "filters": {"type": ["object", "null"]},
+    "context": {"type": ["array", "object", "null"]},
+    "session": {"type": ["object", "null"]},
+    "include_optional_fields": {"type": "boolean", "default": false}
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "version": "1.0.0",
+  "valid_routes": [
+    "short_circuit",
+    "medium",
+    "complex",
+    "llm_needed"
+  ],
+  "intent_to_route": {
+    "exact_lookup": "short_circuit",
+    "attribute_lookup": "short_circuit",
+    "filtered_search": "medium",
+    "admissions_process": "medium",
+    "cost_financial_aid": "medium",
+    "career_outcomes": "medium",
+    "b2b_partnership": "medium",
+    "profile_management": "medium",
+    "multi_constraint": "complex",
+    "comparison": "complex",
+    "recommendation": "complex",
+    "strategy": "complex",
+    "analytics_request": "complex",
+    "rewrite_needed": "complex",
+    "advisory": "llm_needed",
+    "emotional_advisory": "llm_needed",
+    "reflective_advisory": "llm_needed",
+    "campus_life_fit": "llm_needed"
+  },
+  "label_aliases": {
+    "short_circuit": "short_circuit",
+    "shortcircuit": "short_circuit",
+    "easy": "short_circuit",
+    "direct": "short_circuit",
+    "direct_lookup": "short_circuit",
+    "typesense": "short_circuit",
+    "medium": "medium",
+    "standard": "medium",
+    "standard_search": "medium",
+    "simple": "medium",
+    "complex": "complex",
+    "agentic": "complex",
+    "multi_agent": "complex",
+    "multi_agent_workflow": "complex",
+    "llm_needed": "llm_needed",
+    "llm": "llm_needed",
+    "semantic": "llm_needed",
+    "advisory": "llm_needed"
+  },
+  "pipeline_to_route": {
+    "typesense_only": "short_circuit",
+    "typesense": "short_circuit",
+    "direct_lookup": "short_circuit",
+    "rule_classifier": "short_circuit",
+    "search": "medium",
+    "standard_search": "medium",
+    "faceted_search": "medium",
+    "agentic": "complex",
+    "multi_agent": "complex",
+    "multi_agent_workflow": "complex",
+    "comparison_engine": "complex"
+  },
+  "cleanup": {
+    "intent_policy_min_coverage": 0.8,
+    "pipeline_policy_min_coverage": 0.8,
+    "observed_majority_min_share": 0.67,
+    "observed_majority_min_margin": 2,
+    "intent_majority_min_share": 0.75,
+    "intent_majority_min_margin": 2
+  },
+  "deployment_policy": {
+    "global_low_confidence_threshold": 0.45,
+    "short_circuit_min_confidence": 0.8,
+    "low_confidence_route": "llm_needed",
+    "unsafe_short_circuit_route": "medium"
+  },
+  "winner_selection": {
+    "min_accuracy": 0.7,
+    "min_macro_f1": 0.6,
+    "min_short_circuit_recall": 0.65,
+    "max_false_short_circuit_rate": 0.05,
+    "minimum_real_models_for_final": 2,
+    "score_weights": {
+      "macro_f1": 0.45,
+      "accuracy": 0.25,
+      "short_circuit_safety": 0.2,
+      "short_circuit_recall": 0.1
+    },
+    "selection_score": "0.45*macro_f1 + 0.25*accuracy + 0.20*(1-false_short_rate) + 0.10*short_recall"
+  }
+}

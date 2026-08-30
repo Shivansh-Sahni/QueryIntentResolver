@@ -1,57 +1,62 @@
-# Query Intent Resolver V1 — Routing Label Policy
+# Query Intent Resolver V1 Routing Label Policy
 
-## Frozen V1 objective
+## Frozen objective
 
-Given raw `query_text`, predict the minimum handling tier needed to answer the query correctly.
+Given raw query text, predict the minimum handling tier required to answer the query correctly.
 
-Valid output labels are exactly:
+Valid labels are exactly:
 
 - `short_circuit`
 - `medium`
 - `complex`
 - `llm_needed`
 
-The production model input is raw query text only. Persona, intent, current page, filters, conversation history, and other session context are intentionally excluded from V1 model input. They may be added later without changing this contract.
+Persona, intent, page, filters, conversation history, and account context are not model inputs in V1. Historical intent labels may be used only to repair contradictory training annotations.
 
-## Canonical label definitions
+## Canonical definitions
 
 ### `short_circuit`
-Use when the query can be handled deterministically without an LLM or multi-step reasoning.
 
-Typical cases:
-- exact school/entity lookup: `MIT`
-- one-hop factual attribute lookup when the value is directly indexed: `UCLA tuition`
-- direct deterministic lookup/filter with no semantic interpretation needed
+The query can be handled deterministically without an LLM or multi-step reasoning.
+
+Examples:
+
+- `MIT`
+- `UCLA tuition`
+- `Stanford acceptance rate`
 
 ### `medium`
-Use when the query needs ordinary search/retrieval or lightweight processing, but not open-ended reasoning or multi-step orchestration.
 
-Typical cases:
-- one or two structured filters: `colleges in California`
-- admissions/process facts: `Stanford application deadline`
-- financial-aid/career-outcome factual searches
-- B2B product/documentation questions that route to a normal product/support pipeline
+The query requires ordinary search, retrieval, or lightweight processing but not open-ended reasoning or multi-step orchestration.
 
-### `llm_needed`
-Use when a single LLM/rewrite/semantic-interpretation step is needed, but a multi-step agent workflow is not.
+Examples:
 
-Typical cases:
-- subjective or vague fit questions: `schools with normal people`
-- emotional/advisory questions
-- ambiguous natural-language interpretation where a lightweight semantic search is insufficient
+- `colleges in California`
+- `Stanford application deadline`
+- `schools with high internship placement rates`
+- `pricing for partner colleges`
 
 ### `complex`
-Use when the query requires multiple constraints, comparison/ranking, recommendation, planning, or multi-step reasoning/orchestration.
 
-Typical cases:
-- multi-constraint search: `affordable engineering schools in California with good job placement`
-- comparison: `UCLA vs USC for engineering`
-- recommendation/ranking: `schools like Stanford but cheaper`
-- multi-step strategy or workflow requests
+The query requires comparison, ranking, recommendation, multiple constraints, planning, or multi-step orchestration.
 
-## Intent-to-route adjudication map
+Examples:
 
-Intent is **not** an input to the V1 classifier. It is used only as annotation metadata to repair noisy historical complexity labels.
+- `UCLA vs USC for engineering`
+- `schools like Stanford but cheaper`
+- `affordable engineering schools in California with good job placement`
+
+### `llm_needed`
+
+The query requires subjective interpretation, ambiguity resolution, emotional guidance, advisory reasoning, or a natural-language rewrite before ordinary retrieval can proceed.
+
+Examples:
+
+- `schools with normal people`
+- `colleges where people do not care about football`
+- `what school would feel right for me`
+
+## Historical intent-to-route map
 
 | Intent | Canonical route |
 | --- | --- |
@@ -62,6 +67,7 @@ Intent is **not** an input to the V1 classifier. It is used only as annotation m
 | `cost_financial_aid` | `medium` |
 | `career_outcomes` | `medium` |
 | `b2b_partnership` | `medium` |
+| `profile_management` | `medium` |
 | `multi_constraint` | `complex` |
 | `comparison` | `complex` |
 | `recommendation` | `complex` |
@@ -72,21 +78,28 @@ Intent is **not** an input to the V1 classifier. It is used only as annotation m
 | `emotional_advisory` | `llm_needed` |
 | `reflective_advisory` | `llm_needed` |
 | `campus_life_fit` | `llm_needed` |
-| `profile_management` | `medium` |
 
-Unknown intents are not guessed. They are resolved by duplicate-vote evidence when strong enough; otherwise they are sent to manual review.
-
-## Conflict-resolution hierarchy
+## Conflict-resolution order
 
 For each normalized exact query:
 
-1. **Valid-label normalization** — normalize spelling/spacing/case and drop invalid labels such as the historical `high` value.
-2. **Intent policy** — if the query's mapped intent metadata unanimously implies one canonical route, use that route.
-3. **Strong majority** — otherwise use the observed complexity majority only when the top label has at least 67% of votes and a margin of at least 2 rows over the runner-up.
-4. **Manual review** — do not invent a label when evidence is weak or tied. Exclude the query from model training until adjudicated.
+1. Apply an explicit reviewed override when one exists.
+2. Accept a unanimous valid historical route.
+3. If all recognized historical intents map to one route, apply that policy route.
+4. Accept an observed-route majority only when it has at least 67 percent of votes and a margin of at least two rows.
+5. Accept an intent-derived majority only when it has at least 75 percent of votes and a margin of at least two rows.
+6. Otherwise export the query for manual review and exclude it from training and benchmark selection.
 
-This policy is intentionally conservative. Removing a small number of genuinely ambiguous training examples is preferable to encoding contradictory supervision into every model in the V1 shootout.
+No weak or tied conflict is silently resolved.
 
-## Leakage rule
+## Benchmark rule
 
-All rows sharing the same normalized query must stay in the same partition. No normalized query may appear in both training and the frozen benchmark.
+All copies of one normalized query must remain in one partition. No normalized query may appear in both training and benchmark data. Once the benchmark manifest is produced, benchmark membership and labels are frozen.
+
+## Deployment confidence policy
+
+- Confidence below `0.45`: route to `llm_needed`.
+- A `short_circuit` prediction below `0.80`: escalate to `medium`.
+- Unknown output labels: route to `llm_needed`.
+
+These rules prioritize avoiding dangerous false short circuits over saving a marginal amount of compute.

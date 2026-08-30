@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mascotgo.example/schemas/qir-v1-resolve-response.json",
+  "title": "Query Intent Resolver V1 Response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["route", "confidence"],
+  "properties": {
+    "route": {"enum": ["short_circuit", "medium", "complex", "llm_needed"]},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "entities": {"type": ["object", "null"]},
+    "intent": {"type": ["string", "null"]},
+    "raw_route": {"enum": ["short_circuit", "medium", "complex", "llm_needed", null]},
+    "policy_reason": {"type": ["string", "null"]},
+    "latency_ms": {"type": ["number", "null"], "minimum": 0},
+    "context_used": {"type": ["boolean", "null"]}
+  }
+}

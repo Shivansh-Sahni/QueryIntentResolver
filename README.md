@@ -1,68 +1,48 @@
 # Query Intent Resolver
 
-This repository contains two completed workstreams for the Query Intent Resolver project:
+## V1: Implementation-ready routing classifier
 
-1. **Part 1 - Phases 6 and 7**  
-   Final modeling work for query-complexity classification.
+The active V1 work is under [`v1/`](./v1/). It freezes the operational objective as:
 
-2. **Part 2 - Step 3**  
-   A standalone validation package for evaluating future classifier outputs on a held-out benchmark.
+> Given raw query text, predict the minimum handling complexity and routing tier required.
 
-## Repository Structure
-
-```text
-.
-|-- Part 1 - Phases 6 and 7/
-|   |-- Data/
-|   |-- final_outputs_complexity/
-|   |-- train_complexity_primary.py
-|   |-- FINAL_RESULTS.md
-|   `-- README.md
-|
-`-- Part 2 - Step 3/
-    |-- README.md
-    `-- step3_validation/
-        |-- scripts/
-        |-- tests/
-        |-- config/
-        |-- fixtures/
-        |-- templates/
-        `-- reports/
+```json
+{
+  "route": "short_circuit | medium | complex | llm_needed",
+  "confidence": 0.91
+}
 ```
 
-## Part 1 Summary
+V1 includes:
 
-The final Phase 6/7 direction is **complexity-first classification**:
-
-- target classes: `short_circuit`, `medium`, `complex`, `llm_needed`
-- primary model input: raw query text only
-- best strict grouped-query accuracy: `0.816829`
-- chosen model: word TF-IDF + character TF-IDF + lightweight query-pattern features with `LinearSVC`
-
-The main limitation is label inconsistency in the raw data: `164` exact query strings have conflicting complexity labels, covering `1,365` rows.
-
-Start here:
-
-- [Part 1 README](./Part%201%20-%20Phases%206%20and%207/README.md)
-- [Final Results](./Part%201%20-%20Phases%206%20and%207/FINAL_RESULTS.md)
-
-## Part 2 Summary
-
-Step 3 is a standalone validation workflow for future classifier exports. It:
-
-- builds a fixed held-out benchmark
-- validates persona and intent predictions
-- derives route-tier and short-circuit behavior
-- produces JSON, Markdown, HTML, CSV, and confusion-matrix outputs
-- includes a mock dry-run path so the reporting pipeline can be demonstrated before real upstream inputs arrive
+- conservative cleanup of conflicting historical labels
+- a deterministic, query-disjoint frozen benchmark
+- calibrated word/character/query-shape LinearSVC baseline
+- deterministic diagnostic baseline
+- identical-benchmark adapters for Anthony's Qwen classifier and optional lightweight language-model baselines
+- safety-weighted model selection emphasizing false short-circuit errors
+- reproducible reports, hashes, manifests, and validation
+- stable Python, CLI, FastAPI, Docker, and JSON Schema interfaces
+- automated GitHub Actions build and artifact publication
 
 Start here:
 
-- [Step 3 README](./Part%202%20-%20Step%203/README.md)
-- [Validation Contract](./Part%202%20-%20Step%203/step3_validation/CONTRACT.md)
+- [V1 README](./v1/README.md)
+- [Technical contract](./v1/CONTRACT.md)
+- [Implementation specification](./v1/IMPLEMENTATION_SPEC.md)
+- [Routing label policy](./v1/ROUTING_LABEL_POLICY.md)
+- [Team handoff](./v1/TEAM_HANDOFF.md)
 
-## Reproducibility Notes
+The exact MascotGO / Microsoft Foundry attachment point remains configurable pending product-architecture confirmation. Optional context such as persona, current page, active filters, previous messages, and session data is deliberately decoupled from the V1 model.
 
-- Phase 6/7 uses the raw CSV files in `Part 1 - Phases 6 and 7/Data/`.
-- Step 3 is implementation-ready, but real validation results still depend on cleaned labels from step 1 and real classifier exports from step 2.
-- Any outputs produced by the Step 3 mock generator are illustrative only and should not be presented as real model performance.
+## Historical work
+
+The earlier repository work is retained for provenance:
+
+1. **Part 1 - Phases 6 and 7**  
+   Original complexity-first modeling experiments and results.
+
+2. **Part 2 - Step 3**  
+   Earlier standalone persona/intent validation package.
+
+The historical best strict grouped-query result was `0.816829`. V1 supersedes the earlier workflow by repairing contradictory labels, freezing one immutable benchmark, comparing every candidate on that benchmark, and exposing a production-shaped resolver contract.

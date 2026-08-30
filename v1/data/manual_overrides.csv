@@ -1,0 +1,26 @@
+query_text,route,rationale
+api access for college partners,medium,Direct B2B product or integration request
+harvard but less stressful,complex,Recommendation requires similarity and tradeoff reasoning
+schools with high internship placement rates,medium,Single attribute discovery search
+mit without the suffering,complex,Recommendation for alternatives with an implicit constraint
+how do we update our school profile data,medium,Profile management or support workflow
+request demo for our admissions team,medium,Direct B2B lead or demo workflow
+enterprise access for counselors and districts,medium,Direct B2B product inquiry
+pricing for partner colleges,medium,Direct B2B pricing inquiry
+schools with normal people,llm_needed,Subjective and underspecified fit language
+schools with strong first gen support,medium,Single attribute or support filter
+colleges where people dont care about football,llm_needed,Subjective culture and fit interpretation
+mit,short_circuit,Exact school lookup
+ucla vibe but not so expensive,complex,Similarity plus affordability recommendation
+brown,short_circuit,Exact school lookup
+how to lower college costs,medium,General financial aid and cost guidance retrieval
+colleges in california,medium,Single location filter
+penn state,short_circuit,Exact school lookup
+nyu,short_circuit,Exact school lookup
+uc san diego,short_circuit,Exact school lookup
+colleges in texas,medium,Single location filter
+best colleges for psychology job outcomes,complex,Ranking and recommendation using outcome data
+harvard,short_circuit,Exact school lookup
+colleges in warm states,medium,Location filter with modest semantic interpretation
+colleges near chicago,medium,Location filter
+usc,short_circuit,Exact school lookup

@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - '.bootstrap/qir-v1-source.tar.gz.b64'
+      - '.bootstrap/qir-v1-source.part-*'
   workflow_dispatch:
 
 permissions:
@@ -21,15 +21,18 @@ jobs:
         id: unpack
         shell: bash
         run: |
-          if [[ ! -f .bootstrap/qir-v1-source.tar.gz.b64 ]]; then
+          shopt -s nullglob
+          parts=(.bootstrap/qir-v1-source.part-*)
+          if (( ${#parts[@]} == 0 )); then
             echo "bundle_present=false" >> "$GITHUB_OUTPUT"
-            echo "No bootstrap bundle present; nothing to do."
+            echo "No bootstrap bundle parts present; nothing to do."
             exit 0
           fi
           echo "bundle_present=true" >> "$GITHUB_OUTPUT"
-          base64 --decode .bootstrap/qir-v1-source.tar.gz.b64 > /tmp/qir-v1-source.tar.gz
+          printf '%s\n' "${parts[@]}" | sort | xargs cat > /tmp/qir-v1-source.tar.gz.b64
+          base64 --decode /tmp/qir-v1-source.tar.gz.b64 > /tmp/qir-v1-source.tar.gz
           tar -xzf /tmp/qir-v1-source.tar.gz
-          rm -f .bootstrap/qir-v1-source.tar.gz.b64
+          rm -f .bootstrap/qir-v1-source.part-*
 
       - name: Commit complete V1 source
         if: steps.unpack.outputs.bundle_present == 'true'

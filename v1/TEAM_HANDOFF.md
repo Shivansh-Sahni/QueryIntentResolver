@@ -54,15 +54,15 @@ Deliverable: one final, reproducible V1 recommendation and integration-ready rel
 
 ### Anthony — Qwen route benchmark
 
-Deliverable: one valid Qwen prediction export on the frozen blind benchmark.
+Deliverable: one valid Qwen prediction export on the frozen blind input.
 
 ```bash
 python v1/scripts/run_qwen_benchmark.py \
-  --benchmark v1/artifacts/benchmark/benchmark_blind.csv \
+  --input v1/artifacts/benchmark/qwen_benchmark_input.csv \
   --output v1/artifacts/models/qwen/predictions.csv
 ```
 
-Then score it without modifying the benchmark:
+Then score it without modifying or using the gold benchmark during inference:
 
 ```bash
 python v1/scripts/score_prediction_export.py \
@@ -72,7 +72,9 @@ python v1/scripts/score_prediction_export.py \
   --model-name anthony_qwen2_5_3b_lora_intent_to_route
 ```
 
-Required output fields: query/row identifier, predicted route, confidence, model name, latency, and parse validity. Do not tune against benchmark errors.
+Required output fields: benchmark ID, predicted route, confidence, predicted intent/persona, raw response, model name, latency, and parse validity. Do not tune against benchmark errors.
+
+Tracking issue: https://github.com/Shivansh-Sahni/QueryIntentResolver/issues/1
 
 ### Tanvi — independent label adjudication
 
@@ -84,6 +86,8 @@ Deliverable: completed review decisions for the 55 quarantined unique queries.
 - flag context-dependent examples rather than forcing certainty;
 - do not edit the frozen benchmark.
 
+Tracking issue: https://github.com/Shivansh-Sahni/QueryIntentResolver/issues/2
+
 ### Edward — runtime and applicability testing
 
 Deliverable: a short test log covering at least 25 naturally phrased queries.
@@ -94,6 +98,8 @@ Deliverable: a short test log covering at least 25 naturally phrased queries.
 - record expected route, actual route, confidence, and any issue;
 - verify that the public response remains exactly `{route, confidence}`.
 
+Tracking issue: https://github.com/Shivansh-Sahni/QueryIntentResolver/issues/3
+
 ### Nimisha — product-scope review
 
 Deliverable: confirmation that the frozen V1 objective and route classes still match the intended project outcome, plus any missing product requirement.
@@ -101,6 +107,8 @@ Deliverable: confirmation that the frozen V1 objective and route classes still m
 - review the project status and integration questions;
 - flag any mismatch before route bindings are finalized;
 - keep project decisions synchronized across contributors.
+
+Tracking issue: https://github.com/Shivansh-Sahni/QueryIntentResolver/issues/4
 
 ### Ridhi and Anika
 
@@ -115,6 +123,8 @@ The technical pipeline is no longer blocked by model implementation. The remaini
 3. Which optional context fields can the application supply reliably?
 4. Can a privacy-safe set of real queries be provided for shadow evaluation?
 5. Should the resolver deploy as a standalone service, backend module, or Foundry action?
+
+Tracking issue: https://github.com/Shivansh-Sahni/QueryIntentResolver/issues/5
 
 ## API
 

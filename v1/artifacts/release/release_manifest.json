@@ -1,5 +1,6 @@
 {
-  "benchmark_leader": "calibrated_word_char_shape_linearsvc_raw",
+  "analytical_score_leader": "calibrated_word_char_shape_linearsvc_raw",
+  "benchmark_version": "qir-v1.0.0",
   "contract": {
     "optional_inputs_decoupled": [
       "persona",
@@ -30,7 +31,7 @@
   "hashes": {
     "benchmark_manifest_sha256": "de1ddfe0d548916fa5390dd16bed5b4c77ca378ded1af132a3a0295f4583aee7",
     "benchmark_sha256": "591a31c4947d73fa7d77d2a94f32a69e689281c48a564d08317865b826bd84c6",
-    "model_sha256": "19cfbff1d8ba6c0b54bc6d7d5f3567df0a41e0c0fc0b0dea22bf9014aee41bf9",
+    "model_sha256": "e82171d88216460ce122af6952a109c94d70a85263b2279547f403e79ce76e53",
     "policy_sha256": "6965e89ebf02f9d21592529d0990efa0c62bd8f116f906c771cdb1abe20446c7",
     "training_sha256": "25e8d908547db11ac0776efffdf6069a83ff56a0b3f81f5ecd409da05068a96e"
   },
@@ -47,12 +48,15 @@
     "estimated_cost_per_1000_queries_usd": 0.0,
     "false_short_circuit_rate": 0.047619047619047616,
     "macro_f1": 0.7783919434083222,
-    "p95_latency_ms": 4.4449871000040275,
+    "p95_latency_ms": 4.861609400009572,
     "short_circuit_recall": 0.5333333333333333
   },
-  "packaging_note": "The benchmark leader is calibrated_word_char_shape_linearsvc_raw, but it has no compatible local joblib runtime artifact; the stable LinearSVC candidate remains packaged for the API.",
-  "real_models_evaluated": 2,
-  "release_version": "qir-v1.0.0",
+  "packaging_note": "The recommended model is packaged directly.",
+  "provisional_reason": "No real model currently passes every release guardrail, including minimum short-circuit recall.",
+  "real_models_evaluated": 1,
+  "recommended_model": "calibrated_word_char_shape_linearsvc",
+  "release_version": "qir-v1.0.1",
+  "selection_basis": "best_real_model_passing_quality_and_false_short_circuit_guardrails",
   "shootout_status": "provisional",
   "status": "implementation_ready_provisional_model"
 }

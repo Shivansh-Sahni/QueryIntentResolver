@@ -5,7 +5,7 @@
       "context_used": false,
       "entities": {},
       "intent": null,
-      "latency_ms": 4.218664,
+      "latency_ms": 4.343971,
       "policy_reason": "accepted_model_prediction",
       "raw_route": "short_circuit",
       "route": "short_circuit"
@@ -22,7 +22,7 @@
       "context_used": false,
       "entities": {},
       "intent": null,
-      "latency_ms": 4.063099,
+      "latency_ms": 4.1734,
       "policy_reason": "accepted_model_prediction",
       "raw_route": "short_circuit",
       "route": "short_circuit"
@@ -39,7 +39,7 @@
       "context_used": false,
       "entities": {},
       "intent": null,
-      "latency_ms": 3.921596,
+      "latency_ms": 4.055647,
       "policy_reason": "accepted_model_prediction",
       "raw_route": "medium",
       "route": "medium"
@@ -56,7 +56,7 @@
       "context_used": false,
       "entities": {},
       "intent": null,
-      "latency_ms": 4.113575,
+      "latency_ms": 4.114704,
       "policy_reason": "accepted_model_prediction",
       "raw_route": "complex",
       "route": "complex"
@@ -73,7 +73,7 @@
       "context_used": false,
       "entities": {},
       "intent": null,
-      "latency_ms": 37.107206,
+      "latency_ms": 4.303842,
       "policy_reason": "accepted_model_prediction",
       "raw_route": "llm_needed",
       "route": "llm_needed"
@@ -90,7 +90,7 @@
       "context_used": false,
       "entities": {},
       "intent": null,
-      "latency_ms": 4.219065,
+      "latency_ms": 4.121123,
       "policy_reason": "accepted_model_prediction",
       "raw_route": "complex",
       "route": "complex"

@@ -1,301 +1,301 @@
 benchmark_id,query_text,predicted_route,raw_predicted_route,confidence,rule,policy_reason,latency_ms,estimated_cost_usd,model,model_status
-qirv1-0001,what schools should i apply to for nursing not Florida under 40k,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.08735199999421184,0.0,deterministic_rules_v1,diagnostic
-qirv1-0002,colleges on the East Coast under 30k with strong research and internships,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.014020999998365369,0.0,deterministic_rules_v1,diagnostic
-qirv1-0003,can we integrate your platform with our CRM system,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.011866999997778294,0.0,deterministic_rules_v1,diagnostic
-qirv1-0004,affordable political science schools in Texas with good job placement,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.008282999999664753,0.0,deterministic_rules_v1,diagnostic
-qirv1-0005,what is the helicopter parent trap and how to avoid it,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.010154999998235326,0.0,deterministic_rules_v1,diagnostic
-qirv1-0006,do colleges consider course load senior year,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008683000004339192,0.0,deterministic_rules_v1,diagnostic
-qirv1-0007,how employers view interdisciplinary certificates,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007872000011843738,0.0,deterministic_rules_v1,diagnostic
-qirv1-0008,how to advise students about the value of internships and when to pursue them,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.016505000004940484,0.0,deterministic_rules_v1,diagnostic
-qirv1-0009,does Duke have data science,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00920399999415622,0.0,deterministic_rules_v1,diagnostic
-qirv1-0010,how to counsel students on negotiating their first salary,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009043000005704016,0.0,deterministic_rules_v1,diagnostic
-qirv1-0011,which universities have strong programs placing students in rural health corps positions,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009805000004803333,0.0,deterministic_rules_v1,diagnostic
-qirv1-0012,how to write an email to a professor that doesn't sound dumb,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008983000000739594,0.0,deterministic_rules_v1,diagnostic
-qirv1-0013,what is a holds advisor and what kinds of holds affect students most,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009604000013041514,0.0,deterministic_rules_v1,diagnostic
-qirv1-0014,what essays does Columbia require,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007001000000173008,0.0,deterministic_rules_v1,diagnostic
-qirv1-0015,affordable computer science schools near Chicago with good internships,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.007070999998859406,0.0,deterministic_rules_v1,diagnostic
-qirv1-0016,Arizona State,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.009214000002089051,0.0,deterministic_rules_v1,diagnostic
-qirv1-0017,schools with mental health resources,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007800999995311031,0.0,deterministic_rules_v1,diagnostic
-qirv1-0018,what jobs hire people with history degrees,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007350999993605001,0.0,deterministic_rules_v1,diagnostic
-qirv1-0019,what role should teachers play in college counseling conversations,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008473000008279996,0.0,deterministic_rules_v1,diagnostic
-qirv1-0020,how to build a robust institutional advancement and fundraising office,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008512999997378756,0.0,deterministic_rules_v1,diagnostic
-qirv1-0021,How do design graduates improve weak portfolios for employment?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00829299999338673,0.0,deterministic_rules_v1,diagnostic
-qirv1-0022,how to create a retention dashboard to track institutional progress,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008784000002037828,0.0,deterministic_rules_v1,diagnostic
-qirv1-0023,how to tailor advising approaches for adult learners returning to college,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008752999988814736,0.0,deterministic_rules_v1,diagnostic
-qirv1-0024,universities with low textbook costs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.0072109999962322036,0.0,deterministic_rules_v1,diagnostic
-qirv1-0025,edtech build ai bootcamp,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.008191999995688093,0.0,deterministic_rules_v1,diagnostic
-qirv1-0026,UC Berkeley vibe,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.005298000004927417,0.0,deterministic_rules_v1,diagnostic
-qirv1-0027,what to do if my roommate and I don't get along,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008663000002684385,0.0,deterministic_rules_v1,diagnostic
-qirv1-0028,University of Florida internships,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.008373000000005959,0.0,deterministic_rules_v1,diagnostic
-qirv1-0029,institutional branding guidelines,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.00805200001252615,0.0,deterministic_rules_v1,diagnostic
-qirv1-0030,Stanford tuition vs UC Berkeley tuition,complex,complex,0.9,comparison,accepted_model_prediction,0.0034859999971104116,0.0,deterministic_rules_v1,diagnostic
-qirv1-0031,recommend medium-sized colleges near a major tech hub for aerospace engineering reach schools,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.0058090000010224685,0.0,deterministic_rules_v1,diagnostic
-qirv1-0032,how to appeal waitlist decisions,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006709999993859128,0.0,deterministic_rules_v1,diagnostic
-qirv1-0033,universities with strong linguistics research,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007160999999200612,0.0,deterministic_rules_v1,diagnostic
-qirv1-0034,schools with campus-wide language exchange programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007480999997255822,0.0,deterministic_rules_v1,diagnostic
-qirv1-0035,University of Washington scholarships,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.008041999990382465,0.0,deterministic_rules_v1,diagnostic
-qirv1-0036,large computer science colleges near a major tech hub under 40k not too competitive,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.007912000000942498,0.0,deterministic_rules_v1,diagnostic
-qirv1-0037,best biology schools in Texas,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007021000001827815,0.0,deterministic_rules_v1,diagnostic
-qirv1-0038,good schools for kids who are smart but not great test takers,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.007151000005478636,0.0,deterministic_rules_v1,diagnostic
-qirv1-0039,colleges with strong literacy education programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007390999996914616,0.0,deterministic_rules_v1,diagnostic
-qirv1-0040,affordable mechanical engineering schools near a tech hub with good internships,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.007160999999200612,0.0,deterministic_rules_v1,diagnostic
-qirv1-0041,urban universities with strong practicum placements in city schools,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00817299999766874,0.0,deterministic_rules_v1,diagnostic
-qirv1-0042,colleges where alumni commonly return to give back to their communities,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.008954000008998264,0.0,deterministic_rules_v1,diagnostic
-qirv1-0043,what is the FAFSA and when should we fill it out,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008202000003620924,0.0,deterministic_rules_v1,diagnostic
-qirv1-0044,application volume trend modeling,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.008152000006589333,0.0,deterministic_rules_v1,diagnostic
-qirv1-0045,Can graduate applicants receive recommendation letters from industry mentors?,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.005028000003903799,0.0,deterministic_rules_v1,diagnostic
-qirv1-0046,Vanderbilt vs Princeton for philosophy,complex,complex,0.9,comparison,accepted_model_prediction,0.003144999993764941,0.0,deterministic_rules_v1,diagnostic
-qirv1-0047,hiring mgr AI grads applied weak,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006801000012046643,0.0,deterministic_rules_v1,diagnostic
-qirv1-0048,affordable private + good dorms,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007991999993350873,0.0,deterministic_rules_v1,diagnostic
-qirv1-0049,schools in colorado,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.005929000010951313,0.0,deterministic_rules_v1,diagnostic
-qirv1-0050,how employers evaluate certificates vs minors,complex,complex,0.9,comparison,accepted_model_prediction,0.0033349999881693293,0.0,deterministic_rules_v1,diagnostic
-qirv1-0051,universities with strong psychology,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.006560000002764355,0.0,deterministic_rules_v1,diagnostic
-qirv1-0052,Community college housing options?,short_circuit,short_circuit,0.83,one_hop_attribute,accepted_model_prediction,0.007882000005565715,0.0,deterministic_rules_v1,diagnostic
-qirv1-0053,schools where public health majors get field placements not just lectures,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.009043999995128615,0.0,deterministic_rules_v1,diagnostic
-qirv1-0054,how to get more colleges to visit or engage with your high school,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009133999995469821,0.0,deterministic_rules_v1,diagnostic
-qirv1-0055,eng to consulitng how,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007361000001537832,0.0,deterministic_rules_v1,diagnostic
-qirv1-0056,Brown vs Stanford for computer science,complex,complex,0.9,comparison,accepted_model_prediction,0.003245000002038978,0.0,deterministic_rules_v1,diagnostic
-qirv1-0057,how to advise students preparing for behavioral job interviews,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.010415999994961567,0.0,deterministic_rules_v1,diagnostic
-qirv1-0058,Columbia vs NYU,complex,complex,0.9,comparison,accepted_model_prediction,0.00280399999041947,0.0,deterministic_rules_v1,diagnostic
-qirv1-0059,Brown tuition vs UC Irvine tuition,complex,complex,0.9,comparison,accepted_model_prediction,0.003124000002685534,0.0,deterministic_rules_v1,diagnostic
-qirv1-0060,does Caltech have biology,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007541000002220244,0.0,deterministic_rules_v1,diagnostic
-qirv1-0061,cs schools w good social life pls,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.0069809999985182,0.0,deterministic_rules_v1,diagnostic
-qirv1-0062,schools like University of Florida but cheaper,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.004537000009463554,0.0,deterministic_rules_v1,diagnostic
-qirv1-0063,schools with health administration programs aligned with regional hospital needs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.009263999999120642,0.0,deterministic_rules_v1,diagnostic
-qirv1-0064,schools with campus zip lines or adventure courses,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007441999997581661,0.0,deterministic_rules_v1,diagnostic
-qirv1-0065,Caltech vs USC for chemistry,complex,complex,0.9,comparison,accepted_model_prediction,0.0033550000040349914,0.0,deterministic_rules_v1,diagnostic
-qirv1-0066,recommend small colleges in the Midwest for chemistry not too competitive,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.005098000002590197,0.0,deterministic_rules_v1,diagnostic
-qirv1-0067,scholarship officer undergrad success,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.008143000002291956,0.0,deterministic_rules_v1,diagnostic
-qirv1-0068,how do i apply to NYU,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006630000001450753,0.0,deterministic_rules_v1,diagnostic
-qirv1-0069,universities with strong interfaith community service programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.00792200000887533,0.0,deterministic_rules_v1,diagnostic
-qirv1-0070,colleges near a major tech hub full ride options with strong research and internships,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.007702000004883303,0.0,deterministic_rules_v1,diagnostic
-qirv1-0071,schools with on-campus escape rooms,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.0068599999991647564,0.0,deterministic_rules_v1,diagnostic
-qirv1-0072,is a biology degree useful if i dont want to be a doctor,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008984000004375048,0.0,deterministic_rules_v1,diagnostic
-qirv1-0073,UT Austin vs Purdue for pre-med,complex,complex,0.9,comparison,accepted_model_prediction,0.003215000006662194,0.0,deterministic_rules_v1,diagnostic
-qirv1-0074,transf CS prereq missing,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007531999997922867,0.0,deterministic_rules_v1,diagnostic
-qirv1-0075,Are there mentorship opportunities for community college students in business majors?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009394000002771463,0.0,deterministic_rules_v1,diagnostic
-qirv1-0076,what are the social pressures at selective universities and how do parents help,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009554000001799068,0.0,deterministic_rules_v1,diagnostic
-qirv1-0077,universities with public transportation access,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.00718100000085542,0.0,deterministic_rules_v1,diagnostic
-qirv1-0078,college fit vs prestige,complex,complex,0.9,comparison,accepted_model_prediction,0.003065000001356566,0.0,deterministic_rules_v1,diagnostic
-qirv1-0079,scholarship officer rural cs poor,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006609999999795946,0.0,deterministic_rules_v1,diagnostic
-qirv1-0080,UC San Diego job placement for architecture,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.0073510000078158555,0.0,deterministic_rules_v1,diagnostic
-qirv1-0081,universities with public policy undergraduate programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007340999999883024,0.0,deterministic_rules_v1,diagnostic
-qirv1-0082,large public health colleges in warm states good financial aid reach schools,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009013999999751832,0.0,deterministic_rules_v1,diagnostic
-qirv1-0083,cs yield down why,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007221000004165035,0.0,deterministic_rules_v1,diagnostic
-qirv1-0084,schools that support communication with families students and have accessible housing,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.007080999992581383,0.0,deterministic_rules_v1,diagnostic
-qirv1-0085,engineering schools where undergrads publish before senior year,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008002999990708304,0.0,deterministic_rules_v1,diagnostic
-qirv1-0086,how to structure a first semester advising appointment for a new freshman,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00908399999843823,0.0,deterministic_rules_v1,diagnostic
-qirv1-0087,how to evaluate the impact of campus employment on student retention,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008783000012613229,0.0,deterministic_rules_v1,diagnostic
-qirv1-0088,which colleges produce the most teachers who go on to become instructional coaches,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009454999997160485,0.0,deterministic_rules_v1,diagnostic
-qirv1-0089,eng debt trap?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007280999994918602,0.0,deterministic_rules_v1,diagnostic
-qirv1-0090,affordable colleges with strong data science,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.005698999999026455,0.0,deterministic_rules_v1,diagnostic
-qirv1-0091,what is a tuition payment plan,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006660000011038392,0.0,deterministic_rules_v1,diagnostic
-qirv1-0092,what is deferral in admissions,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006330000005050351,0.0,deterministic_rules_v1,diagnostic
-qirv1-0093,how to help students navigate roommate conflicts,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007500999998910629,0.0,deterministic_rules_v1,diagnostic
-qirv1-0094,career changer law 2 cs dumb?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007541999991644843,0.0,deterministic_rules_v1,diagnostic
-qirv1-0095,how to request an extension on an assignment,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007932000002597306,0.0,deterministic_rules_v1,diagnostic
-qirv1-0096,schools with active running or track clubs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.0074320000038596845,0.0,deterministic_rules_v1,diagnostic
-qirv1-0097,universities with social work degrees,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.006790000000478358,0.0,deterministic_rules_v1,diagnostic
-qirv1-0098,How can transfer students manage differences in extracurricular opportunities?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008932999989497148,0.0,deterministic_rules_v1,diagnostic
-qirv1-0099,mech eng 2 yr to 4 yr worth?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007080999992581383,0.0,deterministic_rules_v1,diagnostic
-qirv1-0100,universities with cultural exchange programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.006970999990585369,0.0,deterministic_rules_v1,diagnostic
-qirv1-0101,Princeton financial aid for out of state,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007310999990295386,0.0,deterministic_rules_v1,diagnostic
-qirv1-0102,universities with research in computational biology,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007269999997561172,0.0,deterministic_rules_v1,diagnostic
-qirv1-0103,colleges with rooftop yogahigh,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.00634899998885885,0.0,deterministic_rules_v1,diagnostic
-qirv1-0104,universities where freshmen cannot be cut from engineering,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.008351999994715698,0.0,deterministic_rules_v1,diagnostic
-qirv1-0105,schools with strong bioinformatics programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.006979999994882746,0.0,deterministic_rules_v1,diagnostic
-qirv1-0106,colleges that provide strong alumni mentoring for first gen students,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.008562999994410347,0.0,deterministic_rules_v1,diagnostic
-qirv1-0107,four year cost of University of Washington including housing,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008111999989068863,0.0,deterministic_rules_v1,diagnostic
-qirv1-0108,best colleges for on-campus housing with high graduation rates in California,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.005307999998649393,0.0,deterministic_rules_v1,diagnostic
-qirv1-0109,what colleges fit a student with a 3.5 gpa,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.006900000002474371,0.0,deterministic_rules_v1,diagnostic
-qirv1-0110,how do we keep our admissions staff account access up to date when team members leave or join,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.011167000010914307,0.0,deterministic_rules_v1,diagnostic
-qirv1-0111,how to advocate for systemic changes in curriculum or policy that affect students,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00952399999221143,0.0,deterministic_rules_v1,diagnostic
-qirv1-0112,job placement for Northwestern,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.00801199999500568,0.0,deterministic_rules_v1,diagnostic
-qirv1-0113,How can community college students connect with university alumni for mentorship?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009143999989191798,0.0,deterministic_rules_v1,diagnostic
-qirv1-0114,Boston University vs Columbia,complex,complex,0.9,comparison,accepted_model_prediction,0.0026839999947014803,0.0,deterministic_rules_v1,diagnostic
-qirv1-0115,universities with peer-led study programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007091000000514214,0.0,deterministic_rules_v1,diagnostic
-qirv1-0116,MIT acceptance rate,short_circuit,short_circuit,0.83,one_hop_attribute,accepted_model_prediction,0.006620000007728777,0.0,deterministic_rules_v1,diagnostic
-qirv1-0117,create reach target safety list for film in Texas under 40k,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008602999997719962,0.0,deterministic_rules_v1,diagnostic
-qirv1-0118,career changer teacher2data,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007480999997255822,0.0,deterministic_rules_v1,diagnostic
-qirv1-0119,how to support international students who are academically struggling,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008703000005994,0.0,deterministic_rules_v1,diagnostic
-qirv1-0120,Duke tuition vs Purdue tuition,complex,complex,0.9,comparison,accepted_model_prediction,0.00297500000101536,0.0,deterministic_rules_v1,diagnostic
-qirv1-0121,schools with strong programs in philosophy and logic,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.00585899999805406,0.0,deterministic_rules_v1,diagnostic
-qirv1-0122,career outcomes for anthropology majors,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006749999997168743,0.0,deterministic_rules_v1,diagnostic
-qirv1-0123,switch bio 2 biomed eng jr yr dumb?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007320999998228217,0.0,deterministic_rules_v1,diagnostic
-qirv1-0124,small engineering colleges with division I sports,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007480999997255822,0.0,deterministic_rules_v1,diagnostic
-qirv1-0125,Cornell campus culture,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.005469000001312452,0.0,deterministic_rules_v1,diagnostic
-qirv1-0126,how to build institutional infrastructure for a study abroad office,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008413000003315574,0.0,deterministic_rules_v1,diagnostic
-qirv1-0127,Transfer student social events?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008051999998315296,0.0,deterministic_rules_v1,diagnostic
-qirv1-0128,internships for Stanford,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.00739200000055007,0.0,deterministic_rules_v1,diagnostic
-qirv1-0129,how to build a campus recreation center that serves all students equitably,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008983999990164193,0.0,deterministic_rules_v1,diagnostic
-qirv1-0130,Boston University vs UC Irvine for finance,complex,complex,0.9,comparison,accepted_model_prediction,0.0035249999967845724,0.0,deterministic_rules_v1,diagnostic
-qirv1-0131,schools with explicit racial equity programs for campus inclusion,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.008252000000652515,0.0,deterministic_rules_v1,diagnostic
-qirv1-0132,how to engage parents who are over-involved in their student's applications,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009313999996152234,0.0,deterministic_rules_v1,diagnostic
-qirv1-0133,Columbia,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.006630000001450753,0.0,deterministic_rules_v1,diagnostic
-qirv1-0134,does UC San Diego have philosophy,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007001000000173008,0.0,deterministic_rules_v1,diagnostic
-qirv1-0135,what are common mistakes students make in the college application process,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008933999993132602,0.0,deterministic_rules_v1,diagnostic
-qirv1-0136,colleges that support mental health well,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007001000000173008,0.0,deterministic_rules_v1,diagnostic
-qirv1-0137,schools with 3D printing labs open to all students,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007912000000942498,0.0,deterministic_rules_v1,diagnostic
-qirv1-0138,what is your platform's approach to supporting community colleges specifically,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008463000000347165,0.0,deterministic_rules_v1,diagnostic
-qirv1-0139,create reach target safety list for economics in California under 30k,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008482999987791118,0.0,deterministic_rules_v1,diagnostic
-qirv1-0140,feeling overwhelmed in college what should I do,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007781999997291678,0.0,deterministic_rules_v1,diagnostic
-qirv1-0141,what is the best practice for responding to student inquiries through your system,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00965399999586225,0.0,deterministic_rules_v1,diagnostic
-qirv1-0142,schools with art and creative talent scholarships,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.005779000005645685,0.0,deterministic_rules_v1,diagnostic
-qirv1-0143,how to deal with a professor who gives confusing instructions,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00838300000793879,0.0,deterministic_rules_v1,diagnostic
-qirv1-0144,schools with active intramural esports leagues,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007080999992581383,0.0,deterministic_rules_v1,diagnostic
-qirv1-0145,does USC have electrical engineering,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006880999990244163,0.0,deterministic_rules_v1,diagnostic
-qirv1-0146,colleges with strong parental communication policies,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007621000008839474,0.0,deterministic_rules_v1,diagnostic
-qirv1-0147,what extracurriculars do top colleges actually care about,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00796199999797409,0.0,deterministic_rules_v1,diagnostic
-qirv1-0148,colleges with hidden libraries,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.006279000004383306,0.0,deterministic_rules_v1,diagnostic
-qirv1-0149,what is the drop add period and how do I use it,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008321999999338914,0.0,deterministic_rules_v1,diagnostic
-qirv1-0150,colleges near research parks,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.006229000007351715,0.0,deterministic_rules_v1,diagnostic
-qirv1-0151,colleges emphasizing culturally responsive teaching curricula,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007421000006502254,0.0,deterministic_rules_v1,diagnostic
-qirv1-0152,how to evaluate the impact of guaranteed admission programs on enrollment quality,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.011327000009941912,0.0,deterministic_rules_v1,diagnostic
-qirv1-0153,comparing cs salary outcomes across regions for my son,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00796199999797409,0.0,deterministic_rules_v1,diagnostic
-qirv1-0154,does baylor have good support services for students from low income backgrounds,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009143999989191798,0.0,deterministic_rules_v1,diagnostic
-qirv1-0155,how to design a campus food pantry to address student hunger,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008483000002001972,0.0,deterministic_rules_v1,diagnostic
-qirv1-0156,USC vs UC San Diego for nursing,complex,complex,0.9,comparison,accepted_model_prediction,0.003245000002038978,0.0,deterministic_rules_v1,diagnostic
-qirv1-0157,how to network as an introvert in college,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007250999999541818,0.0,deterministic_rules_v1,diagnostic
-qirv1-0158,does Harvard have business,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007671000005871065,0.0,deterministic_rules_v1,diagnostic
-qirv1-0159,archived admissions data access,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007752000001914894,0.0,deterministic_rules_v1,diagnostic
-qirv1-0160,what schools should i apply to for mechanical engineering near the beach low tuition,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.005939000004673289,0.0,deterministic_rules_v1,diagnostic
-qirv1-0161,schools with honors programs that aren’t stressful,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.01416100000994902,0.0,deterministic_rules_v1,diagnostic
-qirv1-0162,Duke tuition vs University of Maryland tuition,complex,complex,0.9,comparison,accepted_model_prediction,0.00363600000241604,0.0,deterministic_rules_v1,diagnostic
-qirv1-0163,University of Maryland average ACT,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006839999997509949,0.0,deterministic_rules_v1,diagnostic
-qirv1-0164,colleges near state borders,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.006419000001756103,0.0,deterministic_rules_v1,diagnostic
-qirv1-0165,recommend large colleges in the Midwest for economics not too competitive,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.005048000005558606,0.0,deterministic_rules_v1,diagnostic
-qirv1-0166,universities with student-run environmental law organizations,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007952000004252113,0.0,deterministic_rules_v1,diagnostic
-qirv1-0167,recommend medium-sized colleges near a major tech hub for economics reach schools,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.005377999997335792,0.0,deterministic_rules_v1,diagnostic
-qirv1-0168,affordable nursing schools in Texas with good job placement,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.006438999989200056,0.0,deterministic_rules_v1,diagnostic
-qirv1-0169,help me compare colleges for entrepreneurship resources based on robust internships and online course options,complex,complex,0.9,comparison,accepted_model_prediction,0.005307999998649393,0.0,deterministic_rules_v1,diagnostic
-qirv1-0170,Community college STEM faculty office hours?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007450999987668183,0.0,deterministic_rules_v1,diagnostic
-qirv1-0171,how do we position our school against peer institutions on your platform,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009263999999120642,0.0,deterministic_rules_v1,diagnostic
-qirv1-0172,Princeton job placement for biology,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006810000002133165,0.0,deterministic_rules_v1,diagnostic
-qirv1-0173,Community college STEM lab safety training?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.0071209999958909975,0.0,deterministic_rules_v1,diagnostic
-qirv1-0174,colleges that accept community college associate degrees,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007811999992668461,0.0,deterministic_rules_v1,diagnostic
-qirv1-0175,which schools offer campus culture and inclusion and allow early application deadlines,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.00887299999874358,0.0,deterministic_rules_v1,diagnostic
-qirv1-0176,Grad program funding packages?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00801199999500568,0.0,deterministic_rules_v1,diagnostic
-qirv1-0177,colleges where graduates frequently enter community service roles,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.008231999998997708,0.0,deterministic_rules_v1,diagnostic
-qirv1-0178,how to build a comprehensive new staff and administrator onboarding program,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009094000006371061,0.0,deterministic_rules_v1,diagnostic
-qirv1-0179,how to train faculty in active learning and inclusive pedagogy,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008352000008926552,0.0,deterministic_rules_v1,diagnostic
-qirv1-0180,elite non coastal universities,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007941999996319282,0.0,deterministic_rules_v1,diagnostic
-qirv1-0181,schools with strong writing culture,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.0060689999941132555,0.0,deterministic_rules_v1,diagnostic
-qirv1-0182,Rice University research opportunities,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.008683000004339192,0.0,deterministic_rules_v1,diagnostic
-qirv1-0183,how do I advise a student who did their CC online and wants a rural residential experience,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.010755999994671583,0.0,deterministic_rules_v1,diagnostic
-qirv1-0184,create reach target safety list for psychology in California full ride options,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008973999996442217,0.0,deterministic_rules_v1,diagnostic
-qirv1-0185,best colleges for honors seminar quality with robust internships in California,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.00739100001112547,0.0,deterministic_rules_v1,diagnostic
-qirv1-0186,which universities cap class sizes early,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007350999993605001,0.0,deterministic_rules_v1,diagnostic
-qirv1-0187,good colleges for students who want flexibility in pacing,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008202999993045523,0.0,deterministic_rules_v1,diagnostic
-qirv1-0188,edtech founder project CS,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007471000003533845,0.0,deterministic_rules_v1,diagnostic
-qirv1-0189,rankings for Georgia Tech,short_circuit,short_circuit,0.83,one_hop_attribute,accepted_model_prediction,0.007240999991608987,0.0,deterministic_rules_v1,diagnostic
-qirv1-0190,how to build a more racially and ethnically diverse incoming class,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008772999990469543,0.0,deterministic_rules_v1,diagnostic
-qirv1-0191,good schools if you want to start a startup eventually,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008062000006248127,0.0,deterministic_rules_v1,diagnostic
-qirv1-0192,MIT financial aid for out of state,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007221000004165035,0.0,deterministic_rules_v1,diagnostic
-qirv1-0193,how to develop a student success technology ecosystem,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007901999993009667,0.0,deterministic_rules_v1,diagnostic
-qirv1-0194,small electrical engineering colleges near Chicago under 30k,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.006619999993517922,0.0,deterministic_rules_v1,diagnostic
-qirv1-0195,comp sci gpa reset after transfer?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.0073420000035184785,0.0,deterministic_rules_v1,diagnostic
-qirv1-0196,how to conduct an effective sophomore year check-in about college planning,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009374000001116656,0.0,deterministic_rules_v1,diagnostic
-qirv1-0197,how to document and share college counseling resources with students digitally,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.007131000003823829,0.0,deterministic_rules_v1,diagnostic
-qirv1-0198,How can project-based CS labs enhance learning outcomes?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00818300000560157,0.0,deterministic_rules_v1,diagnostic
-qirv1-0199,NYU average SAT,short_circuit,short_circuit,0.83,one_hop_attribute,accepted_model_prediction,0.006669999990549513,0.0,deterministic_rules_v1,diagnostic
-qirv1-0200,civil eng infrastructure bill demand spike,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.01626499999929365,0.0,deterministic_rules_v1,diagnostic
-qirv1-0201,how to advise students who want to transfer from a 4-year to a community college,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.010276000011799624,0.0,deterministic_rules_v1,diagnostic
-qirv1-0202,cheapest architecture schools near a tech hub,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008012000009216536,0.0,deterministic_rules_v1,diagnostic
-qirv1-0203,engineering programs with strong alumni mentorship networks,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007811000003243862,0.0,deterministic_rules_v1,diagnostic
-qirv1-0204,how to get leadership positions in student clubs,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007460999995601014,0.0,deterministic_rules_v1,diagnostic
-qirv1-0205,how to evaluate and improve campus climate survey results,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008051999998315296,0.0,deterministic_rules_v1,diagnostic
-qirv1-0206,University of Florida job placement for engineering,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007572000001232482,0.0,deterministic_rules_v1,diagnostic
-qirv1-0207,edtech build cs portfolio tool,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006709999993859128,0.0,deterministic_rules_v1,diagnostic
-qirv1-0208,student wants tech career but dislikes coding,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007831999994323269,0.0,deterministic_rules_v1,diagnostic
-qirv1-0209,how to help a student who is academically capable but unmotivated,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008773999994104997,0.0,deterministic_rules_v1,diagnostic
-qirv1-0210,Purdue vs MIT,complex,complex,0.9,comparison,accepted_model_prediction,0.002774000009253541,0.0,deterministic_rules_v1,diagnostic
-qirv1-0211,intl student stem OPT stress,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.006028999990803641,0.0,deterministic_rules_v1,diagnostic
-qirv1-0212,universities with research in sociogenomics,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007340999999883024,0.0,deterministic_rules_v1,diagnostic
-qirv1-0213,cc student lab access low,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006619999993517922,0.0,deterministic_rules_v1,diagnostic
-qirv1-0214,schools with campus ambassador programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007000000010748408,0.0,deterministic_rules_v1,diagnostic
-qirv1-0215,schools w strong programs for students intersted in rural journalism or local news,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.011958000001754954,0.0,deterministic_rules_v1,diagnostic
-qirv1-0216,How can community college students find research opportunities at universities?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008933999993132602,0.0,deterministic_rules_v1,diagnostic
-qirv1-0217,how does your platform support community college and transfer student pathways,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009024000007684663,0.0,deterministic_rules_v1,diagnostic
-qirv1-0218,how to run effective group advising or workshop sessions,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00809200000162491,0.0,deterministic_rules_v1,diagnostic
-qirv1-0219,how to build a resource library for advisors that includes major and career information,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009824999992247285,0.0,deterministic_rules_v1,diagnostic
-qirv1-0220,University of Washington vs UCLA for business,complex,complex,0.9,comparison,accepted_model_prediction,0.0035159999924871954,0.0,deterministic_rules_v1,diagnostic
-qirv1-0221,small philosophy colleges in California low tuition,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00755099999594222,0.0,deterministic_rules_v1,diagnostic
-qirv1-0222,colleges near a major tech hub low tuition with strong research and internships,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.007500999998910629,0.0,deterministic_rules_v1,diagnostic
-qirv1-0223,what is Phi Beta Kappa and is it worth pursuing,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008121999997001694,0.0,deterministic_rules_v1,diagnostic
-qirv1-0224,best practices for running a career advising drop-in,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007680999999593041,0.0,deterministic_rules_v1,diagnostic
-qirv1-0225,how does your platform handle colleges going through accreditation review,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008763000010958422,0.0,deterministic_rules_v1,diagnostic
-qirv1-0226,how to help students communicate with financial aid about appeal or special circumstances,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009535000003779714,0.0,deterministic_rules_v1,diagnostic
-qirv1-0227,how to help a student who is a strong writer but low test scores decide where to apply,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.010475999999925989,0.0,deterministic_rules_v1,diagnostic
-qirv1-0228,which schools offer study abroad options and allow no SAT requirement,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008782999998402374,0.0,deterministic_rules_v1,diagnostic
-qirv1-0229,school profile publishing workflow,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007902000007220522,0.0,deterministic_rules_v1,diagnostic
-qirv1-0230,longitudinal admissions data export,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.008071999999970103,0.0,deterministic_rules_v1,diagnostic
-qirv1-0231,cs major building portfolio without internships,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007551999999577674,0.0,deterministic_rules_v1,diagnostic
-qirv1-0232,UC Berkeley vs USC for finance,complex,complex,0.9,comparison,accepted_model_prediction,0.0033050000070034002,0.0,deterministic_rules_v1,diagnostic
-qirv1-0233,mid sized universities with strong human factors engineering,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008051999998315296,0.0,deterministic_rules_v1,diagnostic
-qirv1-0234,what tools are available to advisors for tracking student academic progress,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008913000002053195,0.0,deterministic_rules_v1,diagnostic
-qirv1-0235,visibility in recommendation engine,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.0036760000057256548,0.0,deterministic_rules_v1,diagnostic
-qirv1-0236,schools with strong programs for students who grew up abroad or are third culture kids,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.009194000000434244,0.0,deterministic_rules_v1,diagnostic
-qirv1-0237,can I take grad-level classes as an undergrad,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007801000009521886,0.0,deterministic_rules_v1,diagnostic
-qirv1-0238,affordable architecture schools in Texas with good internships,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.0062990000060381135,0.0,deterministic_rules_v1,diagnostic
-qirv1-0239,does wake forest track student progress well,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007410999998569423,0.0,deterministic_rules_v1,diagnostic
-qirv1-0240,universities that train graduates for local government leadership roles,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.008723000007648807,0.0,deterministic_rules_v1,diagnostic
-qirv1-0241,recommend small colleges near Chicago for psychology,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.0040959999978440464,0.0,deterministic_rules_v1,diagnostic
-qirv1-0242,engineering schools with 4 year graduation guarantee,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007601000007184666,0.0,deterministic_rules_v1,diagnostic
-qirv1-0243,Columbia chill campus,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007301000010784264,0.0,deterministic_rules_v1,diagnostic
-qirv1-0244,colleges where students often study multiple fields by graduation,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.008281999996029299,0.0,deterministic_rules_v1,diagnostic
-qirv1-0245,what is college access work and how does it differ from traditional counseling,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009555000005434522,0.0,deterministic_rules_v1,diagnostic
-qirv1-0246,what college rankings actually matter and what are misleading,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008362999992073128,0.0,deterministic_rules_v1,diagnostic
-qirv1-0247,marketing collaborative eng culture better,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.006350000006705159,0.0,deterministic_rules_v1,diagnostic
-qirv1-0248,colleges near Chicago good financial aid with strong research and internships,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.0069600000074387935,0.0,deterministic_rules_v1,diagnostic
-qirv1-0249,how to build institutional capacity for trauma-informed student services,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008523000005311587,0.0,deterministic_rules_v1,diagnostic
-qirv1-0250,top public universities for tech jobs,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006909999996196348,0.0,deterministic_rules_v1,diagnostic
-qirv1-0251,does University of Maryland have political science,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00739200000055007,0.0,deterministic_rules_v1,diagnostic
-qirv1-0252,do college rankings matter when you plan to work internationally after graduating,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009254000005398666,0.0,deterministic_rules_v1,diagnostic
-qirv1-0253,improve student match quality,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007622000012474928,0.0,deterministic_rules_v1,diagnostic
+qirv1-0001,what schools should i apply to for nursing not Florida under 40k,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.10088899999516343,0.0,deterministic_rules_v1,diagnostic
+qirv1-0002,colleges on the East Coast under 30k with strong research and internships,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.014562000004048059,0.0,deterministic_rules_v1,diagnostic
+qirv1-0003,can we integrate your platform with our CRM system,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.01184799999975894,0.0,deterministic_rules_v1,diagnostic
+qirv1-0004,affordable political science schools in Texas with good job placement,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.008301999997684106,0.0,deterministic_rules_v1,diagnostic
+qirv1-0005,what is the helicopter parent trap and how to avoid it,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.010174999999890133,0.0,deterministic_rules_v1,diagnostic
+qirv1-0006,do colleges consider course load senior year,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008582999996065155,0.0,deterministic_rules_v1,diagnostic
+qirv1-0007,how employers view interdisciplinary certificates,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008171999994033285,0.0,deterministic_rules_v1,diagnostic
+qirv1-0008,how to advise students about the value of internships and when to pursue them,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.016684000001987442,0.0,deterministic_rules_v1,diagnostic
+qirv1-0009,does Duke have data science,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009124000001747845,0.0,deterministic_rules_v1,diagnostic
+qirv1-0010,how to counsel students on negotiating their first salary,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008972999992806763,0.0,deterministic_rules_v1,diagnostic
+qirv1-0011,which universities have strong programs placing students in rural health corps positions,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009954000006473507,0.0,deterministic_rules_v1,diagnostic
+qirv1-0012,how to write an email to a professor that doesn't sound dumb,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009293000005072827,0.0,deterministic_rules_v1,diagnostic
+qirv1-0013,what is a holds advisor and what kinds of holds affect students most,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009765000001493718,0.0,deterministic_rules_v1,diagnostic
+qirv1-0014,what essays does Columbia require,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006820000010065996,0.0,deterministic_rules_v1,diagnostic
+qirv1-0015,affordable computer science schools near Chicago with good internships,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.007171000007133443,0.0,deterministic_rules_v1,diagnostic
+qirv1-0016,Arizona State,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.009434000006081078,0.0,deterministic_rules_v1,diagnostic
+qirv1-0017,schools with mental health resources,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007570999997597028,0.0,deterministic_rules_v1,diagnostic
+qirv1-0018,what jobs hire people with history degrees,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007381000003192639,0.0,deterministic_rules_v1,diagnostic
+qirv1-0019,what role should teachers play in college counseling conversations,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008582999996065155,0.0,deterministic_rules_v1,diagnostic
+qirv1-0020,how to build a robust institutional advancement and fundraising office,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008793000006335205,0.0,deterministic_rules_v1,diagnostic
+qirv1-0021,How do design graduates improve weak portfolios for employment?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.0086330000073076,0.0,deterministic_rules_v1,diagnostic
+qirv1-0022,how to create a retention dashboard to track institutional progress,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009023000004049209,0.0,deterministic_rules_v1,diagnostic
+qirv1-0023,how to tailor advising approaches for adult learners returning to college,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008962999999084786,0.0,deterministic_rules_v1,diagnostic
+qirv1-0024,universities with low textbook costs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007139999993910351,0.0,deterministic_rules_v1,diagnostic
+qirv1-0025,edtech build ai bootcamp,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.008402000005958143,0.0,deterministic_rules_v1,diagnostic
+qirv1-0026,UC Berkeley vibe,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.005438000002300214,0.0,deterministic_rules_v1,diagnostic
+qirv1-0027,what to do if my roommate and I don't get along,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00874299999509276,0.0,deterministic_rules_v1,diagnostic
+qirv1-0028,University of Florida internships,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.008301999997684106,0.0,deterministic_rules_v1,diagnostic
+qirv1-0029,institutional branding guidelines,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.008151999992378478,0.0,deterministic_rules_v1,diagnostic
+qirv1-0030,Stanford tuition vs UC Berkeley tuition,complex,complex,0.9,comparison,accepted_model_prediction,0.0033949999931337516,0.0,deterministic_rules_v1,diagnostic
+qirv1-0031,recommend medium-sized colleges near a major tech hub for aerospace engineering reach schools,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.0058990000013636745,0.0,deterministic_rules_v1,diagnostic
+qirv1-0032,how to appeal waitlist decisions,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006939999991573131,0.0,deterministic_rules_v1,diagnostic
+qirv1-0033,universities with strong linguistics research,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007250999999541818,0.0,deterministic_rules_v1,diagnostic
+qirv1-0034,schools with campus-wide language exchange programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.0076019999966092655,0.0,deterministic_rules_v1,diagnostic
+qirv1-0035,University of Washington scholarships,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.008111999989068863,0.0,deterministic_rules_v1,diagnostic
+qirv1-0036,large computer science colleges near a major tech hub under 40k not too competitive,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.007981999999628897,0.0,deterministic_rules_v1,diagnostic
+qirv1-0037,best biology schools in Texas,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006920000004129179,0.0,deterministic_rules_v1,diagnostic
+qirv1-0038,good schools for kids who are smart but not great test takers,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.007361000001537832,0.0,deterministic_rules_v1,diagnostic
+qirv1-0039,colleges with strong literacy education programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.029953999998610925,0.0,deterministic_rules_v1,diagnostic
+qirv1-0040,affordable mechanical engineering schools near a tech hub with good internships,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.007932000002597306,0.0,deterministic_rules_v1,diagnostic
+qirv1-0041,urban universities with strong practicum placements in city schools,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008473000008279996,0.0,deterministic_rules_v1,diagnostic
+qirv1-0042,colleges where alumni commonly return to give back to their communities,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.009102999996457584,0.0,deterministic_rules_v1,diagnostic
+qirv1-0043,what is the FAFSA and when should we fill it out,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.0085819999924297,0.0,deterministic_rules_v1,diagnostic
+qirv1-0044,application volume trend modeling,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.008121999997001694,0.0,deterministic_rules_v1,diagnostic
+qirv1-0045,Can graduate applicants receive recommendation letters from industry mentors?,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.005027000000268345,0.0,deterministic_rules_v1,diagnostic
+qirv1-0046,Vanderbilt vs Princeton for philosophy,complex,complex,0.9,comparison,accepted_model_prediction,0.0031839999934391017,0.0,deterministic_rules_v1,diagnostic
+qirv1-0047,hiring mgr AI grads applied weak,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006881000004455018,0.0,deterministic_rules_v1,diagnostic
+qirv1-0048,affordable private + good dorms,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.008252000000652515,0.0,deterministic_rules_v1,diagnostic
+qirv1-0049,schools in colorado,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.005998999995426857,0.0,deterministic_rules_v1,diagnostic
+qirv1-0050,how employers evaluate certificates vs minors,complex,complex,0.9,comparison,accepted_model_prediction,0.0033950000073446063,0.0,deterministic_rules_v1,diagnostic
+qirv1-0051,universities with strong psychology,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.006448999997132887,0.0,deterministic_rules_v1,diagnostic
+qirv1-0052,Community college housing options?,short_circuit,short_circuit,0.83,one_hop_attribute,accepted_model_prediction,0.007851999995978076,0.0,deterministic_rules_v1,diagnostic
+qirv1-0053,schools where public health majors get field placements not just lectures,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.009173999998779436,0.0,deterministic_rules_v1,diagnostic
+qirv1-0054,how to get more colleges to visit or engage with your high school,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009353999999461848,0.0,deterministic_rules_v1,diagnostic
+qirv1-0055,eng to consulitng how,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007671000005871065,0.0,deterministic_rules_v1,diagnostic
+qirv1-0056,Brown vs Stanford for computer science,complex,complex,0.9,comparison,accepted_model_prediction,0.0031739999997171253,0.0,deterministic_rules_v1,diagnostic
+qirv1-0057,how to advise students preparing for behavioral job interviews,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008312000005616937,0.0,deterministic_rules_v1,diagnostic
+qirv1-0058,Columbia vs NYU,complex,complex,0.9,comparison,accepted_model_prediction,0.002713999990078264,0.0,deterministic_rules_v1,diagnostic
+qirv1-0059,Brown tuition vs UC Irvine tuition,complex,complex,0.9,comparison,accepted_model_prediction,0.003143999990129487,0.0,deterministic_rules_v1,diagnostic
+qirv1-0060,does Caltech have biology,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007721000002902656,0.0,deterministic_rules_v1,diagnostic
+qirv1-0061,cs schools w good social life pls,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007050999997204599,0.0,deterministic_rules_v1,diagnostic
+qirv1-0062,schools like University of Florida but cheaper,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.004427000007467541,0.0,deterministic_rules_v1,diagnostic
+qirv1-0063,schools with health administration programs aligned with regional hospital needs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.009183000003076813,0.0,deterministic_rules_v1,diagnostic
+qirv1-0064,schools with campus zip lines or adventure courses,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.0077010000012478486,0.0,deterministic_rules_v1,diagnostic
+qirv1-0065,Caltech vs USC for chemistry,complex,complex,0.9,comparison,accepted_model_prediction,0.0030449999997017585,0.0,deterministic_rules_v1,diagnostic
+qirv1-0066,recommend small colleges in the Midwest for chemistry not too competitive,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.00519700000722878,0.0,deterministic_rules_v1,diagnostic
+qirv1-0067,scholarship officer undergrad success,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.008221999991064877,0.0,deterministic_rules_v1,diagnostic
+qirv1-0068,how do i apply to NYU,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006940000005783986,0.0,deterministic_rules_v1,diagnostic
+qirv1-0069,universities with strong interfaith community service programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.008141999998656502,0.0,deterministic_rules_v1,diagnostic
+qirv1-0070,colleges near a major tech hub full ride options with strong research and internships,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.007841999988045245,0.0,deterministic_rules_v1,diagnostic
+qirv1-0071,schools with on-campus escape rooms,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007020000012403216,0.0,deterministic_rules_v1,diagnostic
+qirv1-0072,is a biology degree useful if i dont want to be a doctor,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009383000005414033,0.0,deterministic_rules_v1,diagnostic
+qirv1-0073,UT Austin vs Purdue for pre-med,complex,complex,0.9,comparison,accepted_model_prediction,0.003504999995129765,0.0,deterministic_rules_v1,diagnostic
+qirv1-0074,transf CS prereq missing,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007601000007184666,0.0,deterministic_rules_v1,diagnostic
+qirv1-0075,Are there mentorship opportunities for community college students in business majors?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009673999997517058,0.0,deterministic_rules_v1,diagnostic
+qirv1-0076,what are the social pressures at selective universities and how do parents help,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009783999999513071,0.0,deterministic_rules_v1,diagnostic
+qirv1-0077,universities with public transportation access,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007471000003533845,0.0,deterministic_rules_v1,diagnostic
+qirv1-0078,college fit vs prestige,complex,complex,0.9,comparison,accepted_model_prediction,0.0027940000109083485,0.0,deterministic_rules_v1,diagnostic
+qirv1-0079,scholarship officer rural cs poor,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006729999995513936,0.0,deterministic_rules_v1,diagnostic
+qirv1-0080,UC San Diego job placement for architecture,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007671000005871065,0.0,deterministic_rules_v1,diagnostic
+qirv1-0081,universities with public policy undergraduate programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007361000001537832,0.0,deterministic_rules_v1,diagnostic
+qirv1-0082,large public health colleges in warm states good financial aid reach schools,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00957399998924302,0.0,deterministic_rules_v1,diagnostic
+qirv1-0083,cs yield down why,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007381000003192639,0.0,deterministic_rules_v1,diagnostic
+qirv1-0084,schools that support communication with families students and have accessible housing,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.007171000007133443,0.0,deterministic_rules_v1,diagnostic
+qirv1-0085,engineering schools where undergrads publish before senior year,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00809200000162491,0.0,deterministic_rules_v1,diagnostic
+qirv1-0086,how to structure a first semester advising appointment for a new freshman,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009423999998148247,0.0,deterministic_rules_v1,diagnostic
+qirv1-0087,how to evaluate the impact of campus employment on student retention,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008922999995775172,0.0,deterministic_rules_v1,diagnostic
+qirv1-0088,which colleges produce the most teachers who go on to become instructional coaches,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00965399999586225,0.0,deterministic_rules_v1,diagnostic
+qirv1-0089,eng debt trap?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007361000001537832,0.0,deterministic_rules_v1,diagnostic
+qirv1-0090,affordable colleges with strong data science,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.005798999993089637,0.0,deterministic_rules_v1,diagnostic
+qirv1-0091,what is a tuition payment plan,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.0069499999995059625,0.0,deterministic_rules_v1,diagnostic
+qirv1-0092,what is deferral in admissions,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006599999991863115,0.0,deterministic_rules_v1,diagnostic
+qirv1-0093,how to help students navigate roommate conflicts,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007590999999251835,0.0,deterministic_rules_v1,diagnostic
+qirv1-0094,career changer law 2 cs dumb?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006920000004129179,0.0,deterministic_rules_v1,diagnostic
+qirv1-0095,how to request an extension on an assignment,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007702000004883303,0.0,deterministic_rules_v1,diagnostic
+qirv1-0096,schools with active running or track clubs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007471000003533845,0.0,deterministic_rules_v1,diagnostic
+qirv1-0097,universities with social work degrees,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.006819999995855142,0.0,deterministic_rules_v1,diagnostic
+qirv1-0098,How can transfer students manage differences in extracurricular opportunities?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008983000000739594,0.0,deterministic_rules_v1,diagnostic
+qirv1-0099,mech eng 2 yr to 4 yr worth?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007310999990295386,0.0,deterministic_rules_v1,diagnostic
+qirv1-0100,universities with cultural exchange programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007131000003823829,0.0,deterministic_rules_v1,diagnostic
+qirv1-0101,Princeton financial aid for out of state,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007440999993946207,0.0,deterministic_rules_v1,diagnostic
+qirv1-0102,universities with research in computational biology,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.0075210000005654365,0.0,deterministic_rules_v1,diagnostic
+qirv1-0103,colleges with rooftop yogahigh,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.006420000005391557,0.0,deterministic_rules_v1,diagnostic
+qirv1-0104,universities where freshmen cannot be cut from engineering,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.008261999994374492,0.0,deterministic_rules_v1,diagnostic
+qirv1-0105,schools with strong bioinformatics programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007069999995223952,0.0,deterministic_rules_v1,diagnostic
+qirv1-0106,colleges that provide strong alumni mentoring for first gen students,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.008692999998061168,0.0,deterministic_rules_v1,diagnostic
+qirv1-0107,four year cost of University of Washington including housing,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008213000000978354,0.0,deterministic_rules_v1,diagnostic
+qirv1-0108,best colleges for on-campus housing with high graduation rates in California,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.005427999994367383,0.0,deterministic_rules_v1,diagnostic
+qirv1-0109,what colleges fit a student with a 3.5 gpa,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.007030000006125192,0.0,deterministic_rules_v1,diagnostic
+qirv1-0110,how do we keep our admissions staff account access up to date when team members leave or join,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.013860999999337764,0.0,deterministic_rules_v1,diagnostic
+qirv1-0111,how to advocate for systemic changes in curriculum or policy that affect students,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009883999993576253,0.0,deterministic_rules_v1,diagnostic
+qirv1-0112,job placement for Northwestern,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.008242000006930539,0.0,deterministic_rules_v1,diagnostic
+qirv1-0113,How can community college students connect with university alumni for mentorship?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009514000012700308,0.0,deterministic_rules_v1,diagnostic
+qirv1-0114,Boston University vs Columbia,complex,complex,0.9,comparison,accepted_model_prediction,0.0028340000000071086,0.0,deterministic_rules_v1,diagnostic
+qirv1-0115,universities with peer-led study programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.0072610000074746495,0.0,deterministic_rules_v1,diagnostic
+qirv1-0116,MIT acceptance rate,short_circuit,short_circuit,0.83,one_hop_attribute,accepted_model_prediction,0.006799999994200334,0.0,deterministic_rules_v1,diagnostic
+qirv1-0117,create reach target safety list for film in Texas under 40k,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009062999993147969,0.0,deterministic_rules_v1,diagnostic
+qirv1-0118,career changer teacher2data,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007741000004557463,0.0,deterministic_rules_v1,diagnostic
+qirv1-0119,how to support international students who are academically struggling,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009002999988183547,0.0,deterministic_rules_v1,diagnostic
+qirv1-0120,Duke tuition vs Purdue tuition,complex,complex,0.9,comparison,accepted_model_prediction,0.003195000005007387,0.0,deterministic_rules_v1,diagnostic
+qirv1-0121,schools with strong programs in philosophy and logic,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.006259999992153098,0.0,deterministic_rules_v1,diagnostic
+qirv1-0122,career outcomes for anthropology majors,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009524000006422284,0.0,deterministic_rules_v1,diagnostic
+qirv1-0123,switch bio 2 biomed eng jr yr dumb?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007861999989700053,0.0,deterministic_rules_v1,diagnostic
+qirv1-0124,small engineering colleges with division I sports,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007931999988386451,0.0,deterministic_rules_v1,diagnostic
+qirv1-0125,Cornell campus culture,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.005688000001669025,0.0,deterministic_rules_v1,diagnostic
+qirv1-0126,how to build institutional infrastructure for a study abroad office,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009132999991834367,0.0,deterministic_rules_v1,diagnostic
+qirv1-0127,Transfer student social events?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008272000002307323,0.0,deterministic_rules_v1,diagnostic
+qirv1-0128,internships for Stanford,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007540999988009389,0.0,deterministic_rules_v1,diagnostic
+qirv1-0129,how to build a campus recreation center that serves all students equitably,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.011827999998104133,0.0,deterministic_rules_v1,diagnostic
+qirv1-0130,Boston University vs UC Irvine for finance,complex,complex,0.9,comparison,accepted_model_prediction,0.003715999994824415,0.0,deterministic_rules_v1,diagnostic
+qirv1-0131,schools with explicit racial equity programs for campus inclusion,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.00862299999937477,0.0,deterministic_rules_v1,diagnostic
+qirv1-0132,how to engage parents who are over-involved in their student's applications,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009845000008112947,0.0,deterministic_rules_v1,diagnostic
+qirv1-0133,Columbia,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.006749999997168743,0.0,deterministic_rules_v1,diagnostic
+qirv1-0134,does UC San Diego have philosophy,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.0072009999882993725,0.0,deterministic_rules_v1,diagnostic
+qirv1-0135,what are common mistakes students make in the college application process,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.010105000001203734,0.0,deterministic_rules_v1,diagnostic
+qirv1-0136,colleges that support mental health well,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007460999995601014,0.0,deterministic_rules_v1,diagnostic
+qirv1-0137,schools with 3D printing labs open to all students,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.008261999994374492,0.0,deterministic_rules_v1,diagnostic
+qirv1-0138,what is your platform's approach to supporting community colleges specifically,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00887299999874358,0.0,deterministic_rules_v1,diagnostic
+qirv1-0139,create reach target safety list for economics in California under 30k,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008923000009986026,0.0,deterministic_rules_v1,diagnostic
+qirv1-0140,feeling overwhelmed in college what should I do,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008002000001283704,0.0,deterministic_rules_v1,diagnostic
+qirv1-0141,what is the best practice for responding to student inquiries through your system,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.010244999998576532,0.0,deterministic_rules_v1,diagnostic
+qirv1-0142,schools with art and creative talent scholarships,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.006029000005014495,0.0,deterministic_rules_v1,diagnostic
+qirv1-0143,how to deal with a professor who gives confusing instructions,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008643000001029577,0.0,deterministic_rules_v1,diagnostic
+qirv1-0144,schools with active intramural esports leagues,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007271000001196626,0.0,deterministic_rules_v1,diagnostic
+qirv1-0145,does USC have electrical engineering,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.024506000002588735,0.0,deterministic_rules_v1,diagnostic
+qirv1-0146,colleges with strong parental communication policies,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007831999994323269,0.0,deterministic_rules_v1,diagnostic
+qirv1-0147,what extracurriculars do top colleges actually care about,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008391999998025312,0.0,deterministic_rules_v1,diagnostic
+qirv1-0148,colleges with hidden libraries,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.0064689999987876945,0.0,deterministic_rules_v1,diagnostic
+qirv1-0149,what is the drop add period and how do I use it,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008852999997088773,0.0,deterministic_rules_v1,diagnostic
+qirv1-0150,colleges near research parks,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.006999999996537554,0.0,deterministic_rules_v1,diagnostic
+qirv1-0151,colleges emphasizing culturally responsive teaching curricula,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007781999997291678,0.0,deterministic_rules_v1,diagnostic
+qirv1-0152,how to evaluate the impact of guaranteed admission programs on enrollment quality,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009884999997211708,0.0,deterministic_rules_v1,diagnostic
+qirv1-0153,comparing cs salary outcomes across regions for my son,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.0082119999973429,0.0,deterministic_rules_v1,diagnostic
+qirv1-0154,does baylor have good support services for students from low income backgrounds,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009493999996834646,0.0,deterministic_rules_v1,diagnostic
+qirv1-0155,how to design a campus food pantry to address student hunger,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008843000003366797,0.0,deterministic_rules_v1,diagnostic
+qirv1-0156,USC vs UC San Diego for nursing,complex,complex,0.9,comparison,accepted_model_prediction,0.003594999995470971,0.0,deterministic_rules_v1,diagnostic
+qirv1-0157,how to network as an introvert in college,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.0075210000005654365,0.0,deterministic_rules_v1,diagnostic
+qirv1-0158,does Harvard have business,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007901000003585068,0.0,deterministic_rules_v1,diagnostic
+qirv1-0159,archived admissions data access,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.00813199999072367,0.0,deterministic_rules_v1,diagnostic
+qirv1-0160,what schools should i apply to for mechanical engineering near the beach low tuition,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.006057999996755825,0.0,deterministic_rules_v1,diagnostic
+qirv1-0161,schools with honors programs that aren’t stressful,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.016594000001646236,0.0,deterministic_rules_v1,diagnostic
+qirv1-0162,Duke tuition vs University of Maryland tuition,complex,complex,0.9,comparison,accepted_model_prediction,0.0038860000017848506,0.0,deterministic_rules_v1,diagnostic
+qirv1-0163,University of Maryland average ACT,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.0071199999922555435,0.0,deterministic_rules_v1,diagnostic
+qirv1-0164,colleges near state borders,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.006509000002097309,0.0,deterministic_rules_v1,diagnostic
+qirv1-0165,recommend large colleges in the Midwest for economics not too competitive,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.005216999994672733,0.0,deterministic_rules_v1,diagnostic
+qirv1-0166,universities with student-run environmental law organizations,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.008112000003279718,0.0,deterministic_rules_v1,diagnostic
+qirv1-0167,recommend medium-sized colleges near a major tech hub for economics reach schools,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.005598000001327819,0.0,deterministic_rules_v1,diagnostic
+qirv1-0168,affordable nursing schools in Texas with good job placement,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.006630000001450753,0.0,deterministic_rules_v1,diagnostic
+qirv1-0169,help me compare colleges for entrepreneurship resources based on robust internships and online course options,complex,complex,0.9,comparison,accepted_model_prediction,0.005698999999026455,0.0,deterministic_rules_v1,diagnostic
+qirv1-0170,Community college STEM faculty office hours?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007741000004557463,0.0,deterministic_rules_v1,diagnostic
+qirv1-0171,how do we position our school against peer institutions on your platform,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009723999994548649,0.0,deterministic_rules_v1,diagnostic
+qirv1-0172,Princeton job placement for biology,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007049999993569145,0.0,deterministic_rules_v1,diagnostic
+qirv1-0173,Community college STEM lab safety training?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007049999993569145,0.0,deterministic_rules_v1,diagnostic
+qirv1-0174,colleges that accept community college associate degrees,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007991999993350873,0.0,deterministic_rules_v1,diagnostic
+qirv1-0175,which schools offer campus culture and inclusion and allow early application deadlines,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.008962999999084786,0.0,deterministic_rules_v1,diagnostic
+qirv1-0176,Grad program funding packages?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008181999987755262,0.0,deterministic_rules_v1,diagnostic
+qirv1-0177,colleges where graduates frequently enter community service roles,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.008461999996711711,0.0,deterministic_rules_v1,diagnostic
+qirv1-0178,how to build a comprehensive new staff and administrator onboarding program,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009332999994171587,0.0,deterministic_rules_v1,diagnostic
+qirv1-0179,how to train faculty in active learning and inclusive pedagogy,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008601999994084508,0.0,deterministic_rules_v1,diagnostic
+qirv1-0180,elite non coastal universities,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.008171999994033285,0.0,deterministic_rules_v1,diagnostic
+qirv1-0181,schools with strong writing culture,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.006349000003069705,0.0,deterministic_rules_v1,diagnostic
+qirv1-0182,Rice University research opportunities,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.00854200000333094,0.0,deterministic_rules_v1,diagnostic
+qirv1-0183,how do I advise a student who did their CC online and wants a rural residential experience,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.013338999991674427,0.0,deterministic_rules_v1,diagnostic
+qirv1-0184,create reach target safety list for psychology in California full ride options,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009094000006371061,0.0,deterministic_rules_v1,diagnostic
+qirv1-0185,best colleges for honors seminar quality with robust internships in California,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.005367999989402961,0.0,deterministic_rules_v1,diagnostic
+qirv1-0186,which universities cap class sizes early,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007491000005188653,0.0,deterministic_rules_v1,diagnostic
+qirv1-0187,good colleges for students who want flexibility in pacing,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.0082119999973429,0.0,deterministic_rules_v1,diagnostic
+qirv1-0188,edtech founder project CS,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.00763100000256145,0.0,deterministic_rules_v1,diagnostic
+qirv1-0189,rankings for Georgia Tech,short_circuit,short_circuit,0.83,one_hop_attribute,accepted_model_prediction,0.007289999999215979,0.0,deterministic_rules_v1,diagnostic
+qirv1-0190,how to build a more racially and ethnically diverse incoming class,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008782999998402374,0.0,deterministic_rules_v1,diagnostic
+qirv1-0191,good schools if you want to start a startup eventually,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00874299999509276,0.0,deterministic_rules_v1,diagnostic
+qirv1-0192,MIT financial aid for out of state,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007370000005835209,0.0,deterministic_rules_v1,diagnostic
+qirv1-0193,how to develop a student success technology ecosystem,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008151999992378478,0.0,deterministic_rules_v1,diagnostic
+qirv1-0194,small electrical engineering colleges near Chicago under 30k,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.006550000009042378,0.0,deterministic_rules_v1,diagnostic
+qirv1-0195,comp sci gpa reset after transfer?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007259999989628341,0.0,deterministic_rules_v1,diagnostic
+qirv1-0196,how to conduct an effective sophomore year check-in about college planning,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00940399999649344,0.0,deterministic_rules_v1,diagnostic
+qirv1-0197,how to document and share college counseling resources with students digitally,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.007199999998874773,0.0,deterministic_rules_v1,diagnostic
+qirv1-0198,How can project-based CS labs enhance learning outcomes?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008362000002648529,0.0,deterministic_rules_v1,diagnostic
+qirv1-0199,NYU average SAT,short_circuit,short_circuit,0.83,one_hop_attribute,accepted_model_prediction,0.006790000000478358,0.0,deterministic_rules_v1,diagnostic
+qirv1-0200,civil eng infrastructure bill demand spike,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007319999994592763,0.0,deterministic_rules_v1,diagnostic
+qirv1-0201,how to advise students who want to transfer from a 4-year to a community college,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.010365000008505376,0.0,deterministic_rules_v1,diagnostic
+qirv1-0202,cheapest architecture schools near a tech hub,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007890999995652237,0.0,deterministic_rules_v1,diagnostic
+qirv1-0203,engineering programs with strong alumni mentorship networks,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007862000003910907,0.0,deterministic_rules_v1,diagnostic
+qirv1-0204,how to get leadership positions in student clubs,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007762000009847725,0.0,deterministic_rules_v1,diagnostic
+qirv1-0205,how to evaluate and improve campus climate survey results,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008322000013549768,0.0,deterministic_rules_v1,diagnostic
+qirv1-0206,University of Florida job placement for engineering,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007801000009521886,0.0,deterministic_rules_v1,diagnostic
+qirv1-0207,edtech build cs portfolio tool,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006900000002474371,0.0,deterministic_rules_v1,diagnostic
+qirv1-0208,student wants tech career but dislikes coding,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008032000010871343,0.0,deterministic_rules_v1,diagnostic
+qirv1-0209,how to help a student who is academically capable but unmotivated,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008942999997429979,0.0,deterministic_rules_v1,diagnostic
+qirv1-0210,Purdue vs MIT,complex,complex,0.9,comparison,accepted_model_prediction,0.0026839999947014803,0.0,deterministic_rules_v1,diagnostic
+qirv1-0211,intl student stem OPT stress,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.005998999995426857,0.0,deterministic_rules_v1,diagnostic
+qirv1-0212,universities with research in sociogenomics,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.0074410000081570615,0.0,deterministic_rules_v1,diagnostic
+qirv1-0213,cc student lab access low,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006689000002779721,0.0,deterministic_rules_v1,diagnostic
+qirv1-0214,schools with campus ambassador programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.006920000004129179,0.0,deterministic_rules_v1,diagnostic
+qirv1-0215,schools w strong programs for students intersted in rural journalism or local news,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.00995500001010896,0.0,deterministic_rules_v1,diagnostic
+qirv1-0216,How can community college students find research opportunities at universities?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009093000002735607,0.0,deterministic_rules_v1,diagnostic
+qirv1-0217,how does your platform support community college and transfer student pathways,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009243000008041236,0.0,deterministic_rules_v1,diagnostic
+qirv1-0218,how to run effective group advising or workshop sessions,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00817200000824414,0.0,deterministic_rules_v1,diagnostic
+qirv1-0219,how to build a resource library for advisors that includes major and career information,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.010134000007155919,0.0,deterministic_rules_v1,diagnostic
+qirv1-0220,University of Washington vs UCLA for business,complex,complex,0.9,comparison,accepted_model_prediction,0.003634999998780586,0.0,deterministic_rules_v1,diagnostic
+qirv1-0221,small philosophy colleges in California low tuition,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008061000002612673,0.0,deterministic_rules_v1,diagnostic
+qirv1-0222,colleges near a major tech hub low tuition with strong research and internships,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.007941999996319282,0.0,deterministic_rules_v1,diagnostic
+qirv1-0223,what is Phi Beta Kappa and is it worth pursuing,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008512999997378756,0.0,deterministic_rules_v1,diagnostic
+qirv1-0224,best practices for running a career advising drop-in,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008062000006248127,0.0,deterministic_rules_v1,diagnostic
+qirv1-0225,how does your platform handle colleges going through accreditation review,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009093000002735607,0.0,deterministic_rules_v1,diagnostic
+qirv1-0226,how to help students communicate with financial aid about appeal or special circumstances,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00998400000185029,0.0,deterministic_rules_v1,diagnostic
+qirv1-0227,how to help a student who is a strong writer but low test scores decide where to apply,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.011025999995695202,0.0,deterministic_rules_v1,diagnostic
+qirv1-0228,which schools offer study abroad options and allow no SAT requirement,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009153999997124629,0.0,deterministic_rules_v1,diagnostic
+qirv1-0229,school profile publishing workflow,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.00804200000459332,0.0,deterministic_rules_v1,diagnostic
+qirv1-0230,longitudinal admissions data export,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.008021999988727657,0.0,deterministic_rules_v1,diagnostic
+qirv1-0231,cs major building portfolio without internships,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.0075210000005654365,0.0,deterministic_rules_v1,diagnostic
+qirv1-0232,UC Berkeley vs USC for finance,complex,complex,0.9,comparison,accepted_model_prediction,0.003384999999411775,0.0,deterministic_rules_v1,diagnostic
+qirv1-0233,mid sized universities with strong human factors engineering,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008182000001966117,0.0,deterministic_rules_v1,diagnostic
+qirv1-0234,what tools are available to advisors for tracking student academic progress,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009202999990520766,0.0,deterministic_rules_v1,diagnostic
+qirv1-0235,visibility in recommendation engine,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.0035759999974516177,0.0,deterministic_rules_v1,diagnostic
+qirv1-0236,schools with strong programs for students who grew up abroad or are third culture kids,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.009504000004767477,0.0,deterministic_rules_v1,diagnostic
+qirv1-0237,can I take grad-level classes as an undergrad,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00796199999797409,0.0,deterministic_rules_v1,diagnostic
+qirv1-0238,affordable architecture schools in Texas with good internships,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.0062900000017407365,0.0,deterministic_rules_v1,diagnostic
+qirv1-0239,does wake forest track student progress well,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007601000007184666,0.0,deterministic_rules_v1,diagnostic
+qirv1-0240,universities that train graduates for local government leadership roles,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.00891400000568865,0.0,deterministic_rules_v1,diagnostic
+qirv1-0241,recommend small colleges near Chicago for psychology,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.004115999999498854,0.0,deterministic_rules_v1,diagnostic
+qirv1-0242,engineering schools with 4 year graduation guarantee,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007770999999934247,0.0,deterministic_rules_v1,diagnostic
+qirv1-0243,Columbia chill campus,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007500999998910629,0.0,deterministic_rules_v1,diagnostic
+qirv1-0244,colleges where students often study multiple fields by graduation,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.011005999994040394,0.0,deterministic_rules_v1,diagnostic
+qirv1-0245,what is college access work and how does it differ from traditional counseling,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.010035000002517336,0.0,deterministic_rules_v1,diagnostic
+qirv1-0246,what college rankings actually matter and what are misleading,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00834299999041832,0.0,deterministic_rules_v1,diagnostic
+qirv1-0247,marketing collaborative eng culture better,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.006709999993859128,0.0,deterministic_rules_v1,diagnostic
+qirv1-0248,colleges near Chicago good financial aid with strong research and internships,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.007160999999200612,0.0,deterministic_rules_v1,diagnostic
+qirv1-0249,how to build institutional capacity for trauma-informed student services,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008943000011640834,0.0,deterministic_rules_v1,diagnostic
+qirv1-0250,top public universities for tech jobs,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007140999997545805,0.0,deterministic_rules_v1,diagnostic
+qirv1-0251,does University of Maryland have political science,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007581000005529859,0.0,deterministic_rules_v1,diagnostic
+qirv1-0252,do college rankings matter when you plan to work internationally after graduating,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009554000001799068,0.0,deterministic_rules_v1,diagnostic
+qirv1-0253,improve student match quality,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007831999994323269,0.0,deterministic_rules_v1,diagnostic
 qirv1-0254,Boston University admissions profile average sat and gpa,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008191999995688093,0.0,deterministic_rules_v1,diagnostic
-qirv1-0255,campuses with strong diversity in stem,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.0072610000074746495,0.0,deterministic_rules_v1,diagnostic
-qirv1-0256,analytics for admissions funnel,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007412000002204877,0.0,deterministic_rules_v1,diagnostic
-qirv1-0257,colleges in old mill towns or historic small cities,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007851999995978076,0.0,deterministic_rules_v1,diagnostic
-qirv1-0258,good schools if i like problem solving more than coding,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008122000011212549,0.0,deterministic_rules_v1,diagnostic
-qirv1-0259,Carnegie Mellon financial aid for out of state,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00764199999991888,0.0,deterministic_rules_v1,diagnostic
-qirv1-0260,Are there programs for community college students to shadow professionals in their field?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009525000010057738,0.0,deterministic_rules_v1,diagnostic
-qirv1-0261,schools with zero homework classes,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.006901000006109825,0.0,deterministic_rules_v1,diagnostic
-qirv1-0262,how to respond to external rankings and their impact on institutional reputation,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009233999989533004,0.0,deterministic_rules_v1,diagnostic
-qirv1-0263,data sci grads stats light,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006509000002097309,0.0,deterministic_rules_v1,diagnostic
-qirv1-0264,NYU vs Columbia business,complex,complex,0.9,comparison,accepted_model_prediction,0.0026140000102259364,0.0,deterministic_rules_v1,diagnostic
-qirv1-0265,schools like Vanderbilt but cheaper,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.0037150000053998156,0.0,deterministic_rules_v1,diagnostic
-qirv1-0266,colleges with actual roller coasters nearby,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007080999992581383,0.0,deterministic_rules_v1,diagnostic
-qirv1-0267,good school not scary,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007411000012780278,0.0,deterministic_rules_v1,diagnostic
-qirv1-0268,schools that prepare future teachers with strong trauma informed approaches,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.009162999987211151,0.0,deterministic_rules_v1,diagnostic
-qirv1-0269,melt eng admits stop,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007340999999883024,0.0,deterministic_rules_v1,diagnostic
-qirv1-0270,is UT Austin good for cs,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006599999991863115,0.0,deterministic_rules_v1,diagnostic
-qirv1-0271,selectivity vs acceptance rate,complex,complex,0.9,comparison,accepted_model_prediction,0.002774000009253541,0.0,deterministic_rules_v1,diagnostic
-qirv1-0272,cc hist course night?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.0077010000012478486,0.0,deterministic_rules_v1,diagnostic
-qirv1-0273,Boston University tuition vs MIT tuition,complex,complex,0.9,comparison,accepted_model_prediction,0.0031849999970745557,0.0,deterministic_rules_v1,diagnostic
-qirv1-0274,how to write effective advising case notes and summaries,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008143000002291956,0.0,deterministic_rules_v1,diagnostic
-qirv1-0275,NYU tuition vs Caltech tuition,complex,complex,0.9,comparison,accepted_model_prediction,0.00297500000101536,0.0,deterministic_rules_v1,diagnostic
-qirv1-0276,iowa state vs kansas state,complex,complex,0.9,comparison,accepted_model_prediction,0.0029250000039837687,0.0,deterministic_rules_v1,diagnostic
-qirv1-0277,schools with active student government,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007011000008105839,0.0,deterministic_rules_v1,diagnostic
-qirv1-0278,does your platform allow us to run surveys of students who viewed our profile,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.011787999994794518,0.0,deterministic_rules_v1,diagnostic
-qirv1-0279,medium-sized economics colleges near the beach under 20k,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.006670000004760368,0.0,deterministic_rules_v1,diagnostic
-qirv1-0280,colleges with strong cognitive science + philosophy programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.008132000004934525,0.0,deterministic_rules_v1,diagnostic
-qirv1-0281,unis w big hackathon culture,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.0058180000053198455,0.0,deterministic_rules_v1,diagnostic
-qirv1-0282,how to advise students about apprenticeship programs as alternatives to traditional degrees,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009795000011081356,0.0,deterministic_rules_v1,diagnostic
-qirv1-0283,universities with strong electrical engineering,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007572000001232482,0.0,deterministic_rules_v1,diagnostic
-qirv1-0284,advising student intrested aerospace + physics overlap,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007781999997291678,0.0,deterministic_rules_v1,diagnostic
-qirv1-0285,schools in west virginia,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.00854200000333094,0.0,deterministic_rules_v1,diagnostic
-qirv1-0286,wisconsin vs minnesota alumni outcomes,complex,complex,0.9,comparison,accepted_model_prediction,0.003335000002380184,0.0,deterministic_rules_v1,diagnostic
-qirv1-0287,universities with peer-led tutoring programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.00767099999166021,0.0,deterministic_rules_v1,diagnostic
-qirv1-0288,how to build an accelerated degree pathway for high-performing students,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009333999997807041,0.0,deterministic_rules_v1,diagnostic
-qirv1-0289,Caltech tuition vs Cornell tuition,complex,complex,0.9,comparison,accepted_model_prediction,0.0030039999927566896,0.0,deterministic_rules_v1,diagnostic
-qirv1-0290,University of Michigan vs Purdue for nursing,complex,complex,0.9,comparison,accepted_model_prediction,0.003345000010313015,0.0,deterministic_rules_v1,diagnostic
-qirv1-0291,schools with strong industrial engineering programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007311000004506241,0.0,deterministic_rules_v1,diagnostic
-qirv1-0292,what is the nearest airport to schools in really remote locations,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008984000004375048,0.0,deterministic_rules_v1,diagnostic
-qirv1-0293,schools with collaborative culture,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.0057190000006812625,0.0,deterministic_rules_v1,diagnostic
-qirv1-0294,colleges with military veteran tuition benefits,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.006479999996145125,0.0,deterministic_rules_v1,diagnostic
-qirv1-0295,regional hiring concentration effects,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.00842299999703755,0.0,deterministic_rules_v1,diagnostic
-qirv1-0296,how to implement intrusive advising to support struggling students,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008702999991783145,0.0,deterministic_rules_v1,diagnostic
-qirv1-0297,medium-sized nursing colleges in Texas low tuition,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00755099999594222,0.0,deterministic_rules_v1,diagnostic
-qirv1-0298,millersville vs kutztown,complex,complex,0.9,comparison,accepted_model_prediction,0.0026839999947014803,0.0,deterministic_rules_v1,diagnostic
-qirv1-0299,schools with cooperative education programs and top accounting majors,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.006580000004419162,0.0,deterministic_rules_v1,diagnostic
-qirv1-0300,universities with high numbers of NSF fellowship winners,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007852000010188931,0.0,deterministic_rules_v1,diagnostic
+qirv1-0255,campuses with strong diversity in stem,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009774999995215694,0.0,deterministic_rules_v1,diagnostic
+qirv1-0256,analytics for admissions funnel,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007862000003910907,0.0,deterministic_rules_v1,diagnostic
+qirv1-0257,colleges in old mill towns or historic small cities,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.008101999995346887,0.0,deterministic_rules_v1,diagnostic
+qirv1-0258,good schools if i like problem solving more than coding,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008393000001660766,0.0,deterministic_rules_v1,diagnostic
+qirv1-0259,Carnegie Mellon financial aid for out of state,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007772000003569701,0.0,deterministic_rules_v1,diagnostic
+qirv1-0260,Are there programs for community college students to shadow professionals in their field?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.010005000007140552,0.0,deterministic_rules_v1,diagnostic
+qirv1-0261,schools with zero homework classes,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007120000006466398,0.0,deterministic_rules_v1,diagnostic
+qirv1-0262,how to respond to external rankings and their impact on institutional reputation,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009724000008759504,0.0,deterministic_rules_v1,diagnostic
+qirv1-0263,data sci grads stats light,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.006820000010065996,0.0,deterministic_rules_v1,diagnostic
+qirv1-0264,NYU vs Columbia business,complex,complex,0.9,comparison,accepted_model_prediction,0.002723999998011095,0.0,deterministic_rules_v1,diagnostic
+qirv1-0265,schools like Vanderbilt but cheaper,complex,complex,0.84,recommendation_or_ranking,accepted_model_prediction,0.003775999999788837,0.0,deterministic_rules_v1,diagnostic
+qirv1-0266,colleges with actual roller coasters nearby,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.00718100000085542,0.0,deterministic_rules_v1,diagnostic
+qirv1-0267,good school not scary,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.007621999998264073,0.0,deterministic_rules_v1,diagnostic
+qirv1-0268,schools that prepare future teachers with strong trauma informed approaches,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.009133000006045222,0.0,deterministic_rules_v1,diagnostic
+qirv1-0269,melt eng admits stop,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.0075210000005654365,0.0,deterministic_rules_v1,diagnostic
+qirv1-0270,is UT Austin good for cs,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00705000000778,0.0,deterministic_rules_v1,diagnostic
+qirv1-0271,selectivity vs acceptance rate,complex,complex,0.9,comparison,accepted_model_prediction,0.0028839999970387,0.0,deterministic_rules_v1,diagnostic
+qirv1-0272,cc hist course night?,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00792200000887533,0.0,deterministic_rules_v1,diagnostic
+qirv1-0273,Boston University tuition vs MIT tuition,complex,complex,0.9,comparison,accepted_model_prediction,0.003245000002038978,0.0,deterministic_rules_v1,diagnostic
+qirv1-0274,how to write effective advising case notes and summaries,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008233000002633162,0.0,deterministic_rules_v1,diagnostic
+qirv1-0275,NYU tuition vs Caltech tuition,complex,complex,0.9,comparison,accepted_model_prediction,0.002954000009935953,0.0,deterministic_rules_v1,diagnostic
+qirv1-0276,iowa state vs kansas state,complex,complex,0.9,comparison,accepted_model_prediction,0.002894000004971531,0.0,deterministic_rules_v1,diagnostic
+qirv1-0277,schools with active student government,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.006910000010407202,0.0,deterministic_rules_v1,diagnostic
+qirv1-0278,does your platform allow us to run surveys of students who viewed our profile,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.010035000002517336,0.0,deterministic_rules_v1,diagnostic
+qirv1-0279,medium-sized economics colleges near the beach under 20k,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.006700000000137152,0.0,deterministic_rules_v1,diagnostic
+qirv1-0280,colleges with strong cognitive science + philosophy programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007911999986731644,0.0,deterministic_rules_v1,diagnostic
+qirv1-0281,unis w big hackathon culture,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.005998000006002258,0.0,deterministic_rules_v1,diagnostic
+qirv1-0282,how to advise students about apprenticeship programs as alternatives to traditional degrees,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009934999994243299,0.0,deterministic_rules_v1,diagnostic
+qirv1-0283,universities with strong electrical engineering,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007480999997255822,0.0,deterministic_rules_v1,diagnostic
+qirv1-0284,advising student intrested aerospace + physics overlap,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.00767099999166021,0.0,deterministic_rules_v1,diagnostic
+qirv1-0285,schools in west virginia,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.006369000004724512,0.0,deterministic_rules_v1,diagnostic
+qirv1-0286,wisconsin vs minnesota alumni outcomes,complex,complex,0.9,comparison,accepted_model_prediction,0.003063999997721112,0.0,deterministic_rules_v1,diagnostic
+qirv1-0287,universities with peer-led tutoring programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007220000000529581,0.0,deterministic_rules_v1,diagnostic
+qirv1-0288,how to build an accelerated degree pathway for high-performing students,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009062999993147969,0.0,deterministic_rules_v1,diagnostic
+qirv1-0289,Caltech tuition vs Cornell tuition,complex,complex,0.9,comparison,accepted_model_prediction,0.0029240000003483146,0.0,deterministic_rules_v1,diagnostic
+qirv1-0290,University of Michigan vs Purdue for nursing,complex,complex,0.9,comparison,accepted_model_prediction,0.0033250000086582077,0.0,deterministic_rules_v1,diagnostic
+qirv1-0291,schools with strong industrial engineering programs,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007370000005835209,0.0,deterministic_rules_v1,diagnostic
+qirv1-0292,what is the nearest airport to schools in really remote locations,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.009303999988219402,0.0,deterministic_rules_v1,diagnostic
+qirv1-0293,schools with collaborative culture,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.005988999987494026,0.0,deterministic_rules_v1,diagnostic
+qirv1-0294,colleges with military veteran tuition benefits,llm_needed,llm_needed,0.82,subjective_or_advisory,accepted_model_prediction,0.006349000003069705,0.0,deterministic_rules_v1,diagnostic
+qirv1-0295,regional hiring concentration effects,short_circuit,short_circuit,0.81,short_entity_like_query,accepted_model_prediction,0.008362000002648529,0.0,deterministic_rules_v1,diagnostic
+qirv1-0296,how to implement intrusive advising to support struggling students,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.008772999990469543,0.0,deterministic_rules_v1,diagnostic
+qirv1-0297,medium-sized nursing colleges in Texas low tuition,medium,medium,0.72,default_standard_search,accepted_model_prediction,0.007752000001914894,0.0,deterministic_rules_v1,diagnostic
+qirv1-0298,millersville vs kutztown,complex,complex,0.9,comparison,accepted_model_prediction,0.002554000005261514,0.0,deterministic_rules_v1,diagnostic
+qirv1-0299,schools with cooperative education programs and top accounting majors,complex,complex,0.8,multiple_constraints,accepted_model_prediction,0.006720000001791959,0.0,deterministic_rules_v1,diagnostic
+qirv1-0300,universities with high numbers of NSF fellowship winners,medium,medium,0.76,category_or_filter_search,accepted_model_prediction,0.007980999995993443,0.0,deterministic_rules_v1,diagnostic

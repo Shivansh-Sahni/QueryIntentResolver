@@ -7,8 +7,8 @@
 - False short-circuit rate: **0.1528** (11/72)
 - Short-circuit recall: **0.8133**
 - Expected calibration error: **0.07255846524312053**
-- Median latency: **4.001338500003726 ms**
-- P95 latency: **4.4449871000040275 ms**
+- Median latency: **4.099430499998391 ms**
+- P95 latency: **4.861609400009572 ms**
 - Estimated cost per 1,000 queries: **$0.000000**
 
 ## Per-route metrics

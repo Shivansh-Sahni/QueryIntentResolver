@@ -1,10 +1,4 @@
 {
-  "benchmark_allocation": {
-    "complex": 75,
-    "llm_needed": 75,
-    "medium": 75,
-    "short_circuit": 75
-  },
   "benchmark_route_distribution": {
     "complex": 75,
     "llm_needed": 75,
@@ -12,9 +6,7 @@
     "short_circuit": 75
   },
   "benchmark_rows": 300,
-  "benchmark_status": "created_and_frozen",
-  "dataset_rows_eligible_for_benchmark": 8168,
-  "dataset_rows_resolved": 8171,
+  "benchmark_status": "reused_immutable",
   "overlap_normalized_queries": 0,
   "overlap_query_ids": 0,
   "training_route_distribution": {

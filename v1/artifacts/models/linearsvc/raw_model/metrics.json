@@ -10,11 +10,11 @@
   "false_short_circuit_rate": 0.1527777777777778,
   "macro_f1": 0.8401854778683479,
   "mean_confidence": 0.7804385955982811,
-  "mean_latency_ms": 4.054082456666919,
-  "median_latency_ms": 4.001338500003726,
+  "mean_latency_ms": 4.173192966666761,
+  "median_latency_ms": 4.099430499998391,
   "model_name": "calibrated_word_char_shape_linearsvc_raw",
   "model_status": "diagnostic",
-  "p95_latency_ms": 4.4449871000040275,
+  "p95_latency_ms": 4.861609400009572,
   "per_route": {
     "complex": {
       "f1": 0.912751677852349,

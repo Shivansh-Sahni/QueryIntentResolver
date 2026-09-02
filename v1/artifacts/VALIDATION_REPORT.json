@@ -1,4 +1,5 @@
 {
+  "analytical_score_leader": "calibrated_word_char_shape_linearsvc_raw",
   "benchmark_distribution": {
     "complex": 75,
     "llm_needed": 75,
@@ -7,15 +8,16 @@
   },
   "benchmark_rows": 300,
   "cleaned_unique_queries": 8171,
+  "diagnostic_model_packaging_blocked": true,
   "frozen_hashes_verified": true,
   "manual_review_training_leakage": 0,
   "manual_review_unique_queries": 55,
   "optional_context_decoupling_verified": true,
   "qwen_input_gold_label_leakage": false,
+  "recommended_model": "calibrated_word_char_shape_linearsvc",
   "release_hashes_verified": true,
   "runtime_contract_verified": true,
-  "schema_version": "1.0.0",
-  "shootout_leader": "calibrated_word_char_shape_linearsvc_raw",
+  "schema_version": "1.0.1",
   "smoke_outputs": [
     {
       "confidence": 0.870334,
@@ -47,7 +49,6 @@
   "training_benchmark_exact_query_leakage": 0,
   "training_rows": 7871,
   "verified_real_model_metrics": [
-    "models/linearsvc/metrics.json",
-    "models/zero_shot/metrics.json"
+    "models/linearsvc/metrics.json"
   ]
 }

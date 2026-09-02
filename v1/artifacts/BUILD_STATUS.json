@@ -1,6 +1,6 @@
 {
-  "source_commit_sha": "c2001983babb31203e7b766e93a9f9afe698db2b",
-  "workflow_run_id": "33337268380",
-  "zero_shot_dependency_outcome": "success",
-  "zero_shot_run_outcome": "success"
+  "source_commit_sha": "5be55b42b06cf5f96eb814ca1dd2a6c3a33fac34",
+  "workflow_run_id": "33679651253",
+  "zero_shot_dependency_outcome": "skipped",
+  "zero_shot_run_outcome": "skipped"
 }

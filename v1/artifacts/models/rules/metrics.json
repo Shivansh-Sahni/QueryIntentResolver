@@ -16,12 +16,12 @@
   "false_short_circuit_rate": 0.6363636363636364,
   "macro_f1": 0.39301240541998833,
   "mean_confidence": 0.7675666666666666,
-  "mean_latency_ms": 0.0077513266669389696,
-  "median_latency_ms": 0.007586500004208574,
+  "mean_latency_ms": 0.008081569999850066,
+  "median_latency_ms": 0.007836999991184257,
   "model_name": "deterministic_rules_v1",
   "model_status": "diagnostic",
   "model_type": "deterministic_diagnostic_floor",
-  "p95_latency_ms": 0.00984149999254669,
+  "p95_latency_ms": 0.01013605000679263,
   "per_route": {
     "complex": {
       "f1": 0.7313432835820896,

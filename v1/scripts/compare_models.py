@@ -67,15 +67,39 @@ def main() -> None:
         coverage = safe_float(item.get("coverage"), 0.0)
         model_status = str(item.get("model_status", "real"))
         benchmark_verified = bool(item["benchmark_verified"])
-        eligible = (
+
+        base_real_requirements = (
             model_status == "real"
             and benchmark_verified
             and coverage == 1.0
             and accuracy >= float(guardrails["min_accuracy"])
             and macro_f1 >= float(guardrails["min_macro_f1"])
-            and short_recall >= float(guardrails["min_short_circuit_recall"])
+        )
+        safety_candidate = (
+            base_real_requirements
             and false_short <= float(guardrails["max_false_short_circuit_rate"])
         )
+        eligible = (
+            safety_candidate
+            and short_recall >= float(guardrails["min_short_circuit_recall"])
+        )
+
+        if eligible:
+            selection_tier = "eligible"
+            tier_rank = 0
+        elif safety_candidate:
+            selection_tier = "provisional_safe"
+            tier_rank = 1
+        elif model_status == "real" and benchmark_verified and coverage == 1.0:
+            selection_tier = "real_ineligible"
+            tier_rank = 2
+        elif model_status == "diagnostic":
+            selection_tier = "diagnostic_only"
+            tier_rank = 3
+        else:
+            selection_tier = "invalid_or_unverified"
+            tier_rank = 4
+
         score = (
             float(weights["macro_f1"]) * macro_f1
             + float(weights["accuracy"]) * accuracy
@@ -88,6 +112,9 @@ def main() -> None:
                 "model_status": model_status,
                 "benchmark_verified": benchmark_verified,
                 "eligible": eligible,
+                "safety_candidate": safety_candidate,
+                "selection_tier": selection_tier,
+                "_tier_rank": tier_rank,
                 "selection_score": score,
                 "accuracy": accuracy,
                 "macro_f1": macro_f1,
@@ -104,27 +131,60 @@ def main() -> None:
     table["_p95"] = table["p95_latency_ms"].fillna(float("inf"))
     table["_cost"] = table["estimated_cost_per_1000_queries_usd"].fillna(float("inf"))
     table = table.sort_values(
-        ["eligible", "selection_score", "false_short_circuit_rate", "macro_f1", "accuracy", "_cost", "_p95"],
-        ascending=[False, False, True, False, False, True, True],
+        ["_tier_rank", "selection_score", "false_short_circuit_rate", "macro_f1", "accuracy", "_cost", "_p95"],
+        ascending=[True, False, True, False, False, True, True],
     ).drop(columns=["_p95", "_cost"]).reset_index(drop=True)
     table.insert(0, "rank", range(1, len(table) + 1))
-    table.to_csv(args.output_dir / "shootout_summary.csv", index=False)
+
+    output_table = table.drop(columns=["_tier_rank"])
+    output_table.to_csv(args.output_dir / "shootout_summary.csv", index=False)
+
+    score_leader = table.sort_values(
+        ["selection_score", "false_short_circuit_rate", "macro_f1", "accuracy"],
+        ascending=[False, True, False, False],
+    ).iloc[0].drop(labels=["_tier_rank"]).to_dict()
 
     eligible_table = table.loc[table["eligible"]]
-    winner_row = (eligible_table.iloc[0] if len(eligible_table) else table.iloc[0]).to_dict()
-    verified_real = table.loc[(table["model_status"] == "real") & table["benchmark_verified"]]
+    safe_table = table.loc[table["safety_candidate"]]
+    verified_real = table.loc[(table["model_status"] == "real") & table["benchmark_verified"] & (table["coverage"] == 1.0)]
+
+    if len(eligible_table):
+        selected_row = eligible_table.iloc[0]
+        selection_basis = "all_release_guardrails_passed"
+        provisional_reason = ""
+    elif len(safe_table):
+        selected_row = safe_table.iloc[0]
+        selection_basis = "best_real_model_passing_quality_and_false_short_circuit_guardrails"
+        provisional_reason = "No real model currently passes every release guardrail, including minimum short-circuit recall."
+    elif len(verified_real):
+        selected_row = verified_real.iloc[0]
+        selection_basis = "best_verified_real_model_pending_safety_improvement"
+        provisional_reason = "No verified real model currently passes the routing-safety guardrails."
+    else:
+        raise ValueError("No verified real model with complete benchmark coverage is available for recommendation")
+
+    recommended_row = selected_row.drop(labels=["_tier_rank"]).to_dict()
     minimum_models = int(guardrails["minimum_real_models_for_final"])
-    status = "final" if len(verified_real) >= minimum_models and bool(winner_row["eligible"]) else "provisional"
+    status = (
+        "final"
+        if len(verified_real) >= minimum_models and bool(recommended_row["eligible"])
+        else "provisional"
+    )
 
     winner = {
-        "schema_version": "1.0.0",
+        "schema_version": "1.0.1",
         "status": status,
-        "winner": winner_row,
+        "winner": recommended_row,
+        "recommended_model": recommended_row,
+        "leaderboard_leader": score_leader,
+        "selection_basis": selection_basis,
+        "provisional_reason": provisional_reason,
         "benchmark_sha256": benchmark_sha256,
         "benchmark_rows": benchmark_rows,
         "verified_real_models_evaluated": int(len(verified_real)),
         "selection_policy": guardrails,
-        "finalization_rule": "Final only after the required number of real models are verified against the identical frozen benchmark.",
+        "finalization_rule": "Final only after enough verified real models are evaluated and the recommended model passes every frozen release guardrail.",
+        "diagnostic_policy": "Diagnostic entries are reported for analysis but can never be the recommended or packaged model.",
     }
     (args.output_dir / "winner.json").write_text(json.dumps(winner, indent=2, sort_keys=True), encoding="utf-8")
 
@@ -132,31 +192,39 @@ def main() -> None:
         "# Query Intent Resolver V1 Model Shootout",
         "",
         f"- Status: **{status}**",
-        f"- Current leader: **{winner_row['model_name']}**",
+        f"- Recommended model: **{recommended_row['model_name']}**",
+        f"- Selection basis: **{selection_basis}**",
+        f"- Highest raw score (analysis only): **{score_leader['model_name']}**",
         f"- Verified real models: **{len(verified_real)}**",
         f"- Benchmark SHA-256: `{benchmark_sha256}`",
-        "",
-        "| Rank | Model | Status | Benchmark Verified | Eligible | Accuracy | Macro F1 | False SC | SC Recall | P95 ms | Cost / 1K |",
-        "| ---: | --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |",
     ]
-    for row in table.to_dict(orient="records"):
+    if provisional_reason:
+        lines.append(f"- Why provisional: {provisional_reason}")
+    lines.extend([
+        "",
+        "| Rank | Model | Tier | Status | Verified | Eligible | Safety candidate | Accuracy | Macro F1 | False SC | SC Recall | P95 ms | Cost / 1K |",
+        "| ---: | --- | --- | --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |",
+    ])
+    for row in output_table.to_dict(orient="records"):
         p95_text = "" if pd.isna(row["p95_latency_ms"]) else f"{float(row['p95_latency_ms']):.3f}"
         cost_text = "" if pd.isna(row["estimated_cost_per_1000_queries_usd"]) else f"${float(row['estimated_cost_per_1000_queries_usd']):.6f}"
         lines.append(
-            f"| {int(row['rank'])} | `{row['model_name']}` | {row['model_status']} | {row['benchmark_verified']} | "
-            f"{row['eligible']} | {float(row['accuracy']):.4f} | {float(row['macro_f1']):.4f} | "
+            f"| {int(row['rank'])} | `{row['model_name']}` | {row['selection_tier']} | {row['model_status']} | "
+            f"{row['benchmark_verified']} | {row['eligible']} | {row['safety_candidate']} | "
+            f"{float(row['accuracy']):.4f} | {float(row['macro_f1']):.4f} | "
             f"{float(row['false_short_circuit_rate']):.4f} | {float(row['short_circuit_recall']):.4f} | {p95_text} | {cost_text} |"
         )
     lines.extend([
         "",
         "## Decision order",
         "",
-        "1. Identical frozen benchmark and complete coverage.",
-        "2. Pass false-short-circuit and quality guardrails.",
-        "3. Rank by the frozen safety-weighted score.",
-        "4. Use latency and cost as tie-breakers among comparable models.",
+        "1. Require a real model, the identical frozen benchmark, and complete coverage.",
+        "2. Prefer models passing all release guardrails.",
+        "3. If none pass all guardrails, recommend the best real model that still passes the false-short-circuit safety ceiling and core quality floors.",
+        "4. Rank within a selection tier by the frozen safety-weighted score.",
+        "5. Use latency and cost as tie-breakers among comparable models.",
         "",
-        "Diagnostic entries are reported for transparency but cannot win.",
+        "Diagnostic entries remain visible for transparency but cannot be recommended or packaged.",
     ])
     (args.output_dir / "SHOOTOUT_REPORT.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(json.dumps(winner, indent=2, sort_keys=True))

@@ -42,25 +42,38 @@ def main() -> None:
     winner_path = shootout_dir / "winner.json"
     if not winner_path.exists():
         raise FileNotFoundError("Run compare_models.py before finalizing the release")
-    winner = json.loads(winner_path.read_text(encoding="utf-8"))
-    benchmark_leader = str(winner["winner"]["model_name"])
+    shootout = json.loads(winner_path.read_text(encoding="utf-8"))
+
+    recommended = shootout.get("recommended_model", shootout.get("winner", {}))
+    analytical_leader = shootout.get("leaderboard_leader", recommended)
+    recommended_name = str(recommended["model_name"])
+    analytical_leader_name = str(analytical_leader["model_name"])
+
+    if str(recommended.get("model_status")) != "real":
+        raise ValueError("The recommended release model must be a real model, not a diagnostic entry")
+    if not bool(recommended.get("benchmark_verified")):
+        raise ValueError("The recommended release model is not tied to the frozen benchmark")
+    if float(recommended.get("coverage", 0.0)) != 1.0:
+        raise ValueError("The recommended release model does not have complete benchmark coverage")
 
     stable_model = linearsvc_dir / "model.joblib"
     if not stable_model.exists():
         raise FileNotFoundError("The stable LinearSVC runtime artifact is missing")
+
     packaged_model_name = "calibrated_word_char_shape_linearsvc"
-    packaging_note = "The benchmark leader is packaged directly."
-    leader_model_path = models_dir / benchmark_leader / "model.joblib"
-    if benchmark_leader == packaged_model_name:
+    packaging_note = "The recommended model is packaged directly."
+    recommended_model_path = models_dir / recommended_name / "model.joblib"
+
+    if recommended_name == packaged_model_name:
         selected_model = stable_model
-    elif leader_model_path.exists():
-        selected_model = leader_model_path
-        packaged_model_name = benchmark_leader
+    elif recommended_model_path.exists():
+        selected_model = recommended_model_path
+        packaged_model_name = recommended_name
     else:
         selected_model = stable_model
         packaging_note = (
-            f"The benchmark leader is {benchmark_leader}, but it has no compatible local joblib runtime artifact; "
-            "the stable LinearSVC candidate remains packaged for the API."
+            f"The recommended model is {recommended_name}, but it has no compatible local joblib runtime artifact; "
+            "the stable calibrated LinearSVC remains packaged for the API."
         )
 
     shutil.copy2(selected_model, release_dir / "model.joblib")
@@ -102,16 +115,22 @@ def main() -> None:
     cleanup_summary = json.loads(
         (cleanup_dir / "cleanup_summary.json").read_text(encoding="utf-8")
     )
+
     packaged_metrics_path = linearsvc_dir / "metrics.json"
     packaged_metrics = json.loads(packaged_metrics_path.read_text(encoding="utf-8"))
+    if packaged_model_name != "calibrated_word_char_shape_linearsvc":
+        alternate_metrics = models_dir / packaged_model_name / "metrics.json"
+        if alternate_metrics.exists():
+            packaged_metrics = json.loads(alternate_metrics.read_text(encoding="utf-8"))
 
     release_status = (
         "implementation_ready_benchmark_selected_model"
-        if winner["status"] == "final" and benchmark_leader == packaged_model_name
+        if shootout["status"] == "final" and recommended_name == packaged_model_name
         else "implementation_ready_provisional_model"
     )
     manifest = {
-        "release_version": "qir-v1.0.0",
+        "release_version": "qir-v1.0.1",
+        "benchmark_version": benchmark_manifest.get("benchmark_version", "qir-v1.0.0"),
         "status": release_status,
         "objective": "Determine handling complexity and routing tier from raw query text.",
         "contract": {
@@ -123,11 +142,16 @@ def main() -> None:
             "optional_inputs_decoupled": ["persona", "page", "filters", "context", "session"],
             "optional_outputs_reserved": ["entities", "intent"],
         },
-        "shootout_status": winner["status"],
-        "benchmark_leader": benchmark_leader,
+        "shootout_status": shootout["status"],
+        "selection_basis": shootout.get("selection_basis"),
+        "provisional_reason": shootout.get("provisional_reason", ""),
+        "recommended_model": recommended_name,
+        "analytical_score_leader": analytical_leader_name,
         "packaged_model": packaged_model_name,
         "packaging_note": packaging_note,
-        "real_models_evaluated": winner.get("verified_real_models_evaluated", winner.get("real_models_evaluated", 0)),
+        "real_models_evaluated": shootout.get(
+            "verified_real_models_evaluated", shootout.get("real_models_evaluated", 0)
+        ),
         "packaged_model_metrics": {
             key: packaged_metrics.get(key)
             for key in (

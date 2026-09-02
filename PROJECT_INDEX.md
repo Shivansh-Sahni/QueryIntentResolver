@@ -1,6 +1,6 @@
 # Query Intent Resolver — Complete Project Index
 
-This is the navigation map for the full repository. It separates historical exploration from the active implementation so contributors can immediately identify the current source of truth.
+This is the navigation map for the full repository. It separates historical exploration, archived experiments, and the active implementation so contributors can immediately identify the current source of truth.
 
 ## Start here
 
@@ -73,6 +73,16 @@ The active workflow is `.github/workflows/qir-v1-pipeline.yml`. It runs core tes
 
 The obsolete one-time bootstrap workflow has been removed.
 
+## Archived experimental modeling
+
+### `research_archive/2026-08-30-hardcore-v1/`
+
+This directory preserves a parallel local hybrid-router experiment that used a smaller 4,620-row subset and a separate 552-query benchmark. It reported a 91.30% Logistic Regression result and a 93.30% hybrid rule-plus-Logistic Regression result, but also only 50% accuracy on a small out-of-distribution stress suite.
+
+The archive explains why these results are not directly comparable to, and do not replace, the canonical V1.0.1 metrics. Its useful ideas include template-family leakage checks, under/over-routing metrics, confidence-versus-coverage analysis, and high-precision deterministic gates.
+
+- [Archived experiment report and interpretation rules](./research_archive/2026-08-30-hardcore-v1/README.md)
+
 ## Historical work retained for provenance
 
 Historical directories document how the project evolved. They are not the current implementation source of truth.
@@ -117,6 +127,7 @@ Mock outputs in this historical package are illustrative only and are not curren
 - The frozen benchmark must not be edited after predictions are observed.
 - Model claims must come from committed `metrics.json`, the shootout report, release manifest, or validation report.
 - Diagnostic models can be analyzed but cannot be recommended or packaged.
+- Archived experimental metrics must remain explicitly separated from current release metrics.
 - Mock or simulated predictions must never be presented as real performance.
 - Product integration assumptions remain configurable until MascotGO confirms downstream route bindings and available request context.
 - A material change to route semantics, label policy, or the benchmark must create a new version rather than silently replacing V1 evidence.

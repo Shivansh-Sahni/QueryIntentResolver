@@ -1,15 +1,16 @@
 # Query Intent Resolver — Complete Project Index
 
-This file is the navigation map for the full repository. It separates historical exploration from the active implementation so contributors can find the right source of truth quickly.
+This is the navigation map for the full repository. It separates historical exploration from the active implementation so contributors can immediately identify the current source of truth.
 
 ## Start here
 
-1. [`README.md`](./README.md) — concise repository overview and current verified headline metrics.
-2. [`v1/PROJECT_STATUS_2026-09-02.md`](./v1/PROJECT_STATUS_2026-09-02.md) — current state, limitations, ownership, and decisions required from MascotGO.
+1. [`README.md`](./README.md) — concise overview and current verified headline metrics.
+2. [`v1/PROJECT_STATUS_2026-09-02.md`](./v1/PROJECT_STATUS_2026-09-02.md) — complete current state, limitations, ownership, automation status, and MascotGO decisions required.
 3. [`v1/CONTRACT.md`](./v1/CONTRACT.md) — frozen input/output contract.
-4. [`v1/TEAM_HANDOFF.md`](./v1/TEAM_HANDOFF.md) — specific responsibilities and execution instructions.
+4. [`v1/TEAM_HANDOFF.md`](./v1/TEAM_HANDOFF.md) — specific contributor responsibilities and execution instructions.
 5. [`v1/artifacts/VALIDATION_REPORT.json`](./v1/artifacts/VALIDATION_REPORT.json) — machine-readable validation result.
-6. [`v1/artifacts/shootout/SHOOTOUT_REPORT.md`](./v1/artifacts/shootout/SHOOTOUT_REPORT.md) — current identical-benchmark model comparison.
+6. [`v1/artifacts/shootout/SHOOTOUT_REPORT.md`](./v1/artifacts/shootout/SHOOTOUT_REPORT.md) — current identical-benchmark model comparison and recommendation.
+7. [`v1/artifacts/release/release_manifest.json`](./v1/artifacts/release/release_manifest.json) — packaged release identity, hashes, model metrics, and integration status.
 
 ## Active implementation: `v1/`
 
@@ -27,7 +28,7 @@ The active system predicts the minimum routing tier required from raw query text
 - [`v1/CONTRACT.md`](./v1/CONTRACT.md) — required input, output, and future-compatible optional fields.
 - [`v1/IMPLEMENTATION_SPEC.md`](./v1/IMPLEMENTATION_SPEC.md) — system architecture and implementation details.
 - [`v1/ROUTING_LABEL_POLICY.md`](./v1/ROUTING_LABEL_POLICY.md) — canonical route definitions and adjudication policy.
-- [`v1/PROJECT_STATUS_2026-09-02.md`](./v1/PROJECT_STATUS_2026-09-02.md) — current verified status.
+- [`v1/PROJECT_STATUS_2026-09-02.md`](./v1/PROJECT_STATUS_2026-09-02.md) — verified current status and exact remaining gates.
 - [`v1/TEAM_HANDOFF.md`](./v1/TEAM_HANDOFF.md) — contributor assignments and guardrails.
 - [`v1/CHANGELOG.md`](./v1/CHANGELOG.md) — version history.
 
@@ -46,11 +47,12 @@ The active system predicts the minimum routing tier required from raw query text
 ### Generated artifact map
 
 - `v1/artifacts/data_cleanup/` — normalized data, conflict audit, invalid-label audit, and manual-review queue.
-- `v1/artifacts/benchmark/` — immutable gold benchmark, blind benchmark inputs, training split, hashes, and leakage checks.
-- `v1/artifacts/models/` — predictions and metrics for each evaluated candidate.
-- `v1/artifacts/shootout/` — standardized model leaderboard and recommendation.
+- `v1/artifacts/benchmark/` — immutable gold benchmark, blind model inputs, training split, hashes, and leakage checks.
+- `v1/artifacts/models/` — predictions, metrics, and placeholders for each model track.
+- `v1/artifacts/shootout/` — safety-first model leaderboard and recommendation.
 - `v1/artifacts/release/` — packaged runtime model, release manifest, model card, and sample outputs.
-- `v1/artifacts/VALIDATION_REPORT.json` — final integrity and runtime checks.
+- `v1/artifacts/VALIDATION_REPORT.json` — final integrity, model-eligibility, and runtime checks.
+- `v1/artifacts/BUILD_STATUS.json` — latest automated build provenance.
 
 ### Reproduce the active system
 
@@ -65,9 +67,15 @@ Run the service:
 PYTHONPATH=v1/src uvicorn qir_v1.api:app --host 0.0.0.0 --port 8000
 ```
 
+### Continuous integration
+
+The active workflow is `.github/workflows/qir-v1-pipeline.yml`. It runs core tests, data cleanup, immutable benchmark validation, model training, safety-first comparison, release packaging, artifact validation, artifact upload, and generated-artifact publication. The latest full run passed.
+
+The obsolete one-time bootstrap workflow has been removed.
+
 ## Historical work retained for provenance
 
-Historical directories remain available because they document how the project evolved. They are not the current implementation source of truth.
+Historical directories document how the project evolved. They are not the current implementation source of truth.
 
 ### `Part 1 - Phases 6 and 7/`
 
@@ -96,18 +104,19 @@ Mock outputs in this historical package are illustrative only and are not curren
 
 ## Current GitHub work items
 
-- [Issue #1 — Qwen comparison on the frozen benchmark](./issues/1)
-- [Issue #2 — independent manual-label adjudication](./issues/2)
-- [Issue #3 — API and natural-query applicability testing](./issues/3)
-- [Issue #4 — V1 product-scope confirmation](./issues/4)
-- [Issue #5 — MascotGO route binding and deployment decisions](./issues/5)
+- [Issue #1 — Qwen comparison on the frozen benchmark](https://github.com/Shivansh-Sahni/QueryIntentResolver/issues/1)
+- [Issue #2 — independent manual-label adjudication](https://github.com/Shivansh-Sahni/QueryIntentResolver/issues/2)
+- [Issue #3 — API and natural-query applicability testing](https://github.com/Shivansh-Sahni/QueryIntentResolver/issues/3)
+- [Issue #4 — V1 product-scope confirmation](https://github.com/Shivansh-Sahni/QueryIntentResolver/issues/4)
+- [Issue #5 — MascotGO route binding and deployment decisions](https://github.com/Shivansh-Sahni/QueryIntentResolver/issues/5)
 
 ## Source-of-truth rules
 
 - The V1 objective, labels, and response contract come from `v1/CONTRACT.md` and `v1/ROUTING_LABEL_POLICY.md`.
+- The current project statement and responsibility map come from `v1/PROJECT_STATUS_2026-09-02.md` and `v1/TEAM_HANDOFF.md`.
 - The frozen benchmark must not be edited after predictions are observed.
-- Model claims must come from committed `metrics.json`, the shootout report, or the validation report.
-- Diagnostic models can be analyzed but cannot be packaged as the recommended release model.
+- Model claims must come from committed `metrics.json`, the shootout report, release manifest, or validation report.
+- Diagnostic models can be analyzed but cannot be recommended or packaged.
 - Mock or simulated predictions must never be presented as real performance.
 - Product integration assumptions remain configurable until MascotGO confirms downstream route bindings and available request context.
 - A material change to route semantics, label policy, or the benchmark must create a new version rather than silently replacing V1 evidence.

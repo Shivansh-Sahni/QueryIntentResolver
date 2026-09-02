@@ -125,8 +125,17 @@ def main() -> None:
     shootout_winner = json.loads((shootout / "winner.json").read_text(encoding="utf-8"))
     if shootout_winner.get("benchmark_sha256") != benchmark_manifest["benchmark_gold_sha256"]:
         raise AssertionError("Shootout is not bound to the frozen benchmark hash")
-    if not shootout_winner.get("winner", {}).get("model_name"):
-        raise AssertionError("Shootout did not select a model leader")
+
+    recommended = shootout_winner.get("recommended_model", shootout_winner.get("winner", {}))
+    analytical_leader = shootout_winner.get("leaderboard_leader", recommended)
+    if not recommended.get("model_name"):
+        raise AssertionError("Shootout did not select a recommended model")
+    if recommended.get("model_status") != "real":
+        raise AssertionError("A diagnostic or unverified model was selected as the recommended release model")
+    if recommended.get("benchmark_verified") is not True:
+        raise AssertionError("Recommended model is not verified against the frozen benchmark")
+    if float(recommended.get("coverage", 0.0)) != 1.0:
+        raise AssertionError("Recommended model does not cover the complete frozen benchmark")
 
     release_manifest = json.loads((release / "release_manifest.json").read_text(encoding="utf-8"))
     hashes = release_manifest["hashes"]
@@ -138,6 +147,10 @@ def main() -> None:
         raise AssertionError("Release training hash mismatch")
     if hashes["policy_sha256"] != sha256_file(V1_ROOT / "config" / "route_policy.json"):
         raise AssertionError("Release policy hash mismatch")
+    if release_manifest.get("recommended_model") != recommended.get("model_name"):
+        raise AssertionError("Release manifest does not match the shootout recommendation")
+    if release_manifest.get("packaged_model") != recommended.get("model_name"):
+        raise AssertionError("Packaged model differs from the recommended model")
 
     resolver = QueryIntentResolver(
         model_path=release / "model.joblib",
@@ -170,7 +183,7 @@ def main() -> None:
         raise AssertionError("Optional context is not decoupled in V1")
 
     report = {
-        "schema_version": "1.0.0",
+        "schema_version": "1.0.1",
         "status": "passed",
         "cleaned_unique_queries": int(len(cleaned)),
         "manual_review_unique_queries": int(len(manual)),
@@ -187,7 +200,9 @@ def main() -> None:
         "runtime_contract_verified": True,
         "optional_context_decoupling_verified": True,
         "qwen_input_gold_label_leakage": False,
-        "shootout_leader": shootout_winner["winner"]["model_name"],
+        "recommended_model": recommended["model_name"],
+        "analytical_score_leader": analytical_leader.get("model_name"),
+        "diagnostic_model_packaging_blocked": True,
         "smoke_outputs": [
             {"query_text": query, **output} for query, output in zip(smoke_queries, outputs)
         ],

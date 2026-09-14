@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.0.1 maintenance — 2026-09-14
+
+- Preserved Anthony's committed 300-row Qwen raw prediction export across reproducible pipeline rebuilds.
+- Added direct scoring support for `predicted_route_raw` while preserving the original model export.
+- Scored the Qwen model as an end-to-end routing system without post-hoc intent reparsing, fuzzy correction, generation changes, or benchmark-error tuning.
+- Added complete Qwen metrics, error analysis, classification report, calibration report, and evaluation note to committed artifacts.
+- Updated the model shootout to include two verified real candidates on the identical frozen benchmark.
+- Confirmed that the calibrated LinearSVC remains the provisional release recommendation.
+- Closed issue #1 after Qwen completion and issue #4 after independent product-scope confirmation.
+- Reassigned the unresolved-label review to Nimisha after Tanvi completed the product review.
+- Removed inactive contributor Edward from the active work plan and reassigned natural-query/API testing to Ridhi, with Anika as reviewer and backup.
+- Added `v1/CURRENT_STATUS.md` as the live source for project state and ownership.
+- Updated the README, project index, team handoff, issue bodies, and MascotGO integration issue.
+- Verified the latest GitHub Actions run passed tests, Qwen scoring, shootout regeneration, release packaging, validation, artifact upload, and generated-artifact publication.
+
 ## 1.0.1 — 2026-09-02
 
 - Added a dated project-status record with verified data, benchmark, model-safety, latency, automation, and validation evidence.

@@ -49,6 +49,7 @@
   "training_benchmark_exact_query_leakage": 0,
   "training_rows": 7871,
   "verified_real_model_metrics": [
-    "models/linearsvc/metrics.json"
+    "models/linearsvc/metrics.json",
+    "models/qwen/metrics.json"
   ]
 }

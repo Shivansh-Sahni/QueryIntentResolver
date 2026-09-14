@@ -1,0 +1,52 @@
+{
+  "accuracy": 0.2733333333333333,
+  "benchmark_rows": 300,
+  "benchmark_sha256": "591a31c4947d73fa7d77d2a94f32a69e689281c48a564d08317865b826bd84c6",
+  "coverage": 1.0,
+  "deployment_policy_applied": true,
+  "estimated_cost_per_1000_queries_usd": 0.0,
+  "expected_calibration_error": 0.1778530434202358,
+  "false_short_circuit_count": 1,
+  "false_short_circuit_overall_rate": 0.0033333333333333335,
+  "false_short_circuit_rate": 0.16666666666666666,
+  "macro_f1": 0.1771464348871219,
+  "mean_confidence": 0.4342177139906808,
+  "mean_latency_ms": 1516.1562351566713,
+  "median_latency_ms": 605.7559175000051,
+  "model_name": "anthony_qwen2_5_3b_lora_intent_to_route",
+  "model_status": "real",
+  "p95_latency_ms": 4150.59841980019,
+  "per_route": {
+    "complex": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 75
+    },
+    "llm_needed": {
+      "f1": 0.39644970414201186,
+      "precision": 0.25475285171102663,
+      "recall": 0.8933333333333333,
+      "support": 75
+    },
+    "medium": {
+      "f1": 0.18867924528301888,
+      "precision": 0.3225806451612903,
+      "recall": 0.13333333333333333,
+      "support": 75
+    },
+    "short_circuit": {
+      "f1": 0.12345679012345678,
+      "precision": 0.8333333333333334,
+      "recall": 0.06666666666666667,
+      "support": 75
+    }
+  },
+  "post_hoc_intent_remapping_applied": false,
+  "predicted_short_circuit_count": 6,
+  "prediction_source_column": "predicted_route_raw",
+  "schema_version": "1.0.0",
+  "short_circuit_precision": 0.8333333333333334,
+  "short_circuit_recall": 0.06666666666666667,
+  "total_estimated_cost_usd": 0.0
+}

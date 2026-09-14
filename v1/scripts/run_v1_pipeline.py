@@ -50,6 +50,14 @@ def main() -> None:
     shootout = artifacts / "shootout"
     release = artifacts / "release"
 
+    # External inference can be expensive and may be contributed through a PR.
+    # Preserve the committed raw export before rebuilding generated artifacts.
+    qwen_export_bytes: bytes | None = None
+    for candidate in (qwen / "raw_predictions.csv", qwen / "predictions.csv"):
+        if candidate.exists():
+            qwen_export_bytes = candidate.read_bytes()
+            break
+
     reset_directory(cleanup)
     reset_directory(models)
     reset_directory(shootout)
@@ -148,15 +156,48 @@ def main() -> None:
     else:
         zero_shot.mkdir(parents=True, exist_ok=True)
         (zero_shot / "PENDING.md").write_text(
-            "Run the zero-shot baseline with `--with-zero-shot` or through GitHub Actions.\n",
+            "Run the zero-shot baseline with `--with-zero-shot` or through a manual GitHub Actions dispatch.\n",
             encoding="utf-8",
         )
 
     qwen.mkdir(parents=True, exist_ok=True)
-    (qwen / "PENDING.md").write_text(
-        "Run Anthony's Qwen model on `v1/artifacts/benchmark/qwen_benchmark_input.csv`, then score its export.\n",
-        encoding="utf-8",
-    )
+    if qwen_export_bytes is not None:
+        raw_qwen_export = qwen / "raw_predictions.csv"
+        raw_qwen_export.write_bytes(qwen_export_bytes)
+        run(
+            [
+                sys.executable,
+                str(scripts / "evaluate_predictions.py"),
+                "--benchmark",
+                str(benchmark / "benchmark_gold.csv"),
+                "--predictions",
+                str(raw_qwen_export),
+                "--output-dir",
+                str(qwen),
+                "--model-name",
+                "anthony_qwen2_5_3b_lora_intent_to_route",
+                "--model-status",
+                "real",
+                "--policy",
+                str(policy),
+            ],
+            cwd=repo_root,
+        )
+        (qwen / "EVALUATION_NOTE.md").write_text(
+            "# Qwen V1 evaluation\n\n"
+            "The committed raw export was scored exactly as produced by the unchanged inference pipeline. "
+            "`predicted_route_raw` was treated as the model's end-to-end route output. No post-hoc intent "
+            "reparsing, fuzzy intent correction, generation-parameter change, or benchmark-error tuning was applied.\n",
+            encoding="utf-8",
+        )
+        qwen_status = "evaluated_raw_route_export"
+    else:
+        (qwen / "PENDING.md").write_text(
+            "Run Anthony's Qwen model on `v1/artifacts/benchmark/qwen_benchmark_input.csv`, then commit its raw export.\n",
+            encoding="utf-8",
+        )
+        qwen_status = "awaiting_gpu_export"
+
     llm.mkdir(parents=True, exist_ok=True)
     (llm / "PENDING.md").write_text(
         "Run the optional OpenAI-compatible lightweight LLM baseline only when provider credentials are supplied.\n",
@@ -207,7 +248,7 @@ def main() -> None:
         "linear_model_evaluated": True,
         "diagnostic_rules_evaluated": True,
         "zero_shot_requested": args.with_zero_shot,
-        "qwen_status": "awaiting_gpu_export",
+        "qwen_status": qwen_status,
         "llm_api_status": "optional_credentials_not_supplied",
         "release_manifest": str(release / "release_manifest.json"),
     }

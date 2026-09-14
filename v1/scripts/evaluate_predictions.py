@@ -27,21 +27,36 @@ def sha256_file(path: Path) -> str:
 
 
 def normalize_prediction_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """Add canonical evaluation columns while preserving the raw model export.
+
+    `predicted_route_raw` is intentionally accepted as a first-class alias. This
+    lets externally generated models be scored exactly as they ran, without
+    post-hoc reparsing or retuning their intent text after benchmark outputs have
+    been observed.
+    """
+
     aliases = {
-        "predicted_route": ["predicted_route", "route", "routing_tier", "prediction"],
+        "predicted_route": [
+            "predicted_route",
+            "predicted_route_raw",
+            "route",
+            "routing_tier",
+            "prediction",
+        ],
         "confidence": ["confidence", "predicted_confidence", "score"],
         "benchmark_id": ["benchmark_id", "benchmark_row_id", "row_id", "id"],
         "latency_ms": ["latency_ms", "inference_latency_ms", "latency"],
         "estimated_cost_usd": ["estimated_cost_usd", "cost_usd", "cost"],
     }
     lower = {str(column).strip().lower(): column for column in df.columns}
-    rename: dict[str, str] = {}
+    result = df.copy()
     for target, candidates in aliases.items():
+        if target in result.columns:
+            continue
         for candidate in candidates:
             if candidate in lower:
-                rename[lower[candidate]] = target
+                result[target] = result[lower[candidate]]
                 break
-    result = df.rename(columns=rename).copy()
     if "confidence" not in result:
         result["confidence"] = 0.5
     if "latency_ms" not in result:
@@ -100,6 +115,10 @@ def main() -> None:
     )
     metrics["benchmark_sha256"] = sha256_file(args.benchmark)
     metrics["deployment_policy_applied"] = not args.skip_deployment_policy
+    metrics["prediction_source_column"] = (
+        "predicted_route_raw" if "predicted_route_raw" in predictions.columns else "predicted_route"
+    )
+    metrics["post_hoc_intent_remapping_applied"] = False
     (args.output_dir / "metrics.json").write_text(
         json.dumps(metrics, indent=2, sort_keys=True), encoding="utf-8"
     )

@@ -50,7 +50,7 @@ jobs:
       - name: Unit and contract tests
         run: |
           mkdir -p v1_1/artifacts/verification
-          python -m compileall -q v1_1/qir_release
+          python -m compileall -q v1_1/qir_release v1_1/scripts
           pytest -q v1_1/tests --junitxml=v1_1/artifacts/verification/unit_tests.xml
       - name: Execute review integration, grouped modeling and applicability
         run: python -m qir_release.build --repo-root .
@@ -87,6 +87,8 @@ jobs:
           assert set(result)=={'route','confidence'}
           Path('v1_1/artifacts/verification/container_smoke.json').write_text(json.dumps({'status':'passed','response':result},indent=2)+'\n')
           PY
+      - name: Finalize promotion decision and presentation layout
+        run: python v1_1/scripts/finalize_presentation.py
       - name: Final provenance and hashes
         run: |
           python - <<'PY'
@@ -94,20 +96,28 @@ jobs:
           from pathlib import Path
           root=Path('v1_1')
           assert subprocess.run(['git','diff','--exit-code','--','v1'],check=False).returncode==0
-          payload={'status':'passed','workflow_run_id':'${{ github.run_id }}','source_commit':'${{ github.sha }}','original_v1_unchanged':True,'unit_tests':True,'actual_http':True,'docker_build_and_cli':True,'production_authorized':False}
+          summary=json.loads((root/'artifacts/SUMMARY.json').read_text())
+          decision=json.loads((root/'artifacts/RELEASE_DECISION.json').read_text())
+          assert decision['automatic_promotion_allowed'] is False
+          assert decision['production_authorized'] is False
+          payload={'status':'passed','workflow_run_id':'${{ github.run_id }}','source_commit':'${{ github.sha }}','original_v1_unchanged':True,'unit_tests':True,'actual_http':True,'docker_build_and_cli':True,'model_quality_gates_passed':summary['model_quality_passes_declared_gates'],'automatic_promotion_allowed':False,'production_authorized':False}
           (root/'artifacts/FINAL_VALIDATION.json').write_text(json.dumps(payload,indent=2)+'\n')
           files={str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(root.rglob('*')) if p.is_file() and '__pycache__' not in p.parts and '.pytest_cache' not in p.parts and p.name!='SHA256SUMS.json'}
           (root/'artifacts/SHA256SUMS.json').write_text(json.dumps(files,indent=2,sort_keys=True)+'\n')
           PY
-      - name: Package the complete handoff
+      - name: Package closeout and complete project
         run: |
           tar --exclude='__pycache__' --exclude='.pytest_cache' -czf qir-v1.1-closeout.tar.gz v1_1
+          tar --exclude='__pycache__' --exclude='.pytest_cache' -czf qir-complete-project.tar.gz \
+            v1_1 v1 'Part 1 - Phases 6 and 7' 'Part 2 - Step 3' \
+            research_archive README.md CURRENT_STATUS.md PROJECT_INDEX.md .github .gitignore
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: qir-closeout-evidence
           path: |
             qir-v1.1-closeout.tar.gz
+            qir-complete-project.tar.gz
             v1_1/artifacts/SUMMARY.json
             v1_1/artifacts/verification
           if-no-files-found: warn

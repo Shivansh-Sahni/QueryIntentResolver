@@ -1,0 +1,18 @@
+{
+  "suite_version": "applicability-2026-09-29-v1",
+  "rows": 120,
+  "core_rows": 100,
+  "stress_rows": 20,
+  "core_distribution": {
+    "short_circuit": 25,
+    "medium": 25,
+    "complex": 25,
+    "llm_needed": 25
+  },
+  "sha256": "ee15952c3c69ce704eec10f107dbc24856998fb7ee09d57ce1f6ae6eb93898b9",
+  "author": "AI assistant, for Shivansh Sahni",
+  "independent_human_validation": false,
+  "real_user_traffic": false,
+  "frozen_before_closeout_predictions": true,
+  "usage": "Diagnostic applicability evaluation; do not select models, tune prompts, alter labels, or train on this suite after results are observed."
+}

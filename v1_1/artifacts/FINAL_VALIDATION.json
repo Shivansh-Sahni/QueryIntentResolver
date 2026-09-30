@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "workflow_run_id": "36662241750",
+  "source_commit": "76d0c3717d858a687f52280639989f1a9eaddf88",
+  "original_v1_unchanged": true,
+  "unit_tests": true,
+  "actual_http": true,
+  "docker_build_and_cli": true,
+  "model_quality_gates_passed": false,
+  "automatic_promotion_allowed": false,
+  "production_authorized": false
+}

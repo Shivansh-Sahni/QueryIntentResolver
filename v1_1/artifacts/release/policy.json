@@ -1,0 +1,6 @@
+{
+  "low_threshold": 0.45,
+  "rule_confidence": 0,
+  "short_threshold": 0.6,
+  "use_lookup_rules": false
+}

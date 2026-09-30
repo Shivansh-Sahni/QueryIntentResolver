@@ -1,0 +1,23 @@
+{
+  "checks": 134,
+  "failed": [],
+  "load": {
+    "four_threads_queries_per_second": 162.85308004270527,
+    "four_threads_seconds": 6.140504064999988,
+    "queries": 1000,
+    "scope": "in-process CPU requests, no hosting/network/downstream calls",
+    "sequential_queries_per_second": 174.49768674916783,
+    "sequential_seconds": 5.7307349949999775
+  },
+  "passed": 134,
+  "production_preflight": {
+    "missing": [
+      "model_quality_gate",
+      "explicit_production_mode",
+      "product_owner_approval",
+      "independent_real_traffic_validation",
+      "four_concrete_route_bindings"
+    ],
+    "production_allowed": false
+  }
+}

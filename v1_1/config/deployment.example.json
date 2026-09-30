@@ -1,0 +1,9 @@
+{
+  "mode":"shadow_only",
+  "approved_by_product_owner":false,
+  "real_traffic_validated":false,
+  "invocation_surfaces":[],
+  "route_bindings":{"short_circuit":null,"medium":null,"complex":null,"llm_needed":null},
+  "optional_context_used":false,
+  "note":"These are deliberately unbound. Populate only with authorized MascotGO architecture decisions. llm_needed means clarification/semantic handling, not guaranteed sufficient execution capacity for every uncertain complex query."
+}

@@ -2,12 +2,12 @@
   "checks": 134,
   "failed": [],
   "load": {
-    "four_threads_queries_per_second": 162.85308004270527,
-    "four_threads_seconds": 6.140504064999988,
+    "four_threads_queries_per_second": 167.72823845180528,
+    "four_threads_seconds": 5.962025293000011,
     "queries": 1000,
     "scope": "in-process CPU requests, no hosting/network/downstream calls",
-    "sequential_queries_per_second": 174.49768674916783,
-    "sequential_seconds": 5.7307349949999775
+    "sequential_queries_per_second": 177.76980367225661,
+    "sequential_seconds": 5.625252317000019
   },
   "passed": 134,
   "production_preflight": {

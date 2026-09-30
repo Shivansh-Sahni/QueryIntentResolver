@@ -71,7 +71,7 @@ For learned decisions, confidence is the probability assigned to the **emitted**
 
 The runtime performs no network calls, no database mutations, and no raw-query logging. API-key authentication is optional for local evaluation and required at the deployment gateway for any externally exposed installation. Trusted bundle hashes are checked before model loading; this does not make untrusted pickle/joblib files safe. The supplied environment is pinned.
 
-**134/134 runtime verification checks passed**. The in-process 1,000-query serial test processed approximately **174.5 queries/second**. That is a measured local CPU workload, not an HTTP/network/production service-level agreement. Threaded parity is separately verified.
+**134/134 runtime verification checks passed**. The in-process 1,000-query serial test processed approximately **177.8 queries/second**. That is a measured local CPU workload, not an HTTP/network/production service-level agreement. Threaded parity is separately verified.
 
 `RouterBindings` accepts explicit callables for all four routes and fails when a binding is missing. The deployment preflight remains false until the product owner approves concrete handlers, real traffic has been validated and the quality gates are satisfied. No fabricated endpoint or claimed Foundry deployment is included.
 

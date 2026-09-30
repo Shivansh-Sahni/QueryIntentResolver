@@ -123,11 +123,11 @@
       "false_short_circuit_overall_rate": 0.04,
       "false_short_circuit_rate": 0.2,
       "latency_ms": {
-        "mean": 6.251721350000707,
+        "mean": 6.160212949998538,
         "n": 100,
-        "p50": 6.210400000000504,
-        "p95": 6.689180199984435,
-        "p99": 6.784253269995021
+        "p50": 6.131438499991759,
+        "p95": 6.4944853500009,
+        "p99": 6.680732629997976
       },
       "llm_route_fraction": 0.46,
       "macro_f1": 0.6174994893005082,
@@ -305,11 +305,11 @@
       "false_short_circuit_overall_rate": 0.04040404040404041,
       "false_short_circuit_rate": 0.21052631578947367,
       "latency_ms": {
-        "mean": 6.254277616162057,
+        "mean": 6.162985101008706,
         "n": 99,
-        "p50": 6.216987000016161,
-        "p95": 6.690915399985897,
-        "p99": 6.785464539995018
+        "p50": 6.132009999987531,
+        "p95": 6.497109700001147,
+        "p99": 6.680751259997919
       },
       "llm_route_fraction": 0.46464646464646464,
       "macro_f1": 0.6141403161738932,
@@ -449,11 +449,11 @@
       "false_short_circuit_overall_rate": 0.0,
       "false_short_circuit_rate": null,
       "latency_ms": {
-        "mean": 5.969310899999414,
+        "mean": 5.93340994999636,
         "n": 20,
-        "p50": 5.966170500002477,
-        "p95": 6.229789050020429,
-        "p99": 6.238438609982779
+        "p50": 5.919658499990987,
+        "p95": 6.102528600003154,
+        "p99": 6.103054519992668
       },
       "llm_route_fraction": 0.9,
       "macro_f1": 0.23684210526315788,
@@ -647,7 +647,7 @@
     "false_short_circuit_nonshort_rate": 0.04,
     "false_short_circuit_overall_rate": 0.03,
     "false_short_circuit_rate": 0.14516129032258066,
-    "fit_seconds": 8.03292721199999,
+    "fit_seconds": 7.900677298000005,
     "gates": {
       "accuracy": true,
       "macro_f1": true,
@@ -655,11 +655,11 @@
       "short_circuit_recall": true
     },
     "latency_ms": {
-      "mean": 6.269472353332428,
+      "mean": 6.178794790000286,
       "n": 300,
-      "p50": 6.265299000006053,
-      "p95": 6.62613054999639,
-      "p99": 6.790312189983467
+      "p50": 6.171598500003483,
+      "p95": 6.458923700004959,
+      "p99": 6.634572289983963
     },
     "llm_route_fraction": 0.32666666666666666,
     "macro_f1": 0.8040718949139126,
@@ -850,7 +850,7 @@
       "false_short_circuit_nonshort_rate": 0.04,
       "false_short_circuit_overall_rate": 0.03,
       "false_short_circuit_rate": 0.14516129032258066,
-      "fit_seconds": 8.03292721199999,
+      "fit_seconds": 7.900677298000005,
       "gates": {
         "accuracy": true,
         "macro_f1": true,
@@ -858,11 +858,11 @@
         "short_circuit_recall": true
       },
       "latency_ms": {
-        "mean": 6.269472353332428,
+        "mean": 6.178794790000286,
         "n": 300,
-        "p50": 6.265299000006053,
-        "p95": 6.62613054999639,
-        "p99": 6.790312189983467
+        "p50": 6.171598500003483,
+        "p95": 6.458923700004959,
+        "p99": 6.634572289983963
       },
       "llm_route_fraction": 0.32666666666666666,
       "macro_f1": 0.8040718949139126,
@@ -1046,7 +1046,7 @@
       "false_short_circuit_nonshort_rate": 0.035555555555555556,
       "false_short_circuit_overall_rate": 0.02666666666666667,
       "false_short_circuit_rate": 0.13333333333333333,
-      "fit_seconds": 9.938535899000001,
+      "fit_seconds": 9.799401778999993,
       "gates": {
         "accuracy": true,
         "macro_f1": true,
@@ -1054,11 +1054,11 @@
         "short_circuit_recall": true
       },
       "latency_ms": {
-        "mean": 7.558279979999961,
+        "mean": 7.412581313333154,
         "n": 300,
-        "p50": 7.520673000001921,
-        "p95": 7.981534399997514,
-        "p99": 8.482960340012227
+        "p50": 7.4069774999969695,
+        "p95": 7.714357750006684,
+        "p99": 7.808125340011713
       },
       "llm_route_fraction": 0.35,
       "macro_f1": 0.7811093940655984,
@@ -1242,7 +1242,7 @@
       "false_short_circuit_nonshort_rate": 0.04888888888888889,
       "false_short_circuit_overall_rate": 0.03666666666666667,
       "false_short_circuit_rate": 0.171875,
-      "fit_seconds": 8.442675373000014,
+      "fit_seconds": 8.302989427,
       "gates": {
         "accuracy": true,
         "macro_f1": true,
@@ -1250,11 +1250,11 @@
         "short_circuit_recall": true
       },
       "latency_ms": {
-        "mean": 7.6505131433329625,
+        "mean": 7.482979266666519,
         "n": 300,
-        "p50": 7.633547500006443,
-        "p95": 8.06916025001243,
-        "p99": 8.300667850004402
+        "p50": 7.465061999994305,
+        "p95": 7.793442150011742,
+        "p99": 8.0170752999868
       },
       "llm_route_fraction": 0.3566666666666667,
       "macro_f1": 0.7816871680103277,
@@ -1341,14 +1341,14 @@
   "environment": {
     "OMP_NUM_THREADS": "1",
     "cost": "No external model API calls are made. CPU/hosting and downstream costs are not measured; zero token calls is not zero total operating cost.",
-    "git_source_sha": "76d0c3717d858a687f52280639989f1a9eaddf88",
+    "git_source_sha": "203cce7ac5dcd60714a8c43724f870d862d8ef74",
     "numpy": "2.2.6",
     "pandas": "2.2.3",
     "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
     "processor": "x86_64",
     "python": "3.11.16 (main, Aug 13 2026, 02:46:14) [GCC 13.3.0]",
     "scikit_learn": "1.7.1",
-    "workflow_run_id": "36662241750"
+    "workflow_run_id": "36662714682"
   },
   "external_model_api_calls_in_closeout": 0,
   "interpretation": "Complete engineering deliverable, not proof of production reliability. Labels are mostly synthetic/policy-derived. New tests are assistant-authored and not independent. Original review is retained, with separate policy corrections and context exclusions.",
@@ -1813,12 +1813,12 @@
     "checks": 134,
     "failed": [],
     "load": {
-      "four_threads_queries_per_second": 162.85308004270527,
-      "four_threads_seconds": 6.140504064999988,
+      "four_threads_queries_per_second": 167.72823845180528,
+      "four_threads_seconds": 5.962025293000011,
       "queries": 1000,
       "scope": "in-process CPU requests, no hosting/network/downstream calls",
-      "sequential_queries_per_second": 174.49768674916783,
-      "sequential_seconds": 5.7307349949999775
+      "sequential_queries_per_second": 177.76980367225661,
+      "sequential_seconds": 5.625252317000019
     },
     "passed": 134,
     "production_preflight": {

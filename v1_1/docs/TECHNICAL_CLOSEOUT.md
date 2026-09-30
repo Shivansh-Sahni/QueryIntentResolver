@@ -4,6 +4,10 @@
 **Internal model quality gates:** NOT ALL MET.  
 **Production deployment:** not authorized; requires MascotGO bindings, product approval, independently labeled real queries, and acceptable operational risk.
 
+## Explicit promotion decision
+
+The standalone engineering handoff is complete. The production-quality objective is not. Do not automatically promote V1.1: it falsely short-circuited 9 of 62 predicted short circuits (14.52%), versus 2 of 42 (4.76%) for the preserved V1.0.1 reference. Keep the original reference for comparison and V1.1 for research/integration review. Neither is authorized for live traffic.
+
 ## Decision for the handoff
 
 The OOF-selected V1.1 candidate is **linearsvc**, with short-circuit threshold **0.6** and lookup-rule override **False**. It was selected using only grouped training out-of-fold results; the historical benchmark and new applicability labels were not used to choose the candidate or threshold. Completing the engineering work does not waive the predeclared quality gates.
@@ -67,7 +71,7 @@ For learned decisions, confidence is the probability assigned to the **emitted**
 
 The runtime performs no network calls, no database mutations, and no raw-query logging. API-key authentication is optional for local evaluation and required at the deployment gateway for any externally exposed installation. Trusted bundle hashes are checked before model loading; this does not make untrusted pickle/joblib files safe. The supplied environment is pinned.
 
-**134/134 runtime verification checks passed**. The in-process 1,000-query serial test processed approximately **181.3 queries/second**. That is a measured local CPU workload, not an HTTP/network/production service-level agreement. Threaded parity is separately verified.
+**134/134 runtime verification checks passed**. The in-process 1,000-query serial test processed approximately **174.5 queries/second**. That is a measured local CPU workload, not an HTTP/network/production service-level agreement. Threaded parity is separately verified.
 
 `RouterBindings` accepts explicit callables for all four routes and fails when a binding is missing. The deployment preflight remains false until the product owner approves concrete handlers, real traffic has been validated and the quality gates are satisfied. No fabricated endpoint or claimed Foundry deployment is included.
 

@@ -1,0 +1,22 @@
+{
+  "engineering_handoff_complete": true,
+  "model_quality_objective_complete": false,
+  "automatic_promotion_allowed": false,
+  "production_authorized": false,
+  "retained_reference": "v1.0.1 (safer historical point estimate; still provisional)",
+  "v1_1_role": "research and integration candidate; not a replacement for the reference",
+  "reason": "No live promotion is authorized. The executed V1.1 candidate fails the unchanged short-circuit safety requirement; aggregate accuracy does not waive it.",
+  "historical_v1_1_false_sc_fraction": "9/62",
+  "historical_reference_false_sc_fraction": "2/42",
+  "paired_accuracy_gain_95ci": [
+    -0.016666666666666666,
+    0.06333333333333334
+  ],
+  "small_sample_warning": "Neither point estimate certifies live safety; the old reference also misses its short-circuit recall target.",
+  "remaining_gates": [
+    "short-circuit safety without test tuning",
+    "independent real-query validation",
+    "approved handler bindings and index coverage",
+    "product-owner deployment approval"
+  ]
+}

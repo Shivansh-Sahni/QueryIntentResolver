@@ -1,12 +1,16 @@
 {
   "api_contract_verified": true,
   "applicability_execution_complete": true,
+  "automatic_promotion_allowed": false,
   "candidate": "linearsvc",
   "engineering_delivery_complete": true,
   "independent_real_traffic_validation_complete": false,
   "internal_quality_gates_passed": false,
   "live_mascotgo_integration_complete": false,
+  "model_quality_objective_complete": false,
   "original_benchmark_unchanged": true,
+  "production_authorized": false,
+  "promotion_decision": "retain_v1_0_1_as_safer_provisional_reference; V1.1 is not promoted",
   "recommended_use": "Local demonstration and product-integration review; no automatic live promotion.",
   "review_submission_processed": true,
   "reviewed_context_exclusions_deliberate": 10

@@ -1,12 +1,12 @@
 {
   "OMP_NUM_THREADS": "1",
   "cost": "No external model API calls are made. CPU/hosting and downstream costs are not measured; zero token calls is not zero total operating cost.",
-  "git_source_sha": "202668115d90863a7faa7733537335ad0d578128",
+  "git_source_sha": "76d0c3717d858a687f52280639989f1a9eaddf88",
   "numpy": "2.2.6",
   "pandas": "2.2.3",
   "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
   "processor": "x86_64",
   "python": "3.11.16 (main, Aug 13 2026, 02:46:14) [GCC 13.3.0]",
   "scikit_learn": "1.7.1",
-  "workflow_run_id": "36660959194"
+  "workflow_run_id": "36662241750"
 }

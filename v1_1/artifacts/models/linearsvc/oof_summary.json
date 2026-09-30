@@ -197,19 +197,19 @@
   },
   "folds": [
     {
-      "fit_predict_seconds": 5.366945719,
+      "fit_predict_seconds": 5.503696274999996,
       "fold": 0,
       "train_rows": 4717,
       "validation_rows": 2354
     },
     {
-      "fit_predict_seconds": 5.405500459999985,
+      "fit_predict_seconds": 5.506587871999997,
       "fold": 1,
       "train_rows": 4741,
       "validation_rows": 2330
     },
     {
-      "fit_predict_seconds": 5.454790392999996,
+      "fit_predict_seconds": 5.478516386999999,
       "fold": 2,
       "train_rows": 4684,
       "validation_rows": 2387

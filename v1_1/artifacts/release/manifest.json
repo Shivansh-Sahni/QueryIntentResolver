@@ -3,7 +3,7 @@
   "confidence_definition": "Probability of the emitted learned class. Rule confidence, if enabled, is a training-only empirical estimate. Guard fallback confidence is zero (unknown), not certainty.",
   "model": "linearsvc",
   "model_input": "raw_query_text_only",
-  "model_sha256": "1708e2d9844ec54369ba56460d824ba417d1dfcc2e99511000ed8c11b951fb59",
+  "model_sha256": "11baacfcaa135c50be950d02120e8c904f62ea02edd1f9ece7664a96a7ff4e1e",
   "policy_sha256": "37b06a9878346966213d6685f61c1d60b0ef1f1fde0f67361c3342b629ecca79",
   "production_authorized": false,
   "quality_status": "provisional_quality_gates_not_all_met",
@@ -12,7 +12,7 @@
     "confidence"
   ],
   "selection_sha256": "c1939180fe42470e2e9a118c1b07f47fffbda0a10e1299473fe7c0bba9d9f897",
-  "source_commit": "202668115d90863a7faa7733537335ad0d578128",
+  "source_commit": "76d0c3717d858a687f52280639989f1a9eaddf88",
   "training_rows": 7071,
   "training_sha256": "ab5a7e818ee01b8b47ee975aec374182954a9b6123531f673bd2f2a404b7b140",
   "trusted_artifact_only": true,

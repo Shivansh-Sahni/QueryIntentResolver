@@ -120,7 +120,7 @@
   "false_short_circuit_nonshort_rate": 0.035555555555555556,
   "false_short_circuit_overall_rate": 0.02666666666666667,
   "false_short_circuit_rate": 0.13333333333333333,
-  "fit_seconds": 9.80225061600001,
+  "fit_seconds": 9.938535899000001,
   "gates": {
     "accuracy": true,
     "macro_f1": true,
@@ -128,11 +128,11 @@
     "short_circuit_recall": true
   },
   "latency_ms": {
-    "mean": 7.301624693333982,
+    "mean": 7.558279979999961,
     "n": 300,
-    "p50": 7.297413999992841,
-    "p95": 7.58907970000422,
-    "p99": 7.689941270003827
+    "p50": 7.520673000001921,
+    "p95": 7.981534399997514,
+    "p99": 8.482960340012227
   },
   "llm_route_fraction": 0.35,
   "macro_f1": 0.7811093940655984,

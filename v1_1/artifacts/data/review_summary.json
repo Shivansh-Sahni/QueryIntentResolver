@@ -1,0 +1,15 @@
+{
+  "accepted_unchanged": 15,
+  "all_required_fields_present": true,
+  "benchmark_exact_overlap": 0,
+  "deferred_context": 10,
+  "duplicate_ids": 0,
+  "exact_id_match": true,
+  "original_review_sha256": "0afa8eef4c9c0d897a1adb0c6c29b8b536b3715ab194b935540faedbc1c884aa",
+  "policy_adjudicated": 30,
+  "queue_rows": 55,
+  "submitted_rows": 55,
+  "training_rows_after": 7916,
+  "training_rows_before": 7871,
+  "warning": "Structural completeness is not semantic agreement. Original labels/notes are preserved; policy corrections are separately attributed, not presented as the reviewer's decisions. Context-dependent rows stay quarantined."
+}

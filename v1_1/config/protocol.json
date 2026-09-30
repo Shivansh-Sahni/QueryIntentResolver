@@ -1,0 +1,21 @@
+{
+  "protocol_version": "qir-closeout-1.1.0",
+  "seed": 20260929,
+  "frozen_benchmark_sha256": "591a31c4947d73fa7d77d2a94f32a69e689281c48a564d08317865b826bd84c6",
+  "candidates": ["logistic", "linearsvc", "sgd"],
+  "outer_group_folds": 3,
+  "inner_calibration_folds": 3,
+  "short_circuit_thresholds": [0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95],
+  "global_low_confidence_threshold": 0.45,
+  "min_accuracy": 0.7,
+  "min_macro_f1": 0.6,
+  "max_false_short_circuit_discovery_rate": 0.05,
+  "min_short_circuit_recall": 0.65,
+  "minimum_validation_short_predictions": 30,
+  "selection": "Choose model/threshold/hybrid solely from group-disjoint training OOF predictions; benchmark and applicability labels are used only after selection is saved. No promotion merely to improve a headline.",
+  "benchmark_use": "Preserved historical regression benchmark, already observed in prior work; not a new pristine final test. Also report template-disjoint subset.",
+  "rule_policy": "Only predeclared full-match named-school or single-attribute lookup rules can override the learned class. Enable them only if OOF empirical precision >=0.95 with at least 30 rule firings. No fuzzy lookup or benchmark-derived exceptions.",
+  "applicability": "Assistant-authored policy-labeled tests; freeze before predictions, report overlaps, not independent users or real traffic.",
+  "quality_gate": "Engineering completion, benchmark quality, independent validation and live integration are four separate statuses. A successful build never implies production authorization.",
+  "training_review": "Preserve source CSV. Uniformly adjudicate equivalent query templates under the frozen route meanings; separately attribute changes. Exclude context-dependent reviews."
+}

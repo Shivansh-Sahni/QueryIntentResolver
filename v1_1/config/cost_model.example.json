@@ -1,0 +1,11 @@
+{
+  "status":"unpriced_configuration_example_not_a_savings_claim",
+  "currency":"USD",
+  "daily_query_volume":null,
+  "local_hosting_daily_cost":null,
+  "cpu_cost_per_second":null,
+  "route_handler_cost_per_call":{"short_circuit":null,"medium":null,"complex":null,"llm_needed":null},
+  "route_handler_latency_ms":{"short_circuit":null,"medium":null,"complex":null,"llm_needed":null},
+  "formula":"daily_total = hosting + sum(route_count * observed_handler_unit_cost) + measured_cpu_seconds * cpu_cost_per_second",
+  "caveat":"Do not replace unknown costs with zero. Mistaken short circuits cannot be counted as legitimate savings. No 2026 model prices are asserted."
+}

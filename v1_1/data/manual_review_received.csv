@@ -1,0 +1,56 @@
+query_id,query_text,review_route,review_notes,review_confidence
+7dddbda280d9a36b,Arizona State housing guarantee,complex,The tied signal split favoring complex makes it the safest resolution route.,medium
+9cfac4e4df3fb3a0,Boston University housing guarantee,complex,A plurality of historical observations supports a complex categorization.,medium
+b023b79af85bfcd6,Brown housing guarantee,medium,The query directly aligns with the suggested pipeline routing tier.,high
+f7b296a0fa98a46d,Caltech admissions profile average sat and gpa,complex,Tied pipeline indicators point heavily toward a complex multi-constraint evaluation.,medium
+fd5776946f1fdbe8,Caltech financial aid,short_circuit,Quick fact lookup matches the short circuit route option.,high
+df8f40e9a8ca703c,Caltech housing guarantee,medium,Reviewing historical splits suggests medium is the most standard resolution.,high
+0eadd9e476799266,Carnegie Mellon admissions profile average sat and gpa,short_circuit,System hints favor routing simple factual profiles directly via a short circuit.,high
+9cc2ab3f1fb48cfb,colleges near tech hubs,medium,Clear location search constraints fit cleanly into a medium filter route.,high
+0568d9250e8800a0,Columbia admissions profile average sat and gpa,medium,The profile evaluation criteria matches the suggested medium difficulty baseline.,high
+dc361283185847e6,create reach target safety list for neuroscience near Chicago full ride options,llm_needed,Constructing a personalized application list requires advanced LLM generation capabilities.,high
+e56e4304a3f84572,create reach target safety list for philosophy near Chicago full ride options,complex,Multiple criteria signals cross-classify this as a complex query resolution.,high
+79949a5c679fb1b8,Duke admissions profile average sat and gpa,short_circuit,Profile metrics can be quickly checked using standard short circuit criteria.,high
+fab35bd36da502da,eng shortage 2035 region,complex,Predicting long-term workforce regional changes introduces structural processing complexities.,context-dependent
+b5db16c5567f9d59,four year cost of Carnegie Mellon including housing,short_circuit,Total cost aggregation queries map well to direct short circuit evaluations.,high
+493cd56579566398,four year cost of Duke including housing,llm_needed,Budget calculations for housing combinations benefit most from an LLM approach.,high
+2945a2062918b4cf,four year cost of Harvard including housing,short_circuit,Simple structural fee aggregations line up with short circuit logic.,high
+aac9d8f2f48e1c58,four year cost of Stanford including housing,llm_needed,Intricate structural cost variations favor dynamic generation routes over static paths.,high
+74170f3043ae8e98,four year cost of UC Berkeley including housing,complex,Out-of-state vs in-state multi-variable calculations create complex parameters.,high
+d7b7a6bb0a4c4ad8,four year cost of UC Irvine including housing,complex,Variable state housing and tuition options point heavily to a complex classification.,high
+395fc1b9fdd4c572,four year cost of UCLA including housing,complex,"The metrics indicate a tie between complex and medium, resolving to complex to handle variable residency rate elements safely.",medium
+d364ebd3b71ad571,four year cost of University of Florida including housing,medium,Historical evidence heavily supports the suggested baseline pipeline classification.,high
+4868038c253cb27e,four year cost of University of Maryland including housing,medium,Aligning directly with the suggested routing handles the multi-way observation split securely.,medium
+6ab96bb3b718cf3b,four year cost of University of Wisconsin including housing,medium,Choosing the system-suggested option reconciles conflicting data points across standard lanes.,medium
+6fc88b2b5eb51b46,Georgia Tech admissions profile average sat and gpa,medium,Selecting the recommended medium path stabilizes highly fragmented system indicators.,medium
+3162ae8a9d3c894f,Georgia Tech housing guarantee,medium,The medium assignment covers the multi-lane classification divergence with the highest relative frequency.,medium
+cdae540549cd506b,gov analyst AI grads shortage,complex,Long-range technical labor pool forecasts map natively to complex multi-layered evaluations.,context-dependent
+59532831b1cbd7c2,gov analyst civil eng infra jobs,complex,Assessing infrastructure policy timelines requires layered domain logic typical of a complex route.,context-dependent
+04ba2ebc49ea9615,gov analyst civil infra bill 2030,complex,Projecting the impacts of a specific legislative timeframe introduces macro-environmental factors that demand complex processing.,context-dependent
+906ac5c3c8779b76,gov analyst cs grad shortage,complex,Technical workforce deficiency projections involve complicated labor tracking metrics suited for a complex pipeline strategy.,context-dependent
+edc7c566894074c7,gov analyst cs shortage midwest,complex,Regional labor market constraints add geographic layers that require complex query handling.,context-dependent
+2ea9ecea199712f8,gov analyst data sci oversupply,complex,Tracking specialist talent saturation time horizons relies on highly multi-variable parameter modeling.,context-dependent
+b234c908234920d4,gov analyst eng jobs gap,complex,Broader systemic labor gap analysis requires a structural macro-level parsing methodology.,context-dependent
+de7376d1e5db7520,gov analyst eng shortage region,complex,Pinpointing changing local shortages warrants a more comprehensive processing strategy.,context-dependent
+4a46d6887391bfb1,how to advise students who want to work abroad after graduation,medium,Adhering to the baseline suggestion addresses the cross-classified operational data safely.,medium
+7343209aae89b2ff,MIT admissions profile average sat and gpa,complex,Multi-way pipeline friction is best mediated by confirming a complex categorization path.,high
+ff27d36d86256166,NYU housing guarantee,medium,Majority historical alignment reinforces using the medium route for this profile classification.,high
+1384f241d7a11133,regional eng grad shortage 2035,complex,Future regional graduation metrics call for multi-constraint modeling rules.,context-dependent
+0b4ec33bab58e1e9,Rice University admissions profile average sat and gpa,medium,Strong plurality observations confirm that a medium routing path matches standard protocol specifications.,high
+89df52e938368c1b,Rice University housing guarantee,medium,The medium choice acts as a clear compromise baseline for inconsistent historical metrics.,medium
+a0fe90e6451e756e,schools with strong honors programs,llm_needed,Compiling soft qualitative attributes across varied campus profiles relies directly on an LLM-driven generation mechanism.,high
+845269fd08ec9571,UC Berkeley admissions profile average sat and gpa,short_circuit,Selecting the recommended option resolves the multi-lane validation split standardly.,high
+f0279241475dd4bf,UC Irvine housing guarantee,complex,A plurality of historical data confirms the complex path assignment criteria.,medium
+17ee16c31bea6389,UC Irvine scholarships,medium,The query mirrors the parameters specified under the baseline system recommendation.,high
+9dea39c519dbd296,UCLA housing guarantee,short_circuit,Plurality metrics favor short circuit routing to handle simpler lookup behaviors safely.,medium
+6d56ddd0819ae9b2,University of Florida housing guarantee,short_circuit,System indicators show a clear preference toward completing this route via short circuit.,medium
+4466b2500cf1e588,University of Michigan admissions profile average sat and gpa,short_circuit,Standard operational guidelines point directly toward reinforcing the suggested route choice.,high
+364021165819c103,University of Michigan housing guarantee,llm_needed,Direct alignment with the recommendation baseline guarantees optimal resource tier handling.,high
+100274eab9119919,University of Washington admissions profile average sat and gpa,complex,Confirmed majority metrics anchor this multi-intent layout to a complex evaluation route.,high
+a492fcb9f3f5bd63,University of Washington housing guarantee,complex,Following standard protocol helps resolve the balanced parameter split securely.,high
+67c6f10137695270,University of Wisconsin admissions profile average sat and gpa,medium,Opting for the system baseline addresses the scattered distribution patterns cleanly.,medium
+24e0422647a0ef5d,USC housing guarantee,short_circuit,The profile traits correspond exactly to the recommended simple lookup mechanism.,high
+fd3c21bec1d5ad03,Vanderbilt housing guarantee,medium,Strong metrics favor a medium routing framework to bridge historical execution gaps.,high
+aa774a10b6da3309,Virginia Tech financial aid,medium,Plurality patterns support using a medium baseline path to manage regional profile records.,high
+2ac9e3a656b7b1c5,Virginia Tech housing guarantee,medium,Sticking to the suggested tier mitigates variance introduced by inconsistent source counts.,high
+324a1121d2179f32,what is demonstrated interest and does it matter,llm_needed,Providing an explanation of abstract evaluation criteria calls for dynamic generation via LLM.,high
